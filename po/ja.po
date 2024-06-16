@@ -1,0 +1,4920 @@
+# Japanese translations for PACKAGE package.
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# gemmaro <gemmaro.dev@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-16 09:30+0900\n"
+"PO-Revision-Date: 2024-06-16 09:40+0900\n"
+"Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../CONTRIBUTING.md:1
+msgid "# Contributing to Factory Bot"
+msgstr ""
+
+#: ../CONTRIBUTING.md:3
+msgid ""
+"We love pull requests from everyone. By participating in this project, you\n"
+"agree to abide by the thoughtbot [code of conduct]."
+msgstr ""
+
+#: ../CONTRIBUTING.md:6
+msgid "[code of conduct]: https://thoughtbot.com/open-source-code-of-conduct"
+msgstr ""
+
+#: ../CONTRIBUTING.md:8
+msgid "Here are some ways *you* can contribute:"
+msgstr ""
+
+#: ../CONTRIBUTING.md:10
+msgid ""
+"* by using alpha, beta, and prerelease versions\n"
+"* by reporting bugs\n"
+"* by suggesting new features\n"
+"* by writing or editing documentation\n"
+"* by writing specifications\n"
+"* by writing code ( **no patch is too small** : fix typos, add comments, "
+"etc. )\n"
+"* by refactoring code\n"
+"* by closing [issues][]\n"
+"* by reviewing patches"
+msgstr ""
+
+#: ../CONTRIBUTING.md:20
+msgid "[issues]: https://github.com/thoughtbot/factory_bot/issues"
+msgstr ""
+
+#: ../CONTRIBUTING.md:22
+msgid "## Submitting an Issue"
+msgstr ""
+
+#: ../CONTRIBUTING.md:24
+msgid ""
+"* We use the [GitHub issue tracker][issues] to track bugs and features.\n"
+"* Before submitting a bug report or feature request, check to make sure it "
+"hasn't\n"
+"  already been submitted.\n"
+"* When submitting a bug report, please include a [reproduction script] and "
+"any\n"
+"  other details that may be necessary to reproduce the bug, including your "
+"gem\n"
+"  version, Ruby version, and operating system."
+msgstr ""
+
+#: ../CONTRIBUTING.md:31
+msgid "## Cleaning up issues"
+msgstr ""
+
+#: ../CONTRIBUTING.md:33
+msgid ""
+"* Issues that have no response from the submitter will be closed after 30 "
+"days.\n"
+"* Issues will be closed once they're assumed to be fixed or answered. If "
+"the\n"
+"  maintainer is wrong, it can be opened again.\n"
+"* If your issue is closed by mistake, please understand and explain the "
+"issue.\n"
+"  We will happily reopen the issue."
+msgstr ""
+
+#: ../CONTRIBUTING.md:39
+msgid "## Submitting a Pull Request"
+msgstr ""
+
+#: ../CONTRIBUTING.md:41
+msgid ""
+"1. [Fork][fork] the [official repository][repo].\n"
+"1. [Create a topic branch.][branch]\n"
+"1. Implement your feature or bug fix.\n"
+"1. Add, commit, and push your changes.\n"
+"1. [Submit a pull request.][pr]"
+msgstr ""
+
+#: ../CONTRIBUTING.md:47
+msgid "### Notes"
+msgstr ""
+
+#: ../CONTRIBUTING.md:49
+msgid ""
+"* Please add tests if you changed code. Contributions without tests won't be "
+"accepted.\n"
+"* If you don't know how to add tests, please put in a PR and leave a "
+"comment\n"
+"  asking for help. We love helping!\n"
+"* Please don't update the Gem version."
+msgstr ""
+
+#: ../CONTRIBUTING.md:54
+msgid "## Setting up"
+msgstr ""
+
+#: ../CONTRIBUTING.md:56
+msgid ""
+"```sh\n"
+"bundle install\n"
+"```"
+msgstr ""
+
+#: ../CONTRIBUTING.md:60
+msgid "## Running the test suite"
+msgstr ""
+
+#: ../CONTRIBUTING.md:62
+msgid "The default rake task will run the full test suite and [standard]:"
+msgstr ""
+
+#: ../CONTRIBUTING.md:64
+msgid ""
+"```sh\n"
+"bundle exec rake\n"
+"```"
+msgstr ""
+
+#: ../CONTRIBUTING.md:68
+msgid "You can also run a single group of tests (unit, spec, or feature)"
+msgstr ""
+
+#: ../CONTRIBUTING.md:70
+msgid ""
+"```sh\n"
+"bundle exec rake spec:unit\n"
+"bundle exec rake spec:acceptance\n"
+"bundle exec rake features\n"
+"```"
+msgstr ""
+
+#: ../CONTRIBUTING.md:76
+msgid ""
+"To run an individual rspec test, you can provide a path and line number:"
+msgstr ""
+
+#: ../CONTRIBUTING.md:78
+msgid ""
+"```sh\n"
+"bundle exec rspec spec/path/to/spec.rb:123\n"
+"```"
+msgstr ""
+
+#: ../CONTRIBUTING.md:82
+msgid ""
+"You can run tests with a specific version of rails via [appraisal]. To run\n"
+"the default rake task against Rails 6, for example:"
+msgstr ""
+
+#: ../CONTRIBUTING.md:85
+msgid ""
+"```sh\n"
+"bundle exec appraisal 6.0 rake\n"
+"```"
+msgstr ""
+
+#: ../CONTRIBUTING.md:89
+msgid "## Formatting"
+msgstr ""
+
+#: ../CONTRIBUTING.md:91
+msgid "Use [standard] to automatically format your code:"
+msgstr ""
+
+#: ../CONTRIBUTING.md:93
+msgid ""
+"```sh\n"
+"bundle exec rake standard:fix\n"
+"```"
+msgstr ""
+
+#: ../CONTRIBUTING.md:97
+msgid ""
+"[repo]: https://github.com/thoughtbot/factory_bot/tree/main\n"
+"[fork]: https://help.github.com/articles/fork-a-repo/\n"
+"[branch]: https://help.github.com/articles/creating-and-deleting-branches-"
+"within-your-repository/\n"
+"[pr]: https://help.github.com/articles/using-pull-requests/\n"
+"[standard]: https://github.com/testdouble/standard\n"
+"[appraisal]: https://github.com/thoughtbot/appraisal\n"
+"[reproduction script]: https://github.com/thoughtbot/factory_bot/blob/main/."
+"github/REPRODUCTION_SCRIPT.rb"
+msgstr ""
+
+#: ../CONTRIBUTING.md:105
+msgid ""
+"Inspired by https://github.com/middleman/middleman-heroku/blob/master/"
+"CONTRIBUTING.md"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1
+msgid "**Deprecated**"
+msgstr ""
+
+#: ../GETTING_STARTED.md:3 ../README.md:19
+msgid ""
+"See our extensive reference, guides, and cookbook in [the factory_bot book]"
+"[]."
+msgstr ""
+
+#: ../GETTING_STARTED.md:5 ../README.md:21
+msgid ""
+"For information on integrations with third party libraries, such as RSpec "
+"or\n"
+"Rails, see [the factory_bot wiki][]."
+msgstr ""
+
+#: ../GETTING_STARTED.md:8 ../README.md:24
+msgid ""
+" We also have [a detailed introductory video][], available for free on "
+"Upcase."
+msgstr ""
+
+#: ../GETTING_STARTED.md:10 ../README.md:26
+msgid ""
+"[a detailed introductory video]: https://upcase.com/videos/factory-bot?"
+"utm_source=github&utm_medium=open-source&utm_campaign=factory-girl\n"
+"[the factory_bot book]: https://thoughtbot.github.io/factory_bot\n"
+"[the factory_bot wiki]: https://github.com/thoughtbot/factory_bot/wiki"
+msgstr ""
+
+#: ../GETTING_STARTED.md:14
+msgid ""
+"This document is deprecated and preserved for historical use. It may "
+"disappear\n"
+"at any time."
+msgstr ""
+
+#: ../GETTING_STARTED.md:17
+msgid ""
+"Getting Started\n"
+"==============="
+msgstr ""
+
+#: ../GETTING_STARTED.md:20
+msgid ""
+"* [Setup](#setup)\n"
+"  + [Update Your Gemfile](#update-your-gemfile)\n"
+"  + [Configure your test suite](#configure-your-test-suite)\n"
+"    - [RSpec](#rspec)\n"
+"    - [Test::Unit](#testunit)\n"
+"    - [Cucumber](#cucumber)\n"
+"    - [Spinach](#spinach)\n"
+"    - [Minitest](#minitest)\n"
+"    - [Minitest::Spec](#minitestspec)\n"
+"    - [minitest-rails](#minitest-rails)\n"
+"* [Defining factories](#defining-factories)\n"
+"  + [Factory name and attributes](#factory-name-and-attributes)\n"
+"  + [Specifying the class explicitly](#specifying-the-class-explicitly)\n"
+"  + [Hash attributes](#hash-attributes)\n"
+"  + [Best practices](#best-practices)\n"
+"  + [Definition file paths](#definition-file-paths)\n"
+"  + [Static Attributes](#static-attributes)\n"
+"* [Using factories](#using-factories)\n"
+"  + [Build strategies](#build-strategies)\n"
+"  + [Attribute overrides](#attribute-overrides)\n"
+"  + [`build_stubbed` and `Marshal.dump`](#build_stubbed-and-marshaldump)\n"
+"* [Aliases](#aliases)\n"
+"* [Dependent Attributes](#dependent-attributes)\n"
+"* [Transient Attributes](#transient-attributes)\n"
+"  + [With other attributes](#with-other-attributes)\n"
+"  + [With `attributes_for`](#with-attributes_for)\n"
+"  + [With callbacks](#with-callbacks)\n"
+"  + [With associations](#with-associations)\n"
+"* [Method Name / Reserved Word Attributes](#method-name--reserved-word-"
+"attributes)\n"
+"* [Inheritance](#inheritance)\n"
+"  + [Nested factories](#nested-factories)\n"
+"  + [Assigning parent explicitly](#assigning-parent-explicitly)\n"
+"  + [Best practices](#best-practices-1)\n"
+"* [Associations](#associations)\n"
+"  + [Implicit definition](#implicit-definition)\n"
+"  + [Explicit definition](#explicit-definition)\n"
+"  + [Inline definition](#inline-definition)\n"
+"  + [Specifying the factory](#specifying-the-factory)\n"
+"  + [Overriding attributes](#overriding-attributes)\n"
+"  + [Association overrides](#association-overrides)\n"
+"  + [Build strategies](#build-strategies-1)\n"
+"  + [`has_many` associations](#has_many-associations)\n"
+"  + [`has_and_belongs_to_many` associations](#has_and_belongs_to_many-"
+"associations)\n"
+"  + [Polymorphic associations](#polymorphic-associations)\n"
+"  + [Interconnected associations](#interconnected-associations)\n"
+"* [Sequences](#sequences)\n"
+"  + [Global sequences](#global-sequences)\n"
+"  + [With dynamic attributes](#with-dynamic-attributes)\n"
+"  + [As implicit attributes](#as-implicit-attributes)\n"
+"  + [Inline sequences](#inline-sequences)\n"
+"  + [Initial value](#initial-value)\n"
+"  + [Without a block](#without-a-block)\n"
+"  + [Aliases](#aliases-1)\n"
+"  + [Rewinding](#rewinding)\n"
+"  + [Uniqueness](#uniqueness)\n"
+"* [Traits](#traits)\n"
+"  + [Defining traits](#defining-traits)\n"
+"  + [As implicit attributes](#as-implicit-attributes-1)\n"
+"  + [Attribute precedence](#attribute-precedence)\n"
+"  + [In child factories](#in-child-factories)\n"
+"  + [Using traits](#using-traits)\n"
+"  + [With associations](#with-associations-1)\n"
+"  + [Traits within traits](#traits-within-traits)\n"
+"  + [With transient attributes](#with-transient-attributes)\n"
+"  + [Enum traits](#enum-traits)\n"
+"* [Callbacks](#callbacks)\n"
+"  + [Default callbacks](#default-callbacks)\n"
+"  + [Multiple callbacks](#multiple-callbacks)\n"
+"  + [Global callbacks](#global-callbacks)\n"
+"  + [Symbol#to_proc](#symbolto_proc)\n"
+"* [Modifying factories](#modifying-factories)\n"
+"* [Building or Creating Multiple Records](#building-or-creating-multiple-"
+"records)\n"
+"* [Linting Factories](#linting-factories)\n"
+"* [Custom Construction](#custom-construction)\n"
+"* [Custom Strategies](#custom-strategies)\n"
+"* [Custom Callbacks](#custom-callbacks)\n"
+"* [Custom Methods to Persist Objects](#custom-methods-to-persist-objects)\n"
+"* [ActiveSupport Instrumentation](#activesupport-instrumentation)\n"
+"* [Rails Preloaders and RSpec](#rails-preloaders-and-rspec)\n"
+"* [Using Without Bundler](#using-without-bundler)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:101
+msgid ""
+"Setup\n"
+"-----"
+msgstr ""
+
+#: ../GETTING_STARTED.md:104
+msgid "### Update Your Gemfile"
+msgstr ""
+
+#: ../GETTING_STARTED.md:106
+msgid "If you're using Rails:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:108
+msgid ""
+"```ruby\n"
+"gem \"factory_bot_rails\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:112 ../GETTING_STARTED.md:132
+msgid "If you're *not* using Rails:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:114
+msgid ""
+"```ruby\n"
+"gem \"factory_bot\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:118
+msgid "### Configure your test suite"
+msgstr ""
+
+#: ../GETTING_STARTED.md:120
+msgid "#### RSpec"
+msgstr ""
+
+#: ../GETTING_STARTED.md:122
+msgid ""
+"If you're using Rails, add the following configuration to\n"
+"`spec/support/factory_bot.rb` and be sure to require that file in\n"
+"`rails_helper.rb`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:126
+msgid ""
+"```ruby\n"
+"RSpec.configure do |config|\n"
+"  config.include FactoryBot::Syntax::Methods\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:134
+msgid ""
+"```ruby\n"
+"RSpec.configure do |config|\n"
+"  config.include FactoryBot::Syntax::Methods"
+msgstr ""
+
+#: ../GETTING_STARTED.md:138
+msgid ""
+"  config.before(:suite) do\n"
+"    FactoryBot.find_definitions\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:144
+msgid "#### Test::Unit"
+msgstr ""
+
+#: ../GETTING_STARTED.md:146
+msgid ""
+"```ruby\n"
+"class Test::Unit::TestCase\n"
+"  include FactoryBot::Syntax::Methods\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:152
+msgid "#### Cucumber"
+msgstr ""
+
+#: ../GETTING_STARTED.md:154
+msgid ""
+"```ruby\n"
+"# env.rb (Rails example location - RAILS_ROOT/features/support/env.rb)\n"
+"World(FactoryBot::Syntax::Methods)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:159
+msgid "#### Spinach"
+msgstr ""
+
+#: ../GETTING_STARTED.md:161
+msgid ""
+"```ruby\n"
+"class Spinach::FeatureSteps\n"
+"  include FactoryBot::Syntax::Methods\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:167
+msgid "#### Minitest"
+msgstr ""
+
+#: ../GETTING_STARTED.md:169
+msgid ""
+"```ruby\n"
+"class Minitest::Unit::TestCase\n"
+"  include FactoryBot::Syntax::Methods\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:175
+msgid "#### Minitest::Spec"
+msgstr ""
+
+#: ../GETTING_STARTED.md:177
+msgid ""
+"```ruby\n"
+"class Minitest::Spec\n"
+"  include FactoryBot::Syntax::Methods\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:183
+msgid "#### minitest-rails"
+msgstr ""
+
+#: ../GETTING_STARTED.md:185
+msgid ""
+"```ruby\n"
+"class ActiveSupport::TestCase\n"
+"  include FactoryBot::Syntax::Methods\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:191
+msgid ""
+"If you do not include `FactoryBot::Syntax::Methods` in your test suite, then "
+"all\n"
+"factory\\_bot methods will need to be prefaced with `FactoryBot`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:194
+msgid ""
+"Defining factories\n"
+"------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:197
+msgid "### Factory name and attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:199
+msgid ""
+"Each factory has a name and a set of attributes. The name is used to guess "
+"the\n"
+"class of the object by default:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:202
+msgid ""
+"```ruby\n"
+"# This will guess the User class\n"
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    first_name { \"John\" }\n"
+"    last_name  { \"Doe\" }\n"
+"    admin { false }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:213
+msgid "### Specifying the class explicitly"
+msgstr ""
+
+#: ../GETTING_STARTED.md:215
+msgid "It is also possible to explicitly specify the class:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:217
+msgid ""
+"```ruby\n"
+"# This will use the User class (otherwise Admin would have been guessed)\n"
+"factory :admin, class: \"User\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:222
+msgid ""
+"You can pass a constant as well, if the constant is available (note that "
+"this\n"
+"can cause test performance problems in large Rails applications, since\n"
+"referring to the constant will cause it to be eagerly loaded)."
+msgstr ""
+
+#: ../GETTING_STARTED.md:226
+msgid ""
+"```ruby\n"
+"factory :access_token, class: User\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:230
+msgid "### Hash attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:232
+msgid ""
+"Because of the block syntax in Ruby, defining attributes as `Hash`es (for\n"
+"serialized/JSON columns, for example) requires two sets of curly brackets:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:235
+msgid ""
+"```ruby\n"
+"factory :program do\n"
+"  configuration { { auto_resolve: false, auto_define: true } }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:241 ../GETTING_STARTED.md:518
+msgid "### Best practices"
+msgstr ""
+
+#: ../GETTING_STARTED.md:243
+msgid ""
+"It is recommended that you have one factory for each class that provides\n"
+"the simplest set of attributes necessary to create an instance of that "
+"class. If\n"
+"you're creating ActiveRecord objects, that means that you should only "
+"provide\n"
+"attributes that are required through validations and that do not have "
+"defaults.\n"
+"Other factories can be created through inheritance to cover common scenarios "
+"for\n"
+"each class."
+msgstr ""
+
+#: ../GETTING_STARTED.md:250
+msgid ""
+"Attempting to define multiple factories with the same name will raise an "
+"error."
+msgstr ""
+
+#: ../GETTING_STARTED.md:252
+msgid "### Definition file paths"
+msgstr ""
+
+#: ../GETTING_STARTED.md:254
+msgid ""
+"Factories can be defined anywhere, but will be automatically loaded after\n"
+"calling `FactoryBot.find_definitions` if factories are defined in files at "
+"the\n"
+"following locations:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:258
+msgid ""
+"    test/factories.rb\n"
+"    spec/factories.rb\n"
+"    test/factories/*.rb\n"
+"    spec/factories/*.rb"
+msgstr ""
+
+#: ../GETTING_STARTED.md:263
+msgid "### Static Attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:265
+msgid ""
+"Static attributes (without a block) are no longer available in factory\\_bot "
+"5.\n"
+"You can read more about the decision to remove them in\n"
+"[this blog post](https://robots.thoughtbot.com/deprecating-static-attributes-"
+"in-factory_bot-4-11)."
+msgstr ""
+
+#: ../GETTING_STARTED.md:270
+msgid ""
+"Using factories\n"
+"---------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:273 ../GETTING_STARTED.md:649
+msgid "### Build strategies"
+msgstr ""
+
+#: ../GETTING_STARTED.md:275
+msgid ""
+"factory\\_bot supports several different build strategies: build, create,\n"
+"attributes\\_for and build\\_stubbed:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:278
+msgid ""
+"```ruby\n"
+"# Returns a User instance that's not saved\n"
+"user = build(:user)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:282
+msgid ""
+"# Returns a saved User instance\n"
+"user = create(:user)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:285
+msgid ""
+"# Returns a hash of attributes that can be used to build a User instance\n"
+"attrs = attributes_for(:user)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:288
+msgid ""
+"# Integrates with Ruby 3.0's support for pattern matching assignment\n"
+"attributes_for(:user) => {email:, name:, **attrs}"
+msgstr ""
+
+#: ../GETTING_STARTED.md:291
+msgid ""
+"# Returns an object with all defined attributes stubbed out\n"
+"stub = build_stubbed(:user)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:294
+msgid ""
+"# Passing a block to any of the methods above will yield the return object\n"
+"create(:user) do |user|\n"
+"  user.posts.create(attributes_for(:post))\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:300
+msgid "### Attribute overrides"
+msgstr ""
+
+#: ../GETTING_STARTED.md:302
+msgid ""
+"No matter which strategy is used, it's possible to override the defined\n"
+"attributes by passing a Hash:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:305
+msgid ""
+"```ruby\n"
+"# Build a User instance and override the first_name property\n"
+"user = build(:user, first_name: \"Joe\")\n"
+"user.first_name\n"
+"# => \"Joe\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:312
+msgid "Overriding associations is also supported:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:314 ../GETTING_STARTED.md:325
+msgid ""
+"```ruby\n"
+"account = build(:account, :deluxe)\n"
+"friends = build_list(:user, 2)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:318
+msgid ""
+"user = build(:user, account: account, friends: friends)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:321
+msgid ""
+"Ruby 3.1's support for [omitting values][] from `Hash` literals dovetails "
+"with\n"
+"attribute overrides and provides an opportunity to limit the repetition of\n"
+"variable names:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:329
+msgid ""
+"# The keyword arguments correspond to local variable names, so omit their "
+"values\n"
+"user = build(:user, account:, friends:)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:333
+msgid ""
+"[omitting values]: https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc."
+"html#label-Hash+Literals"
+msgstr ""
+
+#: ../GETTING_STARTED.md:335
+msgid "### `build_stubbed` and `Marshal.dump`"
+msgstr ""
+
+#: ../GETTING_STARTED.md:337
+msgid ""
+"Note that objects created with `build_stubbed` cannot be serialized with\n"
+"`Marshal.dump`, since factory\\_bot defines singleton methods on these "
+"objects."
+msgstr ""
+
+#: ../GETTING_STARTED.md:340
+msgid ""
+"Aliases\n"
+"-------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:343
+msgid ""
+"factory\\_bot allows you to define aliases to existing factories to make "
+"them\n"
+"easier to re-use. This could come in handy when, for example, your Post "
+"object\n"
+"has an author attribute that actually refers to an instance of a User "
+"class.\n"
+"While normally factory\\_bot can infer the factory name from the association "
+"name,\n"
+"in this case it will look for an author factory in vain. So, alias your "
+"user\n"
+"factory so it can be used under alias names."
+msgstr ""
+
+#: ../GETTING_STARTED.md:350
+msgid ""
+"```ruby\n"
+"factory :user, aliases: [:author, :commenter] do\n"
+"  first_name { \"John\" }\n"
+"  last_name { \"Doe\" }\n"
+"  date_of_birth { 18.years.ago }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:357
+msgid ""
+"factory :post do\n"
+"  # The alias allows us to write author instead of\n"
+"  # association :author, factory: :user\n"
+"  author\n"
+"  title { \"How to read a book effectively\" }\n"
+"  body { \"There are five steps involved.\" }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:365
+msgid ""
+"factory :comment do\n"
+"  # The alias allows us to write commenter instead of\n"
+"  # association :commenter, factory: :user\n"
+"  commenter\n"
+"  body { \"Great article!\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:373
+msgid ""
+"Dependent Attributes\n"
+"--------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:376
+msgid ""
+"Attributes can be based on the values of other attributes using the "
+"evaluator\n"
+"that is yielded to dynamic attribute blocks:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:379
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  first_name { \"Joe\" }\n"
+"  last_name  { \"Blow\" }\n"
+"  email { \"#{first_name}.#{last_name}@example.com\".downcase }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:386
+msgid ""
+"create(:user, last_name: \"Doe\").email\n"
+"# => \"joe.doe@example.com\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:390
+msgid ""
+"Transient Attributes\n"
+"--------------------\n"
+"Transient attributes are attributes only available within the factory "
+"definition, and not set on the object being built. This allows for more "
+"complex logic inside factories."
+msgstr ""
+
+#: ../GETTING_STARTED.md:394
+msgid "### With other attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:396
+msgid ""
+"There may be times where your code can be DRYed up by passing in transient\n"
+"attributes to factories. You can access transient attributes within other\n"
+"attributes (see [Dependent Attributes](#dependent-attributes)):"
+msgstr ""
+
+#: ../GETTING_STARTED.md:400
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  transient do\n"
+"    rockstar { true }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:406
+msgid ""
+"  name { \"John Doe#{\" - Rockstar\" if rockstar}\" }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:409
+msgid ""
+"create(:user).name\n"
+"#=> \"John Doe - ROCKSTAR\""
+msgstr ""
+
+#: ../GETTING_STARTED.md:412
+msgid ""
+"create(:user, rockstar: false).name\n"
+"#=> \"John Doe\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:416
+msgid "### With `attributes_for`"
+msgstr ""
+
+#: ../GETTING_STARTED.md:418
+msgid ""
+"Transient attributes will be ignored within attributes\\_for and won't be "
+"set on\n"
+"the model, even if the attribute exists or you attempt to override it."
+msgstr ""
+
+#: ../GETTING_STARTED.md:421
+msgid "### With callbacks"
+msgstr ""
+
+#: ../GETTING_STARTED.md:423
+msgid ""
+"If you need to access the evaluator in a factory\\_bot callback,\n"
+"you'll need to declare a second block argument (for the evaluator) and "
+"access\n"
+"transient attributes from there."
+msgstr ""
+
+#: ../GETTING_STARTED.md:427
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  transient do\n"
+"    upcased { false }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:433
+msgid "  name { \"John Doe\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:435
+msgid ""
+"  after(:create) do |user, evaluator|\n"
+"    user.name.upcase! if evaluator.upcased\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:440
+msgid ""
+"create(:user).name\n"
+"#=> \"John Doe\""
+msgstr ""
+
+#: ../GETTING_STARTED.md:443
+msgid ""
+"create(:user, upcased: true).name\n"
+"#=> \"JOHN DOE\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:447 ../GETTING_STARTED.md:1316
+msgid "### With associations"
+msgstr ""
+
+#: ../GETTING_STARTED.md:449
+msgid ""
+"Transient [associations](#associations) are not supported in factory\\_bot.\n"
+"Associations within the transient block will be treated as regular,\n"
+"non-transient associations."
+msgstr ""
+
+#: ../GETTING_STARTED.md:453
+msgid ""
+"If needed, you can generally work around this by building a factory within "
+"a\n"
+"transient attribute:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:456
+msgid ""
+"```ruby\n"
+"factory :post"
+msgstr ""
+
+#: ../GETTING_STARTED.md:459
+msgid ""
+"factory :user do\n"
+"  transient do\n"
+"    post { build(:post) }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:466
+msgid ""
+"Method Name / Reserved Word Attributes\n"
+"-------------------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:469
+msgid ""
+"If your attributes conflict with existing methods or reserved words (all "
+"methods in the [DefinitionProxy](https://github.com/thoughtbot/factory_bot/"
+"blob/main/lib/factory_bot/definition_proxy.rb) class) you can define them "
+"with `add_attribute`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:471
+msgid ""
+"```ruby\n"
+"factory :dna do\n"
+"  add_attribute(:sequence) { 'GATTACA' }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:476
+msgid ""
+"factory :payment do\n"
+"  add_attribute(:method) { 'paypal' }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:480 ../GETTING_STARTED.md:1404
+msgid "```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:482
+msgid ""
+"Inheritance\n"
+"-----------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:485
+msgid "### Nested factories"
+msgstr ""
+
+#: ../GETTING_STARTED.md:487
+msgid ""
+"You can easily create multiple factories for the same class without "
+"repeating\n"
+"common attributes by nesting factories:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:490
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  title { \"A title\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:494
+msgid ""
+"  factory :approved_post do\n"
+"    approved { true }\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:499
+msgid ""
+"approved_post = create(:approved_post)\n"
+"approved_post.title    # => \"A title\"\n"
+"approved_post.approved # => true\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:504
+msgid "### Assigning parent explicitly"
+msgstr ""
+
+#: ../GETTING_STARTED.md:506
+msgid "You can also assign the parent explicitly:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:508
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  title { \"A title\" }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:513
+msgid ""
+"factory :approved_post, parent: :post do\n"
+"  approved { true }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:520
+msgid ""
+"As mentioned above, it's good practice to define a basic factory for each "
+"class\n"
+"with only the attributes required to create it. Then, create more specific\n"
+"factories that inherit from this basic parent. Factory definitions are "
+"still\n"
+"code, so keep them DRY."
+msgstr ""
+
+#: ../GETTING_STARTED.md:525
+msgid ""
+"Associations\n"
+"------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:528
+msgid "### Implicit definition"
+msgstr ""
+
+#: ../GETTING_STARTED.md:530
+msgid ""
+"It's possible to set up associations within factories. If the factory name "
+"is\n"
+"the same as the association name, the factory name can be left out."
+msgstr ""
+
+#: ../GETTING_STARTED.md:533
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  author\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:540
+msgid "### Explicit definition"
+msgstr ""
+
+#: ../GETTING_STARTED.md:542
+msgid ""
+"You can define associations explicitly. This can be handy especially when\n"
+"[Overriding attributes](#overriding-attributes)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:545
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  association :author\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:552
+msgid "### Inline definition"
+msgstr ""
+
+#: ../GETTING_STARTED.md:554
+msgid ""
+"You can also define associations inline within regular attributes,\n"
+"but note that the value will be `nil`\n"
+"when using the `attributes_for` strategy."
+msgstr ""
+
+#: ../GETTING_STARTED.md:558
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  author { association :author }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:565
+msgid "### Specifying the factory"
+msgstr ""
+
+#: ../GETTING_STARTED.md:567
+msgid ""
+"You can specify a different factory (although [Aliases](#aliases) might "
+"also\n"
+"help you out here)."
+msgstr ""
+
+#: ../GETTING_STARTED.md:570 ../GETTING_STARTED.md:601
+msgid "Implicitly:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:572
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  author factory: :user\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:579 ../GETTING_STARTED.md:610
+msgid "Explicitly:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:581
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  association :author, factory: :user\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:588
+msgid "Inline:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:590
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  author { association :user }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:597
+msgid "### Overriding attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:599
+msgid "You can also override attributes."
+msgstr ""
+
+#: ../GETTING_STARTED.md:603
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  author factory: :author, last_name: \"Writely\"\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:613
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  association :author, last_name: \"Writely\"\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:620
+msgid "Or inline using attributes from the factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:622
+msgid ""
+"```rb\n"
+"factory :post do\n"
+"  # ...\n"
+"  author_last_name { \"Writely\" }\n"
+"  author { association :author, last_name: author_last_name }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:630
+msgid "### Association overrides"
+msgstr ""
+
+#: ../GETTING_STARTED.md:632
+msgid "Attribute overrides can be used to link associated objects:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:634
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :author do\n"
+"    name { 'Taylor' }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:640 ../GETTING_STARTED.md:658
+msgid ""
+"  factory :post do\n"
+"    author\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:645
+msgid ""
+"eunji = build(:author, name: 'Eunji')\n"
+"post = build(:post, author: eunji)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:651
+msgid ""
+"In factory\\_bot 5, associations default to using the same build strategy "
+"as\n"
+"their parent object:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:654
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :author"
+msgstr ""
+
+#: ../GETTING_STARTED.md:663
+msgid ""
+"post = build(:post)\n"
+"post.new_record?        # => true\n"
+"post.author.new_record? # => true"
+msgstr ""
+
+#: ../GETTING_STARTED.md:667
+msgid ""
+"post = create(:post)\n"
+"post.new_record?        # => false\n"
+"post.author.new_record? # => false\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:672
+msgid ""
+"This is different than the default behavior for previous versions of\n"
+"factory\\_bot, where the association strategy would not always match the "
+"strategy\n"
+"of the parent object. If you want to continue using the old behavior, you "
+"can\n"
+"set the `use_parent_strategy` configuration option to `false`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:677 ../GETTING_STARTED.md:693
+msgid ""
+"```ruby\n"
+"FactoryBot.use_parent_strategy = false"
+msgstr ""
+
+#: ../GETTING_STARTED.md:680
+msgid ""
+"# Builds and saves a User and a Post\n"
+"post = create(:post)\n"
+"post.new_record?        # => false\n"
+"post.author.new_record? # => false"
+msgstr ""
+
+#: ../GETTING_STARTED.md:685
+msgid ""
+"# Builds and saves a User, and then builds but does not save a Post\n"
+"post = build(:post)\n"
+"post.new_record?        # => true\n"
+"post.author.new_record? # => false\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:691
+msgid ""
+"To not save the associated object, specify `strategy: :build` in the factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:696
+msgid ""
+"factory :post do\n"
+"  # ...\n"
+"  association :author, factory: :user, strategy: :build\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:701
+msgid ""
+"# Builds a User, and then builds a Post, but does not save either\n"
+"post = build(:post)\n"
+"post.new_record?        # => true\n"
+"post.author.new_record? # => true\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:707
+msgid ""
+"Please note that the `strategy: :build` option must be passed to an explicit "
+"call to `association`,\n"
+"and cannot be used with implicit associations:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:710
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  # ...\n"
+"  author strategy: :build    # <<< this does *not* work; causes author_id to "
+"be nil\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:716
+msgid "### `has_many` associations"
+msgstr ""
+
+#: ../GETTING_STARTED.md:718
+msgid ""
+"There are a few ways to generate data for a `has_many` relationship. The\n"
+"simplest approach is to write a helper method in plain Ruby to tie together "
+"the\n"
+"different records:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:722 ../GETTING_STARTED.md:749
+#: ../GETTING_STARTED.md:790 ../GETTING_STARTED.md:815
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :post do\n"
+"    title { \"Through the Looking Glass\" }\n"
+"    user\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:729
+msgid ""
+"  factory :user do\n"
+"    name { \"Rachel Sanchez\" }\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:734
+msgid ""
+"def user_with_posts(posts_count: 5)\n"
+"  FactoryBot.create(:user) do |user|\n"
+"    FactoryBot.create_list(:post, posts_count, user: user)\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:740
+msgid ""
+"create(:user).posts.length # 0\n"
+"user_with_posts.posts.length # 5\n"
+"user_with_posts(posts_count: 15).posts.length # 15\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:745
+msgid ""
+"If you prefer to keep the object creation fully within factory\\_bot, you "
+"can\n"
+"build the posts in an `after(:create)` callback."
+msgstr ""
+
+#: ../GETTING_STARTED.md:756
+msgid ""
+"  factory :user do\n"
+"    name { \"John Doe\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:759
+msgid ""
+"    # user_with_posts will create post data after the user has been created\n"
+"    factory :user_with_posts do\n"
+"      # posts_count is declared as a transient attribute available in the\n"
+"      # callback via the evaluator\n"
+"      transient do\n"
+"        posts_count { 5 }\n"
+"      end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:767
+msgid ""
+"      # the after(:create) yields two values; the user instance itself and "
+"the\n"
+"      # evaluator, which stores all values from the factory, including "
+"transient\n"
+"      # attributes; `create_list`'s second argument is the number of "
+"records\n"
+"      # to create and we make sure the user is associated properly to the "
+"post\n"
+"      after(:create) do |user, evaluator|\n"
+"        create_list(:post, evaluator.posts_count, user: user)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:774
+msgid ""
+"        # You may need to reload the record here, depending on your "
+"application\n"
+"        user.reload\n"
+"      end\n"
+"    end\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:781
+msgid ""
+"create(:user).posts.length # 0\n"
+"create(:user_with_posts).posts.length # 5\n"
+"create(:user_with_posts, posts_count: 15).posts.length # 15\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:786
+msgid ""
+"Or, for a solution that works with `build`, `build_stubbed`, and `create`\n"
+"(although it doesn't work well with `attributes_for`), you can use inline\n"
+"associations:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:797
+msgid ""
+"  factory :user do\n"
+"    name { \"Taylor Kim\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:800
+msgid ""
+"    factory :user_with_posts do\n"
+"      posts { [association(:post)] }\n"
+"    end\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:806
+msgid ""
+"create(:user).posts.length # 0\n"
+"create(:user_with_posts).posts.length # 1\n"
+"build(:user_with_posts).posts.length # 1\n"
+"build_stubbed(:user_with_posts).posts.length # 1\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:812
+msgid ""
+"For more flexibility you can combine this with the `posts_count` transient\n"
+"attribute from the callback example:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:822
+msgid ""
+"  factory :user do\n"
+"    name { \"Adiza Kumato\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:825
+msgid ""
+"    factory :user_with_posts do\n"
+"      transient do\n"
+"        posts_count { 5 }\n"
+"      end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:830
+msgid ""
+"      posts do\n"
+"        Array.new(posts_count) { association(:post) }\n"
+"      end\n"
+"    end\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:837
+msgid ""
+"create(:user_with_posts).posts.length # 5\n"
+"create(:user_with_posts, posts_count: 15).posts.length # 15\n"
+"build(:user_with_posts, posts_count: 15).posts.length # 15\n"
+"build_stubbed(:user_with_posts, posts_count: 15).posts.length # 15\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:843
+msgid "### `has_and_belongs_to_many` associations"
+msgstr ""
+
+#: ../GETTING_STARTED.md:845
+msgid ""
+"Generating data for a `has_and_belongs_to_many` relationship is very "
+"similar\n"
+"to the above `has_many` relationship, with a small change: you need to pass "
+"an\n"
+"array of objects to the model's pluralized attribute name rather than a "
+"single\n"
+"object to the singular version of the attribute name."
+msgstr ""
+
+#: ../GETTING_STARTED.md:851
+msgid ""
+"```ruby\n"
+"def profile_with_languages(languages_count: 2)\n"
+"  FactoryBot.create(:profile) do |profile|\n"
+"    FactoryBot.create_list(:language, languages_count, profiles: [profile])\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:859
+msgid "Or with the callback approach:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:861 ../GETTING_STARTED.md:877
+msgid ""
+"```ruby\n"
+"factory :profile_with_languages do\n"
+"  transient do\n"
+"    languages_count { 2 }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:867
+msgid ""
+"  after(:create) do |profile, evaluator|\n"
+"    create_list(:language, evaluator.languages_count, profiles: [profile])\n"
+"    profile.reload\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:874
+msgid ""
+"Or the inline association approach (note the use of the `instance` method "
+"here\n"
+"to refer to the profile being built):"
+msgstr ""
+
+#: ../GETTING_STARTED.md:883
+msgid ""
+"  languages do\n"
+"    Array.new(languages_count) do\n"
+"      association(:language, profiles: [instance])\n"
+"    end\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:891
+msgid "### Polymorphic associations"
+msgstr ""
+
+#: ../GETTING_STARTED.md:893
+msgid "Polymorphic associations can be handled with traits:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:895
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :video\n"
+"  factory :photo"
+msgstr ""
+
+#: ../GETTING_STARTED.md:900
+msgid ""
+"  factory :comment do\n"
+"    for_photo # default to the :for_photo trait if none is specified"
+msgstr ""
+
+#: ../GETTING_STARTED.md:903
+msgid ""
+"    trait :for_video do\n"
+"      association :commentable, factory: :video\n"
+"    end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:907
+msgid ""
+"    trait :for_photo do\n"
+"      association :commentable, factory: :photo\n"
+"    end\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:914
+msgid "This allows us to do:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:916
+msgid ""
+"```ruby\n"
+"create(:comment)\n"
+"create(:comment, :for_video)\n"
+"create(:comment, :for_photo)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:922
+msgid "### Interconnected associations"
+msgstr ""
+
+#: ../GETTING_STARTED.md:924
+msgid ""
+"There are limitless ways objects might be interconnected, and\n"
+"factory\\_bot may not always be suited to handle those relationships. In "
+"some\n"
+"cases it makes sense to use factory\\_bot to build each individual object, "
+"and\n"
+"then to write helper methods in plain Ruby to tie those objects together."
+msgstr ""
+
+#: ../GETTING_STARTED.md:929
+msgid ""
+"That said, some more complex, interconnected relationships can be built in "
+"factory\\_bot\n"
+"using inline associations with reference to the `instance` being built."
+msgstr ""
+
+#: ../GETTING_STARTED.md:932
+msgid ""
+"Let's say your models look like this, where an associated `Student` and\n"
+"`Profile` should both belong to the same `School`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:935
+msgid ""
+"```ruby\n"
+"class Student < ApplicationRecord\n"
+"  belongs_to :school\n"
+"  has_one :profile\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:941
+msgid ""
+"class Profile < ApplicationRecord\n"
+"  belongs_to :school\n"
+"  belongs_to :student\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:946
+msgid ""
+"class School < ApplicationRecord\n"
+"  has_many :students\n"
+"  has_many :profiles\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:952
+msgid ""
+"We can ensure the student and profile are connected to each other and to "
+"the\n"
+"same school with a factory like this:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:955
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :student do\n"
+"    school\n"
+"    profile { association :profile, student: instance, school: school }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:962
+msgid ""
+"  factory :profile do\n"
+"    school\n"
+"    student { association :student, profile: instance, school: school }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:967
+msgid ""
+"  factory :school\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:971
+msgid ""
+"Note that this approach works with `build`, `build_stubbed`, and `create`, "
+"but\n"
+"the associations will return `nil` when using `attributes_for`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:974
+msgid ""
+"Also, note that if you assign any attributes inside a custom "
+"`initialize_with`\n"
+"(e.g. `initialize_with { new(**attributes) }`), those attributes should not "
+"refer to `instance`,\n"
+"since it will be `nil`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:978
+msgid ""
+"Sequences\n"
+"---------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:981
+msgid "### Global sequences"
+msgstr ""
+
+#: ../GETTING_STARTED.md:983
+msgid ""
+"Unique values in a specific format (for example, e-mail addresses) can be\n"
+"generated using sequences. Sequences are defined by calling `sequence` in a\n"
+"definition block, and values in a sequence are generated by calling\n"
+"`generate`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:988
+msgid ""
+"```ruby\n"
+"# Defines a new sequence\n"
+"FactoryBot.define do\n"
+"  sequence :email do |n|\n"
+"    \"person#{n}@example.com\"\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:996
+msgid ""
+"generate :email\n"
+"# => \"person1@example.com\""
+msgstr ""
+
+#: ../GETTING_STARTED.md:999
+msgid ""
+"generate :email\n"
+"# => \"person2@example.com\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1003
+msgid "### With dynamic attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1005
+msgid "Sequences can be used in dynamic attributes:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1007
+msgid ""
+"```ruby\n"
+"factory :invite do\n"
+"  invitee { generate(:email) }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1013 ../GETTING_STARTED.md:1183
+msgid "### As implicit attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1015
+msgid "Or as implicit attributes:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1017
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  email # Same as `email { generate(:email) }`\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1023
+msgid ""
+"Note that defining sequences as implicit attributes will not work if you "
+"have a\n"
+"factory with the same name as the sequence."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1026
+msgid "### Inline sequences"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1028
+msgid ""
+"And it's also possible to define an in-line sequence that is only used in\n"
+"a particular factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1031
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  sequence(:email) { |n| \"person#{n}@example.com\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1037
+msgid ""
+"With Ruby 2.7's support for [numbered parameters][], inline definitions can "
+"be\n"
+"even more abbreviated:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1040
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  sequence(:email) { \"person#{_1}@example.com\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1046
+msgid ""
+"[numbered parameters]: https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-"
+"label-Numbered+parameters"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1048
+msgid "### Initial value"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1050
+msgid ""
+"You can override the initial value. Any value that responds to the `#next`\n"
+"method will work (e.g. 1, 2, 3, 'a', 'b', 'c')"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1053
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  sequence(:email, 1000) { |n| \"person#{n}@example.com\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1059
+msgid "### Without a block"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1061
+msgid ""
+"Without a block, the value will increment itself, starting at its initial "
+"value:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1063
+msgid ""
+"```ruby\n"
+"factory :post do\n"
+"  sequence(:position)\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1069
+msgid ""
+"Please note, that the value for the sequence could be any Enumerable "
+"instance,\n"
+"as long as it responds to `#next`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1072
+msgid ""
+"```ruby\n"
+"factory :task do\n"
+"  sequence :priority, %i[low medium high urgent].cycle\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1078
+msgid "### Aliases"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1080
+msgid ""
+"Sequences can also have aliases. The sequence aliases share the same counter:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1082
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  sequence(:email, 1000, aliases: [:sender, :receiver]) { |n| \"person#{n}"
+"@example.com\" }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1087
+msgid ""
+"# will increase value counter for :email which is shared by :sender and :"
+"receiver\n"
+"generate(:sender)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1091
+msgid "Define aliases and use default value (1) for the counter"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1093
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  sequence(:email, aliases: [:sender, :receiver]) { |n| \"person#{n}@example."
+"com\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1099
+msgid "Setting the value:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1101
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  sequence(:email, 'a', aliases: [:sender, :receiver]) { |n| \"person#{n}"
+"@example.com\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1107
+msgid ""
+"The value just needs to support the `#next` method. Here the next value will "
+"be 'a', then 'b', etc."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1109
+msgid "### Rewinding"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1111
+msgid "Sequences can also be rewound with `FactoryBot.rewind_sequences`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1113
+msgid ""
+"```ruby\n"
+"sequence(:email) {|n| \"person#{n}@example.com\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1116
+msgid ""
+"generate(:email) # \"person1@example.com\"\n"
+"generate(:email) # \"person2@example.com\"\n"
+"generate(:email) # \"person3@example.com\""
+msgstr ""
+
+#: ../GETTING_STARTED.md:1120
+msgid "FactoryBot.rewind_sequences"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1122
+msgid ""
+"generate(:email) # \"person1@example.com\"\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1125
+msgid "This rewinds all registered sequences."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1127
+msgid "### Uniqueness"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1129
+msgid ""
+"When working with uniqueness constraints, be careful not to pass in override "
+"values that will conflict with the generated sequence values."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1131
+msgid ""
+"In this example the email will be the same for both users. If email must be "
+"unique, this code will error:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1133
+msgid ""
+"```rb\n"
+"factory :user do\n"
+"  sequence(:email) { |n| \"person#{n}@example.com\" }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1138
+msgid ""
+"FactoryBot.create(:user, email: \"person1@example.com\")\n"
+"FactoryBot.create(:user)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1143
+msgid ""
+"Traits\n"
+"------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1146
+msgid "### Defining traits"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1148
+msgid ""
+"Traits allow you to group attributes together and then apply them\n"
+"to any factory."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1151
+msgid ""
+"```ruby\n"
+"factory :user, aliases: [:author]"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1154
+msgid ""
+"factory :story do\n"
+"  title { \"My awesome story\" }\n"
+"  author"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1158
+msgid ""
+"  trait :published do\n"
+"    published { true }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1162
+msgid ""
+"  trait :unpublished do\n"
+"    published { false }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1166
+msgid ""
+"  trait :week_long_publishing do\n"
+"    start_at { 1.week.ago }\n"
+"    end_at { Time.now }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1171
+msgid ""
+"  trait :month_long_publishing do\n"
+"    start_at { 1.month.ago }\n"
+"    end_at { Time.now }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1176
+msgid ""
+"  factory :week_long_published_story,    traits: [:published, :"
+"week_long_publishing]\n"
+"  factory :month_long_published_story,   traits: [:published, :"
+"month_long_publishing]\n"
+"  factory :week_long_unpublished_story,  traits: [:unpublished, :"
+"week_long_publishing]\n"
+"  factory :month_long_unpublished_story, traits: [:unpublished, :"
+"month_long_publishing]\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1185
+msgid "Traits can be used as implicit attributes:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1187
+msgid ""
+"```ruby\n"
+"factory :week_long_published_story_with_title, parent: :story do\n"
+"  published\n"
+"  week_long_publishing\n"
+"  title { \"Publishing that was started at #{start_at}\" }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1195
+msgid ""
+"Note that defining traits as implicit attributes will not work if you have "
+"a\n"
+"factory or sequence with the same name as the trait."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1198
+msgid "### Attribute precedence"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1200
+msgid ""
+"Traits that define the same attributes won't raise "
+"AttributeDefinitionErrors;\n"
+"the trait that defines the attribute latest gets precedence."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1203 ../GETTING_STARTED.md:1234
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  name { \"Friendly User\" }\n"
+"  login { name }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1208
+msgid ""
+"  trait :active do\n"
+"    name { \"John Doe\" }\n"
+"    status { :active }\n"
+"    login { \"#{name} (active)\" }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1214
+msgid ""
+"  trait :inactive do\n"
+"    name { \"Jane Doe\" }\n"
+"    status { :inactive }\n"
+"    login { \"#{name} (inactive)\" }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1220
+msgid ""
+"  trait :admin do\n"
+"    admin { true }\n"
+"    login { \"admin-#{name}\" }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1225
+msgid ""
+"  factory :active_admin,   traits: [:active, :admin]   # login will be "
+"\"admin-John Doe\"\n"
+"  factory :inactive_admin, traits: [:admin, :inactive] # login will be "
+"\"Jane Doe (inactive)\"\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1230
+msgid "### In child factories"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1232
+msgid ""
+"You can override individual attributes granted by a trait in a child factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1239
+msgid ""
+"  trait :active do\n"
+"    name { \"John Doe\" }\n"
+"    status { :active }\n"
+"    login { \"#{name} (M)\" }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1245
+msgid ""
+"  factory :brandon do\n"
+"    active\n"
+"    name { \"Brandon\" }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1252
+msgid "### As mixins"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1254
+msgid ""
+"Traits can be defined outside of factories and used as mixins to compose "
+"shared attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1256
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  trait :timestamps do\n"
+"    created_at { 8.days.ago }\n"
+"    updated_at { 4.days.ago }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1263
+msgid ""
+"  factory :user, traits: [:timestamps] do\n"
+"    username { \"john_doe\" }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1267
+msgid ""
+"  factory :post do\n"
+"    timestamps\n"
+"    title { \"Traits rock\" }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1274
+msgid "### Using traits"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1276
+msgid ""
+"Traits can also be passed in as a list of symbols when you construct an "
+"instance\n"
+"from factory\\_bot."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1279 ../GETTING_STARTED.md:1303
+#: ../GETTING_STARTED.md:1320 ../GETTING_STARTED.md:1339
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  name { \"Friendly User\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1283
+msgid ""
+"  trait :active do\n"
+"    name { \"John Doe\" }\n"
+"    status { :active }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1288 ../GETTING_STARTED.md:1307
+#: ../GETTING_STARTED.md:1324 ../GETTING_STARTED.md:1343
+msgid ""
+"  trait :admin do\n"
+"    admin { true }\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1293
+msgid ""
+"# creates an admin user with :active status and name \"Jon Snow\"\n"
+"create(:user, :admin, :active, name: \"Jon Snow\")\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1297
+msgid ""
+"This ability works with `build`, `build_stubbed`, `attributes_for`, and "
+"`create`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1299
+msgid ""
+"`create_list` and `build_list` methods are supported as well. Just remember "
+"to pass\n"
+"the number of instances to create/build as second parameter, as documented "
+"in the\n"
+"\"Building or Creating Multiple Records\" section of this file."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1312
+msgid ""
+"# creates 3 admin users with :active status and name \"Jon Snow\"\n"
+"create_list(:user, 3, :admin, :active, name: \"Jon Snow\")\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1318
+msgid "Traits can be used with associations easily too:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1329
+msgid ""
+"factory :post do\n"
+"  association :user, :admin, name: 'John Doe'\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1333
+msgid ""
+"# creates an admin user with name \"John Doe\"\n"
+"create(:post).user\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1337
+msgid "When you're using association names that're different than the factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1348
+msgid ""
+"factory :post do\n"
+"  association :author, :admin, factory: :user, name: 'John Doe'\n"
+"  # or\n"
+"  association :author, factory: [:user, :admin], name: 'John Doe'\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1354
+msgid ""
+"# creates an admin user with name \"John Doe\"\n"
+"create(:post).author\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1358
+msgid "### Traits within traits"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1360
+msgid "Traits can be used within other traits to mix in their attributes."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1362
+msgid ""
+"```ruby\n"
+"factory :order do\n"
+"  trait :completed do\n"
+"    completed_at { 3.days.ago }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1368
+msgid ""
+"  trait :refunded do\n"
+"    completed\n"
+"    refunded_at { 1.day.ago }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1375
+msgid "### With transient attributes"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1377
+msgid "Finally, traits can accept transient attributes."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1379
+msgid ""
+"```ruby\n"
+"factory :invoice do\n"
+"  trait :with_amount do\n"
+"    transient do\n"
+"      amount { 1 }\n"
+"    end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1386
+msgid ""
+"    after(:create) do |invoice, evaluator|\n"
+"      create :line_item, invoice: invoice, amount: evaluator.amount\n"
+"    end\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1392
+msgid ""
+"create :invoice, :with_amount, amount: 2\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1395
+msgid "### Enum traits"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1397
+msgid "Given an Active Record model with an enum attribute:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1399
+msgid ""
+"```rb\n"
+"class Task < ActiveRecord::Base\n"
+"  enum status: {queued: 0, started: 1, finished: 2}\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1406
+msgid ""
+"factory\\_bot will automatically define traits for each possible value of "
+"the\n"
+"enum:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1409
+msgid ""
+"```rb\n"
+"FactoryBot.define do\n"
+"  factory :task\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1414
+msgid ""
+"FactoryBot.build(:task, :queued)\n"
+"FactoryBot.build(:task, :started)\n"
+"FactoryBot.build(:task, :finished)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1419
+msgid ""
+"Writing the traits out manually would be cumbersome, and is not necessary:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1421
+msgid ""
+"```rb\n"
+"FactoryBot.define do\n"
+"  factory :task do\n"
+"    trait :queued do\n"
+"      status { :queued }\n"
+"    end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1428
+msgid ""
+"    trait :started do\n"
+"      status { :started }\n"
+"    end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1432
+msgid ""
+"    trait :finished do\n"
+"      status { :finished }\n"
+"    end\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1439
+msgid ""
+"If automatically defining traits for enum attributes on every factory is "
+"not\n"
+"desired, it is possible to disable the feature by setting\n"
+"`FactoryBot.automatically_define_enum_traits = false`"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1443
+msgid ""
+"In that case, it is still possible to explicitly define traits for an enum\n"
+"attribute in a particular factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1446
+msgid ""
+"```rb\n"
+"FactoryBot.automatically_define_enum_traits = false"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1449
+msgid ""
+"FactoryBot.define do\n"
+"  factory :task do\n"
+"    traits_for_enum(:status)\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1456
+msgid ""
+"It is also possible to use this feature for other enumerable values, not\n"
+"specifically tied to Active Record enum attributes."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1459
+msgid "With an array:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1461 ../GETTING_STARTED.md:1475
+msgid ""
+"```rb\n"
+"class Task\n"
+"  attr_accessor :status\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1466
+msgid ""
+"FactoryBot.define do\n"
+"  factory :task do\n"
+"    traits_for_enum(:status, [\"queued\", \"started\", \"finished\"])\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1473
+msgid "Or with a hash:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1480
+msgid ""
+"FactoryBot.define do\n"
+"  factory :task do\n"
+"    traits_for_enum(:status, { queued: 0, started: 1, finished: 2 })\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1487
+msgid ""
+"Callbacks\n"
+"---------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1490
+msgid "### Default callbacks"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1492
+msgid "factory\\_bot makes available four callbacks for injecting some code:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1494
+msgid ""
+"* after(:build)   - called after a factory is built   (via `FactoryBot."
+"build`, `FactoryBot.create`)\n"
+"* before(:create) - called before a factory is saved  (via `FactoryBot."
+"create`)\n"
+"* after(:create)  - called after a factory is saved   (via `FactoryBot."
+"create`)\n"
+"* after(:stub)    - called after a factory is stubbed (via `FactoryBot."
+"build_stubbed`)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1499
+msgid "Examples:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1501
+msgid ""
+"```ruby\n"
+"# Define a factory that calls the generate_hashed_password method after it "
+"is built\n"
+"factory :user do\n"
+"  after(:build) { |user| generate_hashed_password(user) }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1508
+msgid ""
+"Note that you'll have an instance of the user in the block. This can be "
+"useful."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1510
+msgid "### Multiple callbacks"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1512
+msgid "You can also define multiple types of callbacks on the same factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1514
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  after(:build)  { |user| do_something_to(user) }\n"
+"  after(:create) { |user| do_something_else_to(user) }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1521
+msgid ""
+"Factories can also define any number of the same kind of callback.  These\n"
+"callbacks will be executed in the order they are specified:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1524
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  after(:create) { this_runs_first }\n"
+"  after(:create) { then_this }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1531
+msgid ""
+"Calling `create` will invoke both `after_build` and `after_create` callbacks."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1533
+msgid ""
+"Also, like standard attributes, child factories will inherit (and can also\n"
+"define) callbacks from their parent factory."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1536
+msgid ""
+"Multiple callbacks can be assigned to run a block; this is useful when "
+"building\n"
+"various strategies that run the same code (since there are no callbacks that "
+"are\n"
+"shared across all strategies)."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1540
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  callback(:after_stub, :before_create) { do_something }\n"
+"  after(:stub, :create) { do_something_else }\n"
+"  before(:create, :custom) { do_a_third_thing }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1548
+msgid "### Global callbacks"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1550
+msgid ""
+"To override callbacks for all factories, define them within the\n"
+"`FactoryBot.define` block:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1553
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  after(:build) { |object| puts \"Built #{object}\" }\n"
+"  after(:create) { |object| AuditLog.create(attrs: object.attributes) }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1558 ../GETTING_STARTED.md:2019
+msgid ""
+"  factory :user do\n"
+"    name { \"John Doe\" }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1564
+msgid "### Symbol#to_proc"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1566
+msgid "You can call callbacks that rely on `Symbol#to_proc`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1568
+msgid ""
+"```ruby\n"
+"# app/models/user.rb\n"
+"class User < ActiveRecord::Base\n"
+"  def confirm!\n"
+"    # confirm the user account\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1576
+msgid ""
+"# spec/factories.rb\n"
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    after :create, &:confirm!\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1583
+msgid ""
+"create(:user) # creates the user and confirms it\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1586
+msgid ""
+"Modifying factories\n"
+"-------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1589
+msgid ""
+"If you're given a set of factories (say, from a gem developer) but want to\n"
+"change them to fit into your application better, you can modify that "
+"factory\n"
+"instead of creating a child factory and adding attributes there."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1593
+msgid "If a gem were to give you a User factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1595
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    full_name { \"John Doe\" }\n"
+"    sequence(:username) { |n| \"user#{n}\" }\n"
+"    password { \"password\" }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1605
+msgid "Instead of creating a child factory that added additional attributes:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1607
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :application_user, parent: :user do\n"
+"    full_name { \"Jane Doe\" }\n"
+"    date_of_birth { 21.years.ago }\n"
+"    health { 90 }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1617
+msgid "You could modify that factory instead."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1619
+msgid ""
+"```ruby\n"
+"FactoryBot.modify do\n"
+"  factory :user do\n"
+"    full_name { \"Jane Doe\" }\n"
+"    date_of_birth { 21.years.ago }\n"
+"    health { 90 }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1629
+msgid ""
+"When modifying a factory, you can change any of the attributes you want "
+"(aside from callbacks)."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1631
+msgid ""
+"`FactoryBot.modify` must be called outside of a `FactoryBot.define` block as "
+"it operates on factories differently."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1633
+msgid ""
+"A caveat: you can only modify factories (not sequences or traits) and "
+"callbacks *still compound as they normally would*. So, if\n"
+"the factory you're modifying defines an `after(:create)` callback, you "
+"defining an `after(:create)` won't override it, it'll just get run after the "
+"first callback."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1636
+msgid ""
+"Building or Creating Multiple Records\n"
+"-------------------------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1639
+msgid ""
+"Sometimes, you'll want to create or build multiple instances of a factory at "
+"once."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1641
+msgid ""
+"```ruby\n"
+"built_users   = build_list(:user, 25)\n"
+"created_users = create_list(:user, 25)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1646
+msgid ""
+"These methods will build or create a specific amount of factories and return "
+"them as an array.\n"
+"To set the attributes for each of the factories, you can pass in a hash as "
+"you normally would."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1649
+msgid ""
+"```ruby\n"
+"twenty_year_olds = build_list(:user, 25, date_of_birth: 20.years.ago)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1653
+msgid ""
+"In order to set different attributes for each factory, these methods may be "
+"passed a block, with the factory and the index as parameters:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1655
+msgid ""
+"```ruby\n"
+"twenty_somethings = build_list(:user, 10) do |user, i|\n"
+"  user.date_of_birth = (20 + i).years.ago\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1661
+msgid ""
+"`create_list` passes saved instances into the block. If you modify the "
+"instance, you must save it again:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1663
+msgid ""
+"```ruby\n"
+"twenty_somethings = create_list(:user, 10) do |user, i|\n"
+"  user.date_of_birth = (20 + i).years.ago\n"
+"  user.save!\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1670
+msgid "`build_stubbed_list` will give you fully stubbed out instances:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1672
+msgid ""
+"```ruby\n"
+"stubbed_users = build_stubbed_list(:user, 25) # array of stubbed users\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1676
+msgid ""
+"There's also a set of `*_pair` methods for creating two records at a time:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1678
+msgid ""
+"```ruby\n"
+"built_users   = build_pair(:user) # array of two built users\n"
+"created_users = create_pair(:user) # array of two created users\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1683
+msgid ""
+"If you need multiple attribute hashes, `attributes_for_list` will generate "
+"them:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1685
+msgid ""
+"```ruby\n"
+"users_attrs = attributes_for_list(:user, 25) # array of attribute hashes\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1689
+msgid ""
+"Linting Factories\n"
+"-----------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1692
+msgid "factory\\_bot allows for linting known factories:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1694
+msgid ""
+"```ruby\n"
+"FactoryBot.lint\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1698
+msgid ""
+"`FactoryBot.lint` creates each factory and catches any exceptions raised\n"
+"during the creation process. `FactoryBot::InvalidFactoryError` is raised "
+"with\n"
+"a list of factories (and corresponding exceptions) for factories which "
+"could\n"
+"not be created."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1703
+msgid ""
+"Recommended usage of `FactoryBot.lint`\n"
+"is to run this in a task\n"
+"before your test suite is executed.\n"
+"Running it in a `before(:suite)`,\n"
+"will negatively impact the performance\n"
+"of your tests\n"
+"when running single tests."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1711
+msgid "Example Rake task:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1713
+msgid ""
+"```ruby\n"
+"# lib/tasks/factory_bot.rake\n"
+"namespace :factory_bot do\n"
+"  desc \"Verify that all FactoryBot factories are valid\"\n"
+"  task lint: :environment do\n"
+"    if Rails.env.test?\n"
+"      conn = ActiveRecord::Base.connection\n"
+"      conn.transaction do\n"
+"        FactoryBot.lint\n"
+"        raise ActiveRecord::Rollback\n"
+"      end\n"
+"    else\n"
+"      system(\"bundle exec rake factory_bot:lint RAILS_ENV='test'\")\n"
+"      fail if $?.exitstatus.nonzero?\n"
+"    end\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1732
+msgid ""
+"After calling `FactoryBot.lint`, you'll likely want to clear out the\n"
+"database, as records will most likely be created. The provided example "
+"above\n"
+"uses an sql transaction and rollback to leave the database clean."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1736
+msgid ""
+"You can lint factories selectively by passing only factories you want linted:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1738
+msgid ""
+"```ruby\n"
+"factories_to_lint = FactoryBot.factories.reject do |factory|\n"
+"  factory.name =~ /^old_/\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1743
+msgid ""
+"FactoryBot.lint factories_to_lint\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1746
+msgid "This would lint all factories that aren't prefixed with `old_`."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1748
+msgid ""
+"Traits can also be linted. This option verifies that each\n"
+"and every trait of a factory generates a valid object on its own.\n"
+"This is turned on by passing `traits: true` to the `lint` method:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1752
+msgid ""
+"```ruby\n"
+"FactoryBot.lint traits: true\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1756
+msgid "This can also be combined with other arguments:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1758
+msgid ""
+"```ruby\n"
+"FactoryBot.lint factories_to_lint, traits: true\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1762
+msgid "You can also specify the strategy used for linting:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1764
+msgid ""
+"```ruby\n"
+"FactoryBot.lint strategy: :build\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1768
+msgid ""
+"Verbose linting will include full backtraces for each error, which can be\n"
+"helpful for debugging:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1771
+msgid ""
+"```ruby\n"
+"FactoryBot.lint verbose: true\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1775
+msgid ""
+"Custom Construction\n"
+"-------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1778
+msgid ""
+"If you want to use factory\\_bot to construct an object where some "
+"attributes\n"
+"are passed to `initialize` or if you want to do something other than simply\n"
+"calling `new` on your build class, you can override the default behavior by\n"
+"defining `initialize_with` on your factory. Example:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1783
+msgid ""
+"```ruby\n"
+"# user.rb\n"
+"class User\n"
+"  attr_accessor :name, :email"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1788
+msgid ""
+"  def initialize(name)\n"
+"    @name = name\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1793
+msgid ""
+"# factories.rb\n"
+"sequence(:email) { |n| \"person#{n}@example.com\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1796
+msgid ""
+"factory :user do\n"
+"  name { \"Jane Doe\" }\n"
+"  email"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1800
+msgid ""
+"  initialize_with { new(name) }\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1803
+msgid ""
+"build(:user).name # Jane Doe\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1806
+msgid ""
+"Although factory\\_bot is written to work with ActiveRecord out of the box, "
+"it\n"
+"can also work with any Ruby class. For maximum compatibility with "
+"ActiveRecord,\n"
+"the default initializer builds all instances by calling `new` on your build "
+"class\n"
+"without any arguments. It then calls attribute writer methods to assign all "
+"the\n"
+"attribute values. While that works fine for ActiveRecord, it actually "
+"doesn't\n"
+"work for almost any other Ruby class."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1813
+msgid "You can override the initializer in order to:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1815
+msgid ""
+"* Build non-ActiveRecord objects that require arguments to `initialize`\n"
+"* Use a method other than `new` to instantiate the instance\n"
+"* Do wild things like decorate the instance after it's built"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1819
+msgid ""
+"When using `initialize_with`, you don't have to declare the class itself "
+"when\n"
+"calling `new`; however, any other class methods you want to call will have "
+"to\n"
+"be called on the class explicitly."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1823
+msgid "For example:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1825
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  name { \"John Doe\" }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1829
+msgid ""
+"  initialize_with { User.build_with_name(name) }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1833
+msgid ""
+"You can also access all public attributes within the `initialize_with` "
+"block\n"
+"by calling `attributes`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1836
+msgid ""
+"```ruby\n"
+"factory :user do\n"
+"  transient do\n"
+"    comments_count { 5 }\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1842
+msgid "  name \"John Doe\""
+msgstr ""
+
+#: ../GETTING_STARTED.md:1844
+msgid ""
+"  initialize_with { new(**attributes) }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1848
+msgid ""
+"This will build a hash of all attributes to be passed to `new`. It won't\n"
+"include transient attributes, but everything else defined in the factory "
+"will be\n"
+"passed (associations, evaluated sequences, etc.)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1852
+msgid ""
+"You can define `initialize_with` for all factories by including it in the\n"
+"`FactoryBot.define` block:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1855
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  initialize_with { new(\"Awesome first argument\") }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1861
+msgid ""
+"When using `initialize_with`, attributes accessed from within the "
+"`initialize_with`\n"
+"block are assigned *only* in the constructor; this equates to roughly the\n"
+"following code:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1865 ../GETTING_STARTED.md:1882
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    initialize_with { new(name) }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1870 ../GETTING_STARTED.md:1887
+msgid ""
+"    name { 'value' }\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1874
+msgid ""
+"build(:user)\n"
+"# runs\n"
+"User.new('value')\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1879
+msgid ""
+"This prevents duplicate assignment; in versions of factory\\_bot before 4.0, "
+"it\n"
+"would run this:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1891
+msgid ""
+"build(:user)\n"
+"# runs\n"
+"user = User.new('value')\n"
+"user.name = 'value'\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1897
+msgid ""
+"Custom Strategies\n"
+"-----------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1900
+msgid ""
+"There are times where you may want to extend behavior of factory\\_bot by\n"
+"adding a custom build strategy."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1903
+msgid ""
+"Strategies define two methods: `association` and `result`. `association`\n"
+"receives a `FactoryBot::FactoryRunner` instance, upon which you can call\n"
+"`run`, overriding the strategy if you want. The second method, `result`,\n"
+"receives a `FactoryBot::Evaluation` instance. It provides a way to trigger\n"
+"callbacks (with `notify`), `object` or `hash` (to get the result instance or "
+"a\n"
+"hash based on the attributes defined in the factory), and `create`, which\n"
+"executes the `to_create` callback defined on the factory."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1911
+msgid ""
+"To understand how factory\\_bot uses strategies internally, it's probably\n"
+"easiest to just view the source for each of the four default strategies."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1914
+msgid ""
+"Here's an example of composing a strategy using\n"
+"`FactoryBot::Strategy::Create` to build a JSON representation of your model."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1917 ../GETTING_STARTED.md:1955
+msgid ""
+"```ruby\n"
+"class JsonStrategy\n"
+"  def initialize\n"
+"    @strategy = FactoryBot.strategy_by_name(:create).new\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1923 ../GETTING_STARTED.md:1961
+msgid "  delegate :association, to: :@strategy"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1925
+msgid ""
+"  def result(evaluation)\n"
+"    @strategy.result(evaluation).to_json\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1929
+msgid ""
+"  def to_sym\n"
+"    :json\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1935
+msgid "For factory\\_bot to recognize the new strategy, you can register it:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1937
+msgid ""
+"```ruby\n"
+"FactoryBot.register_strategy(:json, JsonStrategy)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1941
+msgid "This allows you to call"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1943
+msgid ""
+"```ruby\n"
+"FactoryBot.json(:user)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1947
+msgid ""
+"Finally, you can override factory\\_bot's own strategies if you'd like by\n"
+"registering a new object in place of the strategies."
+msgstr ""
+
+#: ../GETTING_STARTED.md:1950
+msgid ""
+"Custom Callbacks\n"
+"----------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1953
+msgid "Custom callbacks can be defined if you're using custom strategies:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1963
+msgid ""
+"  def result(evaluation)\n"
+"    result = @strategy.result(evaluation)\n"
+"    evaluation.notify(:before_json, result)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1967
+msgid ""
+"    result.to_json.tap do |json|\n"
+"      evaluation.notify(:after_json, json)\n"
+"      evaluation.notify(:make_json_awesome, json)\n"
+"    end\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1973
+msgid ""
+"  def to_sym\n"
+"    :json\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1978
+msgid "FactoryBot.register_strategy(:json, JsonStrategy)"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1980
+msgid ""
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    before(:json)                { |user| do_something_to(user) }\n"
+"    after(:json)                 { |user_json| do_something_to(user_json) }\n"
+"    callback(:make_json_awesome) { |user_json| do_something_to(user_json) }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1989
+msgid ""
+"Custom Methods to Persist Objects\n"
+"---------------------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1992
+msgid ""
+"By default, creating a record will call `save!` on the instance; since this\n"
+"may not always be ideal, you can override that behavior by defining\n"
+"`to_create` on the factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:1996
+msgid ""
+"```ruby\n"
+"factory :different_orm_model do\n"
+"  to_create { |instance| instance.persist! }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2002
+msgid ""
+"To disable the persistence method altogether on create, you can "
+"`skip_create`\n"
+"for that factory:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2005
+msgid ""
+"```ruby\n"
+"factory :user_without_database do\n"
+"  skip_create\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2011
+msgid ""
+"To override `to_create` for all factories, define it within the\n"
+"`FactoryBot.define` block:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2014
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  to_create { |instance| instance.persist! }"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2025
+msgid ""
+"ActiveSupport Instrumentation\n"
+"-----------------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2028
+msgid ""
+"In order to track what factories are created (and with what build "
+"strategy),\n"
+"`ActiveSupport::Notifications` are included to provide a way to subscribe "
+"to\n"
+"factories being compiled and run. One example would be to track factories "
+"based on a\n"
+"threshold of execution time."
+msgstr ""
+
+#: ../GETTING_STARTED.md:2033
+msgid ""
+"```ruby\n"
+"ActiveSupport::Notifications.subscribe(\"factory_bot.run_factory\") do |"
+"name, start, finish, id, payload|\n"
+"  execution_time_in_seconds = finish - start"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2037
+msgid ""
+"  if execution_time_in_seconds >= 0.5\n"
+"    $stderr.puts \"Slow factory: #{payload[:name]} using strategy #{payload[:"
+"strategy]}\"\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2043
+msgid ""
+"Another example would be tracking all factories and how they're used\n"
+"throughout your test suite. If you're using RSpec, it's as simple as adding "
+"a\n"
+"`before(:suite)` and `after(:suite)`:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2047
+msgid ""
+"```ruby\n"
+"factory_bot_results = {}\n"
+"config.before(:suite) do\n"
+"  ActiveSupport::Notifications.subscribe(\"factory_bot.run_factory\") do |"
+"name, start, finish, id, payload|\n"
+"    factory_name = payload[:name]\n"
+"    strategy_name = payload[:strategy]\n"
+"    factory_bot_results[factory_name] ||= {}\n"
+"    factory_bot_results[factory_name][strategy_name] ||= 0\n"
+"    factory_bot_results[factory_name][strategy_name] += 1\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2059 ../GETTING_STARTED.md:2082
+msgid ""
+"config.after(:suite) do\n"
+"  puts factory_bot_results\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2064
+msgid ""
+"Another example could involve tracking the attributes and traits that "
+"factories are compiled with. If you're using RSpec, you could add `before(:"
+"suite)` and `after(:suite)` blocks that subscribe to `factory_bot."
+"compile_factory` notifications:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2066
+msgid ""
+"```ruby\n"
+"factory_bot_results = {}\n"
+"config.before(:suite) do\n"
+"  ActiveSupport::Notifications.subscribe(\"factory_bot.compile_factory\") do "
+"|name, start, finish, id, payload|\n"
+"    factory_name = payload[:name]\n"
+"    factory_class = payload[:class]\n"
+"    attributes = payload[:attributes]\n"
+"    traits = payload[:traits]\n"
+"    factory_bot_results[factory_class] ||= {}\n"
+"    factory_bot_results[factory_class][factory_name] = {\n"
+"      attributes: attributes.map(&:name)\n"
+"      traits: traits.map(&:name)\n"
+"    }\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2087
+msgid ""
+"Rails Preloaders and RSpec\n"
+"--------------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2090
+msgid ""
+"When running RSpec with a Rails preloader such as `spring` or `zeus`, it's "
+"possible\n"
+"to encounter an `ActiveRecord::AssociationTypeMismatch` error when creating "
+"a factory\n"
+"with associations, as below:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2094
+msgid ""
+"```ruby\n"
+"FactoryBot.define do\n"
+"  factory :united_states, class: \"Location\" do\n"
+"    name { 'United States' }\n"
+"    association :location_group, factory: :north_america\n"
+"  end"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2101
+msgid ""
+"  factory :north_america, class: \"LocationGroup\" do\n"
+"    name { 'North America' }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2107
+msgid "The error occurs during the run of the test suite:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2109
+msgid ""
+"```\n"
+"Failure/Error: united_states = create(:united_states)\n"
+"ActiveRecord::AssociationTypeMismatch:\n"
+"  LocationGroup(#70251250797320) expected, got "
+"LocationGroup(#70251200725840)\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2115
+msgid ""
+"The two possible solutions are to either run the suite without the "
+"preloader, or\n"
+"to add `FactoryBot.reload` to the RSpec configuration, like so:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2118
+msgid ""
+"```ruby\n"
+"RSpec.configure do |config|\n"
+"  config.before(:suite) { FactoryBot.reload }\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2124
+msgid ""
+"Using Without Bundler\n"
+"---------------------"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2127
+msgid ""
+"If you're not using Bundler, be sure to have the gem installed and call:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2129
+msgid ""
+"```ruby\n"
+"require 'factory_bot'\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2133
+msgid ""
+"Once required, assuming you have a directory structure of `spec/factories` "
+"or\n"
+"`test/factories`, all you'll need to do is run:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2136
+msgid ""
+"```ruby\n"
+"FactoryBot.find_definitions\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2140
+msgid ""
+"If you're using a separate directory structure for your factories, you can\n"
+"change the definition file paths before trying to find definitions:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2143
+msgid ""
+"```ruby\n"
+"FactoryBot.definition_file_paths = %w(custom_factories_directory)\n"
+"FactoryBot.find_definitions\n"
+"```"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2148
+msgid ""
+"If you don't have a separate directory of factories and would like to "
+"define\n"
+"them inline, that's possible as well:"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2151
+msgid ""
+"```ruby\n"
+"require 'factory_bot'"
+msgstr ""
+
+#: ../GETTING_STARTED.md:2154
+msgid ""
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    name { 'John Doe' }\n"
+"    date_of_birth { 21.years.ago }\n"
+"  end\n"
+"end\n"
+"```"
+msgstr ""
+
+#: ../LICENSE:1
+msgid "Copyright (c) 2008-2019 Joe Ferris and thoughtbot, inc."
+msgstr ""
+
+#: ../LICENSE:3
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a "
+"copy\n"
+"of this software and associated documentation files (the \"Software\"), to "
+"deal\n"
+"in the Software without restriction, including without limitation the "
+"rights\n"
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n"
+"copies of the Software, and to permit persons to whom the Software is\n"
+"furnished to do so, subject to the following conditions:"
+msgstr ""
+
+#: ../LICENSE:10
+msgid ""
+"The above copyright notice and this permission notice shall be included in\n"
+"all copies or substantial portions of the Software."
+msgstr ""
+
+#: ../LICENSE:13
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS "
+"OR\n"
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n"
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n"
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n"
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM,\n"
+"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n"
+"THE SOFTWARE."
+msgstr ""
+
+#: ../NAME.md:1
+msgid "# Project Naming History"
+msgstr ""
+
+#: ../NAME.md:3
+msgid "## Factory Girl"
+msgstr ""
+
+#: ../NAME.md:5
+msgid ""
+"This library was [initially released](https://robots.thoughtbot.com/waiting-"
+"for-a-factory-girl)\n"
+"in 2008 with the name \"Factory Girl\"."
+msgstr ""
+
+#: ../NAME.md:8
+msgid ""
+"We chose the name as a nod in the direction of the [Factory method](https://"
+"en.wikipedia.org/wiki/Factory_method_pattern)\n"
+"and [Object Mother](http://martinfowler.com/bliki/ObjectMother.html) "
+"software\n"
+"patterns from the _Design Patterns_ book, and as a reference to the\n"
+"[Rolling Stones song](https://www.youtube.com/watch?v=4jKix2DFlnA) of the "
+"same\n"
+"name."
+msgstr ""
+
+#: ../NAME.md:14
+msgid "## Factory Bot"
+msgstr ""
+
+#: ../NAME.md:16
+msgid ""
+"The name \"Factory Girl\" was confusing to some developers who encountered "
+"this\n"
+"library, and offensive or problematic to others. In October 2017 we [renamed "
+"the library](https://robots.thoughtbot.com/factory_bot)\n"
+"to \"Factory Bot\"."
+msgstr ""
+
+#: ../README.md:1
+msgid ""
+"# factory_bot [![Build Status][ci-image]][ci] [![Code Climate][grade-image]]"
+"[grade] [![Gem Version][version-image]][version]"
+msgstr ""
+
+#: ../README.md:3
+msgid ""
+"factory_bot is a fixtures replacement with a straightforward definition "
+"syntax, support for multiple build strategies (saved instances, unsaved "
+"instances, attribute hashes, and stubbed objects), and support for multiple "
+"factories for the same class (user, admin_user, and so on), including "
+"factory inheritance."
+msgstr ""
+
+#: ../README.md:5
+msgid ""
+"If you want to use factory_bot with Rails, see\n"
+"[factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)."
+msgstr ""
+
+#: ../README.md:8
+msgid "_[Interested in the history of the project name?][NAME]_"
+msgstr ""
+
+#: ../README.md:11
+msgid "### Transitioning from factory\\_girl?"
+msgstr ""
+
+#: ../README.md:13
+msgid ""
+"Check out the [guide](https://github.com/thoughtbot/factory_bot/blob/4-9-0-"
+"stable/UPGRADE_FROM_FACTORY_GIRL.md)."
+msgstr ""
+
+#: ../README.md:16
+msgid ""
+"Documentation\n"
+"-------------"
+msgstr ""
+
+#: ../README.md:30
+msgid ""
+"Install\n"
+"--------"
+msgstr ""
+
+#: ../README.md:33
+msgid "Run:"
+msgstr ""
+
+#: ../README.md:35
+msgid ""
+"```ruby\n"
+"bundle add factory_bot\n"
+"```"
+msgstr ""
+
+#: ../README.md:39
+msgid "To install the gem manually from your shell, run:"
+msgstr ""
+
+#: ../README.md:41
+msgid ""
+"```shell\n"
+"gem install factory_bot\n"
+"```"
+msgstr ""
+
+#: ../README.md:45
+msgid ""
+"Supported Ruby versions\n"
+"-----------------------"
+msgstr ""
+
+#: ../README.md:48
+msgid ""
+"Supported Ruby versions are listed in [`.github/workflows/build.yml`]"
+"(https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build."
+"yml)"
+msgstr ""
+
+#: ../README.md:50
+msgid ""
+"More Information\n"
+"----------------"
+msgstr ""
+
+#: ../README.md:53
+msgid ""
+"* [Rubygems](https://rubygems.org/gems/factory_bot)\n"
+"* [Stack Overflow](https://stackoverflow.com/questions/tagged/factory-bot)\n"
+"* [Issues](https://github.com/thoughtbot/factory_bot/issues)\n"
+"* [GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
+"com/)"
+msgstr ""
+
+#: ../README.md:58
+msgid ""
+"[GETTING_STARTED]: https://github.com/thoughtbot/factory_bot/blob/main/"
+"GETTING_STARTED.md\n"
+"[NAME]: https://github.com/thoughtbot/factory_bot/blob/main/NAME.md"
+msgstr ""
+
+#: ../README.md:61
+msgid ""
+"Useful Tools\n"
+"------------"
+msgstr ""
+
+#: ../README.md:64
+msgid ""
+"* [FactoryTrace](https://github.com/djezzzl/factory_trace) - helps to find "
+"unused factories and traits."
+msgstr ""
+
+#: ../README.md:66
+msgid ""
+"Contributing\n"
+"------------"
+msgstr ""
+
+#: ../README.md:69
+msgid ""
+"Please see [CONTRIBUTING.md](https://github.com/thoughtbot/factory_bot/blob/"
+"main/CONTRIBUTING.md)."
+msgstr ""
+
+#: ../README.md:71
+msgid ""
+"factory_bot was originally written by Joe Ferris and is maintained by "
+"thoughtbot.\n"
+"Many improvements and bugfixes were contributed by the [open source\n"
+"community](https://github.com/thoughtbot/factory_bot/graphs/contributors)."
+msgstr ""
+
+#: ../README.md:75
+msgid ""
+"License\n"
+"-------"
+msgstr ""
+
+#: ../README.md:78
+msgid ""
+"factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free\n"
+"software, and may be redistributed under the terms specified in the\n"
+"[LICENSE] file."
+msgstr ""
+
+#: ../README.md:82
+msgid "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
+msgstr ""
+
+#: ../README.md:84
+msgid ""
+"<!-- START /templates/footer.md -->\n"
+"## About thoughtbot"
+msgstr ""
+
+#: ../README.md:87
+msgid "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
+msgstr ""
+
+#: ../README.md:89
+msgid ""
+"This repo is maintained and funded by thoughtbot, inc.\n"
+"The names and logos for thoughtbot are trademarks of thoughtbot, inc."
+msgstr ""
+
+#: ../README.md:92
+msgid ""
+"We love open source software!\n"
+"See [our other projects][community].\n"
+"We are [available for hire][hire]."
+msgstr ""
+
+#: ../README.md:96
+msgid ""
+"[community]: https://thoughtbot.com/community?utm_source=github\n"
+"[hire]: https://thoughtbot.com/hire-us?utm_source=github"
+msgstr ""
+
+#: ../README.md:100
+msgid "<!-- END /templates/footer.md -->"
+msgstr ""
+
+#: ../README.md:102
+msgid ""
+"[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/"
+"build.yml/badge.svg?branch=main\n"
+"[ci]: https://github.com/thoughtbot/factory_bot/actions?"
+"query=workflow%3ABuild+branch%3Amain\n"
+"[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/"
+"gpa.svg\n"
+"[grade]: https://codeclimate.com/github/thoughtbot/factory_bot\n"
+"[version-image]: https://badge.fury.io/rb/factory_bot.svg\n"
+"[version]: https://badge.fury.io/rb/factory_bot\n"
+"[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0."
+"svg\n"
+"[hound]: https://houndci.com"
+msgstr ""
+
+# FactoryBot.lint
+#: ../lib/factory_bot.rb:61
+msgid ""
+"Look for errors in factories and (optionally) their traits.\n"
+"Parameters:\n"
+"factories - which factories to lint; omit for all factories\n"
+"options:\n"
+"  traits: true - to lint traits as well as factories\n"
+"  strategy: :create - to specify the strategy for linting\n"
+"  verbose: true - to include full backtraces for each linting error"
+msgstr ""
+
+# FactoryBot.build_stubbed_starting_id=
+#: ../lib/factory_bot.rb:74
+msgid "Set the starting value for ids when using the build_stubbed strategy"
+msgstr ""
+
+# FactoryBot.build_stubbed_starting_id=
+#: ../lib/factory_bot.rb:76
+msgid ""
+"Arguments:\n"
+"* starting_id +Integer+\n"
+"  The new starting id value."
+msgstr ""
+
+# @param
+#: ../lib/factory_bot/aliases.rb:3
+msgid "tag|param|value"
+msgstr ""
+
+# @param value
+#: ../lib/factory_bot/aliases.rb:3
+msgid "the value to set the attribute aliases to."
+msgstr ""
+
+# FactoryBot.aliases
+#: ../lib/factory_bot/aliases.rb:4
+msgid "Returns the value of attribute aliases."
+msgstr ""
+
+# FactoryBot.aliases=
+#: ../lib/factory_bot/aliases.rb:4
+msgid "Sets the attribute aliases"
+msgstr ""
+
+# @return [Attribute]
+#: ../lib/factory_bot/attribute.rb:10
+msgid "a new instance of Attribute"
+msgstr ""
+
+# @api
+#: ../lib/factory_bot/attribute.rb:23
+#: ../lib/factory_bot/attribute/association.rb:22
+#: ../lib/factory_bot/attribute/dynamic.rb:10
+#: ../lib/factory_bot/attribute/sequence.rb:10
+#: ../lib/factory_bot/attribute_assigner.rb:106
+#: ../lib/factory_bot/attribute_list.rb:62
+#: ../lib/factory_bot/callbacks_observer.rb:17
+#: ../lib/factory_bot/configuration.rb:29 ../lib/factory_bot/declaration.rb:21
+#: ../lib/factory_bot/declaration/association.rb:39
+#: ../lib/factory_bot/declaration/dynamic.rb:23
+#: ../lib/factory_bot/declaration/implicit.rb:23
+#: ../lib/factory_bot/declaration_list.rb:45
+#: ../lib/factory_bot/definition.rb:200 ../lib/factory_bot/enum.rb:21
+#: ../lib/factory_bot/evaluator.rb:66
+#: ../lib/factory_bot/evaluator_class_definer.rb:13
+#: ../lib/factory_bot/factory.rb:156 ../lib/factory_bot/internal.rb:82
+#: ../lib/factory_bot/null_factory.rb:23 ../lib/factory_bot/null_object.rb:16
+#: ../lib/factory_bot/sequence.rb:65
+#: ../lib/factory_bot/strategy_calculator.rb:22
+#: ../lib/factory_bot/strategy_syntax_method_registrar.rb:55
+#: ../lib/factory_bot/syntax_runner.rb:3 ../lib/factory_bot/trait.rb:31
+msgid "private"
+msgstr ""
+
+# @return [Association]
+#: ../lib/factory_bot/attribute/association.rb:7
+#: ../lib/factory_bot/declaration/association.rb:5
+msgid "a new instance of Association"
+msgstr ""
+
+# @return [Dynamic]
+#: ../lib/factory_bot/attribute/dynamic.rb:5
+#: ../lib/factory_bot/declaration/dynamic.rb:5
+msgid "a new instance of Dynamic"
+msgstr ""
+
+# @return [Sequence]
+#: ../lib/factory_bot/attribute/sequence.rb:5 ../lib/factory_bot/sequence.rb:8
+msgid "a new instance of Sequence"
+msgstr ""
+
+# @return [AttributeAssigner]
+#: ../lib/factory_bot/attribute_assigner.rb:4
+msgid "a new instance of AttributeAssigner"
+msgstr ""
+
+# @return [AttributeList]
+#: ../lib/factory_bot/attribute_list.rb:6
+msgid "a new instance of AttributeList"
+msgstr ""
+
+# FactoryBot::Callback#name
+# FactoryBot::Registry#name
+#: ../lib/factory_bot/callback.rb:4 ../lib/factory_bot/registry.rb:8
+msgid "Returns the value of attribute name."
+msgstr ""
+
+# @return [Callback]
+#: ../lib/factory_bot/callback.rb:5
+msgid "a new instance of Callback"
+msgstr ""
+
+# FactoryBot::Callback#block
+#: ../lib/factory_bot/callback.rb:26
+msgid "Returns the value of attribute block."
+msgstr ""
+
+# @return [CallbacksObserver]
+#: ../lib/factory_bot/callbacks_observer.rb:4
+msgid "a new instance of CallbacksObserver"
+msgstr ""
+
+# @return [Configuration]
+#: ../lib/factory_bot/configuration.rb:13
+msgid "a new instance of Configuration"
+msgstr ""
+
+# @return [Declaration]
+#: ../lib/factory_bot/declaration.rb:10
+msgid "a new instance of Declaration"
+msgstr ""
+
+# @return [Implicit]
+#: ../lib/factory_bot/declaration/implicit.rb:5
+msgid "a new instance of Implicit"
+msgstr ""
+
+# @return [DeclarationList]
+#: ../lib/factory_bot/declaration_list.rb:6
+msgid "a new instance of DeclarationList"
+msgstr ""
+
+# @return [Decorator]
+#: ../lib/factory_bot/decorator.rb:5
+msgid "a new instance of Decorator"
+msgstr ""
+
+# FactoryBot::Decorator#method_missing
+#: ../lib/factory_bot/decorator.rb:10
+msgid "rubocop:disable Style/MethodMissingSuper"
+msgstr ""
+
+# @return [AttributeHash]
+#: ../lib/factory_bot/decorator/attribute_hash.rb:4
+msgid "a new instance of AttributeHash"
+msgstr ""
+
+# @return [InvocationTracker]
+#: ../lib/factory_bot/decorator/invocation_tracker.rb:4
+msgid "a new instance of InvocationTracker"
+msgstr ""
+
+# FactoryBot::Decorator::InvocationTracker#method_missing
+# FactoryBot::NullObject#method_missing
+#: ../lib/factory_bot/decorator/invocation_tracker.rb:10
+#: ../lib/factory_bot/null_object.rb:9
+msgid "rubocop:disable Style/MissingRespondToMissing"
+msgstr ""
+
+# @return [NewConstructor]
+#: ../lib/factory_bot/decorator/new_constructor.rb:4
+msgid "a new instance of NewConstructor"
+msgstr ""
+
+# @return [Definition]
+#: ../lib/factory_bot/definition.rb:7
+msgid "a new instance of Definition"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#child_factories
+#: ../lib/factory_bot/definition_proxy.rb:25
+msgid "Returns the value of attribute child_factories."
+msgstr ""
+
+# @return [DefinitionProxy]
+#: ../lib/factory_bot/definition_proxy.rb:26
+msgid "a new instance of DefinitionProxy"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#add_attribute
+#: ../lib/factory_bot/definition_proxy.rb:38
+msgid ""
+"Adds an attribute to the factory.\n"
+"The attribute value will be generated \"lazily\"\n"
+"by calling the block whenever an instance is generated.\n"
+"The block will not be called if the\n"
+"attribute is overridden for a specific instance."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#add_attribute
+#: ../lib/factory_bot/definition_proxy.rb:44
+msgid ""
+"Arguments:\n"
+"* name: +Symbol+ or +String+\n"
+"  The name of this attribute. This will be assigned using \"name=\" for\n"
+"  generated instances."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:58
+msgid ""
+"Calls add_attribute using the missing method name as the name of the\n"
+"attribute, so that:"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:61
+msgid ""
+"  factory :user do\n"
+"    name { 'Billy Idol' }\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:65
+#: ../lib/factory_bot/definition_proxy.rb:83
+msgid "and:"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:67
+msgid ""
+"  factory :user do\n"
+"    add_attribute(:name) { 'Billy Idol' }\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:71
+#: ../lib/factory_bot/definition_proxy.rb:91
+msgid "are equivalent."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:73
+msgid ""
+"If no argument or block is given, factory_bot will first look for an\n"
+"association, then for a sequence, and finally for a trait with the same\n"
+"name. This means that given an \"admin\" trait, an \"email\" sequence, and "
+"an\n"
+"\"account\" factory:"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:78
+msgid ""
+"  factory :user, traits: [:admin] do\n"
+"    email { generate(:email) }\n"
+"    association :account\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#method_missing
+#: ../lib/factory_bot/definition_proxy.rb:85
+msgid ""
+"  factory :user do\n"
+"    admin\n"
+"    email\n"
+"    account\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#sequence
+#: ../lib/factory_bot/definition_proxy.rb:107
+msgid ""
+"Adds an attribute that will have unique values generated by a sequence with\n"
+"a specified format."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#sequence
+#: ../lib/factory_bot/definition_proxy.rb:110
+msgid ""
+"The result of:\n"
+"  factory :user do\n"
+"    sequence(:email) { |n| \"person#{n}@example.com\" }\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#sequence
+#: ../lib/factory_bot/definition_proxy.rb:115
+msgid ""
+"Is equal to:\n"
+"  sequence(:email) { |n| \"person#{n}@example.com\" }"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#sequence
+#: ../lib/factory_bot/definition_proxy.rb:118
+msgid ""
+"  factory :user do\n"
+"    email { FactoryBot.generate(:email) }\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#sequence
+#: ../lib/factory_bot/definition_proxy.rb:122
+msgid "Except that no globally available sequence will be defined."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#association
+#: ../lib/factory_bot/definition_proxy.rb:129
+msgid ""
+"Adds an attribute that builds an association. The associated instance will\n"
+"be built using the same build strategy as the parent instance."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#association
+#: ../lib/factory_bot/definition_proxy.rb:132
+msgid ""
+"Example:\n"
+"  factory :user do\n"
+"    name 'Joey'\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#association
+#: ../lib/factory_bot/definition_proxy.rb:137
+msgid ""
+"  factory :post do\n"
+"    association :author, factory: :user\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#association
+#: ../lib/factory_bot/definition_proxy.rb:141
+msgid ""
+"Arguments:\n"
+"* name: +Symbol+\n"
+"  The name of this attribute.\n"
+"* options: +Hash+"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#association
+#: ../lib/factory_bot/definition_proxy.rb:146
+msgid ""
+"Options:\n"
+"* factory: +Symbol+ or +String+\n"
+"   The name of the factory to use when building the associated instance.\n"
+"   If no name is given, the name of the attribute is assumed to be the\n"
+"   name of the factory. For example, a \"user\" association will by\n"
+"   default use the \"user\" factory."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:180
+msgid "Creates traits for enumerable values."
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:182
+msgid ""
+"Example:\n"
+"  factory :task do\n"
+"    traits_for_enum :status, [:started, :finished]\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:187
+msgid ""
+"Equivalent to:\n"
+"  factory :task do\n"
+"    trait :started do\n"
+"      status { :started }\n"
+"    end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:193
+msgid ""
+"    trait :finished do\n"
+"      status { :finished }\n"
+"    end\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:198
+msgid ""
+"Example:\n"
+"  factory :task do\n"
+"    traits_for_enum :status, {started: 1, finished: 2}\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:203
+msgid ""
+"Example:\n"
+"  class Task\n"
+"    def statuses\n"
+"      {started: 1, finished: 2}\n"
+"    end\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:210
+msgid ""
+"  factory :task do\n"
+"    traits_for_enum :status\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:214
+msgid ""
+"Both equivalent to:\n"
+"  factory :task do\n"
+"    trait :started do\n"
+"      status { 1 }\n"
+"    end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:220
+msgid ""
+"    trait :finished do\n"
+"      status { 2 }\n"
+"    end\n"
+"  end"
+msgstr ""
+
+# FactoryBot::DefinitionProxy#traits_for_enum
+#: ../lib/factory_bot/definition_proxy.rb:226
+msgid ""
+"Arguments:\n"
+"  attribute_name: +Symbol+ or +String+\n"
+"    the name of the attribute these traits will set the value of\n"
+"  values: +Array+, +Hash+, or other +Enumerable+\n"
+"    An array of trait names, or a mapping of trait names to values for\n"
+"    those traits. When this argument is not provided, factory_bot will\n"
+"    attempt to get the values by calling the pluralized `attribute_name`\n"
+"    class method."
+msgstr ""
+
+# @return [Enum]
+#: ../lib/factory_bot/enum.rb:4
+msgid "a new instance of Enum"
+msgstr ""
+
+# FactoryBot::TraitDefinitionError
+#: ../lib/factory_bot/errors.rb:6
+msgid "Raised when a trait is defined that references itself."
+msgstr ""
+
+# FactoryBot::InvalidCallbackNameError
+#: ../lib/factory_bot/errors.rb:9
+msgid "Raised when a callback is defined that has an invalid name"
+msgstr ""
+
+# FactoryBot::DuplicateDefinitionError
+#: ../lib/factory_bot/errors.rb:12
+msgid ""
+"Raised when a factory is defined with the same name as a previously-defined "
+"factory."
+msgstr ""
+
+# FactoryBot::SequenceAbuseError
+#: ../lib/factory_bot/errors.rb:15
+msgid ""
+"Raised when attempting to register a sequence from a dynamic attribute block"
+msgstr ""
+
+# FactoryBot::AttributeDefinitionError
+#: ../lib/factory_bot/errors.rb:18
+msgid "Raised when defining an attribute twice in the same factory"
+msgstr ""
+
+# FactoryBot::AssociationDefinitionError
+#: ../lib/factory_bot/errors.rb:21
+msgid "Raised when attempting to pass a block to an association definition"
+msgstr ""
+
+# FactoryBot::MethodDefinitionError
+#: ../lib/factory_bot/errors.rb:24
+msgid "Raised when a method is defined in a factory or trait with arguments"
+msgstr ""
+
+# FactoryBot::InvalidFactoryError
+#: ../lib/factory_bot/errors.rb:27
+msgid "Raised when any factory is considered invalid"
+msgstr ""
+
+# @return [Evaluation]
+#: ../lib/factory_bot/evaluation.rb:3
+msgid "a new instance of Evaluation"
+msgstr ""
+
+# @return [Evaluator]
+#: ../lib/factory_bot/evaluator.rb:13
+msgid "a new instance of Evaluator"
+msgstr ""
+
+# @return [EvaluatorClassDefiner]
+#: ../lib/factory_bot/evaluator_class_definer.rb:4
+msgid "a new instance of EvaluatorClassDefiner"
+msgstr ""
+
+# @return [Factory]
+#: ../lib/factory_bot/factory.rb:9
+msgid "a new instance of Factory"
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:57
+msgid "Names for this factory, including aliases."
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:59
+msgid "Example:"
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:61 ../lib/factory_bot/factory.rb:72
+msgid ""
+"  factory :user, aliases: [:author] do\n"
+"    # ...\n"
+"  end"
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:65
+msgid ""
+"  FactoryBot.create(:author).class\n"
+"  # => User"
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:68
+msgid ""
+"Because an attribute defined without a value or block will build an\n"
+"association with the same name, this allows associations to be defined\n"
+"without factories, such as:"
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:76
+msgid ""
+"  factory :post do\n"
+"    author\n"
+"  end"
+msgstr ""
+
+# FactoryBot::Factory#names
+#: ../lib/factory_bot/factory.rb:80
+msgid ""
+"  FactoryBot.create(:post).author.class\n"
+"  # => User"
+msgstr ""
+
+# @return [FactoryRunner]
+#: ../lib/factory_bot/factory_runner.rb:3
+msgid "a new instance of FactoryRunner"
+msgstr ""
+
+# FactoryBot.definition_file_paths
+# FactoryBot.definition_file_paths=
+#: ../lib/factory_bot/find_definitions.rb:4
+msgid ""
+"An Array of strings specifying locations that should be searched for\n"
+"factory definitions. By default, factory_bot will attempt to require\n"
+"\"factories\", \"test/factories\" and \"spec/factories\". Only the first\n"
+"existing file will be loaded."
+msgstr ""
+
+# @return [Linter]
+#: ../lib/factory_bot/linter.rb:3
+msgid "a new instance of Linter"
+msgstr ""
+
+# FactoryBot::Linter#factories_to_lint
+#: ../lib/factory_bot/linter.rb:20
+msgid "Returns the value of attribute factories_to_lint."
+msgstr ""
+
+# FactoryBot::Linter#invalid_factories
+#: ../lib/factory_bot/linter.rb:20
+msgid "Returns the value of attribute invalid_factories."
+msgstr ""
+
+# FactoryBot::Linter#factory_strategy
+#: ../lib/factory_bot/linter.rb:20
+msgid "Returns the value of attribute factory_strategy."
+msgstr ""
+
+# @return [FactoryError]
+#: ../lib/factory_bot/linter.rb:29
+msgid "a new instance of FactoryError"
+msgstr ""
+
+# @return [FactoryTraitError]
+#: ../lib/factory_bot/linter.rb:52
+msgid "a new instance of FactoryTraitError"
+msgstr ""
+
+# @return [NullFactory]
+#: ../lib/factory_bot/null_factory.rb:6
+msgid "a new instance of NullFactory"
+msgstr ""
+
+# @return [NullObject]
+#: ../lib/factory_bot/null_object.rb:4
+msgid "a new instance of NullObject"
+msgstr ""
+
+# @return [Registry]
+#: ../lib/factory_bot/registry.rb:9
+msgid "a new instance of Registry"
+msgstr ""
+
+# FactoryBot::Sequence
+#: ../lib/factory_bot/sequence.rb:3
+msgid ""
+"Sequences are defined using sequence within a FactoryBot.define block.\n"
+"Sequence values are generated using next."
+msgstr ""
+
+# @return [EnumeratorAdapter]
+#: ../lib/factory_bot/sequence.rb:52
+msgid "a new instance of EnumeratorAdapter"
+msgstr ""
+
+# @return [StrategyCalculator]
+#: ../lib/factory_bot/strategy_calculator.rb:4
+msgid "a new instance of StrategyCalculator"
+msgstr ""
+
+# @return [StrategySyntaxMethodRegistrar]
+#: ../lib/factory_bot/strategy_syntax_method_registrar.rb:4
+msgid "a new instance of StrategySyntaxMethodRegistrar"
+msgstr ""
+
+# FactoryBot::Syntax::Methods
+#: ../lib/factory_bot/syntax/methods.rb:4
+msgid ""
+"This module is a container for all strategy methods provided by\n"
+"FactoryBot. This includes all the default strategies provided "
+"({Methods#build},\n"
+"{Methods#create}, {Methods#build_stubbed}, and {Methods#attributes_for}), "
+"as\n"
+"well as the complementary *_list and *_pair methods."
+msgstr ""
+
+# @example
+#: ../lib/factory_bot/syntax/methods.rb:32
+msgid "tag|example|singular factory execution"
+msgstr ""
+
+# @example singular factory execution
+#: ../lib/factory_bot/syntax/methods.rb:32
+msgid ""
+"# basic use case\n"
+"build(:completed_order)\n"
+"\n"
+"# factory yielding its result to a block\n"
+"create(:post) do |post|\n"
+"  create(:comment, post: post)\n"
+"end\n"
+"\n"
+"# factory with attribute override\n"
+"attributes_for(:post, title: \"I love Ruby!\")\n"
+"\n"
+"# factory with traits and attribute override\n"
+"build_stubbed(:user, :admin, :male, name: \"John Doe\")"
+msgstr ""
+
+# @example
+#: ../lib/factory_bot/syntax/methods.rb:32
+msgid "tag|example|multiple factory execution"
+msgstr ""
+
+# @example multiple factory execution
+#: ../lib/factory_bot/syntax/methods.rb:32
+msgid ""
+"# basic use case\n"
+"build_list(:completed_order, 2)\n"
+"create_list(:completed_order, 2)\n"
+"\n"
+"# factory with attribute override\n"
+"attributes_for_list(:post, 4, title: \"I love Ruby!\")\n"
+"\n"
+"# factory with traits and attribute override\n"
+"build_stubbed_list(:user, 15, :admin, :male, name: \"John Doe\")"
+msgstr ""
+
+# @return [Object]
+#: ../lib/factory_bot/syntax/methods.rb:33
+#: ../lib/factory_bot/syntax/methods.rb:39
+#: ../lib/factory_bot/syntax/methods.rb:44
+msgid "instantiated object defined by the factory"
+msgstr ""
+
+# FactoryBot::Syntax::Methods#build
+#: ../lib/factory_bot/syntax/methods.rb:34
+msgid ""
+"(see #strategy_method)\n"
+"Builds a registered factory by name."
+msgstr ""
+
+# FactoryBot::Syntax::Methods#create
+#: ../lib/factory_bot/syntax/methods.rb:40
+msgid ""
+"(see #strategy_method)\n"
+"Creates a registered factory by name."
+msgstr ""
+
+# FactoryBot::Syntax::Methods#build_stubbed
+#: ../lib/factory_bot/syntax/methods.rb:45
+msgid ""
+"(see #strategy_method)\n"
+"Builds a stubbed registered factory by name."
+msgstr ""
+
+# @return [Hash]
+#: ../lib/factory_bot/syntax/methods.rb:49
+msgid "hash of attributes for the factory"
+msgstr ""
+
+# FactoryBot::Syntax::Methods#attributes_for
+#: ../lib/factory_bot/syntax/methods.rb:50
+msgid ""
+"(see #strategy_method)\n"
+"Generates a hash of attributes for a registered factory by name."
+msgstr ""
+
+# @return [Array]
+#: ../lib/factory_bot/syntax/methods.rb:54
+msgid "array of built objects defined by the factory"
+msgstr ""
+
+# FactoryBot::Syntax::Methods#attributes_for_list
+# FactoryBot::Syntax::Methods#build_list
+# FactoryBot::Syntax::Methods#build_stubbed_list
+# FactoryBot::Syntax::Methods#create_list
+#: ../lib/factory_bot/syntax/methods.rb:55
+#: ../lib/factory_bot/syntax/methods.rb:59
+#: ../lib/factory_bot/syntax/methods.rb:63
+#: ../lib/factory_bot/syntax/methods.rb:67
+msgid "(see #strategy_method_list)"
+msgstr ""
+
+# @return [Array]
+#: ../lib/factory_bot/syntax/methods.rb:58
+msgid "array of created objects defined by the factory"
+msgstr ""
+
+# @return [Array]
+#: ../lib/factory_bot/syntax/methods.rb:62
+msgid "array of stubbed objects defined by the factory"
+msgstr ""
+
+# @return [Array<Hash>]
+#: ../lib/factory_bot/syntax/methods.rb:66
+msgid "array of attribute hashes for the factory"
+msgstr ""
+
+# @return [Array]
+#: ../lib/factory_bot/syntax/methods.rb:70
+msgid "pair of built objects defined by the factory"
+msgstr ""
+
+# FactoryBot::Syntax::Methods#attributes_for_pair
+# FactoryBot::Syntax::Methods#build_pair
+# FactoryBot::Syntax::Methods#build_stubbed_pair
+# FactoryBot::Syntax::Methods#create_pair
+#: ../lib/factory_bot/syntax/methods.rb:71
+#: ../lib/factory_bot/syntax/methods.rb:75
+#: ../lib/factory_bot/syntax/methods.rb:79
+#: ../lib/factory_bot/syntax/methods.rb:83
+msgid "(see #strategy_method_pair)"
+msgstr ""
+
+# @return [Array]
+#: ../lib/factory_bot/syntax/methods.rb:74
+msgid "pair of created objects defined by the factory"
+msgstr ""
+
+# @return [Array]
+#: ../lib/factory_bot/syntax/methods.rb:78
+msgid "pair of stubbed objects defined by the factory"
+msgstr ""
+
+# @return [Array<Hash>]
+#: ../lib/factory_bot/syntax/methods.rb:82
+msgid "pair of attribute hashes for the factory"
+msgstr ""
+
+# @param [Symbol]
+#: ../lib/factory_bot/syntax/methods.rb:86
+#: ../lib/factory_bot/syntax/methods.rb:92
+#: ../lib/factory_bot/syntax/methods.rb:99
+msgid "tag|param|name"
+msgstr ""
+
+# @param [Symbol] name
+#: ../lib/factory_bot/syntax/methods.rb:86
+msgid "the name of the factory to build"
+msgstr ""
+
+# @param [Array<Symbol, Symbol, Hash>]
+#: ../lib/factory_bot/syntax/methods.rb:86
+#: ../lib/factory_bot/syntax/methods.rb:92
+#: ../lib/factory_bot/syntax/methods.rb:99
+msgid "tag|param|traits_and_overrides"
+msgstr ""
+
+# @param [Array<Symbol, Symbol, Hash>] traits_and_overrides
+#: ../lib/factory_bot/syntax/methods.rb:86
+#: ../lib/factory_bot/syntax/methods.rb:92
+#: ../lib/factory_bot/syntax/methods.rb:99
+msgid "splat args traits and a hash of overrides"
+msgstr ""
+
+# @param [Proc]
+#: ../lib/factory_bot/syntax/methods.rb:86
+#: ../lib/factory_bot/syntax/methods.rb:92
+#: ../lib/factory_bot/syntax/methods.rb:99
+msgid "tag|param|block"
+msgstr ""
+
+# @param [Proc] block
+#: ../lib/factory_bot/syntax/methods.rb:86
+#: ../lib/factory_bot/syntax/methods.rb:92
+#: ../lib/factory_bot/syntax/methods.rb:99
+msgid "block to be executed"
+msgstr ""
+
+# @param [Symbol] name
+#: ../lib/factory_bot/syntax/methods.rb:92
+#: ../lib/factory_bot/syntax/methods.rb:99
+msgid "the name of the factory to execute"
+msgstr ""
+
+# @param [Integer]
+#: ../lib/factory_bot/syntax/methods.rb:92
+msgid "tag|param|amount"
+msgstr ""
+
+# @param [Integer] amount
+#: ../lib/factory_bot/syntax/methods.rb:92
+msgid "the number of instances to execute"
+msgstr ""
+
+# FactoryBot::Syntax::Methods#generate
+#: ../lib/factory_bot/syntax/methods.rb:106
+msgid "Generates and returns the next value in a sequence."
+msgstr ""
+
+# FactoryBot::Syntax::Methods#generate
+#: ../lib/factory_bot/syntax/methods.rb:108
+msgid ""
+"Arguments:\n"
+"  name: (Symbol)\n"
+"    The name of the sequence that a value should be generated for."
+msgstr ""
+
+# FactoryBot::Syntax::Methods#generate
+# FactoryBot::Syntax::Methods#generate_list
+#: ../lib/factory_bot/syntax/methods.rb:112
+#: ../lib/factory_bot/syntax/methods.rb:126
+msgid ""
+"Returns:\n"
+"  The next value in the sequence. (Object)"
+msgstr ""
+
+# FactoryBot::Syntax::Methods#generate_list
+#: ../lib/factory_bot/syntax/methods.rb:118
+msgid "Generates and returns the list of values in a sequence."
+msgstr ""
+
+# FactoryBot::Syntax::Methods#generate_list
+#: ../lib/factory_bot/syntax/methods.rb:120
+msgid ""
+"Arguments:\n"
+"  name: (Symbol)\n"
+"    The name of the sequence that a value should be generated for.\n"
+"  count: (Fixnum)\n"
+"    Count of values"
+msgstr ""
+
+# @return [Trait]
+#: ../lib/factory_bot/trait.rb:6
+msgid "a new instance of Trait"
+msgstr ""
