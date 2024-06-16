@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-05-07 00:17+0900\n"
-"PO-Revision-Date: 2024-06-01 22:21+0900\n"
+"POT-Creation-Date: 2024-06-16 08:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -5442,4 +5442,322 @@ msgid ""
 "    date_of_birth { 21.years.ago }\n"
 "  end\n"
 "end\n"
+msgstr ""
+
+#. type: Title #
+#: ../CONTRIBUTING.md:1
+#, no-wrap
+msgid "Contributing to Factory Bot"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:5
+msgid ""
+"We love pull requests from everyone. By participating in this project, you "
+"agree to abide by the thoughtbot [code of conduct]."
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:6
+#, no-wrap
+msgid "[code of conduct]: https://thoughtbot.com/open-source-code-of-conduct"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:9
+msgid "Here are some ways *you* can contribute:"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by using alpha, beta, and prerelease versions"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by reporting bugs"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by suggesting new features"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by writing or editing documentation"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by writing specifications"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid ""
+"by writing code ( **no patch is too small** : fix typos, add comments, etc. )"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by refactoring code"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by closing [issues][]"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:19
+msgid "by reviewing patches"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:20
+#, no-wrap
+msgid "[issues]: https://github.com/thoughtbot/factory_bot/issues"
+msgstr ""
+
+#. type: Title ##
+#: ../CONTRIBUTING.md:22
+#, no-wrap
+msgid "Submitting an Issue"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:30
+msgid "We use the [GitHub issue tracker][issues] to track bugs and features."
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:30
+msgid ""
+"Before submitting a bug report or feature request, check to make sure it "
+"hasn't already been submitted."
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:30
+msgid ""
+"When submitting a bug report, please include a [reproduction script] and any "
+"other details that may be necessary to reproduce the bug, including your gem "
+"version, Ruby version, and operating system."
+msgstr ""
+
+#. type: Title ##
+#: ../CONTRIBUTING.md:31
+#, no-wrap
+msgid "Cleaning up issues"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:38
+msgid ""
+"Issues that have no response from the submitter will be closed after 30 days."
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:38
+msgid ""
+"Issues will be closed once they're assumed to be fixed or answered. If the "
+"maintainer is wrong, it can be opened again."
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:38
+msgid ""
+"If your issue is closed by mistake, please understand and explain the "
+"issue.  We will happily reopen the issue."
+msgstr ""
+
+#. type: Title ##
+#: ../CONTRIBUTING.md:39
+#, no-wrap
+msgid "Submitting a Pull Request"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../CONTRIBUTING.md:46
+msgid "[Fork][fork] the [official repository][repo]."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../CONTRIBUTING.md:46
+msgid "[Create a topic branch.][branch]"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../CONTRIBUTING.md:46
+msgid "Implement your feature or bug fix."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../CONTRIBUTING.md:46
+msgid "Add, commit, and push your changes."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../CONTRIBUTING.md:46
+msgid "[Submit a pull request.][pr]"
+msgstr ""
+
+#. type: Title ###
+#: ../CONTRIBUTING.md:47
+#, no-wrap
+msgid "Notes"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:53
+msgid ""
+"Please add tests if you changed code. Contributions without tests won't be "
+"accepted."
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:53
+msgid ""
+"If you don't know how to add tests, please put in a PR and leave a comment "
+"asking for help. We love helping!"
+msgstr ""
+
+#. type: Bullet: '* '
+#: ../CONTRIBUTING.md:53
+msgid "Please don't update the Gem version."
+msgstr ""
+
+#. type: Title ##
+#: ../CONTRIBUTING.md:54
+#, no-wrap
+msgid "Setting up"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: ../CONTRIBUTING.md:56
+#, no-wrap
+msgid "bundle install\n"
+msgstr ""
+
+#. type: Title ##
+#: ../CONTRIBUTING.md:60
+#, no-wrap
+msgid "Running the test suite"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:63
+msgid "The default rake task will run the full test suite and [standard]:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: ../CONTRIBUTING.md:64
+#, no-wrap
+msgid "bundle exec rake\n"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:69
+msgid "You can also run a single group of tests (unit, spec, or feature)"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: ../CONTRIBUTING.md:70
+#, no-wrap
+msgid ""
+"bundle exec rake spec:unit\n"
+"bundle exec rake spec:acceptance\n"
+"bundle exec rake features\n"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:77
+msgid ""
+"To run an individual rspec test, you can provide a path and line number:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: ../CONTRIBUTING.md:78
+#, no-wrap
+msgid "bundle exec rspec spec/path/to/spec.rb:123\n"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:84
+msgid ""
+"You can run tests with a specific version of rails via [appraisal]. To run "
+"the default rake task against Rails 6, for example:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: ../CONTRIBUTING.md:85
+#, no-wrap
+msgid "bundle exec appraisal 6.0 rake\n"
+msgstr ""
+
+#. type: Title ##
+#: ../CONTRIBUTING.md:89
+#, no-wrap
+msgid "Formatting"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:92
+msgid "Use [standard] to automatically format your code:"
+msgstr ""
+
+#. type: Fenced code block (sh)
+#: ../CONTRIBUTING.md:93
+#, no-wrap
+msgid "bundle exec rake standard:fix\n"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:97
+#, no-wrap
+msgid "[repo]: https://github.com/thoughtbot/factory_bot/tree/main"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:98
+#, no-wrap
+msgid "[fork]: https://help.github.com/articles/fork-a-repo/"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:99
+#, no-wrap
+msgid "[branch]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:100
+#, no-wrap
+msgid "[pr]: https://help.github.com/articles/using-pull-requests/"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:101
+#, no-wrap
+msgid "[standard]: https://github.com/testdouble/standard"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:102
+#, no-wrap
+msgid "[appraisal]: https://github.com/thoughtbot/appraisal"
+msgstr ""
+
+#. type: Link reference
+#: ../CONTRIBUTING.md:103
+#, no-wrap
+msgid "[reproduction script]: https://github.com/thoughtbot/factory_bot/blob/main/.github/REPRODUCTION_SCRIPT.rb"
+msgstr ""
+
+#. type: Plain text
+#: ../CONTRIBUTING.md:105
+msgid ""
+"Inspired by https://github.com/middleman/middleman-heroku/blob/master/"
+"CONTRIBUTING.md"
 msgstr ""

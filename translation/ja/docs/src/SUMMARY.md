@@ -101,3 +101,4 @@
 - [お読みください](README.md)
 - [お知らせ](NEWS.md)
 - [名称](NAME.md)
+- [貢献](CONTRIBUTING.md)
