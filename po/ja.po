@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: YARD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-16 09:30+0900\n"
-"PO-Revision-Date: 2024-06-16 09:40+0900\n"
+"PO-Revision-Date: 2024-06-16 09:46+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -4060,7 +4060,7 @@ msgstr ""
 # FactoryBot.aliases
 #: ../lib/factory_bot/aliases.rb:4
 msgid "Returns the value of attribute aliases."
-msgstr ""
+msgstr "属性の別称の値を返します。"
 
 # FactoryBot.aliases=
 #: ../lib/factory_bot/aliases.rb:4
@@ -4598,6 +4598,9 @@ msgid ""
 "\"factories\", \"test/factories\" and \"spec/factories\". Only the first\n"
 "existing file will be loaded."
 msgstr ""
+"ファクトリ定義を探す場所を指定する文字列の配列です。\n"
+"既定ではfactory_botは「factories」「test/factoris」「spec/factories」をrequireしようとします。\n"
+"最初の存在するファイルのみが読み込まれます。"
 
 # @return [Linter]
 #: ../lib/factory_bot/linter.rb:3
