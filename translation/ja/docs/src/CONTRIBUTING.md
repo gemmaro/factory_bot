@@ -104,3 +104,23 @@ bundle exec rake standard:fix
 
 https://github.com/middleman/middleman-heroku/blob/master/CONTRIBUTING.md
 から着想を得ました。
+
+## この日本語訳について
+
+本文書は[``The factory_bot book''][book]の日本語訳です。
+
+日本語訳のファイル（Markdown形式）は原文のファイル構造に従って生成され、`translation/ja`ディレクトリ以下に配置されます。
+特に`translation/ja/docs`ディレクトリ以下に配置されるファイルはmdBookによりウェブページに変換されます。
+
+翻訳管理にはpo4aが使われており、GNU GettextのPO形式により翻訳が保管されます。
+そのため、原文に変更が発生した場合は次の手順で更新します。
+なお、お知らせは過去のバージョンは未翻訳のものが残っています。
+これらのバージョンは必要に応じて訳出することとします。
+POファイルでは`translation/po/news.ja.po`に分離されています。
+
+1. 原文のリポジトリに合わせてリベースする。
+1. `make -C translation`でPOファイルを更新する。
+1. 更新された`translation/po/*.ja.po`を編集し、fuzzyの項目や未翻訳の項目の翻訳を完了する。
+2. 再度`make -C translation`を実行し、日本語訳のファイルを生成する。
+
+[book]: https://thoughtbot.github.io/factory_bot/ "thoughtbot"
