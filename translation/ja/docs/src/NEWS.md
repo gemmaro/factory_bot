@@ -14,15 +14,14 @@
 
   * 内部的：observerの依存関係を除きました (Earlopain)。
 
-## 6.4.3 (December 26, 2023)
+## 6.4.3（2023年12月26日）
 
-  * Fix: Support models without ID setters in build_stubbed (Olivier
-    Bellone).
-  * Fix: Explicit observer dependency (Oleg Antonyan).
-  * Internal: Add Rails 7.1 to CI (Olivier Bellone).
-  * Internal: Bump github actions/checkout to v4 (Lorenzo Zabot)
-  * Internal: Stop passing disable-error_highlight in CI (Mike Burns).
-  * Internal: Relax the exception message check (Mike Burns).
+  * 修正：build_stubbedでIDセッターのないモデルに対応しました (Olivier Bellone)。
+  * 修正：明示的な観察器の依存 (Oleg Antonyan)。
+  * 内部：Rails 7.1をCIに追加 (Olivier Bellone)。
+  * 内部：githubのactions/checkoutをv4に更新 (Lorenzo Zabot)。
+  * 内部：CIでdisable-error_highlightを渡すのを中止 (Mike Burns)。
+  * 内部：例外伝文検査を緩和 (Mike Burns)。
 
 ## 6.4.2 (November 22, 2023)
 

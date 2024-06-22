@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-06-16 08:45+0900\n"
+"POT-Creation-Date: 2024-06-22 13:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,10 +24,10 @@ msgstr ""
 
 #. type: Plain text
 #: ../docs/src/SUMMARY.md:4
-msgid "[Intro](summary.md)"
+msgid "[Intro](intro.md)"
 msgstr ""
 
-#. type: Title #
+#. type: Title ##
 #: ../docs/src/SUMMARY.md:5
 #, no-wrap
 msgid "Reference"
@@ -113,7 +113,7 @@ msgstr ""
 msgid "[FactoryBot.register_strategy](ref/register_strategy.md)"
 msgstr ""
 
-#. type: Title #
+#. type: Title ##
 #: ../docs/src/SUMMARY.md:24
 #, no-wrap
 msgid "Guide"
@@ -136,7 +136,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Defining factories]()"
+msgid "[Defining factories](defining/summary.md)"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -171,7 +171,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Using factories]()"
+msgid "[Using factories](using-factories/summary.md)"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -235,7 +235,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Inheritance]()"
+msgid "[Inheritance](inheritance/summary.md)"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -256,7 +256,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Associations]()"
+msgid "[Associations](associations/summary.md)"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -296,7 +296,7 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Sequences]()"
+msgid "[Sequences](sequences/summary.md)"
 msgstr ""
 
 #. type: Bullet: '  - '
@@ -452,7 +452,7 @@ msgid ""
 "[ActiveSupport Instrumentation](activesupport-instrumentation/summary.md)"
 msgstr ""
 
-#. type: Title #
+#. type: Title ##
 #: ../docs/src/SUMMARY.md:92
 #, no-wrap
 msgid "Cookbook"
@@ -531,7 +531,7 @@ msgid "factory_bot [![Build Status][ci-image]][ci] [![Code Climate][grade-image]
 msgstr ""
 
 #. type: Plain text
-#: ../README.md:4 ../docs/src/summary.md:7
+#: ../README.md:4 ../docs/src/intro.md:7
 msgid ""
 "factory_bot is a fixtures replacement with a straightforward definition "
 "syntax, support for multiple build strategies (saved instances, unsaved "
@@ -727,13 +727,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../README.md:76 ../docs/src/summary.md:15
+#: ../README.md:76 ../docs/src/intro.md:15
 #, no-wrap
 msgid "License"
 msgstr ""
 
 #. type: Plain text
-#: ../README.md:81 ../docs/src/summary.md:20
+#: ../README.md:81 ../docs/src/intro.md:20
 msgid ""
 "factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
 "software, and may be redistributed under the terms specified in the "
@@ -741,7 +741,7 @@ msgid ""
 msgstr ""
 
 #. type: Link reference
-#: ../README.md:82 ../docs/src/summary.md:21
+#: ../README.md:82 ../docs/src/intro.md:21
 #, no-wrap
 msgid "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
 msgstr ""
@@ -753,7 +753,7 @@ msgid "<!-- START /templates/footer.md -->\n"
 msgstr ""
 
 #. type: Title ##
-#: ../README.md:85 ../docs/src/summary.md:24
+#: ../README.md:85 ../docs/src/intro.md:23
 #, no-wrap
 msgid "About thoughtbot"
 msgstr ""
@@ -778,13 +778,13 @@ msgid ""
 msgstr ""
 
 #. type: Link reference
-#: ../README.md:96 ../docs/src/summary.md:33
+#: ../README.md:96 ../docs/src/intro.md:32
 #, no-wrap
 msgid "[community]: https://thoughtbot.com/community?utm_source=github"
 msgstr ""
 
 #. type: Link reference
-#: ../README.md:97 ../docs/src/summary.md:34
+#: ../README.md:97 ../docs/src/intro.md:33
 #, no-wrap
 msgid "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
 msgstr ""
@@ -4584,53 +4584,53 @@ msgid ""
 msgstr ""
 
 #. type: Title #
-#: ../docs/src/summary.md:1
+#: ../docs/src/intro.md:1
 #, no-wrap
 msgid "Intro"
 msgstr ""
 
 #. type: Plain text
-#: ../docs/src/summary.md:9
+#: ../docs/src/intro.md:9
 msgid "Its documentation is split as such:"
 msgstr ""
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [guide](setup/summary.html) is a great place to start for first-time "
 "users."
 msgstr ""
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [cookbook](cookbook/has_many-associations.html) is the go-to place for "
 "creative solutions to common situations."
 msgstr ""
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [wiki](https://github.com/thoughtbot/factory_bot/wiki) details "
 "considerations for integrating with other software."
 msgstr ""
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [reference](ref/build-strategies.html) is terse facts for those who use "
 "this project often."
 msgstr ""
 
 #. type: Plain text
-#: ../docs/src/summary.md:28
+#: ../docs/src/intro.md:27
 msgid ""
 "factory_bot is maintained and funded by thoughtbot, inc.  The names and "
 "logos for thoughtbot are trademarks of thoughtbot, inc."
 msgstr ""
 
 #. type: Plain text
-#: ../docs/src/summary.md:32
+#: ../docs/src/intro.md:31
 msgid ""
 "We love open source software! See [our other projects][community] or [hire "
 "us][hire] to design, develop, and grow your product."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FactoryBot\n"
 "POT-Creation-Date: 2024-05-07 00:17+0900\n"
-"PO-Revision-Date: 2024-06-01 22:21+0900\n"
+"PO-Revision-Date: 2024-06-22 13:41+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -70,38 +70,39 @@ msgstr "内部的：observerの依存関係を除きました (Earlopain)。"
 #: ../NEWS.md:17
 #, no-wrap
 msgid "6.4.3 (December 26, 2023)"
-msgstr ""
+msgstr "6.4.3（2023年12月26日）"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:25
 msgid ""
 "Fix: Support models without ID setters in build_stubbed (Olivier Bellone)."
 msgstr ""
+"修正：build_stubbedでIDセッターのないモデルに対応しました (Olivier Bellone)。"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:25
 msgid "Fix: Explicit observer dependency (Oleg Antonyan)."
-msgstr ""
+msgstr "修正：明示的な観察器の依存 (Oleg Antonyan)。"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:25
 msgid "Internal: Add Rails 7.1 to CI (Olivier Bellone)."
-msgstr ""
+msgstr "内部：Rails 7.1をCIに追加 (Olivier Bellone)。"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:25
 msgid "Internal: Bump github actions/checkout to v4 (Lorenzo Zabot)"
-msgstr ""
+msgstr "内部：githubのactions/checkoutをv4に更新 (Lorenzo Zabot)。"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:25
 msgid "Internal: Stop passing disable-error_highlight in CI (Mike Burns)."
-msgstr ""
+msgstr "内部：CIでdisable-error_highlightを渡すのを中止 (Mike Burns)。"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:25
 msgid "Internal: Relax the exception message check (Mike Burns)."
-msgstr ""
+msgstr "内部：例外伝文検査を緩和 (Mike Burns)。"
 
 #. type: Title ##
 #: ../NEWS.md:26

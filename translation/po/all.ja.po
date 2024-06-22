@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2024-06-16 08:45+0900\n"
-"PO-Revision-Date: 2024-06-16 09:11+0900\n"
+"POT-Creation-Date: 2024-06-22 13:36+0900\n"
+"PO-Revision-Date: 2024-06-22 13:38+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -25,10 +25,10 @@ msgstr "概要"
 
 #. type: Plain text
 #: ../docs/src/SUMMARY.md:4
-msgid "[Intro](summary.md)"
-msgstr "[序](summary.md)"
+msgid "[Intro](intro.md)"
+msgstr "[序](intro.md)"
 
-#. type: Title #
+#. type: Title ##
 #: ../docs/src/SUMMARY.md:5
 #, no-wrap
 msgid "Reference"
@@ -115,7 +115,7 @@ msgstr "[FactoryBot.lint](ref/lint.md)"
 msgid "[FactoryBot.register_strategy](ref/register_strategy.md)"
 msgstr "[FactoryBot.register_strategy](ref/register_strategy.md)"
 
-#. type: Title #
+#. type: Title ##
 #: ../docs/src/SUMMARY.md:24
 #, no-wrap
 msgid "Guide"
@@ -138,8 +138,8 @@ msgstr "[Railsの事前読込器とRSpec](rails-preloaders-and-rspec/summary.md)
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Defining factories]()"
-msgstr "[ファクトリ定義]()"
+msgid "[Defining factories](defining/summary.md)"
+msgstr "[ファクトリ定義](defining/summary.md)"
 
 #. type: Bullet: '  - '
 #: ../docs/src/SUMMARY.md:91
@@ -173,8 +173,8 @@ msgstr "[静的属性（廃止）](defining/static-attributes.md)"
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Using factories]()"
-msgstr "[ファクトリを使う]()"
+msgid "[Using factories](using-factories/summary.md)"
+msgstr "[ファクトリを使う](linting-factories/summary.md)"
 
 #. type: Bullet: '  - '
 #: ../docs/src/SUMMARY.md:91
@@ -240,8 +240,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Inheritance]()"
-msgstr "[継承]()"
+msgid "[Inheritance](inheritance/summary.md)"
+msgstr "[継承](inheritance/summary.md)"
 
 #. type: Bullet: '  - '
 #: ../docs/src/SUMMARY.md:91
@@ -261,8 +261,8 @@ msgstr "[ベストプラクティス](inheritance/best-practices.md)"
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Associations]()"
-msgstr "[関連]()"
+msgid "[Associations](associations/summary.md)"
+msgstr "[関連](associations/summary.md)"
 
 #. type: Bullet: '  - '
 #: ../docs/src/SUMMARY.md:91
@@ -301,8 +301,8 @@ msgstr "[構築戦略](associations/build-strategies.md)"
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
-msgid "[Sequences]()"
-msgstr "[系列]()"
+msgid "[Sequences](sequences/summary.md)"
+msgstr "[系列](sequences/summary.md)"
 
 #. type: Bullet: '  - '
 #: ../docs/src/SUMMARY.md:91
@@ -459,7 +459,7 @@ msgid ""
 "[ActiveSupport Instrumentation](activesupport-instrumentation/summary.md)"
 msgstr "[ActiveSupportの計装](activesupport-instrumentation/summary.md)"
 
-#. type: Title #
+#. type: Title ##
 #: ../docs/src/SUMMARY.md:92
 #, no-wrap
 msgid "Cookbook"
@@ -552,7 +552,7 @@ msgid "factory_bot [![Build Status][ci-image]][ci] [![Code Climate][grade-image]
 msgstr "factory_bot [![ビルド状態][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gemのバージョン][version-image]][version]"
 
 #. type: Plain text
-#: ../README.md:4 ../docs/src/summary.md:7
+#: ../README.md:4 ../docs/src/intro.md:7
 msgid ""
 "factory_bot is a fixtures replacement with a straightforward definition "
 "syntax, support for multiple build strategies (saved instances, unsaved "
@@ -776,13 +776,13 @@ msgstr ""
 "thoughtbot/factory_bot/graphs/contributors)により貢献されました。"
 
 #. type: Title ##
-#: ../README.md:76 ../docs/src/summary.md:15
+#: ../README.md:76 ../docs/src/intro.md:15
 #, no-wrap
 msgid "License"
 msgstr "使用許諾"
 
 #. type: Plain text
-#: ../README.md:81 ../docs/src/summary.md:20
+#: ../README.md:81 ../docs/src/intro.md:20
 msgid ""
 "factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
 "software, and may be redistributed under the terms specified in the "
@@ -793,7 +793,7 @@ msgstr ""
 "[LICENSE] file."
 
 #. type: Link reference
-#: ../README.md:82 ../docs/src/summary.md:21
+#: ../README.md:82 ../docs/src/intro.md:21
 #, no-wrap
 msgid "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
 msgstr "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
@@ -805,7 +805,7 @@ msgid "<!-- START /templates/footer.md -->\n"
 msgstr "<!-- START /templates/footer.md -->\n"
 
 #. type: Title ##
-#: ../README.md:85 ../docs/src/summary.md:24
+#: ../README.md:85 ../docs/src/intro.md:23
 #, no-wrap
 msgid "About thoughtbot"
 msgstr "thoughtbotについて"
@@ -835,13 +835,13 @@ msgstr ""
 "[求人を募集しています][hire]。"
 
 #. type: Link reference
-#: ../README.md:96 ../docs/src/summary.md:33
+#: ../README.md:96 ../docs/src/intro.md:32
 #, no-wrap
 msgid "[community]: https://thoughtbot.com/community?utm_source=github"
 msgstr "[community]: https://thoughtbot.com/community?utm_source=github"
 
 #. type: Link reference
-#: ../README.md:97 ../docs/src/summary.md:34
+#: ../README.md:97 ../docs/src/intro.md:33
 #, no-wrap
 msgid "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
 msgstr "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
@@ -5891,25 +5891,25 @@ msgstr ""
 "end\n"
 
 #. type: Title #
-#: ../docs/src/summary.md:1
+#: ../docs/src/intro.md:1
 #, no-wrap
 msgid "Intro"
 msgstr "序"
 
 #. type: Plain text
-#: ../docs/src/summary.md:9
+#: ../docs/src/intro.md:9
 msgid "Its documentation is split as such:"
 msgstr "ドキュメントは以下に分かれています。"
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [guide](setup/summary.html) is a great place to start for first-time "
 "users."
 msgstr "[手引き](setup/summary.html)は初見の利用者が始めるのに良い場所です。"
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [cookbook](cookbook/has_many-associations.html) is the go-to place for "
 "creative solutions to common situations."
@@ -5918,7 +5918,7 @@ msgstr ""
 "決策が見付かる行き先です。"
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [wiki](https://github.com/thoughtbot/factory_bot/wiki) details "
 "considerations for integrating with other software."
@@ -5927,7 +5927,7 @@ msgstr ""
 "統合するときの検討事項が詳しく書かれています。"
 
 #. type: Bullet: '- '
-#: ../docs/src/summary.md:14
+#: ../docs/src/intro.md:14
 msgid ""
 "the [reference](ref/build-strategies.html) is terse facts for those who use "
 "this project often."
@@ -5936,7 +5936,7 @@ msgstr ""
 "事実です。"
 
 #. type: Plain text
-#: ../docs/src/summary.md:28
+#: ../docs/src/intro.md:27
 msgid ""
 "factory_bot is maintained and funded by thoughtbot, inc.  The names and "
 "logos for thoughtbot are trademarks of thoughtbot, inc."
@@ -5945,7 +5945,7 @@ msgstr ""
 "thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
 
 #. type: Plain text
-#: ../docs/src/summary.md:32
+#: ../docs/src/intro.md:31
 msgid ""
 "We love open source software! See [our other projects][community] or [hire "
 "us][hire] to design, develop, and grow your product."
