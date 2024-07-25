@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require "perfect_toml"
+doc = PerfectTOML.parse($stdin.read)
+doc["book"]["authors"] << "gemmaro"
+doc["book"]["language"] = "ja"
+doc["output"]["html"]["site-url"] = "/factory_bot/"
+puts PerfectTOML.generate(doc)
