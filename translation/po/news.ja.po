@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FactoryBot\n"
-"POT-Creation-Date: 2024-05-07 00:17+0900\n"
-"PO-Revision-Date: 2024-06-22 13:41+0900\n"
+"POT-Creation-Date: 2024-08-25 07:41+0900\n"
+"PO-Revision-Date: 2024-08-25 07:44+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -108,7 +108,7 @@ msgstr "内部：例外伝文検査を緩和 (Mike Burns)。"
 #: ../NEWS.md:26
 #, no-wrap
 msgid "6.4.2 (November 22, 2023)"
-msgstr ""
+msgstr "6.4.2（2023年11月22日）"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:30
@@ -116,6 +116,8 @@ msgid ""
 "Fix: top-level traits pass their class to ActiveSupport::Notifications "
 "(makicamel)."
 msgstr ""
+"修正：最上水準のトレイトで、クラスがActiveSupport::Notificationsに渡されるよ"
+"うにしました (makicamel)。"
 
 #. type: Title ##
 #: ../NEWS.md:31
