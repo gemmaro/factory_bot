@@ -14,12 +14,12 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: Generate translation
-      run: |
-        sudo apt-get update --yes
-        sudo apt-get install --yes po4a ruby
-        sudo gem install perfect_toml
-        make --directory translation
+    # - name: Generate translation
+    #   run: |
+    #     sudo apt-get update --yes
+    #     sudo apt-get install --yes po4a ruby
+    #     sudo gem install perfect_toml
+    #     make --directory translation
     - name: Install mdbook
       run: |
         mkdir mdbook
