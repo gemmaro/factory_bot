@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
 "POT-Creation-Date: 2024-08-25 07:41+0900\n"
-"PO-Revision-Date: 2024-08-25 07:42+0900\n"
+"PO-Revision-Date: 2024-10-11 19:01+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -174,7 +174,7 @@ msgstr "[静的属性（廃止）](defining/static-attributes.md)"
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:91
 msgid "[Using factories](using-factories/summary.md)"
-msgstr "[ファクトリを使う](linting-factories/summary.md)"
+msgstr "[ファクトリを使う](using-factories/summary.md)"
 
 #. type: Bullet: '  - '
 #: ../docs/src/SUMMARY.md:91
