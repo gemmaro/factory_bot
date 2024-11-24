@@ -88,7 +88,7 @@ FactoryBot.define do
 end
 
 build(:user)
-# ……とすると以下が走ります。
+# ……とすると以下が実行されます。
 User.new('value')
 ```
 
@@ -105,7 +105,7 @@ FactoryBot.define do
 end
 
 build(:user)
-# ……は以下が走ります。
+# ……とすると以下が実行されます。
 user = User.new('value')
 user.name = 'value'
 ```

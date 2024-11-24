@@ -1,15 +1,15 @@
 # 構築戦略
 
-factory\_botのファクトリが定義されると、組み込みのどの構築戦略や独自の構築戦略を使って構築できます。
+factory\_botのファクトリを定義したら、組み込みの構築戦略や独自の構築戦略を使って構築できます。
 
-こうした全ての戦略は[ActiveSupport::Notifications]を使って`factory_bot.run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、`:overrides`、`:factory`を持つペイロードを渡します。
+こうした戦略は全て、[ActiveSupport::Notifications]を使って`factory_bot.run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、`:overrides`、`:factory`を持つペイロードを渡します。
 
 [ActiveSupport::Notifications]: https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html
 
-リストではないメソッド（`.build`や`.build_pair`や`.create`など）は必須の実引数であるファクトリの名前を取ります。
-また省略できるトレイトの名前や上塗りする属性のハッシュもあります。
+リストではないメソッド（`.build`や`.build_pair`や`.create`など）は、必須の実引数であるファクトリ名を取ります。
+また、省略できるトレイト名や、上塗りする属性のハッシュもあります。
 最後にブロックを取れます。
-このブロックは生成されたオブジェクトを実引数として更新されたオブジェクトを返します。
+このブロックは、生成されたオブジェクトを実引数とし、更新されたオブジェクトを返します。
 
 リストのメソッド（`.build_list`や`.create_list`など）には2つの必須の実引数を持ちます。
 ファクトリの名前と構築するインスタンスの数です。
@@ -48,8 +48,8 @@ factory\_botのファクトリが定義されると、組み込みのどの構�
 
 ## `attributes_for`
 
-`FactoryBot.attributes_for`メソッドは属性とその値を持つHashを、`initialize_with`を使って構築します。
-`attributes_for_pair`メソッドと`attributes_for_list`メソッドは`build_pair`と`build_list`と似たように動作します。
+`FactoryBot.attributes_for`メソッドは、属性とその値を持つHashを、`initialize_with`を使って構築します。
+`attributes_for_pair`メソッドと`attributes_for_list`メソッドは、`build_pair`と`build_list`と似た動作です。
 
 関連は`null`構築戦略（構築されません）を使って構築されます。
 
@@ -57,12 +57,13 @@ factory\_botのファクトリが定義されると、組み込みのどの構�
 
 ## `build_stubbed`
 
-`FactoryBot.build_stubbed`メソッドは偽のActiveRecordオブジェクトを返します。
-`.build_stubbed_pair`メソッドと`.build_stubbed_list`メソッドは`.build_pair`と`.build_list`と似たように定義されます。
+`FactoryBot.build_stubbed`メソッドは、偽のActiveRecordオブジェクトを返します。
+`.build_stubbed_pair`メソッドと`.build_stubbed_list`メソッドは、`.build_pair`と`.build_list`と似た定義です。
 
-`initialize_with`を使ってオブジェクトを構築しますが、そうしておいてからメソッドとデータを適切なものとしてスタブします。
+`initialize_with`を使ってオブジェクトを構築します。
+ただし、メソッドとデータを適切にスタブします。
 
-- `id`は（属性で上塗りされない限り）連続して設定されます。
+- `id`は（属性で上塗りされない限り）連番で設定されます。
 - `created_at`と`updated_at`は（属性で上塗りされない限り）現在時刻に設定されます。
 - 全ての[ActiveModel::Dirty]の変更の記録が消去されます。
 - `persisted?`は真です。

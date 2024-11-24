@@ -16,7 +16,7 @@ FactoryBot.define do
 end
 ```
 
-エラーはテストスートを走らせるときに起こります。
+エラーは、テストスートを走らせるときに起こります。
 
 ```
 Failure/Error: united_states = create(:united_states)

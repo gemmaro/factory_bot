@@ -89,7 +89,7 @@
 - [オブジェクトを永続化するための独自メソッド](custom-methods-to-persist-objects/summary.md)
 - [ActiveSupportの計装](activesupport-instrumentation/summary.md)
 
-## 料理本
+## レシピ
 
 - [`has_many`関連](cookbook/has_many-associations.md)
 - [`has_and_belongs_to_many`関連](cookbook/has_and_belongs_to_many-associations.md)

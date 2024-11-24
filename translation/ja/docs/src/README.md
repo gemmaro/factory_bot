@@ -1,7 +1,7 @@
 # factory_bot [![ビルド状態][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gemのバージョン][version-image]][version]
 
-factory_botはフィクスチャの代替です。
-直感的な定義構文、複数の構築戦略（保存されたインスタンス、保存されないインスタンス、属性ハッシュ、スタブ化オブジェクト）への対応、ファクトリ継承を含めた同じクラスに対する複数のファクトリ（user、admin_user、などなど）への対応があります。
+factory_botはフィクスチャの代わりになるものです。
+直感的な定義構文であり、複数の構築戦略（保存されたインスタンス、保存されないインスタンス、属性ハッシュ、スタブ化オブジェクト）、ファクトリ継承を含む同じクラスに対する複数のファクトリ（user、admin_user、など）に対応しています。
 
 Railsでfactory_botを使いたいときは[factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)を参照してください。
 
@@ -16,9 +16,9 @@ _[プロジェクト名の歴史に関心がありますか][NAME]_
 ドキュメント
 ------
 
-[factory_botの本][the factory_bot book]で網羅的な参照、手引き、料理本を参照してください。
+[factory_botの本][the factory_bot book]で網羅的な参照、手引き、レシピを参照してください。
 
-RSpecやRailsといったサードパーティライブラリの統合についての情報は[factory_botのwiki][the factory_bot
+RSpecやRailsといったサードパーティライブラリの統合についての情報は[factory_botのウィキ][the factory_bot
 wiki]を参照してください。
 
 [詳細な導入のための映像][a detailed introductory video]もあります。

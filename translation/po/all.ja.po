@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2024-08-25 07:41+0900\n"
-"PO-Revision-Date: 2024-10-11 19:01+0900\n"
+"POT-Creation-Date: 2024-11-24 09:56+0900\n"
+"PO-Revision-Date: 2024-11-24 10:48+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -16,6 +16,414 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Title #
+#: ../docs/src/intro.md:1
+#, no-wrap
+msgid "Intro"
+msgstr "序"
+
+#. type: Plain text
+#: ../docs/src/intro.md:7 ../README.md:4
+msgid ""
+"factory_bot is a fixtures replacement with a straightforward definition "
+"syntax, support for multiple build strategies (saved instances, unsaved "
+"instances, attribute hashes, and stubbed objects), and support for multiple "
+"factories for the same class (user, admin_user, and so on), including "
+"factory inheritance."
+msgstr ""
+"factory_botはフィクスチャの代わりになるものです。\n"
+"直感的な定義構文であり、複数の構築戦略（保存されたインスタンス、保存されない"
+"インスタンス、属性ハッシュ、スタブ化オブジェクト）、ファクトリ継承を含む同じ"
+"クラスに対する複数のファクトリ（user、admin_user、など）に対応しています。"
+
+#. type: Plain text
+#: ../docs/src/intro.md:9
+msgid "Its documentation is split as such:"
+msgstr "ドキュメントは以下に分かれています。"
+
+#. type: Bullet: '- '
+#: ../docs/src/intro.md:14
+msgid ""
+"the [guide](setup/summary.html) is a great place to start for first-time "
+"users."
+msgstr "初めて使う方は、[手引き](setup/summary.html)から始めると良いでしょう。"
+
+#. type: Bullet: '- '
+#: ../docs/src/intro.md:14
+msgid ""
+"the [cookbook](cookbook/has_many-associations.html) is the go-to place for "
+"creative solutions to common situations."
+msgstr ""
+"[レシピ](cookbook/has_many-associations.html)には、よくある状況に対する創造的"
+"な解決策があります。"
+
+#. type: Bullet: '- '
+#: ../docs/src/intro.md:14
+msgid ""
+"the [wiki](https://github.com/thoughtbot/factory_bot/wiki) details "
+"considerations for integrating with other software."
+msgstr ""
+"[ウィキ](https://github.com/thoughtbot/factory_bot/wiki)には他のソフトウェア"
+"と統合するときの検討事項が詳しく書かれています。"
+
+#. type: Bullet: '- '
+#: ../docs/src/intro.md:14
+msgid ""
+"the [reference](ref/build-strategies.html) is terse facts for those who use "
+"this project often."
+msgstr ""
+"[便覧](ref/build-strategies.html)には、本プロジェクトのソフトウェアを頻繁に使"
+"う人向けの情報があります。"
+
+#. type: Title -
+#: ../docs/src/intro.md:15 ../README.md:76
+#, no-wrap
+msgid "License"
+msgstr "使用許諾"
+
+#. type: Plain text
+#: ../docs/src/intro.md:20 ../README.md:81
+msgid ""
+"factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
+"software, and may be redistributed under the terms specified in the "
+"[LICENSE] file."
+msgstr ""
+"factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
+"software, and may be redistributed under the terms specified in the "
+"[LICENSE] file."
+
+#. type: Link reference
+#: ../docs/src/intro.md:21 ../README.md:82
+#, no-wrap
+msgid "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
+msgstr "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
+
+#. type: Title ##
+#: ../docs/src/intro.md:23 ../README.md:85
+#, no-wrap
+msgid "About thoughtbot"
+msgstr "thoughtbotについて"
+
+#. type: Plain text
+#: ../docs/src/intro.md:27
+msgid ""
+"factory_bot is maintained and funded by thoughtbot, inc.  The names and "
+"logos for thoughtbot are trademarks of thoughtbot, inc."
+msgstr ""
+"factory_botはthoughtbot, inc.により保守され、資金提供されています。\n"
+"thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
+
+#. type: Plain text
+#: ../docs/src/intro.md:31
+msgid ""
+"We love open source software! See [our other projects][community] or [hire "
+"us][hire] to design, develop, and grow your product."
+msgstr ""
+"私達はオープンソースソフトウェアが大好きです！\n"
+"[私達の他のプロジェクト][community]を参照してください。\n"
+"製品を設計、開発、成長させるための[求人を募集しています][hire]。"
+
+#. type: Link reference
+#: ../docs/src/intro.md:32 ../README.md:96
+#, no-wrap
+msgid "[community]: https://thoughtbot.com/community?utm_source=github"
+msgstr "[community]: https://thoughtbot.com/community?utm_source=github"
+
+#. type: Link reference
+#: ../docs/src/intro.md:33 ../README.md:97
+#, no-wrap
+msgid "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
+msgstr "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
+
+#. type: Title #
+#: ../docs/src/ref/build-strategies.md:1
+#: ../docs/src/associations/build-strategies.md:1
+#: ../docs/src/using-factories/build-strategies.md:1
+#, no-wrap
+msgid "Build strategies"
+msgstr "構築戦略"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:5
+msgid ""
+"Once a factory\\_bot factory is defined, it can be constructed using any of "
+"the built-in build strategies, or a custom build strategy."
+msgstr ""
+"factory\\_botのファクトリを定義したら、組み込みの構築戦略や独自の構築戦略を"
+"使って構築できます。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:9
+msgid ""
+"All of these strategies notify on the `factory_bot.run_factory` "
+"instrumentation using [ActiveSupport::Notifications], passing a payload with "
+"`:name`, `:strategy`, `:traits`, `:overrides`, and `:factory` keys."
+msgstr ""
+"こうした戦略は全て、[ActiveSupport::Notifications]を使って`factory_bot."
+"run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、`:overrides`、"
+"`:factory`を持つペイロードを渡します。"
+
+#. type: Link reference
+#: ../docs/src/ref/build-strategies.md:10
+#, no-wrap
+msgid "[ActiveSupport::Notifications]: https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html"
+msgstr "[ActiveSupport::Notifications]: https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:17
+msgid ""
+"The non-list (`.build`, `.build_pair`, `.create`, etc.) methods take one "
+"mandatory argument: the name of the factory. They can then optionally take "
+"names of traits, and then a hash of attributes to override. Finally, they "
+"can take a block. This block takes the produced object as an argument, and "
+"returns an updated object."
+msgstr ""
+"リストではないメソッド（`.build`や`.build_pair`や`.create`など）は、必須の実"
+"引数であるファクトリ名を取ります。\n"
+"また、省略できるトレイト名や、上塗りする属性のハッシュもあります。\n"
+"最後にブロックを取れます。\n"
+"このブロックは、生成されたオブジェクトを実引数とし、更新されたオブジェクトを"
+"返します。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:23
+msgid ""
+"The list methods (`.build_list`, `.create_list`, etc.) have two required "
+"arguments: the name of the factory, and the number of instances to build. "
+"They then can optionally take traits and overrides. Finally, they can take a "
+"block.  This block takes the produced object and the zero-based index as "
+"arguments, and returns an updated object."
+msgstr ""
+"リストのメソッド（`.build_list`や`.create_list`など）には2つの必須の実引数を"
+"持ちます。\n"
+"ファクトリの名前と構築するインスタンスの数です。\n"
+"また省略可能なトレイトと上塗りするものを取れます。\n"
+"最後にブロックを取れます。\n"
+"このブロックは生成されたオブジェクトとゼロ始まりの添字を実引数として取り、更"
+"新されたオブジェクトを返します。"
+
+#. type: Title ##
+#: ../docs/src/ref/build-strategies.md:24
+#, no-wrap
+msgid "`build`"
+msgstr "`build`"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:30
+msgid ""
+"The `FactoryBot.build` method constructs an instance of the class according "
+"to `initialize_with`, which defaults to calling the `.new` class method.  `."
+"build_list` constructs multiple instances, and `.build_pair` is a shorthand "
+"to construct two instances."
+msgstr ""
+"`FactoryBot.build`メソッドは`initialize_with`にしたがってクラスのインスタンス"
+"を構築します。\n"
+"既定では`.new`クラスメソッドを呼びます。\n"
+"`.build_list`は複数のインスタンスを構築し、`.build_pair`は2つのインスタンスを"
+"構築する早道です。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:32
+msgid "After it calls `initialize_with`, it invokes the `after_build` hook."
+msgstr "`initialize_with`を呼んだ後、`after_build`フックを呼びます。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:34
+msgid "Associations are constructed using the `build` build strategy."
+msgstr "関連は`build`構築戦略を使って構築されます。"
+
+#. type: Title ##
+#: ../docs/src/ref/build-strategies.md:35
+#, no-wrap
+msgid "`create`"
+msgstr "`create`"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:41
+msgid ""
+"The `FactoryBot.create` method constructs an instance of the class according "
+"to `initialize_with`, and then persists it using `to_create`. The `."
+"create_list` class method constructs multiple instances, and `.create_pair` "
+"is a shorthand to construct two instances."
+msgstr ""
+"`FactoryBot.create`メソッドは`initialize_with`にしたがってクラスのインスタン"
+"スを構築し、`to_create`を使って永続化します。\n"
+"`.create_list`クラスメソッドは複数のインスタンスを構築します。\n"
+"また`.create_pair`は2つのインスタンスを構築する早道です。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:43
+msgid ""
+"After it calls `initialize_with`, it invokes the following hooks in order:"
+msgstr "`initialize_with`を呼んだ後、以下のフックを順番に呼びます。"
+
+#. type: Bullet: '1. '
+#: ../docs/src/ref/build-strategies.md:48
+msgid "`after_build`"
+msgstr "`after_build`"
+
+#. type: Bullet: '1. '
+#: ../docs/src/ref/build-strategies.md:48
+msgid "`before_create`"
+msgstr "`before_create`"
+
+#. type: Bullet: '1. '
+#: ../docs/src/ref/build-strategies.md:48
+msgid "non-hook: `to_create`"
+msgstr "フックではない`to_create`"
+
+#. type: Bullet: '1. '
+#: ../docs/src/ref/build-strategies.md:48
+msgid "`after_create`"
+msgstr "`after_create`"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:50
+msgid "Associations are constructed using the `create` build strategy."
+msgstr "関連は`create`構築戦略を使って構築されます。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:54
+msgid ""
+"The `to_create` hook controls how objects are persisted. It takes a block "
+"with the object and the factory\\_bot context, and runs it for its side "
+"effect. By default, it calls `#save!`."
+msgstr ""
+"`to_create`フックはオブジェクトの永続化方法を制御します。\n"
+"オブジェクトとfactory\\_botの文脈を持つブロックを取り、副作用を見越して走りま"
+"す。\n"
+"既定では`#save!`を呼びます。"
+
+#. type: Title ##
+#: ../docs/src/ref/build-strategies.md:55
+#, no-wrap
+msgid "`attributes_for`"
+msgstr "`attributes_for`"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:60
+msgid ""
+"The `FactoryBot.attributes_for` method constructs a Hash with the attributes "
+"and their values, using `initialize_with`. The `attributes_for_pair` and "
+"`attributes_for_list` methods work similarly as `build_pair` and "
+"`build_list`."
+msgstr ""
+"`FactoryBot.attributes_for`メソッドは、属性とその値を持つHashを、"
+"`initialize_with`を使って構築します。\n"
+"`attributes_for_pair`メソッドと`attributes_for_list`メソッドは、`build_pair`"
+"と`build_list`と似た動作です。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:62
+msgid ""
+"Associations are constructed using the `null` build strategy (they are not "
+"built)."
+msgstr "関連は`null`構築戦略（構築されません）を使って構築されます。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:64
+msgid "No hooks are called."
+msgstr "フックは呼ばれません。"
+
+#. type: Title ##
+#: ../docs/src/ref/build-strategies.md:65
+#, no-wrap
+msgid "`build_stubbed`"
+msgstr "`build_stubbed`"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:70
+msgid ""
+"The `FactoryBot.build_stubbed` method returns a fake ActiveRecord object. "
+"The `.build_stubbed_pair` and `.build_stubbed_list` methods are defined "
+"similarly to `.build_pair` and `.build_list`."
+msgstr ""
+"`FactoryBot.build_stubbed`メソッドは、偽のActiveRecordオブジェクトを返しま"
+"す。\n"
+"`.build_stubbed_pair`メソッドと`.build_stubbed_list`メソッドは、`.build_pair`"
+"と`.build_list`と似た定義です。"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:73
+msgid ""
+"It uses `initialize_with` to construct the object, but then stubs methods "
+"and data as appropriate:"
+msgstr ""
+"`initialize_with`を使ってオブジェクトを構築します。\n"
+"ただし、メソッドとデータを適切にスタブします。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid "`id` is set sequentially (unless overridden by attributes)"
+msgstr "`id`は（属性で上塗りされない限り）連番で設定されます。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid ""
+"`created_at` and `updated_at` are set to the current time (unless overridden "
+"by attributes)"
+msgstr ""
+"`created_at`と`updated_at`は（属性で上塗りされない限り）現在時刻に設定されま"
+"す。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid "all [ActiveModel::Dirty] change tracking is cleared"
+msgstr "全ての[ActiveModel::Dirty]の変更の記録が消去されます。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid "`persisted?` is true"
+msgstr "`persisted?`は真です。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid "`new_record?` is false"
+msgstr "`new_record?`は偽です。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid "`destroyed?` is false"
+msgstr "`destroyed?`は偽です。"
+
+#. type: Bullet: '- '
+#: ../docs/src/ref/build-strategies.md:81
+msgid ""
+"persistence methods raise a `RuntimeError` (`#connection`, `#delete`, "
+"`#save`, `#update`, etc.)"
+msgstr ""
+"永続化メソッド（`#connection`や`#delete`や`#save`や`#update`など）は"
+"`RuntimeError`を投げます。"
+
+#. type: Link reference
+#: ../docs/src/ref/build-strategies.md:82
+#, no-wrap
+msgid "[ActiveModel::Dirty]: https://api.rubyonrails.org/classes/ActiveModel/Dirty.html"
+msgstr "[ActiveModel::Dirty]: https://api.rubyonrails.org/classes/ActiveModel/Dirty.html"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:85
+msgid "After it sets up the object it invokes the `after_stub` hook."
+msgstr "オブジェクトを設定した後`after_stub`フックを呼びます。"
+
+#. type: Title ##
+#: ../docs/src/ref/build-strategies.md:86
+#, no-wrap
+msgid "`null`"
+msgstr "`null`"
+
+#. type: Plain text
+#: ../docs/src/ref/build-strategies.md:90
+msgid ""
+"The `FactoryBot.null` method returns `nil`. The `.null_pair` method gives "
+"you a pair of nils, and `.null_list` gives as many nils as you desire. This "
+"is used internally."
+msgstr ""
+"`FactoryBot.null`メソッドは`nil`を返します。\n"
+"`.null_pair`メソッドはnilの対を与えます。\n"
+"`.null_list`は欲しい数だけnilを与えます。\n"
+"内部的に使われています。"
 
 #. type: Title #
 #: ../docs/src/SUMMARY.md:1
@@ -463,7 +871,7 @@ msgstr "[ActiveSupportの計装](activesupport-instrumentation/summary.md)"
 #: ../docs/src/SUMMARY.md:92
 #, no-wrap
 msgid "Cookbook"
-msgstr "料理本"
+msgstr "レシピ"
 
 #. type: Bullet: '- '
 #: ../docs/src/SUMMARY.md:97
@@ -544,361 +952,6 @@ msgstr ""
 "があるように感じたりする人にとって困惑するものでした。\n"
 "2017年10月に「Factory Bot」に[ライブラリを改名](https://robots.thoughtbot."
 "com/factory_bot)しました。"
-
-#. type: Title #
-#: ../README.md:1
-#, no-wrap
-msgid "factory_bot [![Build Status][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gem Version][version-image]][version]"
-msgstr "factory_bot [![ビルド状態][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gemのバージョン][version-image]][version]"
-
-#. type: Plain text
-#: ../README.md:4 ../docs/src/intro.md:7
-msgid ""
-"factory_bot is a fixtures replacement with a straightforward definition "
-"syntax, support for multiple build strategies (saved instances, unsaved "
-"instances, attribute hashes, and stubbed objects), and support for multiple "
-"factories for the same class (user, admin_user, and so on), including "
-"factory inheritance."
-msgstr ""
-"factory_botはフィクスチャの代替です。\n"
-"直感的な定義構文、複数の構築戦略（保存されたインスタンス、保存されないインス"
-"タンス、属性ハッシュ、スタブ化オブジェクト）への対応、ファクトリ継承を含めた"
-"同じクラスに対する複数のファクトリ（user、admin_user、などなど）への対応があ"
-"ります。"
-
-#. type: Plain text
-#: ../README.md:7
-msgid ""
-"If you want to use factory_bot with Rails, see [factory_bot_rails](https://"
-"github.com/thoughtbot/factory_bot_rails)."
-msgstr ""
-"Railsでfactory_botを使いたいときは[factory_bot_rails](https://github.com/"
-"thoughtbot/factory_bot_rails)を参照してください。"
-
-#. type: Plain text
-#: ../README.md:9
-msgid "_[Interested in the history of the project name?][NAME]_"
-msgstr "_[プロジェクト名の歴史に関心がありますか][NAME]_"
-
-#. type: Title ###
-#: ../README.md:11
-#, no-wrap
-msgid "Transitioning from factory\\_girl?"
-msgstr "factory\\_girlから移行されますか"
-
-#. type: Plain text
-#: ../README.md:14
-msgid ""
-"Check out the [guide](https://github.com/thoughtbot/factory_bot/blob/4-9-0-"
-"stable/UPGRADE_FROM_FACTORY_GIRL.md)."
-msgstr ""
-"[手引き](https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/"
-"UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。"
-
-#. type: Title -
-#: ../README.md:17
-#, no-wrap
-msgid "Documentation"
-msgstr "ドキュメント"
-
-#. type: Plain text
-#: ../README.md:20
-msgid ""
-"See our extensive reference, guides, and cookbook in [the factory_bot book]"
-"[]."
-msgstr ""
-"[factory_botの本][the factory_bot book]で網羅的な参照、手引き、料理本を参照し"
-"てください。"
-
-#. type: Plain text
-#: ../README.md:23
-msgid ""
-"For information on integrations with third party libraries, such as RSpec or "
-"Rails, see [the factory_bot wiki][]."
-msgstr ""
-"RSpecやRailsといったサードパーティライブラリの統合についての情報は"
-"[factory_botのwiki][the factory_bot wiki]を参照してください。"
-
-#. type: Plain text
-#: ../README.md:25
-#, no-wrap
-msgid " We also have [a detailed introductory video][], available for free on Upcase.\n"
-msgstr ""
-"[詳細な導入のための映像][a detailed introductory video]もあります。\n"
-"Upcaseで無料で見られます。\n"
-
-#. type: Link reference
-#: ../README.md:26
-#, no-wrap
-msgid "[a detailed introductory video]: https://upcase.com/videos/factory-bot?utm_source=github&utm_medium=open-source&utm_campaign=factory-girl"
-msgstr "[a detailed introductory video]: https://upcase.com/videos/factory-bot?utm_source=github&utm_medium=open-source&utm_campaign=factory-girl"
-
-#. type: Link reference
-#: ../README.md:27
-#, no-wrap
-msgid "[the factory_bot book]: https://thoughtbot.github.io/factory_bot"
-msgstr "[the factory_bot book]: https://thoughtbot.github.io/factory_bot"
-
-#. type: Link reference
-#: ../README.md:28
-#, no-wrap
-msgid "[the factory_bot wiki]: https://github.com/thoughtbot/factory_bot/wiki"
-msgstr "[the factory_bot wiki]: https://github.com/thoughtbot/factory_bot/wiki"
-
-#. type: Plain text
-#: ../README.md:31
-msgid "Install"
-msgstr "インストール"
-
-#. type: Plain text
-#: ../README.md:34
-msgid "Run:"
-msgstr "以下を走らせてください。"
-
-#. type: Fenced code block (ruby)
-#: ../README.md:35
-#, no-wrap
-msgid "bundle add factory_bot\n"
-msgstr "bundle add factory_bot\n"
-
-#. type: Plain text
-#: ../README.md:40
-msgid "To install the gem manually from your shell, run:"
-msgstr "シェルで手動でgemをインストールするには、以下を走らせてください。"
-
-#. type: Fenced code block (shell)
-#: ../README.md:41
-#, no-wrap
-msgid "gem install factory_bot\n"
-msgstr "gem install factory_bot\n"
-
-#. type: Title -
-#: ../README.md:46
-#, no-wrap
-msgid "Supported Ruby versions"
-msgstr "対応しているRubyのバージョン"
-
-#. type: Plain text
-#: ../README.md:49
-msgid ""
-"Supported Ruby versions are listed in [`.github/workflows/build.yml`]"
-"(https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build."
-"yml)"
-msgstr ""
-"対応しているRubyのバージョンは[`.github/workflows/build.yml`](https://github."
-"com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml)に一覧になっ"
-"ています。"
-
-#. type: Title -
-#: ../README.md:51
-#, no-wrap
-msgid "More Information"
-msgstr "その他の情報"
-
-#. type: Bullet: '* '
-#: ../README.md:57
-msgid "[Rubygems](https://rubygems.org/gems/factory_bot)"
-msgstr "[Rubygems](https://rubygems.org/gems/factory_bot)"
-
-#. type: Bullet: '* '
-#: ../README.md:57
-msgid ""
-"[Stack Overflow](https://stackoverflow.com/questions/tagged/factory-bot)"
-msgstr ""
-"[Stack Overflow](https://stackoverflow.com/questions/tagged/factory-bot)"
-
-#. type: Bullet: '* '
-#: ../README.md:57
-msgid "[Issues](https://github.com/thoughtbot/factory_bot/issues)"
-msgstr "[イシュー](https://github.com/thoughtbot/factory_bot/issues)"
-
-#. type: Bullet: '* '
-#: ../README.md:57
-msgid ""
-"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
-"com/)"
-msgstr ""
-"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
-"com/)"
-
-#. type: Link reference
-#: ../README.md:58
-#, no-wrap
-msgid "[GETTING_STARTED]: https://github.com/thoughtbot/factory_bot/blob/main/GETTING_STARTED.md"
-msgstr "[GETTING_STARTED]: https://github.com/thoughtbot/factory_bot/blob/main/GETTING_STARTED.md"
-
-#. type: Link reference
-#: ../README.md:59
-#, no-wrap
-msgid "[NAME]: https://github.com/thoughtbot/factory_bot/blob/main/NAME.md"
-msgstr "[NAME]: https://github.com/thoughtbot/factory_bot/blob/main/NAME.md"
-
-#. type: Title -
-#: ../README.md:62
-#, no-wrap
-msgid "Useful Tools"
-msgstr "有用なツール"
-
-#. type: Bullet: '* '
-#: ../README.md:65
-msgid ""
-"[FactoryTrace](https://github.com/djezzzl/factory_trace) - helps to find "
-"unused factories and traits."
-msgstr ""
-"[FactoryTrace](https://github.com/djezzzl/factory_trace)は使われていないファ"
-"クトリやトレイトを見付けるのに役立ちます。"
-
-#. type: Title -
-#: ../README.md:67
-#, no-wrap
-msgid "Contributing"
-msgstr "貢献"
-
-#. type: Plain text
-#: ../README.md:70
-msgid ""
-"Please see [CONTRIBUTING.md](https://github.com/thoughtbot/factory_bot/blob/"
-"main/CONTRIBUTING.md)."
-msgstr ""
-"[CONTRIBUTING.md](https://github.com/thoughtbot/factory_bot/blob/main/"
-"CONTRIBUTING.md)を参照してください。"
-
-#. type: Plain text
-#: ../README.md:74
-msgid ""
-"factory_bot was originally written by Joe Ferris and is maintained by "
-"thoughtbot.  Many improvements and bugfixes were contributed by the [open "
-"source community](https://github.com/thoughtbot/factory_bot/graphs/"
-"contributors)."
-msgstr ""
-"factory_botは元はJoe Ferrisにより書かれ、thoughtbotにより保守されています。\n"
-"多くの向上と不具合の修正が[オープンソースコミュニティ](https://github.com/"
-"thoughtbot/factory_bot/graphs/contributors)により貢献されました。"
-
-#. type: Title ##
-#: ../README.md:76 ../docs/src/intro.md:15
-#, no-wrap
-msgid "License"
-msgstr "使用許諾"
-
-#. type: Plain text
-#: ../README.md:81 ../docs/src/intro.md:20
-msgid ""
-"factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
-"software, and may be redistributed under the terms specified in the "
-"[LICENSE] file."
-msgstr ""
-"factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
-"software, and may be redistributed under the terms specified in the "
-"[LICENSE] file."
-
-#. type: Link reference
-#: ../README.md:82 ../docs/src/intro.md:21
-#, no-wrap
-msgid "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
-msgstr "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
-
-#. type: Plain text
-#: ../README.md:85
-#, no-wrap
-msgid "<!-- START /templates/footer.md -->\n"
-msgstr "<!-- START /templates/footer.md -->\n"
-
-#. type: Title ##
-#: ../README.md:85 ../docs/src/intro.md:23
-#, no-wrap
-msgid "About thoughtbot"
-msgstr "thoughtbotについて"
-
-#. type: Plain text
-#: ../README.md:88
-msgid "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
-msgstr "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
-
-#. type: Plain text
-#: ../README.md:91
-msgid ""
-"This repo is maintained and funded by thoughtbot, inc.  The names and logos "
-"for thoughtbot are trademarks of thoughtbot, inc."
-msgstr ""
-"このリポジトリはthoughtbot, inc.により保守され、資金提供されています。\n"
-"thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
-
-#. type: Plain text
-#: ../README.md:95
-msgid ""
-"We love open source software! See [our other projects][community].  We are "
-"[available for hire][hire]."
-msgstr ""
-"私達はオープンソースソフトウェアが大好きです！\n"
-"[私達の他のプロジェクト][community]を参照してください。\n"
-"[求人を募集しています][hire]。"
-
-#. type: Link reference
-#: ../README.md:96 ../docs/src/intro.md:32
-#, no-wrap
-msgid "[community]: https://thoughtbot.com/community?utm_source=github"
-msgstr "[community]: https://thoughtbot.com/community?utm_source=github"
-
-#. type: Link reference
-#: ../README.md:97 ../docs/src/intro.md:33
-#, no-wrap
-msgid "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
-msgstr "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
-
-#. type: Plain text
-#: ../README.md:101
-#, no-wrap
-msgid "<!-- END /templates/footer.md -->\n"
-msgstr "<!-- END /templates/footer.md -->\n"
-
-#. type: Link reference
-#: ../README.md:102
-#, no-wrap
-msgid "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
-msgstr "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
-
-#. type: Link reference
-#: ../README.md:103
-#, no-wrap
-msgid "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
-msgstr "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
-
-#. type: Link reference
-#: ../README.md:104
-#, no-wrap
-msgid "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
-msgstr "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
-
-#. type: Link reference
-#: ../README.md:105
-#, no-wrap
-msgid "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
-msgstr "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
-
-#. type: Link reference
-#: ../README.md:106
-#, no-wrap
-msgid "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
-msgstr "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
-
-#. type: Link reference
-#: ../README.md:107
-#, no-wrap
-msgid "[version]: https://badge.fury.io/rb/factory_bot"
-msgstr "[version]: https://badge.fury.io/rb/factory_bot"
-
-#. type: Link reference
-#: ../README.md:108
-#, no-wrap
-msgid "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
-msgstr "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
-
-#. type: Link reference
-#: ../README.md:109
-#, no-wrap
-msgid "[hound]: https://houndci.com"
-msgstr "[hound]: https://houndci.com"
 
 #. type: Title #
 #: ../docs/src/activesupport-instrumentation/summary.md:1
@@ -1177,14 +1230,6 @@ msgstr ""
 #, no-wrap
 msgid "[omitting values]: https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc.html#label-Hash+Literals"
 msgstr "[omitting values]: https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc.html#label-Hash+Literals"
-
-#. type: Title #
-#: ../docs/src/associations/build-strategies.md:1
-#: ../docs/src/ref/build-strategies.md:1
-#: ../docs/src/using-factories/build-strategies.md:1
-#, no-wrap
-msgid "Build strategies"
-msgstr "構築戦略"
 
 #. type: Plain text
 #: ../docs/src/associations/build-strategies.md:4
@@ -2786,7 +2831,7 @@ msgstr ""
 "end\n"
 "\n"
 "build(:user)\n"
-"# ……とすると以下が走ります。\n"
+"# ……とすると以下が実行されます。\n"
 "User.new('value')\n"
 
 #. type: Plain text
@@ -2824,7 +2869,7 @@ msgstr ""
 "end\n"
 "\n"
 "build(:user)\n"
-"# ……は以下が走ります。\n"
+"# ……とすると以下が実行されます。\n"
 "user = User.new('value')\n"
 "user.name = 'value'\n"
 
@@ -2949,9 +2994,7 @@ msgstr ""
 msgid ""
 "To understand how factory\\_bot uses strategies internally, it's probably "
 "easiest to view the source for each of the four default strategies."
-msgstr ""
-"factory\\_botがどのように内部的に戦略を使っているか理解するには、各4つの既定"
-"の戦略のソースを眺めるのが恐らく一番簡単です。"
+msgstr "factory\\_botで、戦略が内部で使われる仕組みを理解するには、4つの既定の戦略それぞれのソースを眺めるのが、恐らく一番簡単です。"
 
 #. type: Plain text
 #: ../docs/src/custom-strategies/summary.md:19
@@ -3749,9 +3792,9 @@ msgid ""
 msgstr ""
 "注意点：ファクトリのみ変更でき（系列やトレイトはできません）、コールバックは*"
 "通常のものと同様に付属したまま*です。\n"
-"そのため変更しているファクトリが`after(:create)`コールバックを定義するとき、"
-"`after(:create)`を定義しても上塗りされず、その代わりに最初のコールバックの後"
-"に走ります。"
+"そのため、変更しているファクトリで`after(:create)`コールバックを定義すると"
+"き、`after(:create)`を定義しても上塗りされません。\n"
+"最初のコールバックの後に実行されます。"
 
 #. type: Title #
 #: ../docs/src/rails-preloaders-and-rspec/summary.md:1
@@ -3800,7 +3843,7 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/rails-preloaders-and-rspec/summary.md:21
 msgid "The error occurs during the run of the test suite:"
-msgstr "エラーはテストスートを走らせるときに起こります。"
+msgstr "エラーは、テストスートを走らせるときに起こります。"
 
 #. type: Fenced code block
 #: ../docs/src/rails-preloaders-and-rspec/summary.md:22
@@ -3849,8 +3892,8 @@ msgid ""
 "Within a factory definition, the `add_attribute` method defines a key/value "
 "pair that will be set when the object is built."
 msgstr ""
-"ファクトリの定義の中では、`add_attribute`メソッドでオブジェクトが構築されると"
-"きに設定されるキーバリュー対を定義します。"
+"ファクトリの定義の中では、`add_attribute`メソッドで、オブジェクトが構築される"
+"ときに設定されるキーバリュー対を定義できます。"
 
 #. type: Plain text
 #: ../docs/src/ref/add_attribute.md:9
@@ -3869,7 +3912,7 @@ msgstr ""
 msgid ""
 "Assignment is done by calling the Ruby attribute setter. For example, given"
 msgstr ""
-"代入はRubyの属性セッターを呼んで行われます。\n"
+"代入ではRubyの属性セッターを呼びます。\n"
 "例えば以下があるとします。"
 
 #. type: Fenced code block (ruby)
@@ -3891,7 +3934,7 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/ref/add_attribute.md:21
 msgid "This will use the `#name=` setter:"
-msgstr "これは`#name=`セッターを使います。"
+msgstr "このとき`#name=`セッターが使われます。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/ref/add_attribute.md:22
@@ -3913,7 +3956,7 @@ msgstr ""
 #: ../docs/src/ref/association.md:1
 #, no-wrap
 msgid "association"
-msgstr "association"
+msgstr "関連"
 
 #. type: Plain text
 #: ../docs/src/ref/association.md:6
@@ -3922,9 +3965,9 @@ msgid ""
 "additional object alongside this one. This name best makes sense within the "
 "context of ActiveRecord."
 msgstr ""
-"ファクトリブロック内では、`association`を使うと常にこのオブジェクトに連なる追"
-"加のオブジェクトが作られます。\n"
-"この名前はActiveRecordの文脈で一番意味が通ります。"
+"ファクトリブロック内で`association`を使うと、このオブジェクトに隣合うオブジェ"
+"クトが追加で作られます。\n"
+"この名前は、ActiveRecordの文脈だと一番わかりやすいでしょう。"
 
 #. type: Plain text
 #: ../docs/src/ref/association.md:8
@@ -3965,10 +4008,7 @@ msgstr "skip_createとto_create、そしてinitialize_with"
 msgid ""
 "The `skip_create`, `to_create`, and `initialize_with` methods control how "
 "factory\\_bot interacts with the [build strategies](build-strategies.html)."
-msgstr ""
-"`skip_create`メソッドと`to_create`メソッドと`initialize_with`メソッドは"
-"factory\\_botが[構築戦略](build-strategies.html)とのやり取りの仕方を制御しま"
-"す。"
+msgstr "`skip_create`メソッドと`to_create`メソッドと`initialize_with`メソッドは、factory\\_botによる[構築戦略](build-strategies.html)とのやり取りの仕方を制御します。"
 
 #. type: Plain text
 #: ../docs/src/ref/build-and-create.md:9
@@ -4053,287 +4093,6 @@ msgstr ""
 "これにより`create`戦略を`build`の同意語として使えます。\n"
 "ただし`create`フックは追加で掛かっています。"
 
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:5
-msgid ""
-"Once a factory\\_bot factory is defined, it can be constructed using any of "
-"the built-in build strategies, or a custom build strategy."
-msgstr ""
-"factory\\_botのファクトリが定義されると、組み込みのどの構築戦略や独自の構築戦"
-"略を使って構築できます。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:9
-msgid ""
-"All of these strategies notify on the `factory_bot.run_factory` "
-"instrumentation using [ActiveSupport::Notifications], passing a payload with "
-"`:name`, `:strategy`, `:traits`, `:overrides`, and `:factory` keys."
-msgstr ""
-"こうした全ての戦略は[ActiveSupport::Notifications]を使って`factory_bot."
-"run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、`:overrides`、"
-"`:factory`を持つペイロードを渡します。"
-
-#. type: Link reference
-#: ../docs/src/ref/build-strategies.md:10
-#, no-wrap
-msgid "[ActiveSupport::Notifications]: https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html"
-msgstr "[ActiveSupport::Notifications]: https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:17
-msgid ""
-"The non-list (`.build`, `.build_pair`, `.create`, etc.) methods take one "
-"mandatory argument: the name of the factory. They can then optionally take "
-"names of traits, and then a hash of attributes to override. Finally, they "
-"can take a block. This block takes the produced object as an argument, and "
-"returns an updated object."
-msgstr ""
-"リストではないメソッド（`.build`や`.build_pair`や`.create`など）は必須の実引"
-"数であるファクトリの名前を取ります。\n"
-"また省略できるトレイトの名前や上塗りする属性のハッシュもあります。\n"
-"最後にブロックを取れます。\n"
-"このブロックは生成されたオブジェクトを実引数として更新されたオブジェクトを返"
-"します。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:23
-msgid ""
-"The list methods (`.build_list`, `.create_list`, etc.) have two required "
-"arguments: the name of the factory, and the number of instances to build. "
-"They then can optionally take traits and overrides. Finally, they can take a "
-"block.  This block takes the produced object and the zero-based index as "
-"arguments, and returns an updated object."
-msgstr ""
-"リストのメソッド（`.build_list`や`.create_list`など）には2つの必須の実引数を"
-"持ちます。\n"
-"ファクトリの名前と構築するインスタンスの数です。\n"
-"また省略可能なトレイトと上塗りするものを取れます。\n"
-"最後にブロックを取れます。\n"
-"このブロックは生成されたオブジェクトとゼロ始まりの添字を実引数として取り、更"
-"新されたオブジェクトを返します。"
-
-#. type: Title ##
-#: ../docs/src/ref/build-strategies.md:24
-#, no-wrap
-msgid "`build`"
-msgstr "`build`"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:30
-msgid ""
-"The `FactoryBot.build` method constructs an instance of the class according "
-"to `initialize_with`, which defaults to calling the `.new` class method.  `."
-"build_list` constructs multiple instances, and `.build_pair` is a shorthand "
-"to construct two instances."
-msgstr ""
-"`FactoryBot.build`メソッドは`initialize_with`にしたがってクラスのインスタンス"
-"を構築します。\n"
-"既定では`.new`クラスメソッドを呼びます。\n"
-"`.build_list`は複数のインスタンスを構築し、`.build_pair`は2つのインスタンスを"
-"構築する早道です。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:32
-msgid "After it calls `initialize_with`, it invokes the `after_build` hook."
-msgstr "`initialize_with`を呼んだ後、`after_build`フックを呼びます。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:34
-msgid "Associations are constructed using the `build` build strategy."
-msgstr "関連は`build`構築戦略を使って構築されます。"
-
-#. type: Title ##
-#: ../docs/src/ref/build-strategies.md:35
-#, no-wrap
-msgid "`create`"
-msgstr "`create`"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:41
-msgid ""
-"The `FactoryBot.create` method constructs an instance of the class according "
-"to `initialize_with`, and then persists it using `to_create`. The `."
-"create_list` class method constructs multiple instances, and `.create_pair` "
-"is a shorthand to construct two instances."
-msgstr ""
-"`FactoryBot.create`メソッドは`initialize_with`にしたがってクラスのインスタン"
-"スを構築し、`to_create`を使って永続化します。\n"
-"`.create_list`クラスメソッドは複数のインスタンスを構築します。\n"
-"また`.create_pair`は2つのインスタンスを構築する早道です。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:43
-msgid ""
-"After it calls `initialize_with`, it invokes the following hooks in order:"
-msgstr "`initialize_with`を呼んだ後、以下のフックを順番に呼びます。"
-
-#. type: Bullet: '1. '
-#: ../docs/src/ref/build-strategies.md:48
-msgid "`after_build`"
-msgstr "`after_build`"
-
-#. type: Bullet: '1. '
-#: ../docs/src/ref/build-strategies.md:48
-msgid "`before_create`"
-msgstr "`before_create`"
-
-#. type: Bullet: '1. '
-#: ../docs/src/ref/build-strategies.md:48
-msgid "non-hook: `to_create`"
-msgstr "フックではない`to_create`"
-
-#. type: Bullet: '1. '
-#: ../docs/src/ref/build-strategies.md:48
-msgid "`after_create`"
-msgstr "`after_create`"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:50
-msgid "Associations are constructed using the `create` build strategy."
-msgstr "関連は`create`構築戦略を使って構築されます。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:54
-msgid ""
-"The `to_create` hook controls how objects are persisted. It takes a block "
-"with the object and the factory\\_bot context, and runs it for its side "
-"effect. By default, it calls `#save!`."
-msgstr ""
-"`to_create`フックはオブジェクトの永続化方法を制御します。\n"
-"オブジェクトとfactory\\_botの文脈を持つブロックを取り、副作用を見越して走りま"
-"す。\n"
-"既定では`#save!`を呼びます。"
-
-#. type: Title ##
-#: ../docs/src/ref/build-strategies.md:55
-#, no-wrap
-msgid "`attributes_for`"
-msgstr "`attributes_for`"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:60
-msgid ""
-"The `FactoryBot.attributes_for` method constructs a Hash with the attributes "
-"and their values, using `initialize_with`. The `attributes_for_pair` and "
-"`attributes_for_list` methods work similarly as `build_pair` and "
-"`build_list`."
-msgstr ""
-"`FactoryBot.attributes_for`メソッドは属性とその値を持つHashを、"
-"`initialize_with`を使って構築します。\n"
-"`attributes_for_pair`メソッドと`attributes_for_list`メソッドは`build_pair`と"
-"`build_list`と似たように動作します。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:62
-msgid ""
-"Associations are constructed using the `null` build strategy (they are not "
-"built)."
-msgstr "関連は`null`構築戦略（構築されません）を使って構築されます。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:64
-msgid "No hooks are called."
-msgstr "フックは呼ばれません。"
-
-#. type: Title ##
-#: ../docs/src/ref/build-strategies.md:65
-#, no-wrap
-msgid "`build_stubbed`"
-msgstr "`build_stubbed`"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:70
-msgid ""
-"The `FactoryBot.build_stubbed` method returns a fake ActiveRecord object. "
-"The `.build_stubbed_pair` and `.build_stubbed_list` methods are defined "
-"similarly to `.build_pair` and `.build_list`."
-msgstr ""
-"`FactoryBot.build_stubbed`メソッドは偽のActiveRecordオブジェクトを返しま"
-"す。\n"
-"`.build_stubbed_pair`メソッドと`.build_stubbed_list`メソッドは`.build_pair`と"
-"`.build_list`と似たように定義されます。"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:73
-msgid ""
-"It uses `initialize_with` to construct the object, but then stubs methods "
-"and data as appropriate:"
-msgstr ""
-"`initialize_with`を使ってオブジェクトを構築しますが、そうしておいてからメソッ"
-"ドとデータを適切なものとしてスタブします。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid "`id` is set sequentially (unless overridden by attributes)"
-msgstr "`id`は（属性で上塗りされない限り）連続して設定されます。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid ""
-"`created_at` and `updated_at` are set to the current time (unless overridden "
-"by attributes)"
-msgstr ""
-"`created_at`と`updated_at`は（属性で上塗りされない限り）現在時刻に設定されま"
-"す。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid "all [ActiveModel::Dirty] change tracking is cleared"
-msgstr "全ての[ActiveModel::Dirty]の変更の記録が消去されます。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid "`persisted?` is true"
-msgstr "`persisted?`は真です。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid "`new_record?` is false"
-msgstr "`new_record?`は偽です。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid "`destroyed?` is false"
-msgstr "`destroyed?`は偽です。"
-
-#. type: Bullet: '- '
-#: ../docs/src/ref/build-strategies.md:81
-msgid ""
-"persistence methods raise a `RuntimeError` (`#connection`, `#delete`, "
-"`#save`, `#update`, etc.)"
-msgstr ""
-"永続化メソッド（`#connection`や`#delete`や`#save`や`#update`など）は"
-"`RuntimeError`を投げます。"
-
-#. type: Link reference
-#: ../docs/src/ref/build-strategies.md:82
-#, no-wrap
-msgid "[ActiveModel::Dirty]: https://api.rubyonrails.org/classes/ActiveModel/Dirty.html"
-msgstr "[ActiveModel::Dirty]: https://api.rubyonrails.org/classes/ActiveModel/Dirty.html"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:85
-msgid "After it sets up the object it invokes the `after_stub` hook."
-msgstr "オブジェクトを設定した後`after_stub`フックを呼びます。"
-
-#. type: Title ##
-#: ../docs/src/ref/build-strategies.md:86
-#, no-wrap
-msgid "`null`"
-msgstr "`null`"
-
-#. type: Plain text
-#: ../docs/src/ref/build-strategies.md:90
-msgid ""
-"The `FactoryBot.null` method returns `nil`. The `.null_pair` method gives "
-"you a pair of nils, and `.null_list` gives as many nils as you desire. This "
-"is used internally."
-msgstr ""
-"`FactoryBot.null`メソッドは`nil`を返します。\n"
-"`.null_pair`メソッドはnilの対を与えます。\n"
-"`.null_list`は欲しい数だけnilを与えます。\n"
-"内部的に使われています。"
-
 #. type: Title #
 #: ../docs/src/ref/define.md:1
 #, no-wrap
@@ -4351,13 +4110,13 @@ msgstr ""
 "factory\\_botで読み込まれる各ファイルはブロック付きの`FactoryBot.define`で呼"
 "ばれることになります。\n"
 "ブロックは`FactoryBot::Syntax::Default::DSL`のインスタンス内で評価され、"
-"`factory`や`sequence`や`trait`など他のメソッドを利用できます。"
+"`factory`や`sequence`や`trait`などのメソッドを利用できます。"
 
 #. type: Title #
 #: ../docs/src/ref/factory.md:1
 #, no-wrap
 msgid "factory"
-msgstr "factory"
+msgstr "ファクトリ"
 
 #. type: Plain text
 #: ../docs/src/ref/factory.md:5
@@ -4377,12 +4136,12 @@ msgid ""
 "hash of options, and an optional block."
 msgstr ""
 "`factory`メソッドは3つの実引数を取ります。\n"
-"必須である名前、省略できるオプションのハッシュと省略できるブロックです。"
+"必須の名前、省略できるオプションのハッシュ、そして省略できるブロックです。"
 
 #. type: Plain text
 #: ../docs/src/ref/factory.md:10
 msgid "The name is expected to be a Symbol."
-msgstr "名前はSymbolであることが期待されます。"
+msgstr "名前はSymbolにすることになっています。"
 
 #. type: Title ##
 #: ../docs/src/ref/factory.md:11
@@ -4397,7 +4156,7 @@ msgid ""
 "or Symbol (anything that responds to `#to_s`). By default it is either the "
 "parent's class name or the factory's name."
 msgstr ""
-"`:class`はクラスが構築するものです。\n"
+"`:class`は、構築するクラスです。\n"
 "クラスないしStringやSymbol（`#to_s`に応答する任意のもの）にできます。\n"
 "既定では親クラス名かファクトリ名の何れかです。"
 
@@ -4416,9 +4175,9 @@ msgid ""
 "`:aliases` - alternative names for this factory. Any of these names can be "
 "used with a build strategy. Defaults to the empty list."
 msgstr ""
-"`:aliases`はこのファクトリの代わりの名前です。\n"
-"これらの名前は構築戦略で使えます。\n"
-"既定では空のリストです。"
+"`:aliases`はこのファクトリの別名です。\n"
+"構築戦略で使えます。\n"
+"既定では空リストです。"
 
 #. type: Bullet: '- '
 #: ../docs/src/ref/factory.md:22
@@ -4426,8 +4185,8 @@ msgid ""
 "`:traits` - base traits that are used by default when building this "
 "factory.  Defaults to the empty list."
 msgstr ""
-"`:traits`はこのファクトリを構築するときに既定で使われる基底のトレイトです。\n"
-"基底で空のリストです。"
+"`:traits`はこのファクトリを構築するときに既定で使われる既定のトレイトです。\n"
+"既定で空リストです。"
 
 #. type: Title ##
 #: ../docs/src/ref/factory.md:23
@@ -4674,9 +4433,9 @@ msgid ""
 "parents; the parents' callbacks are run first."
 msgstr ""
 "同じコールバック名を複数回フックに掛けられます。\n"
-"全てのブロックが定義された順に走ります。\n"
+"ブロックは全て、定義された順に実行されます。\n"
 "コールバックは親から継承します。\n"
-"親のコールバックが最初に走ります。"
+"親のコールバックがまず実行されます。"
 
 #. type: Title ##
 #: ../docs/src/ref/hooks.md:30
@@ -4791,9 +4550,8 @@ msgid ""
 "`association`, `sequence`, and `trait` to define a factory. You can also "
 "level a default `method_missing` definition for potential shortcuts."
 msgstr ""
-"`factory`定義ブロックでは`add_attribute`や`association`や`sequence`や`trait`"
-"を使ってファクトリを定義できます。\n"
-"また既定の`method_missing`定義を活用して隠れた早道を定義できます。"
+"`factory`定義ブロックでは、`add_attribute`や`association`や`sequence`や`trait`を使ってファクトリを定義できます。\n"
+"また、既定の`method_missing`定義を活かした早道も使えます。"
 
 #. type: Plain text
 #: ../docs/src/ref/method_missing.md:9
@@ -4835,7 +4593,9 @@ msgstr "同名の別のファクトリがあるとき、関連を定義します
 msgid ""
 "If there is a global sequence of the same name, then it defines an attribute "
 "with a value that pulls from the sequence."
-msgstr "同名の大域系列があると、その系列から値を引いてくる属性を定義します。"
+msgstr ""
+"同名の大域系列があると、属性が定義されます。\n"
+"系列から値が取り出されます。"
 
 #. type: Bullet: '1. '
 #: ../docs/src/ref/method_missing.md:25
@@ -4849,7 +4609,9 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/ref/method_missing.md:27
 msgid "Using `method_missing` can turn an explicit definition:"
-msgstr "`method_missing`を使うと明示的な属性に変えられます。"
+msgstr ""
+"`method_missing`を使ってみましょう。\n"
+"以下の明示的な定義があるとします。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/ref/method_missing.md:28
@@ -4892,7 +4654,7 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/ref/method_missing.md:48
 msgid "... into a more implicit definition:"
-msgstr "上記はより暗黙の定義にできます。"
+msgstr "上記はもっと暗黙な定義にできます。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/ref/method_missing.md:49
@@ -5031,7 +4793,7 @@ msgstr ""
 #: ../docs/src/ref/sequence.md:1
 #, no-wrap
 msgid "sequence"
-msgstr "sequence"
+msgstr "系列"
 
 #. type: Plain text
 #: ../docs/src/ref/sequence.md:4
@@ -5053,9 +4815,7 @@ msgstr "大域系列"
 msgid ""
 "With a [`Factory.define`] block, use the `sequence` method to define global "
 "sequences that can be shared with other factories."
-msgstr ""
-"[`Factory.define`]ブロックでは、`sequence`メソッドを使って他のファクトリで共"
-"有できる大域系列が定義されます。"
+msgstr "[`Factory.define`]ブロックでは、`sequence`メソッドを使うと、他のファクトリで共有できる大域系列が定義されます。"
 
 #. type: Link reference
 #: ../docs/src/ref/sequence.md:10
@@ -5070,7 +4830,7 @@ msgid ""
 "name is expected to be a Symbol."
 msgstr ""
 "`sequence`メソッドは、名前、省略できる実引数、ブロックを取ります。\n"
-"名前はSymbolが期待されます。"
+"名前はSymbolにすることになっています。"
 
 #. type: Plain text
 #: ../docs/src/ref/sequence.md:17
@@ -5094,8 +4854,8 @@ msgid ""
 "The sequence value is incremented globally. Using an `:email_address` "
 "sequence from multiple places increments the value each time."
 msgstr ""
-"系列の値は大域的に漸増します。\n"
-"複数の場所で`:email_address`系列を使うと毎回値が漸増します。"
+"系列の値は大域的に増加します。\n"
+"複数の場所で`:email_address`系列を使うと、都度値が漸増します。"
 
 #. type: Plain text
 #: ../docs/src/ref/sequence.md:24 ../docs/src/ref/trait.md:10
@@ -5174,16 +4934,14 @@ msgstr ""
 #: ../docs/src/ref/trait.md:1
 #, no-wrap
 msgid "trait"
-msgstr "trait"
+msgstr "トレイト"
 
 #. type: Plain text
 #: ../docs/src/ref/trait.md:4
 msgid ""
 "Within a `factory` definition block, use the `trait` method to define named "
 "permutations of the factory."
-msgstr ""
-"`factory`定義ブロック内で、`trait`メソッドを使うとファクトリの名前付きの変更"
-"内容が定義されます。"
+msgstr "`factory`定義ブロック内で`trait`メソッドを使うと、ファクトリの変更内容が名前付きで定義されます。"
 
 #. type: Plain text
 #: ../docs/src/ref/trait.md:7
@@ -5214,10 +4972,9 @@ msgid ""
 "original inspiration was [`ActiveRecord::Enum`] but it can apply to any "
 "attribute with a restricted set of values."
 msgstr ""
-"`factory`定義ブロックに於いて、`traits_for_enum`メソッドはいくつかの値のうち"
-"どれか1つになる属性の任意のオブジェクト用の補助機能です。\n"
-"元となった着想は[`ActiveRecord::Enum`]ですが、制限された値の集まりのある任意"
-"の属性に適用できます。"
+"`factory`定義ブロックには、`traits_for_enum`メソッドという補助機能があります。\n"
+"任意のオブジェクトに、いくつかの値のうちのどれかになる属性を持たせます。\n"
+"元となった着想は[`ActiveRecord::Enum`]ですが、限られた値の集合がある任意の属性に適用できます。"
 
 #. type: Link reference
 #: ../docs/src/ref/traits_for_enum.md:8
@@ -5228,7 +4985,7 @@ msgstr "[`ActiveRecord::Enum`]: https://api.rubyonrails.org/classes/ActiveRecord
 #. type: Plain text
 #: ../docs/src/ref/traits_for_enum.md:11
 msgid "This method creates a trait for each value."
-msgstr "このメソッドは各値にトレイトを作ります。"
+msgstr "このメソッドにより、それぞれの値にトレイトが作られます。"
 
 #. type: Plain text
 #: ../docs/src/ref/traits_for_enum.md:15
@@ -5237,7 +4994,7 @@ msgid ""
 "set of values. The values can be any Enumerable, such as Array or Hash. By "
 "default, the values are `nil`."
 msgstr ""
-"`traits_for_enum`メソッドは必須の属性名と省略できる値の集合を取ります。\n"
+"`traits_for_enum`メソッドは、必須の属性名と省略できる値の集合を取ります。\n"
 "値は任意のEnumerableにできます。\n"
 "例えばArrayやHashです。\n"
 "既定では値は`nil`です。"
@@ -5270,7 +5027,7 @@ msgid ""
 "based on whether `#each` iterates in pairs like it does for Hashes."
 msgstr ""
 "値が何らかのEnumerableのとき、ArrayまたはHashのように扱います。\n"
-"ここでは`#each`がHashのように対を反復するかどうかに基づきます。"
+"このとき、`#each`がHashのように対で反復するかどうかに基づきます。"
 
 #. type: Plain text
 #: ../docs/src/ref/traits_for_enum.md:29
@@ -5797,8 +5554,8 @@ msgid ""
 "frameworks change."
 msgstr ""
 "インストール手順が私達の手の届かないコードに基づいて様々であるため、そうした"
-"ドキュメントは[私達のwiki][our wiki]で更新され続けます。\n"
-"フレームワークが変わったときにwikiを編集することをお勧めします。"
+"ドキュメントは[ウィキ][our wiki]で更新され続けます。\n"
+"フレームワークが変わったときにウィキを編集することをお勧めします。"
 
 #. type: Plain text
 #: ../docs/src/setup/summary.md:12
@@ -5807,7 +5564,7 @@ msgid ""
 "in [our wiki]**."
 msgstr ""
 "以降では最もよくある準備をドキュメントとして書きます。\n"
-"**しかし詳細は[私達のwiki][our wiki]をあたってください。**"
+"**しかし詳細は[ウィキ][our wiki]をあたってください。**"
 
 #. type: Link reference
 #: ../docs/src/setup/summary.md:13
@@ -5846,7 +5603,7 @@ msgstr "gem \"factory_bot\"\n"
 #. type: Plain text
 #: ../docs/src/setup/summary.md:30 ../docs/src/setup/summary.md:49
 msgid "For more, see [our wiki]."
-msgstr "詳細については[私達のwiki][our wiki]を参照してください。"
+msgstr "詳細については[私達のウィキ][our wiki]を参照してください。"
 
 #. type: Title ##
 #: ../docs/src/setup/summary.md:31
@@ -5889,70 +5646,6 @@ msgstr ""
 "class Test::Unit::TestCase\n"
 "  include FactoryBot::Syntax::Methods\n"
 "end\n"
-
-#. type: Title #
-#: ../docs/src/intro.md:1
-#, no-wrap
-msgid "Intro"
-msgstr "序"
-
-#. type: Plain text
-#: ../docs/src/intro.md:9
-msgid "Its documentation is split as such:"
-msgstr "ドキュメントは以下に分かれています。"
-
-#. type: Bullet: '- '
-#: ../docs/src/intro.md:14
-msgid ""
-"the [guide](setup/summary.html) is a great place to start for first-time "
-"users."
-msgstr "[手引き](setup/summary.html)は初見の利用者が始めるのに良い場所です。"
-
-#. type: Bullet: '- '
-#: ../docs/src/intro.md:14
-msgid ""
-"the [cookbook](cookbook/has_many-associations.html) is the go-to place for "
-"creative solutions to common situations."
-msgstr ""
-"[料理本](cookbook/has_many-associations.html)はよくある状況に対する創造的な解"
-"決策が見付かる行き先です。"
-
-#. type: Bullet: '- '
-#: ../docs/src/intro.md:14
-msgid ""
-"the [wiki](https://github.com/thoughtbot/factory_bot/wiki) details "
-"considerations for integrating with other software."
-msgstr ""
-"[wiki](https://github.com/thoughtbot/factory_bot/wiki)には他のソフトウェアと"
-"統合するときの検討事項が詳しく書かれています。"
-
-#. type: Bullet: '- '
-#: ../docs/src/intro.md:14
-msgid ""
-"the [reference](ref/build-strategies.html) is terse facts for those who use "
-"this project often."
-msgstr ""
-"[便覧](ref/build-strategies.html)はこのプロジェクトを頻繁に使う人達用の簡潔な"
-"事実です。"
-
-#. type: Plain text
-#: ../docs/src/intro.md:27
-msgid ""
-"factory_bot is maintained and funded by thoughtbot, inc.  The names and "
-"logos for thoughtbot are trademarks of thoughtbot, inc."
-msgstr ""
-"factory_botはthoughtbot, inc.により保守され、資金提供されています。\n"
-"thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
-
-#. type: Plain text
-#: ../docs/src/intro.md:31
-msgid ""
-"We love open source software! See [our other projects][community] or [hire "
-"us][hire] to design, develop, and grow your product."
-msgstr ""
-"私達はオープンソースソフトウェアが大好きです！\n"
-"[私達の他のプロジェクト][community]を参照してください。\n"
-"製品を設計、開発、成長させるための[求人を募集しています][hire]。"
 
 #. type: Plain text
 #: ../docs/src/traits/as-implicit-attributes.md:4
@@ -6824,7 +6517,7 @@ msgid ""
 msgstr ""
 "factory\\_botのコールバックで評価された定義自体を使う必要があるとき、（定義"
 "に）2つ目のブロック引数を宣言してそこから一過的属性を使う必要があります。\n"
-"これは最終的な評価された値を表します。"
+"こうすると、最終的な評価された値が表されます。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/transient-attributes/with-callbacks.md:7
@@ -7346,7 +7039,7 @@ msgstr "テストスートを走らせる"
 #. type: Plain text
 #: ../CONTRIBUTING.md:63
 msgid "The default rake task will run the full test suite and [standard]:"
-msgstr "規定のrakeタスクは完全なテストスートと[standard]を走らせます。"
+msgstr "既定のrakeタスクでは、完全なテストスートと[standard]が実行されます。"
 
 #. type: Fenced code block (sh)
 #: ../CONTRIBUTING.md:64
@@ -7390,7 +7083,7 @@ msgid ""
 "the default rake task against Rails 6, for example:"
 msgstr ""
 "[appraisal]で特定のバージョンのrailsでテストを走らせられます。\n"
-"Rails 6に対して規定のrakeタスクを走らせる例は以下です。"
+"Rails 6に対して、既定のrakeタスクを走らせる例は以下です。"
 
 #. type: Fenced code block (sh)
 #: ../CONTRIBUTING.md:85
@@ -7465,3 +7158,302 @@ msgid ""
 msgstr ""
 "https://github.com/middleman/middleman-heroku/blob/master/CONTRIBUTING.md か"
 "ら着想を得ました。"
+
+#. type: Title #
+#: ../README.md:1
+#, no-wrap
+msgid "factory_bot [![Build Status][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gem Version][version-image]][version]"
+msgstr "factory_bot [![ビルド状態][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gemのバージョン][version-image]][version]"
+
+#. type: Plain text
+#: ../README.md:7
+msgid ""
+"If you want to use factory_bot with Rails, see [factory_bot_rails](https://"
+"github.com/thoughtbot/factory_bot_rails)."
+msgstr ""
+"Railsでfactory_botを使いたいときは[factory_bot_rails](https://github.com/"
+"thoughtbot/factory_bot_rails)を参照してください。"
+
+#. type: Plain text
+#: ../README.md:9
+msgid "_[Interested in the history of the project name?][NAME]_"
+msgstr "_[プロジェクト名の歴史に関心がありますか][NAME]_"
+
+#. type: Title ###
+#: ../README.md:11
+#, no-wrap
+msgid "Transitioning from factory\\_girl?"
+msgstr "factory\\_girlから移行されますか"
+
+#. type: Plain text
+#: ../README.md:14
+msgid ""
+"Check out the [guide](https://github.com/thoughtbot/factory_bot/blob/4-9-0-"
+"stable/UPGRADE_FROM_FACTORY_GIRL.md)."
+msgstr ""
+"[手引き](https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/"
+"UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。"
+
+#. type: Title -
+#: ../README.md:17
+#, no-wrap
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#. type: Plain text
+#: ../README.md:20
+msgid ""
+"See our extensive reference, guides, and cookbook in [the factory_bot book]"
+"[]."
+msgstr ""
+"[factory_botの本][the factory_bot book]で網羅的な参照、手引き、レシピを参照し"
+"てください。"
+
+#. type: Plain text
+#: ../README.md:23
+msgid ""
+"For information on integrations with third party libraries, such as RSpec or "
+"Rails, see [the factory_bot wiki][]."
+msgstr ""
+"RSpecやRailsといったサードパーティライブラリの統合についての情報は"
+"[factory_botのウィキ][the factory_bot wiki]を参照してください。"
+
+#. type: Plain text
+#: ../README.md:25
+#, no-wrap
+msgid " We also have [a detailed introductory video][], available for free on Upcase.\n"
+msgstr ""
+"[詳細な導入のための映像][a detailed introductory video]もあります。\n"
+"Upcaseで無料で見られます。\n"
+
+#. type: Link reference
+#: ../README.md:26
+#, no-wrap
+msgid "[a detailed introductory video]: https://upcase.com/videos/factory-bot?utm_source=github&utm_medium=open-source&utm_campaign=factory-girl"
+msgstr "[a detailed introductory video]: https://upcase.com/videos/factory-bot?utm_source=github&utm_medium=open-source&utm_campaign=factory-girl"
+
+#. type: Link reference
+#: ../README.md:27
+#, no-wrap
+msgid "[the factory_bot book]: https://thoughtbot.github.io/factory_bot"
+msgstr "[the factory_bot book]: https://thoughtbot.github.io/factory_bot"
+
+#. type: Link reference
+#: ../README.md:28
+#, no-wrap
+msgid "[the factory_bot wiki]: https://github.com/thoughtbot/factory_bot/wiki"
+msgstr "[the factory_bot wiki]: https://github.com/thoughtbot/factory_bot/wiki"
+
+#. type: Plain text
+#: ../README.md:31
+msgid "Install"
+msgstr "インストール"
+
+#. type: Plain text
+#: ../README.md:34
+msgid "Run:"
+msgstr "以下を走らせてください。"
+
+#. type: Fenced code block (ruby)
+#: ../README.md:35
+#, no-wrap
+msgid "bundle add factory_bot\n"
+msgstr "bundle add factory_bot\n"
+
+#. type: Plain text
+#: ../README.md:40
+msgid "To install the gem manually from your shell, run:"
+msgstr "シェルで手動でgemをインストールするには、以下を走らせてください。"
+
+#. type: Fenced code block (shell)
+#: ../README.md:41
+#, no-wrap
+msgid "gem install factory_bot\n"
+msgstr "gem install factory_bot\n"
+
+#. type: Title -
+#: ../README.md:46
+#, no-wrap
+msgid "Supported Ruby versions"
+msgstr "対応しているRubyのバージョン"
+
+#. type: Plain text
+#: ../README.md:49
+msgid ""
+"Supported Ruby versions are listed in [`.github/workflows/build.yml`]"
+"(https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build."
+"yml)"
+msgstr ""
+"対応しているRubyのバージョンは[`.github/workflows/build.yml`](https://github."
+"com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml)に一覧になっ"
+"ています。"
+
+#. type: Title -
+#: ../README.md:51
+#, no-wrap
+msgid "More Information"
+msgstr "その他の情報"
+
+#. type: Bullet: '* '
+#: ../README.md:57
+msgid "[Rubygems](https://rubygems.org/gems/factory_bot)"
+msgstr "[Rubygems](https://rubygems.org/gems/factory_bot)"
+
+#. type: Bullet: '* '
+#: ../README.md:57
+msgid ""
+"[Stack Overflow](https://stackoverflow.com/questions/tagged/factory-bot)"
+msgstr ""
+"[Stack Overflow](https://stackoverflow.com/questions/tagged/factory-bot)"
+
+#. type: Bullet: '* '
+#: ../README.md:57
+msgid "[Issues](https://github.com/thoughtbot/factory_bot/issues)"
+msgstr "[イシュー](https://github.com/thoughtbot/factory_bot/issues)"
+
+#. type: Bullet: '* '
+#: ../README.md:57
+msgid ""
+"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
+"com/)"
+msgstr ""
+"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
+"com/)"
+
+#. type: Link reference
+#: ../README.md:58
+#, no-wrap
+msgid "[GETTING_STARTED]: https://github.com/thoughtbot/factory_bot/blob/main/GETTING_STARTED.md"
+msgstr "[GETTING_STARTED]: https://github.com/thoughtbot/factory_bot/blob/main/GETTING_STARTED.md"
+
+#. type: Link reference
+#: ../README.md:59
+#, no-wrap
+msgid "[NAME]: https://github.com/thoughtbot/factory_bot/blob/main/NAME.md"
+msgstr "[NAME]: https://github.com/thoughtbot/factory_bot/blob/main/NAME.md"
+
+#. type: Title -
+#: ../README.md:62
+#, no-wrap
+msgid "Useful Tools"
+msgstr "有用なツール"
+
+#. type: Bullet: '* '
+#: ../README.md:65
+msgid ""
+"[FactoryTrace](https://github.com/djezzzl/factory_trace) - helps to find "
+"unused factories and traits."
+msgstr ""
+"[FactoryTrace](https://github.com/djezzzl/factory_trace)は使われていないファ"
+"クトリやトレイトを見付けるのに役立ちます。"
+
+#. type: Title -
+#: ../README.md:67
+#, no-wrap
+msgid "Contributing"
+msgstr "貢献"
+
+#. type: Plain text
+#: ../README.md:70
+msgid ""
+"Please see [CONTRIBUTING.md](https://github.com/thoughtbot/factory_bot/blob/"
+"main/CONTRIBUTING.md)."
+msgstr ""
+"[CONTRIBUTING.md](https://github.com/thoughtbot/factory_bot/blob/main/"
+"CONTRIBUTING.md)を参照してください。"
+
+#. type: Plain text
+#: ../README.md:74
+msgid ""
+"factory_bot was originally written by Joe Ferris and is maintained by "
+"thoughtbot.  Many improvements and bugfixes were contributed by the [open "
+"source community](https://github.com/thoughtbot/factory_bot/graphs/"
+"contributors)."
+msgstr ""
+"factory_botは元はJoe Ferrisにより書かれ、thoughtbotにより保守されています。\n"
+"多くの向上と不具合の修正が[オープンソースコミュニティ](https://github.com/"
+"thoughtbot/factory_bot/graphs/contributors)により貢献されました。"
+
+#. type: Plain text
+#: ../README.md:85
+#, no-wrap
+msgid "<!-- START /templates/footer.md -->\n"
+msgstr "<!-- START /templates/footer.md -->\n"
+
+#. type: Plain text
+#: ../README.md:88
+msgid "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
+msgstr "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
+
+#. type: Plain text
+#: ../README.md:91
+msgid ""
+"This repo is maintained and funded by thoughtbot, inc.  The names and logos "
+"for thoughtbot are trademarks of thoughtbot, inc."
+msgstr ""
+"このリポジトリはthoughtbot, inc.により保守され、資金提供されています。\n"
+"thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
+
+#. type: Plain text
+#: ../README.md:95
+msgid ""
+"We love open source software! See [our other projects][community].  We are "
+"[available for hire][hire]."
+msgstr ""
+"私達はオープンソースソフトウェアが大好きです！\n"
+"[私達の他のプロジェクト][community]を参照してください。\n"
+"[求人を募集しています][hire]。"
+
+#. type: Plain text
+#: ../README.md:101
+#, no-wrap
+msgid "<!-- END /templates/footer.md -->\n"
+msgstr "<!-- END /templates/footer.md -->\n"
+
+#. type: Link reference
+#: ../README.md:102
+#, no-wrap
+msgid "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
+msgstr "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
+
+#. type: Link reference
+#: ../README.md:103
+#, no-wrap
+msgid "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
+msgstr "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
+
+#. type: Link reference
+#: ../README.md:104
+#, no-wrap
+msgid "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
+msgstr "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
+
+#. type: Link reference
+#: ../README.md:105
+#, no-wrap
+msgid "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
+msgstr "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
+
+#. type: Link reference
+#: ../README.md:106
+#, no-wrap
+msgid "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
+msgstr "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
+
+#. type: Link reference
+#: ../README.md:107
+#, no-wrap
+msgid "[version]: https://badge.fury.io/rb/factory_bot"
+msgstr "[version]: https://badge.fury.io/rb/factory_bot"
+
+#. type: Link reference
+#: ../README.md:108
+#, no-wrap
+msgid "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
+msgstr "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
+
+#. type: Link reference
+#: ../README.md:109
+#, no-wrap
+msgid "[hound]: https://houndci.com"
+msgstr "[hound]: https://houndci.com"

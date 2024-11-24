@@ -59,7 +59,7 @@ bundle install
 
 ## テストスートを走らせる
 
-規定のrakeタスクは完全なテストスートと[standard]を走らせます。
+既定のrakeタスクでは、完全なテストスートと[standard]が実行されます。
 
 ```sh
 bundle exec rake
@@ -80,7 +80,7 @@ bundle exec rspec spec/path/to/spec.rb:123
 ```
 
 [appraisal]で特定のバージョンのrailsでテストを走らせられます。
-Rails 6に対して規定のrakeタスクを走らせる例は以下です。
+Rails 6に対して、既定のrakeタスクを走らせる例は以下です。
 
 ```sh
 bundle exec appraisal 6.0 rake
