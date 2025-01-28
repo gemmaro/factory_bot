@@ -1,6 +1,6 @@
 # skip_createとto_create、そしてinitialize_with
 
-`skip_create`メソッドと`to_create`メソッドと`initialize_with`メソッドはfactory\_botが[構築戦略](build-strategies.html)とのやり取りの仕方を制御します。
+`skip_create`メソッドと`to_create`メソッドと`initialize_with`メソッドは、factory\_botによる[構築戦略](build-strategies.html)とのやり取りの仕方を制御します。
 
 これらのメソッドは`factory`定義ブロック内で呼べます。
 作用はそのファクトリに留まります。

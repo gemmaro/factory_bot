@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2024-11-24 09:56+0900\n"
+"POT-Creation-Date: 2025-01-28 16:26+0900\n"
 "PO-Revision-Date: 2024-11-24 10:48+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
@@ -2994,7 +2994,9 @@ msgstr ""
 msgid ""
 "To understand how factory\\_bot uses strategies internally, it's probably "
 "easiest to view the source for each of the four default strategies."
-msgstr "factory\\_botで、戦略が内部で使われる仕組みを理解するには、4つの既定の戦略それぞれのソースを眺めるのが、恐らく一番簡単です。"
+msgstr ""
+"factory\\_botで、戦略が内部で使われる仕組みを理解するには、4つの既定の戦略そ"
+"れぞれのソースを眺めるのが、恐らく一番簡単です。"
 
 #. type: Plain text
 #: ../docs/src/custom-strategies/summary.md:19
@@ -4008,7 +4010,10 @@ msgstr "skip_createとto_create、そしてinitialize_with"
 msgid ""
 "The `skip_create`, `to_create`, and `initialize_with` methods control how "
 "factory\\_bot interacts with the [build strategies](build-strategies.html)."
-msgstr "`skip_create`メソッドと`to_create`メソッドと`initialize_with`メソッドは、factory\\_botによる[構築戦略](build-strategies.html)とのやり取りの仕方を制御します。"
+msgstr ""
+"`skip_create`メソッドと`to_create`メソッドと`initialize_with`メソッドは、"
+"factory\\_botによる[構築戦略](build-strategies.html)とのやり取りの仕方を制御"
+"します。"
 
 #. type: Plain text
 #: ../docs/src/ref/build-and-create.md:9
@@ -4550,7 +4555,8 @@ msgid ""
 "`association`, `sequence`, and `trait` to define a factory. You can also "
 "level a default `method_missing` definition for potential shortcuts."
 msgstr ""
-"`factory`定義ブロックでは、`add_attribute`や`association`や`sequence`や`trait`を使ってファクトリを定義できます。\n"
+"`factory`定義ブロックでは、`add_attribute`や`association`や`sequence`や"
+"`trait`を使ってファクトリを定義できます。\n"
 "また、既定の`method_missing`定義を活かした早道も使えます。"
 
 #. type: Plain text
@@ -4815,7 +4821,9 @@ msgstr "大域系列"
 msgid ""
 "With a [`Factory.define`] block, use the `sequence` method to define global "
 "sequences that can be shared with other factories."
-msgstr "[`Factory.define`]ブロックでは、`sequence`メソッドを使うと、他のファクトリで共有できる大域系列が定義されます。"
+msgstr ""
+"[`Factory.define`]ブロックでは、`sequence`メソッドを使うと、他のファクトリで"
+"共有できる大域系列が定義されます。"
 
 #. type: Link reference
 #: ../docs/src/ref/sequence.md:10
@@ -4941,7 +4949,9 @@ msgstr "トレイト"
 msgid ""
 "Within a `factory` definition block, use the `trait` method to define named "
 "permutations of the factory."
-msgstr "`factory`定義ブロック内で`trait`メソッドを使うと、ファクトリの変更内容が名前付きで定義されます。"
+msgstr ""
+"`factory`定義ブロック内で`trait`メソッドを使うと、ファクトリの変更内容が名前"
+"付きで定義されます。"
 
 #. type: Plain text
 #: ../docs/src/ref/trait.md:7
@@ -4972,9 +4982,11 @@ msgid ""
 "original inspiration was [`ActiveRecord::Enum`] but it can apply to any "
 "attribute with a restricted set of values."
 msgstr ""
-"`factory`定義ブロックには、`traits_for_enum`メソッドという補助機能があります。\n"
+"`factory`定義ブロックには、`traits_for_enum`メソッドという補助機能がありま"
+"す。\n"
 "任意のオブジェクトに、いくつかの値のうちのどれかになる属性を持たせます。\n"
-"元となった着想は[`ActiveRecord::Enum`]ですが、限られた値の集合がある任意の属性に適用できます。"
+"元となった着想は[`ActiveRecord::Enum`]ですが、限られた値の集合がある任意の属"
+"性に適用できます。"
 
 #. type: Link reference
 #: ../docs/src/ref/traits_for_enum.md:8

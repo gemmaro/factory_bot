@@ -1,7 +1,7 @@
 # method_missing
 
-`factory`定義ブロックでは`add_attribute`や`association`や`sequence`や`trait`を使ってファクトリを定義できます。
-また既定の`method_missing`定義を活用して隠れた早道を定義できます。
+`factory`定義ブロックでは、`add_attribute`や`association`や`sequence`や`trait`を使ってファクトリを定義できます。
+また、既定の`method_missing`定義を活かした早道も使えます。
 
 未知のメソッド（例えば`name`や`admin`や`email`や`account`）を呼ぶと、関連や系列やトレイトやファクトリの属性に繋がります。
 
@@ -13,11 +13,13 @@
 
 1. 同名の別のファクトリがあるとき、関連を定義します。
 
-1. 同名の大域系列があると、その系列から値を引いてくる属性を定義します。
+1. 同名の大域系列があると、属性が定義されます。
+   系列から値が取り出されます。
 
 1. ファクトリに同名のトレイトがあるとき、このファクトリの全ての構築に対してトレイトを変えます。
 
-`method_missing`を使うと明示的な属性に変えられます。
+`method_missing`を使ってみましょう。
+以下の明示的な定義があるとします。
 
 ```ruby
 FactoryBot.define do
@@ -38,7 +40,7 @@ FactoryBot.define do
 end
 ```
 
-上記はより暗黙の定義にできます。
+上記はもっと暗黙な定義にできます。
 
 ```ruby
 FactoryBot.define do
