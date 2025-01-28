@@ -1,13 +1,14 @@
 # traits_for_enum
 
-`factory`定義ブロックに於いて、`traits_for_enum`メソッドはいくつかの値のうちどれか1つになる属性の任意のオブジェクト用の補助機能です。
-元となった着想は[`ActiveRecord::Enum`]ですが、制限された値の集まりのある任意の属性に適用できます。
+`factory`定義ブロックには、`traits_for_enum`メソッドという補助機能があります。
+任意のオブジェクトに、いくつかの値のうちのどれかになる属性を持たせます。
+元となった着想は[`ActiveRecord::Enum`]ですが、限られた値の集合がある任意の属性に適用できます。
 
 [`ActiveRecord::Enum`]: https://api.rubyonrails.org/classes/ActiveRecord/Enum.html
 
-このメソッドは各値にトレイトを作ります。
+このメソッドにより、それぞれの値にトレイトが作られます。
 
-`traits_for_enum`メソッドは必須の属性名と省略できる値の集合を取ります。
+`traits_for_enum`メソッドは、必須の属性名と省略できる値の集合を取ります。
 値は任意のEnumerableにできます。
 例えばArrayやHashです。
 既定では値は`nil`です。
@@ -19,7 +20,7 @@
 トレイト名はキーであり、属性を値に設定します。
 
 値が何らかのEnumerableのとき、ArrayまたはHashのように扱います。
-ここでは`#each`がHashのように対を反復するかどうかに基づきます。
+このとき、`#each`がHashのように対で反復するかどうかに基づきます。
 
 値がnilのとき、複数形になった属性名に因むクラスメソッドを使います。
 
