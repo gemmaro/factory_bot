@@ -1,5 +1,13 @@
 # お知らせ
 
+## 6.5.1 (January 31, 2025)
+
+  * Changed: execute linting tests within ActiveRecord transactions when
+    available (Sean Doyle)
+  * Fix: Random test failure when tracking compilation time (CodeMeinster)
+  * Fix: Bump the minimum required activesupport version to 6.1 (Earlopain)
+  * Internal: Update development dependencies (Neil Carvalho)
+
 ## 6.5.0（2024年9月6日）
 
   * @elasticspoonにより、 https://github.com/thoughtbot/factory_bot/pull/1623

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FactoryBot\n"
-"POT-Creation-Date: 2024-09-07 06:43+0900\n"
+"POT-Creation-Date: 2025-02-03 11:40+0900\n"
 "PO-Revision-Date: 2024-09-07 06:55+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
@@ -25,12 +25,45 @@ msgstr "お知らせ"
 
 #. type: Title ##
 #: ../NEWS.md:3
+#, fuzzy, no-wrap
+#| msgid "6.4.6 (January 30, 2023)"
+msgid "6.5.1 (January 31, 2025)"
+msgstr "6.4.6（2023年1月30日）"
+
+#. type: Bullet: '  * '
+#: ../NEWS.md:9
+msgid ""
+"Changed: execute linting tests within ActiveRecord transactions when "
+"available (Sean Doyle)"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ../NEWS.md:9
+msgid "Fix: Random test failure when tracking compilation time (CodeMeinster)"
+msgstr ""
+
+#. type: Bullet: '  * '
+#: ../NEWS.md:9
+#, fuzzy
+#| msgid "Fix: Bump minimum required Ruby in gemspec (Earlopain)."
+msgid "Fix: Bump the minimum required activesupport version to 6.1 (Earlopain)"
+msgstr "修正：gemspecのRubyの最小バージョンの要件を上げました (Earlopain)。"
+
+#. type: Bullet: '  * '
+#: ../NEWS.md:9
+#, fuzzy
+#| msgid "Internal: Remove observer dependency (Earlopain)."
+msgid "Internal: Update development dependencies (Neil Carvalho)"
+msgstr "内部的：observerの依存関係を除きました (Earlopain)。"
+
+#. type: Title ##
+#: ../NEWS.md:10
 #, no-wrap
 msgid "6.5.0 (September 6, 2024)"
 msgstr "6.5.0（2024年9月6日）"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "fix: issue 1621 broken links in ref/factory.md by @elasticspoon in https://"
 "github.com/thoughtbot/factory_bot/pull/1623"
@@ -40,7 +73,7 @@ msgstr ""
 "関連するイシューは1621です"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Add standard settings by @ydah in https://github.com/thoughtbot/factory_bot/"
 "pull/1625"
@@ -49,7 +82,7 @@ msgstr ""
 "が追加されました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Call dynamic-readme reusable workflow by @stefannibrasil in https://github."
 "com/thoughtbot/factory_bot/pull/1628"
@@ -58,7 +91,7 @@ msgstr ""
 "でdynamic-readmeという、再利用のためのワークフローを呼ぶようにしました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Update README again by @stefannibrasil in https://github.com/thoughtbot/"
 "factory_bot/pull/1630"
@@ -67,7 +100,7 @@ msgstr ""
 "で再びreadmeが更新されました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Only run this workflow if the README has been updated by @stefannibrasil in "
 "https://github.com/thoughtbot/factory_bot/pull/1635"
@@ -76,7 +109,7 @@ msgstr ""
 "で、READMEが更新されたときにのみ、ワークフローを走らせるようにしました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Automatically Generated: Update Dynamic Section in README by @github-actions "
 "in https://github.com/thoughtbot/factory_bot/pull/1637"
@@ -85,7 +118,7 @@ msgstr ""
 "pull/1637 で、READMEのDynamic Sectionを更新しました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Added a case for build_class to handle class names with underscores passed "
 "as a string by @m-gizzi in https://github.com/thoughtbot/factory_bot/"
@@ -95,7 +128,7 @@ msgstr ""
 "として渡された、下線文字のあるクラス名を扱う場合を、build_classに追加しました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Add Ruby 3.3 to CI by @berkos in https://github.com/thoughtbot/factory_bot/"
 "pull/1615"
@@ -104,7 +137,7 @@ msgstr ""
 "3.3がCIに追加されました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Update Dependabot configuration by @smaboshe in https://github.com/"
 "thoughtbot/factory_bot/pull/1655"
@@ -113,7 +146,7 @@ msgstr ""
 "Dependabotの構成が更新されました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Add new maintainers to CODEOWNERS by @sarahraqueld in https://github.com/"
 "thoughtbot/factory_bot/pull/1651"
@@ -122,7 +155,7 @@ msgstr ""
 "新しいメンテナがCODEOWNERSに追加されました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Improve docs formatting and fix filename conflicts by @sarahraqueld in "
 "https://github.com/thoughtbot/factory_bot/pull/1666"
@@ -131,7 +164,7 @@ msgstr ""
 "文書の書式とファイル名の競合を改善しました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Add a dynamic security workflow and a SECURITY.md file by @sarahraqueld in "
 "https://github.com/thoughtbot/factory_bot/pull/1677"
@@ -140,7 +173,7 @@ msgstr ""
 "動的なセキュリティワークフローと SECURITY.md ファイルを追加しました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Automatically Generated: Update Dynamic Section in SECURITY by @github-"
 "actions in https://github.com/thoughtbot/factory_bot/pull/1678"
@@ -149,7 +182,7 @@ msgstr ""
 "pull/1678 で、SECURITY中の動的な節を更新しました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Ensure rails 7.2 compatibility by @Earlopain in https://github.com/"
 "thoughtbot/factory_bot/pull/1686"
@@ -158,7 +191,7 @@ msgstr ""
 "rails 7.2の互換性が確保されました"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:20
+#: ../NEWS.md:27
 msgid ""
 "Fix the factory definition in traits documentation by @ddieulivol in https://"
 "github.com/thoughtbot/factory_bot/pull/1688"
@@ -167,94 +200,94 @@ msgstr ""
 "レイトの文書にあるファクトリ定義が修正されました"
 
 #. type: Title ##
-#: ../NEWS.md:21
+#: ../NEWS.md:28
 #, no-wrap
 msgid "6.4.6 (January 30, 2023)"
 msgstr "6.4.6（2023年1月30日）"
 
 #. type: Bullet: ' * '
-#: ../NEWS.md:26
+#: ../NEWS.md:33
 msgid "Fix: Bump minimum required Ruby in gemspec (Earlopain)."
 msgstr "修正：gemspecのRubyの最小バージョンの要件を上げました (Earlopain)。"
 
 #. type: Bullet: ' * '
-#: ../NEWS.md:26
+#: ../NEWS.md:33
 msgid "Fix: Broken link in `FactoryBot.modify` docs (Matt Brictson)."
 msgstr "修正：`FactoryBot.modify`のリンク切れを直しました (Matt Brictson)。"
 
 #. type: Bullet: ' * '
-#: ../NEWS.md:26
+#: ../NEWS.md:33
 msgid "Fix: Broken link in `FactoryBot.lint` docs (Anton Dieterle)."
 msgstr "修正：`FactoryBot.lint`のリンク切れを直しました (Anton Dieterle)。"
 
 #. type: Title ##
-#: ../NEWS.md:27
+#: ../NEWS.md:34
 #, no-wrap
 msgid "6.4.5 (December 29, 2023)"
 msgstr "6.4.5（2023年12月29日）"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:30
+#: ../NEWS.md:37
 msgid "Changed: Support Ruby 3.0+, Rails 6.1+ (Mike Burns)."
 msgstr "変更：Ruby 3.0以降、Rails6.1以降に対応しました (Mike Burns)。"
 
 #. type: Title ##
-#: ../NEWS.md:31
+#: ../NEWS.md:38
 #, no-wrap
 msgid "6.4.4 (December 27, 2023)"
 msgstr "6.4.4（2023年12月27日）"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:34
+#: ../NEWS.md:41
 msgid "Internal: Remove observer dependency (Earlopain)."
 msgstr "内部的：observerの依存関係を除きました (Earlopain)。"
 
 #. type: Title ##
-#: ../NEWS.md:35
+#: ../NEWS.md:42
 #, no-wrap
 msgid "6.4.3 (December 26, 2023)"
 msgstr "6.4.3（2023年12月26日）"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:43
+#: ../NEWS.md:50
 msgid ""
 "Fix: Support models without ID setters in build_stubbed (Olivier Bellone)."
 msgstr ""
 "修正：build_stubbedでIDセッターのないモデルに対応しました (Olivier Bellone)。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:43
+#: ../NEWS.md:50
 msgid "Fix: Explicit observer dependency (Oleg Antonyan)."
 msgstr "修正：明示的な観察器の依存 (Oleg Antonyan)。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:43
+#: ../NEWS.md:50
 msgid "Internal: Add Rails 7.1 to CI (Olivier Bellone)."
 msgstr "内部：Rails 7.1をCIに追加 (Olivier Bellone)。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:43
+#: ../NEWS.md:50
 msgid "Internal: Bump github actions/checkout to v4 (Lorenzo Zabot)"
 msgstr "内部：githubのactions/checkoutをv4に更新 (Lorenzo Zabot)。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:43
+#: ../NEWS.md:50
 msgid "Internal: Stop passing disable-error_highlight in CI (Mike Burns)."
 msgstr "内部：CIでdisable-error_highlightを渡すのを中止 (Mike Burns)。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:43
+#: ../NEWS.md:50
 msgid "Internal: Relax the exception message check (Mike Burns)."
 msgstr "内部：例外伝文検査を緩和 (Mike Burns)。"
 
 #. type: Title ##
-#: ../NEWS.md:44
+#: ../NEWS.md:51
 #, no-wrap
 msgid "6.4.2 (November 22, 2023)"
 msgstr "6.4.2（2023年11月22日）"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:48
+#: ../NEWS.md:55
 msgid ""
 "Fix: top-level traits pass their class to ActiveSupport::Notifications "
 "(makicamel)."
@@ -263,270 +296,270 @@ msgstr ""
 "うにしました (makicamel)。"
 
 #. type: Title ##
-#: ../NEWS.md:49
+#: ../NEWS.md:56
 #, no-wrap
 msgid "6.4.1 (November 20, 2023)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:53
+#: ../NEWS.md:60
 msgid ""
 "Fix: factories with traits pass their class to ActiveSupport::Notifications "
 "(makicamel)."
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:54
+#: ../NEWS.md:61
 #, no-wrap
 msgid "6.4.0 (November 17, 2023)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:60
+#: ../NEWS.md:67
 msgid ""
 "Added: if `build_stubbed` detects a UUID primary key, generate the correct "
 "type (Peter Boling, Alexandre Ruban)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:60
+#: ../NEWS.md:67
 msgid "Docs: show examples of Ruby 3 syntactic sugars (Sean Doyle)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:60
+#: ../NEWS.md:67
 msgid "Internal: resolve test warning messages (Mike Burns)."
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:62
+#: ../NEWS.md:69
 #, no-wrap
 msgid "6.3.0 (September 1, 2023)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Fix: link to changelog for RubyGems (Berkan Ünal)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Fix: integrate with Ruby 3.2's `did_you_mean` library (Daniel Colson)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid ""
 "Changed: explicitly define `#destroyed?` within the `Stub` strategy to "
 "return `false` to be consistent with ActiveRecord (Benjamin Fleischer)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid ""
 "Added: announce `factory_bot.compile_factory` notification (Sean Doyle)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid ""
 "Docs: clarify that custom strategies need to define `#to_sym` (Edmund "
 "Korley, Jonas S)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Docs: fix CI link in README (Mark Huk)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Docs: fix GitHub links (Robert Fletcher)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Docs: install this library with `bundle add` (Glauco Custódio)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Docs: re-write into mdBook (Mike Burns, Sara Jackson, Stefanni Brasil)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid ""
 "Docs: clarify that automatic trait definitions could introduce new linting "
 "errors (Lawrence Chou)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: skip TruffleRuby on Rails 5.0, 5.1, 5.2 (Andrii Konchyn)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: fix typoes throughout codebase (Yudai Takada)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: run CI on `actions/checkout` v3 (Yudai Takada)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: follow standardrb code style (Yudai Takada)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: stop using Hound (Daniel Nolan)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: only run simplecov on C Ruby (Daniel Colson)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: quieter Cucumber (Daniel Colson)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: Ruby 3.2 support (Daniel Colson)."
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:84
+#: ../NEWS.md:91
 msgid "Internal: Mike Burns is the CODEOWNER (Stefanni Brasil)."
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:85
+#: ../NEWS.md:92
 #, no-wrap
 msgid "6.2.1 (March 8, 2022)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:91
+#: ../NEWS.md:98
 msgid "Added: CI testing against truffleruby"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:91
+#: ../NEWS.md:98
 msgid "Changed: Documentation improvements for sequences and traits"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:91
+#: ../NEWS.md:98
 msgid ""
 "Fixed: ActiveSupport::Notifications reporting strategy through associations "
 "now report as symbols"
 msgstr ""
 
 #. type: Bullet: '    * '
-#: ../NEWS.md:91
+#: ../NEWS.md:98
 msgid ""
 "BREAKING CHANGE: Custom strategies now need to define a `to_sym` method to "
 "specify the strategy identifier"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:91
+#: ../NEWS.md:98
 msgid "Fixed: `add_attribute` with reserved keywords assigns values correctly"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:92
+#: ../NEWS.md:99
 #, no-wrap
 msgid "6.2.0 (May 7, 2021)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:97
+#: ../NEWS.md:104
 msgid "Added: support for Ruby 3.0"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:97
+#: ../NEWS.md:104
 msgid ""
 "Changed: Include factory or trait name in error messages for missing traits. "
 "d05a9a3c"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:97
+#: ../NEWS.md:104
 msgid "Changed: Switched from Travis CI to GitHub Actions"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:97
+#: ../NEWS.md:104
 msgid "Fixed: More Ruby 2.7 kwarg deprecation warnings"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:98
+#: ../NEWS.md:105
 #, no-wrap
 msgid "6.1.0 (July 8, 2020)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:102
+#: ../NEWS.md:109
 msgid ""
 "Added: public reader for the evaluation instance, helpful for building "
 "interrelated associations"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:102
+#: ../NEWS.md:109
 msgid ""
 "Changed: raise a more helpful error when passing an invalid argument to an "
 "association"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:102
+#: ../NEWS.md:109
 msgid "Fixed: Ruby 2.7 kwarg deprecation warnings"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:103
+#: ../NEWS.md:110
 #, no-wrap
 msgid "6.0.2 (June 19, 2020)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:105
+#: ../NEWS.md:112
 msgid ""
 "Fixed: bug causing traits to consume more memory each time they were used"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:106
+#: ../NEWS.md:113
 #, no-wrap
 msgid "6.0.1 (June 19, 2020)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:108
+#: ../NEWS.md:115
 msgid ""
 "Fixed: bug with constant resolution causing unexpected uninitialized "
 "constant errors"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:109
+#: ../NEWS.md:116
 #, no-wrap
 msgid "6.0.0 (June 18, 2020)"
 msgstr ""
 
 #. type: Plain text
-#: ../NEWS.md:121
+#: ../NEWS.md:128
 #, no-wrap
 msgid ""
 "  * Added: automatic definition of traits for Active Record enum attributes, enabled by default\n"
@@ -543,18 +576,18 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:122
+#: ../NEWS.md:129
 #, no-wrap
 msgid "5.2.0 (April 24, 2020)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:125
+#: ../NEWS.md:132
 msgid "Added: Pass index to block for `*_list` methods"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:125
+#: ../NEWS.md:132
 msgid ""
 "Deprecated: methods on the top-level `FactoryBot` module meant only for "
 "internal use: `callbacks`, `configuration`, `constructor`, "
@@ -563,71 +596,71 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:126
+#: ../NEWS.md:133
 #, no-wrap
 msgid "5.1.2 (March 25, 2020)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:128
+#: ../NEWS.md:135
 msgid "Fixed: Ruby 2.7 keyword deprecation warning in FactoryBot.lint"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:129
+#: ../NEWS.md:136
 #, no-wrap
 msgid "5.1.1 (October 2, 2019)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:132
+#: ../NEWS.md:139
 msgid "Improved: performance of traits"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:132
+#: ../NEWS.md:139
 msgid "Fixed: registering strategies on JRuby"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:133
+#: ../NEWS.md:140
 #, no-wrap
 msgid "5.1.0 (September 21, 2019)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:140
+#: ../NEWS.md:147
 msgid ""
 "Added: \"Did you mean?\" style error message to help with typos in "
 "association declarations"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:140
+#: ../NEWS.md:147
 msgid ""
 "Changed: `NoMethodError` for static attributes now offers a \"Did you mean?"
 "\" style message"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:140
+#: ../NEWS.md:147
 msgid "Fixed: avoid undefining inherited evaluator methods"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:140
+#: ../NEWS.md:147
 msgid "Fixed: avoid stubbing id for records without a primary key"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:140
+#: ../NEWS.md:147
 msgid ""
 "Fixed: raise a helpful error for self-referencing traits to avoid a "
 "`SystemStackError`"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:140
+#: ../NEWS.md:147
 msgid ""
 "Deprecated: methods on the top-level `FactoryBot` module meant only for "
 "internal use: `allow_class_lookup`, `allow_class_lookup`=, `register_trait`, "
@@ -638,445 +671,445 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:141
+#: ../NEWS.md:148
 #, no-wrap
 msgid "5.0.2 (February 22, 2019)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:143
+#: ../NEWS.md:150
 msgid ""
 "Bugfix: raise \"Trait not registered\" error when passing invalid trait "
 "arguments"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:144
+#: ../NEWS.md:151
 #, no-wrap
 msgid "5.0.1 (February 15, 2019)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:147
+#: ../NEWS.md:154
 msgid ""
 "Bugfix: Do not raise error when two sequences have the same name in two "
 "traits that have the same name"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:148
+#: ../NEWS.md:155
 #, no-wrap
 msgid "5.0.0 (February 1, 2019)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Added: Verbose option to include full backtraces in the linting output"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid ""
 "Changed: use_parent_strategy now defaults to true, so by default the build "
 "strategy will build, rather than create associations"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Changed: Passing a block when defining associations now raises an error"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Bugfix: use_parent_strategy is no longer reset by FactoryBot.reload"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid ""
 "Bugfix: rewind_sequences will now rewind local sequences along with the "
 "global ones"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid ""
 "Bugfix: the build_stubbed strategy now sets timestamps without changing the "
 "the original behavior of the timestamp methods"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid ""
 "Bugfix: avoid a stack error when referring to an \"attributes\" attribute in "
 "initialize_with"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Removed: support for EOL versions of Ruby and Rails"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid ""
 "Removed: static attributes (use dynamic attributes with a block instead)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Removed: looking up factories by class"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Removed: ignore method (use transient instead)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid ""
 "Removed: duplicate_attribute_assignment_from_initialize_with configuration "
 "option"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:164
+#: ../NEWS.md:171
 msgid "Deprecated: allow_class_lookup configuration option"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:165
+#: ../NEWS.md:172
 #, no-wrap
 msgid "4.11.1 (September 7, 2018)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:167
+#: ../NEWS.md:174
 msgid "Documentation: Include .yardopts in the gem to fix broken RubyDoc links"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:168
+#: ../NEWS.md:175
 #, no-wrap
 msgid "4.11.0 (August, 15, 2018)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:172
+#: ../NEWS.md:179
 msgid ""
 "Bugfix: Do not raise error for valid build_stubbed methods: decrement, "
 "increment, and toggle"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:172
+#: ../NEWS.md:179
 msgid ""
 "Bugfix: Do not add timestamps with build_stubbed for objects that shouldn't "
 "have timestamps"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:172
+#: ../NEWS.md:179
 msgid "Deprecate static attributes"
 msgstr "静的属性を廃止しました。"
 
 #. type: Title ##
-#: ../NEWS.md:173
+#: ../NEWS.md:180
 #, no-wrap
 msgid "4.10.0 (May 25, 2018)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:175
+#: ../NEWS.md:182
 msgid "Allow sequences to be rewound"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:176
+#: ../NEWS.md:183
 #, no-wrap
 msgid "4.9.0 (skipped - FactoryGirl only release)"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:178
+#: ../NEWS.md:185
 #, no-wrap
 msgid "4.8.2 (October 20, 2017)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:180
+#: ../NEWS.md:187
 msgid "Rename factory_girl to factory_bot"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:181
+#: ../NEWS.md:188
 #, no-wrap
 msgid "4.8.1 (September 28, 2017)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:185
+#: ../NEWS.md:192
 msgid ""
 "Explicitly define `#destroyed?` within the `Stub` strategy to return `nil` "
 "instead of raising"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:185
+#: ../NEWS.md:192
 msgid "Update various dependencies"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:185
+#: ../NEWS.md:192
 msgid ""
 "Update internal test suite to use RSpec's mocking/stubbing instead of mocha"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:186
+#: ../NEWS.md:193
 #, no-wrap
 msgid "4.8.0 (December 16, 2016)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:190 ../NEWS.md:199 ../NEWS.md:233
+#: ../NEWS.md:197 ../NEWS.md:206 ../NEWS.md:240
 msgid "Improve documentation"
 msgstr "ドキュメントを改善しました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:190
+#: ../NEWS.md:197
 msgid ""
 "Add `FactoryGirl.generate_list` to be consistent with `build_list`/"
 "`create_list` and friends"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:190
+#: ../NEWS.md:197
 msgid ""
 "Add `FactoryGirl.use_parent_strategy` configuration to allow associations to "
 "leverage parent build strategy"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:191
+#: ../NEWS.md:198
 #, no-wrap
 msgid "4.7.0 (April 1, 2016)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:199
+#: ../NEWS.md:206
 msgid ""
 "Improve instrumentation payload to include traits, overrides, and the "
 "factory itself"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:199
+#: ../NEWS.md:206
 msgid "Allow linting of traits"
 msgstr "トレイトをリントできるようにしました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:199
+#: ../NEWS.md:206
 msgid "Deprecate factory lookup by class name in preparation for 5.0"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:199
+#: ../NEWS.md:206
 msgid ""
 "Improve internal performance by using flat_map instead of map and compact"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:199
+#: ../NEWS.md:206
 msgid "Improve handling of dirty attributes after building a stubbed object"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:199
+#: ../NEWS.md:206
 msgid "Reduce warnings from redefining methods"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:200
+#: ../NEWS.md:207
 #, no-wrap
 msgid "4.6.0 (skipped)"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:202
+#: ../NEWS.md:209
 #, no-wrap
 msgid "4.5.0 (October 17, 2014)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:208
+#: ../NEWS.md:215
 msgid "Improve FactoryGirl.lint by including exception and message in output"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:208
+#: ../NEWS.md:215
 msgid "Allow selective linting"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:208
+#: ../NEWS.md:215
 msgid "Use more explicit #public_send when doing attribute assignment"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:208
+#: ../NEWS.md:215
 msgid "Improve documentation around FactoryGirl.lint and initialize_with"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:208
+#: ../NEWS.md:215
 msgid "Deprecate #ignore in favor of #transient"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:209
+#: ../NEWS.md:216
 #, no-wrap
 msgid "4.4.0 (February 10, 2014)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:213
+#: ../NEWS.md:220
 msgid "Add FactoryGirl.lint"
 msgstr "FactoryGirl.lintを加えました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:213
+#: ../NEWS.md:220
 msgid "Fix memory leak in duplicate traits"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:213 ../NEWS.md:302
+#: ../NEWS.md:220 ../NEWS.md:309
 msgid "Update documentation"
 msgstr "ドキュメントを更新しました。"
 
 #. type: Title ##
-#: ../NEWS.md:214
+#: ../NEWS.md:221
 #, no-wrap
 msgid "4.3.0 (November 3, 2013)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid "Start testing against Rails 4.0 and Ruby 2.0.0"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid "Stop testing against Rails 3.0 and Ruby 1.9.2"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid "Add `*_pair` methods to only build two objects"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid ""
 "Raise if a method is defined with a FactoryGirl block (factory or trait)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid "Allow use of Symbol#to_proc in callbacks"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid "Add global callbacks"
 msgstr "大域コールバックを加えました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:222
+#: ../NEWS.md:229
 msgid "Improve GETTING_STARTED and README"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:223
+#: ../NEWS.md:230
 #, no-wrap
 msgid "4.2.0 (January 18, 2013)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Allow `*_list` syntax methods to accept a block"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Update gem dependencies"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Allow setting id for objects created with `build_stubbed`"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Fix Stub strategy to mimic ActiveRecord regarding `created_at`"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Evaluate sequences within the context of an Evaluator"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Fix Mocha deprecation warning"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Fix some warnings when running RUBYOPT=-w rake"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:233
+#: ../NEWS.md:240
 msgid "Convert test suite to RSpec's \"expect\" syntax"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:234
+#: ../NEWS.md:241
 #, no-wrap
 msgid "4.1.0 (September 11, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:237
+#: ../NEWS.md:244
 msgid "Allow multiple callbacks to bind to the same block"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:237
+#: ../NEWS.md:244
 msgid "Fix documentation surrounding the stub strategy"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:238
+#: ../NEWS.md:245
 #, no-wrap
 msgid "4.0.0 (August 3, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:243
+#: ../NEWS.md:250
 msgid "Remove deprecated cucumber_steps"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:243
+#: ../NEWS.md:250
 msgid "Remove deprecated alternate syntaxes"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:243
+#: ../NEWS.md:250
 msgid ""
 "Deprecate duplicate_attribute_assignment_from_initialize_with, which is now "
 "unused as attributes assigned within initialize_with are not subsequently "
@@ -1084,13 +1117,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:244
+#: ../NEWS.md:251
 #, no-wrap
 msgid "3.6.1 (August 2, 2012)"
 msgstr ""
 
 #. type: Plain text
-#: ../NEWS.md:249
+#: ../NEWS.md:256
 #, no-wrap
 msgid ""
 "  Update README to include info about running with JRuby\n"
@@ -1100,126 +1133,126 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:250
+#: ../NEWS.md:257
 #, no-wrap
 msgid "3.6.0 (July 27, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:258
+#: ../NEWS.md:265
 msgid "Code/spec cleanup"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:258
+#: ../NEWS.md:265
 msgid "Allow factories with traits to be used in associations"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:258
+#: ../NEWS.md:265
 msgid ""
 "Refactor Factory to use DefinitionHierarchy to handle managing callbacks, "
 "custom constructor, and custom to_create"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:258
+#: ../NEWS.md:265
 msgid "Add memoization to speed up factories providing attribute overrides"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:258
+#: ../NEWS.md:265
 msgid "Add initial support of JRuby when running in 1.9 mode"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:258
+#: ../NEWS.md:265
 msgid ""
 "Improve docs on what happens when including FactoryGirl::Syntax::Methods"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:259
+#: ../NEWS.md:266
 #, no-wrap
 msgid "3.5.0 (June 22, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:262
+#: ../NEWS.md:269
 msgid "Allow created_at to be set when using build_stubbed"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:262
+#: ../NEWS.md:269
 msgid "Deprecate FactoryGirl step definitions"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:263
+#: ../NEWS.md:270
 #, no-wrap
 msgid "3.4.2 (June 19, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:266
+#: ../NEWS.md:273
 msgid ""
 "Fix bug in traits with callbacks called implicitly in factories whose "
 "callbacks trigger multiple times"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:267
+#: ../NEWS.md:274
 #, no-wrap
 msgid "3.4.1 (June 18, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:269
+#: ../NEWS.md:276
 msgid "Fix traits so they can be nested and referred to from other traits"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:270
+#: ../NEWS.md:277
 #, no-wrap
 msgid "3.4.0 (June 11, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:275
+#: ../NEWS.md:282
 msgid "Sequences support Enumerators"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:275
+#: ../NEWS.md:282
 msgid ""
 "Optionally disable duplicate assignment of attributes in initialize_with"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:275
+#: ../NEWS.md:282
 msgid "Make hash of public attributes available in initialize_with"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:275
+#: ../NEWS.md:282
 msgid "Support referring to a factory based on class name"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:276
+#: ../NEWS.md:283
 #, no-wrap
 msgid "3.3.0 (May 13, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid ""
 "Allow to_create, skip_create, and initialize_with to be defined globally"
 msgstr ""
 "to_create、skip_create、initialize_withを大域的に定義できるようにしました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid ""
 "Allow to_create, skip_create, and initialize_with to be defined within traits"
 msgstr ""
@@ -1227,24 +1260,24 @@ msgstr ""
 "た。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid "Fix deprecation messages for alternate syntaxes (make, generate, etc.)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid "Improve library documentation"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid ""
 "Deprecate after_build, after_create, before_create, after_stub in favor of "
 "new callbacks"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid ""
 "Introduce new callback syntax: after(:build) {}, after(:custom) {}, or "
 "callback(:different) {} This allows for declaring any callback, usable with "
@@ -1252,111 +1285,111 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid ""
 "Add attributes_for_list and build_stubbed_list with the "
 "StrategySyntaxMethodRegistrar"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid ""
 "Allow use of syntax methods (build, create, generate, etc) implicitly in "
 "callbacks"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:287
+#: ../NEWS.md:294
 msgid "Internal refactoring of a handful of components"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:288
+#: ../NEWS.md:295
 #, no-wrap
 msgid "3.2.0 (April 24, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:295
+#: ../NEWS.md:302
 msgid "Use AS::Notifications for pub/sub to track running factories"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:295
+#: ../NEWS.md:302
 msgid "Call new within initialize_with implicitly on the build class"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:295
+#: ../NEWS.md:302
 msgid "Skip to_create with skip_create"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:295
+#: ../NEWS.md:302
 msgid "Allow registration of custom strategies"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:295
+#: ../NEWS.md:302
 msgid "Deprecate alternate syntaxes"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:295
+#: ../NEWS.md:302
 msgid "Implicitly call factory_bot's syntax methods from dynamic attributes"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:296
+#: ../NEWS.md:303
 #, no-wrap
 msgid "3.1.0 (April 6, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:302
+#: ../NEWS.md:309
 msgid "Sequences support aliases, which reference the same block"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:302
+#: ../NEWS.md:309
 msgid "Add before_create callback"
 msgstr "before_createコールバックを加えました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:302
+#: ../NEWS.md:309
 msgid ""
 "Support use of #attribute_names method to determine available attributes for "
 "steps"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:302
+#: ../NEWS.md:309
 msgid "Use ActiveSupport::Deprecation for all deprecations"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:303
+#: ../NEWS.md:310
 #, no-wrap
 msgid "3.0.0 (March 23, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:310
+#: ../NEWS.md:317
 msgid "Deprecate the vintage syntax"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:310
+#: ../NEWS.md:317
 msgid "Remove Rails 2.x support"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:310
+#: ../NEWS.md:317
 msgid "Remove Ruby 1.8 support"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:310
+#: ../NEWS.md:317
 msgid ""
 "Remove deprecated features, including default_strategy, factory_name, :"
 "method for defining default strategy, ignore on individual attributes, and "
@@ -1364,184 +1397,184 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:311
+#: ../NEWS.md:318
 #, no-wrap
 msgid "2.6.4 (March 16, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:314
+#: ../NEWS.md:321
 msgid "Do not ignore names of transient attributes"
 msgstr "一過的属性名を無視しないようにしました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:314
+#: ../NEWS.md:321
 msgid "Ensure attributes set on instance are calculated uniquely"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:315
+#: ../NEWS.md:322
 #, no-wrap
 msgid "2.6.3 (March 9, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:319
+#: ../NEWS.md:326
 msgid ""
 "Fix issue with traits not being present the first time a factory is accessed"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:319
+#: ../NEWS.md:326
 msgid ""
 "Update available Cucumber step definitions to not require a trailing colon "
 "when building a table of attributes to instantiate records with"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:320
+#: ../NEWS.md:327
 #, no-wrap
 msgid "2.6.2 (March 9, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:325
+#: ../NEWS.md:332
 msgid "Allow factories to use all their ancestors' traits"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:325
+#: ../NEWS.md:332
 msgid "Ignore bin dir generated by bundler"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:325
+#: ../NEWS.md:332
 msgid ""
 "Namespace ::Factory as top-level to fix vintage syntax issue with Ruby 1.9.2-"
 "p3p18"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:326
+#: ../NEWS.md:333
 #, no-wrap
 msgid "2.6.1 (March 2, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:330
+#: ../NEWS.md:337
 msgid "Use FactoryGirl.reload in specs"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:330
+#: ../NEWS.md:337
 msgid ""
 "Clean up running named factories with a particular strategy with "
 "FactoryGirl::FactoryRunner"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:331
+#: ../NEWS.md:338
 #, no-wrap
 msgid "2.6.0 (February 17, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:336
+#: ../NEWS.md:343
 msgid ""
 "Improve documentation of has_many associations in the GETTING_STARTED "
 "document"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:336
+#: ../NEWS.md:343
 msgid ""
 "Deprecate :method in favor of :strategy when overriding an association's "
 "build strategy"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:337
+#: ../NEWS.md:344
 #, no-wrap
 msgid "2.5.2 (February 10, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:342
+#: ../NEWS.md:349
 msgid "Fix step definitions to use associations defined in parent factories"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:342
+#: ../NEWS.md:349
 msgid "Add inline trait support to (build|create)_list"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:342
+#: ../NEWS.md:349
 msgid ""
 "Update ActiveSupport dependency to >= 2.3.9, which introduced class_attribute"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:343
+#: ../NEWS.md:350
 #, no-wrap
 msgid "2.5.1 (February 3, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:351
+#: ../NEWS.md:358
 msgid ""
 "Fix attribute evaluation when the attribute isn't defined in the factory but "
 "is a private method on Object"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:351
+#: ../NEWS.md:358
 msgid "Update rubygems on Travis before running tests"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:351
+#: ../NEWS.md:358
 msgid "Fix spec name"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:351
+#: ../NEWS.md:358
 msgid "Update GETTING_STARTED with correct usage of build_stubbed"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:351
+#: ../NEWS.md:358
 msgid "Update README with more info on initialize_with"
 msgstr "READMEを更新し、initialize_withについて追記しました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:351
+#: ../NEWS.md:358
 msgid "Honor :parent on factory over block nesting"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:352
+#: ../NEWS.md:359
 #, no-wrap
 msgid "2.5.0 (January 20, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:356
+#: ../NEWS.md:363
 msgid "Revert 'Deprecate build_stubbed and attributes_for'"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:356
+#: ../NEWS.md:363
 msgid "Implement initialize_with to allow overriding object instantiation"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:356
+#: ../NEWS.md:363
 msgid "Ensure FG runs against Rails 3.2.0"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:357
+#: ../NEWS.md:364
 #, no-wrap
 msgid "2.4.2 (January 18, 2012)"
 msgstr ""
@@ -1550,96 +1583,96 @@ msgstr ""
 # Fix issues with inline traits not taking precedence https://github.com/thoughtbot/factory_bot/commit/065c6c17895e13e6a4ba5debfd8d4d1ed500cd74
 # Comparing changes https://github.com/thoughtbot/factory_bot/compare/v2.4.1...v2.4.2
 #. type: Bullet: '  * '
-#: ../NEWS.md:359
+#: ../NEWS.md:366
 msgid "Fix inline traits' interaction with defaults on the factory"
 msgstr "行内トレイトと既定のファクトリとの相互作用を修正しました。"
 
 #. type: Title ##
-#: ../NEWS.md:360
+#: ../NEWS.md:367
 #, no-wrap
 msgid "2.4.1 (January 17, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:363
+#: ../NEWS.md:370
 msgid "Deprecate build_stubbed and attributes_for"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:363
+#: ../NEWS.md:370
 msgid "Fix inline traits"
 msgstr "行内トレイトを修正しました。"
 
 #. type: Title ##
-#: ../NEWS.md:364
+#: ../NEWS.md:371
 #, no-wrap
 msgid "2.4.0 (January 13, 2012)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid ""
 "Refactor internals of FactoryGirl to use anonymous class on which attributes "
 "get defined"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid "Explicitly require Ruby 1.8.7 or higher in gemspec"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid "Fix documentation"
 msgstr "ドキュメントを修正しました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid "Add Gemnasium status to documentation"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid ""
 "Supplying a Class to a factory that overrides to_s no longer results in "
 "getting the wrong Class constructed"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid ""
 "Be more agnostic about ORMs when using columns in FactoryGirl step "
 "definitions"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid "Test against Active Record 3.2.0.rc2"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:376
+#: ../NEWS.md:383
 msgid "Update GETTING_STARTED to use Ruby syntax highlighting"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:377
+#: ../NEWS.md:384
 #, no-wrap
 msgid "2.3.2 (November 26, 2011)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:385
+#: ../NEWS.md:392
 msgid "Move logic of where instance.save! is set to Definition"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:385
+#: ../NEWS.md:392
 msgid "Fix method name from aliases_for? to alias_for?"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:385
+#: ../NEWS.md:392
 msgid ""
 "Refactor internal attribute handling to use an anonymous class instead of "
 "faking Ruby's variable resolution. This allows for more sane usage of "
@@ -1649,115 +1682,115 @@ msgid ""
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:386
+#: ../NEWS.md:393
 #, no-wrap
 msgid "2.3.1 (November 23, 2011)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:394
+#: ../NEWS.md:401
 msgid ""
 "Remove internally-used associate method from all the FactoryGirl::Proxy "
 "subclasses"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:394
+#: ../NEWS.md:401
 msgid "Move around requiring of files"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:394
+#: ../NEWS.md:401
 msgid "Consolidate errors into factory_bot.rb"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:394
+#: ../NEWS.md:401
 msgid ""
 "Refactor AttributeList to deal with priority only when iterating over "
 "attributes"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:394
+#: ../NEWS.md:401
 msgid "Refactor internals of some of the Proxy subclasses"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:394
+#: ../NEWS.md:401
 msgid "Ensure callbacks on traits are executed in the correct order"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:395
+#: ../NEWS.md:402
 #, no-wrap
 msgid "2.3.0 (November 18, 2011)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid ""
 "Registries are named, resulting in better messages when factories, traits, "
 "or sequences cannot be found"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid "Fix incorrect tests"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid ""
 "Internals refactoring introducing FactoryGirl::NullFactory, FactoryGirl::"
 "Definition, and FactoryGirl::DeclarationList"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid "Use ActiveSupport for Hash#except and its delegation capabilities"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid "Fix usage of callbacks when added via implicit traits"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid "Use Bundler tasks and clean up dependencies"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid "Fix failing spec for big letters in factory name passed as symbol"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:407
+#: ../NEWS.md:414
 msgid ""
 "Add ability for traits to be added dynamically when creating an instance via "
 "build, create, build_stubbed, or attributes_for"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:408
+#: ../NEWS.md:415
 #, no-wrap
 msgid "2.2.0 (October 14, 2011)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid "Clean up RSpec suite to not use 'should'"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid "Use create_list in step definitions"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid ""
 "Syntax methods that deal with ORM interaction (attributes_for, build, "
 "build_stubbed, and create) now accept a block that yields the result. This "
@@ -1766,19 +1799,19 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid "Standardize deprecation warnings"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid ""
 "Update transient attribute syntax to use blocks instead of calling ignore on "
 "each attribute declaration"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid ""
 "Parents can be defined after children because factories are evaluated when "
 "they're used; this means breaking up factories across multiple files will "
@@ -1786,124 +1819,124 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:422
+#: ../NEWS.md:429
 msgid ""
 "Large internal refactoring, including changing access modifiers for a "
 "handful of methods for a more clearly defined API"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:423
+#: ../NEWS.md:430
 #, no-wrap
 msgid "2.1.2 (September 23, 2011)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:426
+#: ../NEWS.md:433
 msgid "Bugfix: Vintage syntax fixed after bug introduced in 2.1.1"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:426
+#: ../NEWS.md:433
 msgid "Introduce dependency on activesupport to remove code from Factory class"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:427
+#: ../NEWS.md:434
 #, no-wrap
 msgid "2.1.1 (September 23, 2011) (yanked)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:432
+#: ../NEWS.md:439
 msgid "Bugfix: Parent object callbacks are run before child object callbacks"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:432
+#: ../NEWS.md:439
 msgid ""
 "Declarations: allow overriding/modification of individual traits in child "
 "factories"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:432
+#: ../NEWS.md:439
 msgid "Callbacks refactored to not be attributes"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:432
+#: ../NEWS.md:439
 msgid ""
 "Updating documentation for formatting and clarity (incl. new specificity for "
 "cucumber)"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:433
+#: ../NEWS.md:440
 #, no-wrap
 msgid "2.1.0 (September 02, 2011)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid "Bugfix: created_at now defined for stubbed models"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid "Gemspec updated for use with Rails 3.1"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid ""
 "Factories can now be modified post-definition (useful for overriding "
 "defaults from gems/plugins)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid "All factories can now be reloaded with Factory.reload"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid ""
 "Add :method => build to factory associations to prevent saving of associated "
 "objects"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid "Factories defined in {Rails.root}/factories are now loaded by default"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:441
+#: ../NEWS.md:448
 msgid "Various documentation updates"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:442
+#: ../NEWS.md:449
 #, no-wrap
 msgid "1.1.4 (November 28, 2008)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:451
+#: ../NEWS.md:458
 msgid ""
 "Factory.build now uses Factory.create for associations of the built object"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:451
+#: ../NEWS.md:458
 msgid ""
 "Factory definitions are now detected in subdirectories, such as factories/"
 "person_factory.rb (thanks to Josh Nichols)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:451
+#: ../NEWS.md:458
 msgid ""
 "Factory definitions are now loaded after the environment in a Rails project "
 "(fixes some issues with dependencies being loaded too early) (thanks to Josh "
@@ -1911,20 +1944,20 @@ msgid ""
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:451
+#: ../NEWS.md:458
 msgid ""
 "Factory names ending in 's' no longer cause problems (thanks to Alex Sharp "
 "and Josh Owens)"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:452
+#: ../NEWS.md:459
 #, no-wrap
 msgid "1.1.3 (September 12, 2008)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:455
+#: ../NEWS.md:462
 msgid ""
 "Automatically pull in definitions from factories.rb, test/factories.rb, or "
 "spec/factories.rb"
@@ -1933,70 +1966,70 @@ msgstr ""
 "るようにしました。"
 
 #. type: Title ##
-#: ../NEWS.md:455
+#: ../NEWS.md:462
 #, no-wrap
 msgid "1.1.2 (July 30, 2008)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:460
+#: ../NEWS.md:467
 msgid "Improved error handling for invalid and undefined factories/attributes"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:460
+#: ../NEWS.md:467
 msgid "Improved handling of strings vs symbols vs classes"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:460
+#: ../NEWS.md:467
 msgid "Added a prettier syntax for handling associations"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:460
+#: ../NEWS.md:467
 msgid "Updated documentation and fixed compatibility with Rails 2.1"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:461
+#: ../NEWS.md:468
 #, no-wrap
 msgid "1.1.1 (June 23, 2008)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:463
+#: ../NEWS.md:470
 msgid "The attribute \"name\" no longer requires using #add_attribute"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:464
+#: ../NEWS.md:471
 #, no-wrap
 msgid "1.1.0 (June 03, 2008)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:468
+#: ../NEWS.md:475
 msgid "Added support for dependent attributes"
 msgstr "依存属性の対応を加えました。"
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:468
+#: ../NEWS.md:475
 msgid "Fixed the attributes_for build strategy to not build associations"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:468
+#: ../NEWS.md:475
 msgid "Added support for sequences"
 msgstr ""
 
 #. type: Title ##
-#: ../NEWS.md:469
+#: ../NEWS.md:476
 #, no-wrap
 msgid "1.0.0 (May 31, 2008)"
 msgstr ""
 
 #. type: Bullet: '  * '
-#: ../NEWS.md:470
+#: ../NEWS.md:477
 msgid "First version"
 msgstr ""
