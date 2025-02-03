@@ -1,12 +1,11 @@
 # お知らせ
 
-## 6.5.1 (January 31, 2025)
+## 6.5.1（2025年1月31日）
 
-  * Changed: execute linting tests within ActiveRecord transactions when
-    available (Sean Doyle)
-  * Fix: Random test failure when tracking compilation time (CodeMeinster)
-  * Fix: Bump the minimum required activesupport version to 6.1 (Earlopain)
-  * Internal: Update development dependencies (Neil Carvalho)
+  * 変更：可能な場合、ActiveRecordのトランザクション中にリント検査を実行 (Sean Doyle)
+  * 修正：コンパイル時間を計測するときに無作為にテストが失敗していた点 (CodeMeinster)
+  * 修正：activesupportの最小要件バージョンを6.1に引き上げました (Earlopain)
+  * 内部的：開発依存関係を更新 (Neil Carvalho)
 
 ## 6.5.0（2024年9月6日）
 
@@ -71,10 +70,10 @@
 
   * 修正：最上水準のトレイトで、クラスがActiveSupport::Notificationsに渡されるようにしました (makicamel)。
 
-## 6.4.1 (November 20, 2023)
+## 6.4.1（2023年11月20日）
 
-  * Fix: factories with traits pass their class to
-    ActiveSupport::Notifications (makicamel).
+  * 修正：トレイトのあるファクトリについて、そのクラスがActiveSupport::Notificationsに渡されるようになりました
+    (makicamel)。
 
 ## 6.4.0 (November 17, 2023)
 

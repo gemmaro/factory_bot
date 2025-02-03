@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FactoryBot\n"
 "POT-Creation-Date: 2025-02-03 11:40+0900\n"
-"PO-Revision-Date: 2024-09-07 06:55+0900\n"
+"PO-Revision-Date: 2025-02-03 11:44+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -25,10 +25,9 @@ msgstr "お知らせ"
 
 #. type: Title ##
 #: ../NEWS.md:3
-#, fuzzy, no-wrap
-#| msgid "6.4.6 (January 30, 2023)"
+#, no-wrap
 msgid "6.5.1 (January 31, 2025)"
-msgstr "6.4.6（2023年1月30日）"
+msgstr "6.5.1（2025年1月31日）"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:9
@@ -36,25 +35,26 @@ msgid ""
 "Changed: execute linting tests within ActiveRecord transactions when "
 "available (Sean Doyle)"
 msgstr ""
+"変更：可能な場合、ActiveRecordのトランザクション中にリント検査を実行 (Sean "
+"Doyle)"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:9
 msgid "Fix: Random test failure when tracking compilation time (CodeMeinster)"
 msgstr ""
+"修正：コンパイル時間を計測するときに無作為にテストが失敗していた点 "
+"(CodeMeinster)"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:9
-#, fuzzy
-#| msgid "Fix: Bump minimum required Ruby in gemspec (Earlopain)."
 msgid "Fix: Bump the minimum required activesupport version to 6.1 (Earlopain)"
-msgstr "修正：gemspecのRubyの最小バージョンの要件を上げました (Earlopain)。"
+msgstr ""
+"修正：activesupportの最小要件バージョンを6.1に引き上げました (Earlopain)"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:9
-#, fuzzy
-#| msgid "Internal: Remove observer dependency (Earlopain)."
 msgid "Internal: Update development dependencies (Neil Carvalho)"
-msgstr "内部的：observerの依存関係を除きました (Earlopain)。"
+msgstr "内部的：開発依存関係を更新 (Neil Carvalho)"
 
 #. type: Title ##
 #: ../NEWS.md:10
@@ -299,7 +299,7 @@ msgstr ""
 #: ../NEWS.md:56
 #, no-wrap
 msgid "6.4.1 (November 20, 2023)"
-msgstr ""
+msgstr "6.4.1（2023年11月20日）"
 
 #. type: Bullet: '  * '
 #: ../NEWS.md:60
@@ -307,6 +307,8 @@ msgid ""
 "Fix: factories with traits pass their class to ActiveSupport::Notifications "
 "(makicamel)."
 msgstr ""
+"修正：トレイトのあるファクトリについて、そのクラスがActiveSupport::"
+"Notificationsに渡されるようになりました (makicamel)。"
 
 #. type: Title ##
 #: ../NEWS.md:61
