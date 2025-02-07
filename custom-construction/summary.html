@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>独自の構築 - factory_bot</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">序</a></li><li class="chapter-item expanded "><a href="../ref/build-strategies.html"><strong aria-hidden="true">1.</strong> 構築戦略</a></li><li class="chapter-item expanded "><a href="../ref/find_definitions.html"><strong aria-hidden="true">2.</strong> FactoryBot.find_definitions</a></li><li class="chapter-item expanded "><a href="../ref/define.html"><strong aria-hidden="true">3.</strong> FactoryBot.define</a></li><li class="chapter-item expanded "><a href="../ref/factory.html"><strong aria-hidden="true">4.</strong> factory</a></li><li class="chapter-item expanded "><a href="../ref/add_attribute.html"><strong aria-hidden="true">5.</strong> add_attribute</a></li><li class="chapter-item expanded "><a href="../ref/association.html"><strong aria-hidden="true">6.</strong> association</a></li><li class="chapter-item expanded "><a href="../ref/sequence.html"><strong aria-hidden="true">7.</strong> sequence</a></li><li class="chapter-item expanded "><a href="../ref/trait.html"><strong aria-hidden="true">8.</strong> trait</a></li><li class="chapter-item expanded "><a href="../ref/method_missing.html"><strong aria-hidden="true">9.</strong> method_missing</a></li><li class="chapter-item expanded "><a href="../ref/traits_for_enum.html"><strong aria-hidden="true">10.</strong> traits_for_enum</a></li><li class="chapter-item expanded "><a href="../ref/build-and-create.html"><strong aria-hidden="true">11.</strong> skip_createとto_create、そしてinitialize_with</a></li><li class="chapter-item expanded "><a href="../ref/transient.html"><strong aria-hidden="true">12.</strong> transient</a></li><li class="chapter-item expanded "><a href="../ref/hooks.html"><strong aria-hidden="true">13.</strong> フック</a></li><li class="chapter-item expanded "><a href="../ref/modify.html"><strong aria-hidden="true">14.</strong> FactoryBot.modify</a></li><li class="chapter-item expanded "><a href="../ref/lint.html"><strong aria-hidden="true">15.</strong> FactoryBot.lint</a></li><li class="chapter-item expanded "><a href="../ref/register_strategy.html"><strong aria-hidden="true">16.</strong> FactoryBot.register_strategy</a></li><li class="chapter-item expanded "><a href="../setup/summary.html"><strong aria-hidden="true">17.</strong> 準備</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../using-without-bundler/summary.html"><strong aria-hidden="true">17.1.</strong> Bundler無しで使う</a></li><li class="chapter-item expanded "><a href="../rails-preloaders-and-rspec/summary.html"><strong aria-hidden="true">17.2.</strong> Railsの事前読込器とRSpec</a></li></ol></li><li class="chapter-item expanded "><a href="../defining/summary.html"><strong aria-hidden="true">18.</strong> ファクトリ定義</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../defining/name-attributes.html"><strong aria-hidden="true">18.1.</strong> ファクトリ名と属性</a></li><li class="chapter-item expanded "><a href="../defining/explicit-class.html"><strong aria-hidden="true">18.2.</strong> クラスを明示的に指定</a></li><li class="chapter-item expanded "><a href="../defining/file-paths.html"><strong aria-hidden="true">18.3.</strong> 定義ファイルパス</a></li><li class="chapter-item expanded "><a href="../defining/hash-attributes.html"><strong aria-hidden="true">18.4.</strong> ハッシュ属性</a></li><li class="chapter-item expanded "><a href="../defining/best-practices.html"><strong aria-hidden="true">18.5.</strong> ベストプラクティス</a></li><li class="chapter-item expanded "><a href="../defining/static-attributes.html"><strong aria-hidden="true">18.6.</strong> 静的属性（廃止）</a></li></ol></li><li class="chapter-item expanded "><a href="../using-factories/summary.html"><strong aria-hidden="true">19.</strong> ファクトリを使う</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../using-factories/build-strategies.html"><strong aria-hidden="true">19.1.</strong> 構築戦略</a></li><li class="chapter-item expanded "><a href="../building-or-creating-multiple-records/summary.html"><strong aria-hidden="true">19.2.</strong> 複数のレコードを構築したり作成したり</a></li><li class="chapter-item expanded "><a href="../using-factories/attribute-overrides.html"><strong aria-hidden="true">19.3.</strong> 属性の上塗り</a></li></ol></li><li class="chapter-item expanded "><a href="../aliases/summary.html"><strong aria-hidden="true">20.</strong> 別称</a></li><li class="chapter-item expanded "><a href="../dependent-attributes/summary.html"><strong aria-hidden="true">21.</strong> 依存属性</a></li><li class="chapter-item expanded "><a href="../transient-attributes/summary.html"><strong aria-hidden="true">22.</strong> 一過的属性</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../transient-attributes/with-other-attributes.html"><strong aria-hidden="true">22.1.</strong> 他の属性付き</a></li><li class="chapter-item expanded "><a href="../transient-attributes/with-attributes_for.html"><strong aria-hidden="true">22.2.</strong> attributes_for付き</a></li><li class="chapter-item expanded "><a href="../transient-attributes/with-callbacks.html"><strong aria-hidden="true">22.3.</strong> コールバック付き</a></li><li class="chapter-item expanded "><a href="../transient-attributes/with-associations.html"><strong aria-hidden="true">22.4.</strong> 関連付き</a></li></ol></li><li class="chapter-item expanded "><a href="../method-name-reserved-word-attributes/summary.html"><strong aria-hidden="true">23.</strong> メソッド名と予約語の属性</a></li><li class="chapter-item expanded "><a href="../inheritance/summary.html"><strong aria-hidden="true">24.</strong> 継承</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../inheritance/nested-factories.html"><strong aria-hidden="true">24.1.</strong> 入れ子のファクトリ</a></li><li class="chapter-item expanded "><a href="../inheritance/assigning-parent-explicitly.html"><strong aria-hidden="true">24.2.</strong> 親を明示的に代入</a></li><li class="chapter-item expanded "><a href="../inheritance/best-practices.html"><strong aria-hidden="true">24.3.</strong> ベストプラクティス</a></li></ol></li><li class="chapter-item expanded "><a href="../associations/summary.html"><strong aria-hidden="true">25.</strong> 関連</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../associations/implicit-definition.html"><strong aria-hidden="true">25.1.</strong> 暗黙定義</a></li><li class="chapter-item expanded "><a href="../associations/explicit-definition.html"><strong aria-hidden="true">25.2.</strong> 明示定義</a></li><li class="chapter-item expanded "><a href="../associations/inline-definition.html"><strong aria-hidden="true">25.3.</strong> 行内定義</a></li><li class="chapter-item expanded "><a href="../associations/specifying-the-factory.html"><strong aria-hidden="true">25.4.</strong> ファクトリの指定</a></li><li class="chapter-item expanded "><a href="../associations/overriding-attributes.html"><strong aria-hidden="true">25.5.</strong> 属性の上塗り</a></li><li class="chapter-item expanded "><a href="../associations/association-overrides.html"><strong aria-hidden="true">25.6.</strong> 関連の上塗り</a></li><li class="chapter-item expanded "><a href="../associations/build-strategies.html"><strong aria-hidden="true">25.7.</strong> 構築戦略</a></li></ol></li><li class="chapter-item expanded "><a href="../sequences/summary.html"><strong aria-hidden="true">26.</strong> 系列</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../sequences/global-sequences.html"><strong aria-hidden="true">26.1.</strong> 大域系列</a></li><li class="chapter-item expanded "><a href="../sequences/with-dynamic-attributes.html"><strong aria-hidden="true">26.2.</strong> 動的属性付き</a></li><li class="chapter-item expanded "><a href="../sequences/as-implicit-attributes.html"><strong aria-hidden="true">26.3.</strong> 暗黙属性として</a></li><li class="chapter-item expanded "><a href="../sequences/inline-sequences.html"><strong aria-hidden="true">26.4.</strong> 行内系列</a></li><li class="chapter-item expanded "><a href="../sequences/initial-value.html"><strong aria-hidden="true">26.5.</strong> 初期値</a></li><li class="chapter-item expanded "><a href="../sequences/without-a-block.html"><strong aria-hidden="true">26.6.</strong> ブロック無し</a></li><li class="chapter-item expanded "><a href="../sequences/aliases.html"><strong aria-hidden="true">26.7.</strong> 別称</a></li><li class="chapter-item expanded "><a href="../sequences/rewinding.html"><strong aria-hidden="true">26.8.</strong> 巻き戻し</a></li><li class="chapter-item expanded "><a href="../sequences/uniqueness.html"><strong aria-hidden="true">26.9.</strong> 一意性</a></li></ol></li><li class="chapter-item expanded "><a href="../traits/summary.html"><strong aria-hidden="true">27.</strong> トレイト</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../traits/as-implicit-attributes.html"><strong aria-hidden="true">27.1.</strong> 暗黙属性として</a></li><li class="chapter-item expanded "><a href="../traits/using.html"><strong aria-hidden="true">27.2.</strong> トレイトを使う</a></li><li class="chapter-item expanded "><a href="../traits/enum.html"><strong aria-hidden="true">27.3.</strong> 列挙トレイト</a></li><li class="chapter-item expanded "><a href="../traits/attribute-precedence.html"><strong aria-hidden="true">27.4.</strong> 属性の優先度</a></li><li class="chapter-item expanded "><a href="../traits/in-child-factories.html"><strong aria-hidden="true">27.5.</strong> 子のファクトリの内部</a></li><li class="chapter-item expanded "><a href="../traits/mixins.html"><strong aria-hidden="true">27.6.</strong> ミックスインとして</a></li><li class="chapter-item expanded "><a href="../traits/with-associations.html"><strong aria-hidden="true">27.7.</strong> 関連付き</a></li><li class="chapter-item expanded "><a href="../traits/traits-within-traits.html"><strong aria-hidden="true">27.8.</strong> トレイト内トレイト</a></li><li class="chapter-item expanded "><a href="../traits/with-transient-attributes.html"><strong aria-hidden="true">27.9.</strong> 一過的属性付き</a></li></ol></li><li class="chapter-item expanded "><a href="../callbacks/summary.html"><strong aria-hidden="true">28.</strong> コールバック</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../callbacks/multiple-callbacks.html"><strong aria-hidden="true">28.1.</strong> 複数コールバック</a></li><li class="chapter-item expanded "><a href="../callbacks/global-callbacks.html"><strong aria-hidden="true">28.2.</strong> 大域コールバック</a></li><li class="chapter-item expanded "><a href="../callbacks/symbol-to_proc.html"><strong aria-hidden="true">28.3.</strong> Symbol#to_proc</a></li></ol></li><li class="chapter-item expanded "><a href="../modifying-factories/summary.html"><strong aria-hidden="true">29.</strong> ファクトリの変更</a></li><li class="chapter-item expanded "><a href="../linting-factories/summary.html"><strong aria-hidden="true">30.</strong> ファクトリのリント</a></li><li class="chapter-item expanded "><a href="../custom-construction/summary.html" class="active"><strong aria-hidden="true">31.</strong> 独自の構築</a></li><li class="chapter-item expanded "><a href="../custom-strategies/summary.html"><strong aria-hidden="true">32.</strong> 独自の戦略</a></li><li class="chapter-item expanded "><a href="../custom-callbacks/summary.html"><strong aria-hidden="true">33.</strong> 独自コールバック</a></li><li class="chapter-item expanded "><a href="../custom-methods-to-persist-objects/summary.html"><strong aria-hidden="true">34.</strong> オブジェクトを永続化するための独自メソッド</a></li><li class="chapter-item expanded "><a href="../activesupport-instrumentation/summary.html"><strong aria-hidden="true">35.</strong> ActiveSupportの計装</a></li><li class="chapter-item expanded "><a href="../cookbook/has_many-associations.html"><strong aria-hidden="true">36.</strong> has_many関連</a></li><li class="chapter-item expanded "><a href="../cookbook/has_and_belongs_to_many-associations.html"><strong aria-hidden="true">37.</strong> has_and_belongs_to_many関連</a></li><li class="chapter-item expanded "><a href="../cookbook/polymorphic-associations.html"><strong aria-hidden="true">38.</strong> 多相関連</a></li><li class="chapter-item expanded "><a href="../cookbook/interconnected-associations.html"><strong aria-hidden="true">39.</strong> 相互接続関連</a></li><li class="chapter-item expanded affix "><li class="part-title">その他</li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">40.</strong> お読みください</a></li><li class="chapter-item expanded "><a href="../NEWS.html"><strong aria-hidden="true">41.</strong> お知らせ</a></li><li class="chapter-item expanded "><a href="../NAME.html"><strong aria-hidden="true">42.</strong> 名称</a></li><li class="chapter-item expanded "><a href="../CONTRIBUTING.html"><strong aria-hidden="true">43.</strong> 貢献</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">factory_bot</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="独自の構築"><a class="header" href="#独自の構築">独自の構築</a></h1>
+<p>factory_botを使って、<code>initialize</code>に渡される属性があるオブジェクトを構築したいときや、クラスを構築する上で単に<code>new</code>を呼ぶ以上のことをしたいときは、ファクトリに<code>initialize_with</code>を定義して既定の挙動を上塗りできます。
+例えば以下です。</p>
+<pre><code class="language-ruby"># user.rb
+class User
+  attr_accessor :name, :email
+
+  def initialize(name)
+    @name = name
+  end
+end
+
+# factories.rb
+sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+
+factory :user do
+  name { &quot;Jane Doe&quot; }
+  email
+
+  initialize_with { new(name) }
+end
+
+build(:user).name # Jane Doe
+</code></pre>
+<p>factory_botはActiveRecordで飛び抜けて上手く書けるようになっていますが、どんなRubyクラスでも動作できます。
+ActiveRecordと最大限の互換性があるよう、既定の初期化器はクラスを構築するのに実引数なしで<code>new</code>を読んで全てのインスタンスを構築します。
+それから属性の書込みメソッドを呼んで全ての属性値を代入します。
+ActiveRecordでは上手く動きますが、他のRubyのクラスのほとんどは実際にはうまくいきません。</p>
+<p>以下の目的で初期化器を上塗りできます。</p>
+<ul>
+<li><code>initialize</code>に実引数が必須の非ActiveRecordオブジェクトを構築する。</li>
+<li><code>new</code>ではないメソッドを使ってインスタンスをインスタンス化する。</li>
+<li>構築された後にインスタンスを修飾するような雑なことをする。</li>
+</ul>
+<p><code>initialize_with</code>を使うとき、<code>new</code>を呼ぶときにクラス自体を宣言する必要はありません。
+しかし呼びたいその他のクラスメソッドは明示的にクラスに対して呼ばなければなりません。</p>
+<p>例は以下です。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;John Doe&quot; }
+
+  initialize_with { User.build_with_name(name) }
+end
+</code></pre>
+<p><code>attributes</code>を呼んで<code>initialize_with</code>ブロック内で全ての公の属性を使うこともできます。</p>
+<pre><code class="language-ruby">factory :user do
+  transient do
+    comments_count { 5 }
+  end
+
+  name &quot;John Doe&quot;
+
+  initialize_with { new(**attributes) }
+end
+</code></pre>
+<p>こうすると<code>new</code>に渡される全ての属性のハッシュを構築します。
+一過的属性は含まれませんが、ファクトリで定義されたその他全て（関連、評価された系列など）が渡されます。</p>
+<p><code>FactoryBot.define</code>ブロック内に含めると全てのファクトリに<code>initialize_with</code>を定義できます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  initialize_with { new(&quot;Awesome first argument&quot;) }
+end
+</code></pre>
+<p><code>initialize_with</code>を使うとき、<code>initialize_with</code>ブロック内で使う属性は構築子で<em>のみ</em>代入されます。
+これは以下のコードと大まかに同じです。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :user do
+    initialize_with { new(name) }
+
+    name { 'value' }
+  end
+end
+
+build(:user)
+# ……とすると以下が実行されます。
+User.new('value')
+</code></pre>
+<p>これは重複する代入を防止しています。
+4.0より前のfactory_botでは以下が走っていました。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :user do
+    initialize_with { new(name) }
+
+    name { 'value' }
+  end
+end
+
+build(:user)
+# ……とすると以下が実行されます。
+user = User.new('value')
+user.name = 'value'
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../linting-factories/summary.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../custom-strategies/summary.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../linting-factories/summary.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../custom-strategies/summary.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,2807 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>factory_bot</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">序</a></li><li class="chapter-item expanded "><a href="ref/build-strategies.html"><strong aria-hidden="true">1.</strong> 構築戦略</a></li><li class="chapter-item expanded "><a href="ref/find_definitions.html"><strong aria-hidden="true">2.</strong> FactoryBot.find_definitions</a></li><li class="chapter-item expanded "><a href="ref/define.html"><strong aria-hidden="true">3.</strong> FactoryBot.define</a></li><li class="chapter-item expanded "><a href="ref/factory.html"><strong aria-hidden="true">4.</strong> factory</a></li><li class="chapter-item expanded "><a href="ref/add_attribute.html"><strong aria-hidden="true">5.</strong> add_attribute</a></li><li class="chapter-item expanded "><a href="ref/association.html"><strong aria-hidden="true">6.</strong> association</a></li><li class="chapter-item expanded "><a href="ref/sequence.html"><strong aria-hidden="true">7.</strong> sequence</a></li><li class="chapter-item expanded "><a href="ref/trait.html"><strong aria-hidden="true">8.</strong> trait</a></li><li class="chapter-item expanded "><a href="ref/method_missing.html"><strong aria-hidden="true">9.</strong> method_missing</a></li><li class="chapter-item expanded "><a href="ref/traits_for_enum.html"><strong aria-hidden="true">10.</strong> traits_for_enum</a></li><li class="chapter-item expanded "><a href="ref/build-and-create.html"><strong aria-hidden="true">11.</strong> skip_createとto_create、そしてinitialize_with</a></li><li class="chapter-item expanded "><a href="ref/transient.html"><strong aria-hidden="true">12.</strong> transient</a></li><li class="chapter-item expanded "><a href="ref/hooks.html"><strong aria-hidden="true">13.</strong> フック</a></li><li class="chapter-item expanded "><a href="ref/modify.html"><strong aria-hidden="true">14.</strong> FactoryBot.modify</a></li><li class="chapter-item expanded "><a href="ref/lint.html"><strong aria-hidden="true">15.</strong> FactoryBot.lint</a></li><li class="chapter-item expanded "><a href="ref/register_strategy.html"><strong aria-hidden="true">16.</strong> FactoryBot.register_strategy</a></li><li class="chapter-item expanded "><a href="setup/summary.html"><strong aria-hidden="true">17.</strong> 準備</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="using-without-bundler/summary.html"><strong aria-hidden="true">17.1.</strong> Bundler無しで使う</a></li><li class="chapter-item expanded "><a href="rails-preloaders-and-rspec/summary.html"><strong aria-hidden="true">17.2.</strong> Railsの事前読込器とRSpec</a></li></ol></li><li class="chapter-item expanded "><a href="defining/summary.html"><strong aria-hidden="true">18.</strong> ファクトリ定義</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="defining/name-attributes.html"><strong aria-hidden="true">18.1.</strong> ファクトリ名と属性</a></li><li class="chapter-item expanded "><a href="defining/explicit-class.html"><strong aria-hidden="true">18.2.</strong> クラスを明示的に指定</a></li><li class="chapter-item expanded "><a href="defining/file-paths.html"><strong aria-hidden="true">18.3.</strong> 定義ファイルパス</a></li><li class="chapter-item expanded "><a href="defining/hash-attributes.html"><strong aria-hidden="true">18.4.</strong> ハッシュ属性</a></li><li class="chapter-item expanded "><a href="defining/best-practices.html"><strong aria-hidden="true">18.5.</strong> ベストプラクティス</a></li><li class="chapter-item expanded "><a href="defining/static-attributes.html"><strong aria-hidden="true">18.6.</strong> 静的属性（廃止）</a></li></ol></li><li class="chapter-item expanded "><a href="using-factories/summary.html"><strong aria-hidden="true">19.</strong> ファクトリを使う</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="using-factories/build-strategies.html"><strong aria-hidden="true">19.1.</strong> 構築戦略</a></li><li class="chapter-item expanded "><a href="building-or-creating-multiple-records/summary.html"><strong aria-hidden="true">19.2.</strong> 複数のレコードを構築したり作成したり</a></li><li class="chapter-item expanded "><a href="using-factories/attribute-overrides.html"><strong aria-hidden="true">19.3.</strong> 属性の上塗り</a></li></ol></li><li class="chapter-item expanded "><a href="aliases/summary.html"><strong aria-hidden="true">20.</strong> 別称</a></li><li class="chapter-item expanded "><a href="dependent-attributes/summary.html"><strong aria-hidden="true">21.</strong> 依存属性</a></li><li class="chapter-item expanded "><a href="transient-attributes/summary.html"><strong aria-hidden="true">22.</strong> 一過的属性</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="transient-attributes/with-other-attributes.html"><strong aria-hidden="true">22.1.</strong> 他の属性付き</a></li><li class="chapter-item expanded "><a href="transient-attributes/with-attributes_for.html"><strong aria-hidden="true">22.2.</strong> attributes_for付き</a></li><li class="chapter-item expanded "><a href="transient-attributes/with-callbacks.html"><strong aria-hidden="true">22.3.</strong> コールバック付き</a></li><li class="chapter-item expanded "><a href="transient-attributes/with-associations.html"><strong aria-hidden="true">22.4.</strong> 関連付き</a></li></ol></li><li class="chapter-item expanded "><a href="method-name-reserved-word-attributes/summary.html"><strong aria-hidden="true">23.</strong> メソッド名と予約語の属性</a></li><li class="chapter-item expanded "><a href="inheritance/summary.html"><strong aria-hidden="true">24.</strong> 継承</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="inheritance/nested-factories.html"><strong aria-hidden="true">24.1.</strong> 入れ子のファクトリ</a></li><li class="chapter-item expanded "><a href="inheritance/assigning-parent-explicitly.html"><strong aria-hidden="true">24.2.</strong> 親を明示的に代入</a></li><li class="chapter-item expanded "><a href="inheritance/best-practices.html"><strong aria-hidden="true">24.3.</strong> ベストプラクティス</a></li></ol></li><li class="chapter-item expanded "><a href="associations/summary.html"><strong aria-hidden="true">25.</strong> 関連</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="associations/implicit-definition.html"><strong aria-hidden="true">25.1.</strong> 暗黙定義</a></li><li class="chapter-item expanded "><a href="associations/explicit-definition.html"><strong aria-hidden="true">25.2.</strong> 明示定義</a></li><li class="chapter-item expanded "><a href="associations/inline-definition.html"><strong aria-hidden="true">25.3.</strong> 行内定義</a></li><li class="chapter-item expanded "><a href="associations/specifying-the-factory.html"><strong aria-hidden="true">25.4.</strong> ファクトリの指定</a></li><li class="chapter-item expanded "><a href="associations/overriding-attributes.html"><strong aria-hidden="true">25.5.</strong> 属性の上塗り</a></li><li class="chapter-item expanded "><a href="associations/association-overrides.html"><strong aria-hidden="true">25.6.</strong> 関連の上塗り</a></li><li class="chapter-item expanded "><a href="associations/build-strategies.html"><strong aria-hidden="true">25.7.</strong> 構築戦略</a></li></ol></li><li class="chapter-item expanded "><a href="sequences/summary.html"><strong aria-hidden="true">26.</strong> 系列</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="sequences/global-sequences.html"><strong aria-hidden="true">26.1.</strong> 大域系列</a></li><li class="chapter-item expanded "><a href="sequences/with-dynamic-attributes.html"><strong aria-hidden="true">26.2.</strong> 動的属性付き</a></li><li class="chapter-item expanded "><a href="sequences/as-implicit-attributes.html"><strong aria-hidden="true">26.3.</strong> 暗黙属性として</a></li><li class="chapter-item expanded "><a href="sequences/inline-sequences.html"><strong aria-hidden="true">26.4.</strong> 行内系列</a></li><li class="chapter-item expanded "><a href="sequences/initial-value.html"><strong aria-hidden="true">26.5.</strong> 初期値</a></li><li class="chapter-item expanded "><a href="sequences/without-a-block.html"><strong aria-hidden="true">26.6.</strong> ブロック無し</a></li><li class="chapter-item expanded "><a href="sequences/aliases.html"><strong aria-hidden="true">26.7.</strong> 別称</a></li><li class="chapter-item expanded "><a href="sequences/rewinding.html"><strong aria-hidden="true">26.8.</strong> 巻き戻し</a></li><li class="chapter-item expanded "><a href="sequences/uniqueness.html"><strong aria-hidden="true">26.9.</strong> 一意性</a></li></ol></li><li class="chapter-item expanded "><a href="traits/summary.html"><strong aria-hidden="true">27.</strong> トレイト</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="traits/as-implicit-attributes.html"><strong aria-hidden="true">27.1.</strong> 暗黙属性として</a></li><li class="chapter-item expanded "><a href="traits/using.html"><strong aria-hidden="true">27.2.</strong> トレイトを使う</a></li><li class="chapter-item expanded "><a href="traits/enum.html"><strong aria-hidden="true">27.3.</strong> 列挙トレイト</a></li><li class="chapter-item expanded "><a href="traits/attribute-precedence.html"><strong aria-hidden="true">27.4.</strong> 属性の優先度</a></li><li class="chapter-item expanded "><a href="traits/in-child-factories.html"><strong aria-hidden="true">27.5.</strong> 子のファクトリの内部</a></li><li class="chapter-item expanded "><a href="traits/mixins.html"><strong aria-hidden="true">27.6.</strong> ミックスインとして</a></li><li class="chapter-item expanded "><a href="traits/with-associations.html"><strong aria-hidden="true">27.7.</strong> 関連付き</a></li><li class="chapter-item expanded "><a href="traits/traits-within-traits.html"><strong aria-hidden="true">27.8.</strong> トレイト内トレイト</a></li><li class="chapter-item expanded "><a href="traits/with-transient-attributes.html"><strong aria-hidden="true">27.9.</strong> 一過的属性付き</a></li></ol></li><li class="chapter-item expanded "><a href="callbacks/summary.html"><strong aria-hidden="true">28.</strong> コールバック</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="callbacks/multiple-callbacks.html"><strong aria-hidden="true">28.1.</strong> 複数コールバック</a></li><li class="chapter-item expanded "><a href="callbacks/global-callbacks.html"><strong aria-hidden="true">28.2.</strong> 大域コールバック</a></li><li class="chapter-item expanded "><a href="callbacks/symbol-to_proc.html"><strong aria-hidden="true">28.3.</strong> Symbol#to_proc</a></li></ol></li><li class="chapter-item expanded "><a href="modifying-factories/summary.html"><strong aria-hidden="true">29.</strong> ファクトリの変更</a></li><li class="chapter-item expanded "><a href="linting-factories/summary.html"><strong aria-hidden="true">30.</strong> ファクトリのリント</a></li><li class="chapter-item expanded "><a href="custom-construction/summary.html"><strong aria-hidden="true">31.</strong> 独自の構築</a></li><li class="chapter-item expanded "><a href="custom-strategies/summary.html"><strong aria-hidden="true">32.</strong> 独自の戦略</a></li><li class="chapter-item expanded "><a href="custom-callbacks/summary.html"><strong aria-hidden="true">33.</strong> 独自コールバック</a></li><li class="chapter-item expanded "><a href="custom-methods-to-persist-objects/summary.html"><strong aria-hidden="true">34.</strong> オブジェクトを永続化するための独自メソッド</a></li><li class="chapter-item expanded "><a href="activesupport-instrumentation/summary.html"><strong aria-hidden="true">35.</strong> ActiveSupportの計装</a></li><li class="chapter-item expanded "><a href="cookbook/has_many-associations.html"><strong aria-hidden="true">36.</strong> has_many関連</a></li><li class="chapter-item expanded "><a href="cookbook/has_and_belongs_to_many-associations.html"><strong aria-hidden="true">37.</strong> has_and_belongs_to_many関連</a></li><li class="chapter-item expanded "><a href="cookbook/polymorphic-associations.html"><strong aria-hidden="true">38.</strong> 多相関連</a></li><li class="chapter-item expanded "><a href="cookbook/interconnected-associations.html"><strong aria-hidden="true">39.</strong> 相互接続関連</a></li><li class="chapter-item expanded affix "><li class="part-title">その他</li><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">40.</strong> お読みください</a></li><li class="chapter-item expanded "><a href="NEWS.html"><strong aria-hidden="true">41.</strong> お知らせ</a></li><li class="chapter-item expanded "><a href="NAME.html"><strong aria-hidden="true">42.</strong> 名称</a></li><li class="chapter-item expanded "><a href="CONTRIBUTING.html"><strong aria-hidden="true">43.</strong> 貢献</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">factory_bot</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="序"><a class="header" href="#序">序</a></h1>
+<p>factory_botはフィクスチャの代わりになるものです。
+直感的な定義構文であり、複数の構築戦略（保存されたインスタンス、保存されないインスタンス、属性ハッシュ、スタブ化オブジェクト）、ファクトリ継承を含む同じクラスに対する複数のファクトリ（user、admin_user、など）に対応しています。</p>
+<p>ドキュメントは以下に分かれています。</p>
+<ul>
+<li>初めて使う方は、<a href="setup/summary.html">手引き</a>から始めると良いでしょう。</li>
+<li><a href="cookbook/has_many-associations.html">レシピ</a>には、よくある状況に対する創造的な解決策があります。</li>
+<li><a href="https://github.com/thoughtbot/factory_bot/wiki">ウィキ</a>には他のソフトウェアと統合するときの検討事項が詳しく書かれています。</li>
+<li><a href="ref/build-strategies.html">便覧</a>には、本プロジェクトのソフトウェアを頻繁に使う人向けの情報があります。</li>
+</ul>
+<h2 id="使用許諾"><a class="header" href="#使用許諾">使用許諾</a></h2>
+<p>factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free
+software, and may be redistributed under the terms specified in the
+<a href="https://github.com/thoughtbot/factory_bot/blob/main/LICENSE">LICENSE</a> file.</p>
+<h2 id="thoughtbotについて"><a class="header" href="#thoughtbotについて">thoughtbotについて</a></h2>
+<p>factory_botはthoughtbot, inc.により保守され、資金提供されています。
+thoughtbotの名前とロゴはthoughtbot, inc.の商標です。</p>
+<p>私達はオープンソースソフトウェアが大好きです！
+<a href="https://thoughtbot.com/community?utm_source=github">私達の他のプロジェクト</a>を参照してください。
+製品を設計、開発、成長させるための<a href="https://thoughtbot.com/hire-us?utm_source=github">求人を募集しています</a>。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="構築戦略"><a class="header" href="#構築戦略">構築戦略</a></h1>
+<p>factory_botのファクトリを定義したら、組み込みの構築戦略や独自の構築戦略を使って構築できます。</p>
+<p>こうした戦略は全て、<a href="https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html">ActiveSupport::Notifications</a>を使って<code>factory_bot.run_factory</code>計装に通知し、キー<code>:name</code>、<code>:strategy</code>、<code>:traits</code>、<code>:overrides</code>、<code>:factory</code>を持つペイロードを渡します。</p>
+<p>リストではないメソッド（<code>.build</code>や<code>.build_pair</code>や<code>.create</code>など）は、必須の実引数であるファクトリ名を取ります。
+また、省略できるトレイト名や、上塗りする属性のハッシュもあります。
+最後にブロックを取れます。
+このブロックは、生成されたオブジェクトを実引数とし、更新されたオブジェクトを返します。</p>
+<p>リストのメソッド（<code>.build_list</code>や<code>.create_list</code>など）には2つの必須の実引数を持ちます。
+ファクトリの名前と構築するインスタンスの数です。
+また省略可能なトレイトと上塗りするものを取れます。
+最後にブロックを取れます。
+このブロックは生成されたオブジェクトとゼロ始まりの添字を実引数として取り、更新されたオブジェクトを返します。</p>
+<h2 id="build"><a class="header" href="#build"><code>build</code></a></h2>
+<p><code>FactoryBot.build</code>メソッドは<code>initialize_with</code>にしたがってクラスのインスタンスを構築します。
+既定では<code>.new</code>クラスメソッドを呼びます。
+<code>.build_list</code>は複数のインスタンスを構築し、<code>.build_pair</code>は2つのインスタンスを構築する早道です。</p>
+<p><code>initialize_with</code>を呼んだ後、<code>after_build</code>フックを呼びます。</p>
+<p>関連は<code>build</code>構築戦略を使って構築されます。</p>
+<h2 id="create"><a class="header" href="#create"><code>create</code></a></h2>
+<p><code>FactoryBot.create</code>メソッドは<code>initialize_with</code>にしたがってクラスのインスタンスを構築し、<code>to_create</code>を使って永続化します。
+<code>.create_list</code>クラスメソッドは複数のインスタンスを構築します。
+また<code>.create_pair</code>は2つのインスタンスを構築する早道です。</p>
+<p><code>initialize_with</code>を呼んだ後、以下のフックを順番に呼びます。</p>
+<ol>
+<li><code>after_build</code></li>
+<li><code>before_create</code></li>
+<li>フックではない<code>to_create</code></li>
+<li><code>after_create</code></li>
+</ol>
+<p>関連は<code>create</code>構築戦略を使って構築されます。</p>
+<p><code>to_create</code>フックはオブジェクトの永続化方法を制御します。
+オブジェクトとfactory_botの文脈を持つブロックを取り、副作用を見越して走ります。
+既定では<code>#save!</code>を呼びます。</p>
+<h2 id="attributes_for"><a class="header" href="#attributes_for"><code>attributes_for</code></a></h2>
+<p><code>FactoryBot.attributes_for</code>メソッドは、属性とその値を持つHashを、<code>initialize_with</code>を使って構築します。
+<code>attributes_for_pair</code>メソッドと<code>attributes_for_list</code>メソッドは、<code>build_pair</code>と<code>build_list</code>と似た動作です。</p>
+<p>関連は<code>null</code>構築戦略（構築されません）を使って構築されます。</p>
+<p>フックは呼ばれません。</p>
+<h2 id="build_stubbed"><a class="header" href="#build_stubbed"><code>build_stubbed</code></a></h2>
+<p><code>FactoryBot.build_stubbed</code>メソッドは、偽のActiveRecordオブジェクトを返します。
+<code>.build_stubbed_pair</code>メソッドと<code>.build_stubbed_list</code>メソッドは、<code>.build_pair</code>と<code>.build_list</code>と似た定義です。</p>
+<p><code>initialize_with</code>を使ってオブジェクトを構築します。
+ただし、メソッドとデータを適切にスタブします。</p>
+<ul>
+<li><code>id</code>は（属性で上塗りされない限り）連番で設定されます。</li>
+<li><code>created_at</code>と<code>updated_at</code>は（属性で上塗りされない限り）現在時刻に設定されます。</li>
+<li>全ての<a href="https://api.rubyonrails.org/classes/ActiveModel/Dirty.html">ActiveModel::Dirty</a>の変更の記録が消去されます。</li>
+<li><code>persisted?</code>は真です。</li>
+<li><code>new_record?</code>は偽です。</li>
+<li><code>destroyed?</code>は偽です。</li>
+<li>永続化メソッド（<code>#connection</code>や<code>#delete</code>や<code>#save</code>や<code>#update</code>など）は<code>RuntimeError</code>を投げます。</li>
+</ul>
+<p>オブジェクトを設定した後<code>after_stub</code>フックを呼びます。</p>
+<h2 id="null"><a class="header" href="#null"><code>null</code></a></h2>
+<p><code>FactoryBot.null</code>メソッドは<code>nil</code>を返します。
+<code>.null_pair</code>メソッドはnilの対を与えます。
+<code>.null_list</code>は欲しい数だけnilを与えます。
+内部的に使われています。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factorybotfind_definitions"><a class="header" href="#factorybotfind_definitions">FactoryBot.find_definitions</a></h1>
+<p><code>FactoryBot.find_definitions</code>メソッドはプロジェクトに亙る全てのfactory_botの定義を読み込みます。</p>
+<p>読込順は<code>FactoryBot.definition_file_paths</code>属性で制御します。
+既定の読込順は以下の通りです。</p>
+<ol>
+<li><code>factories.rb</code></li>
+<li><code>test/factories.rb</code></li>
+<li><code>test/factories/**/*.rb</code></li>
+<li><code>spec/factories.rb</code></li>
+<li><code>spec/factories/**/*.rb</code></li>
+</ol>
+<h2 id="rails"><a class="header" href="#rails">Rails</a></h2>
+<p><code>.find_definitions</code>メソッドは初期化後に<code>factory_bot_rails</code>により自動的に呼ばれます。
+初期化時に（<code>config/initializers</code>などで）<code>.definition_file_paths</code>を設定したり、<code>Rails.application.config.factory_bot.definition_file_paths</code>で設定したりできます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factorybotdefine"><a class="header" href="#factorybotdefine">FactoryBot.define</a></h1>
+<p>factory_botで読み込まれる各ファイルはブロック付きの<code>FactoryBot.define</code>で呼ばれることになります。
+ブロックは<code>FactoryBot::Syntax::Default::DSL</code>のインスタンス内で評価され、<code>factory</code>や<code>sequence</code>や<code>trait</code>などのメソッドを利用できます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリ"><a class="header" href="#ファクトリ">ファクトリ</a></h1>
+<p><code>FactoryBot.define</code>ブロック内ではファクトリを定義できます。
+<code>factory</code>を使って定義された全てのものは<a href="ref/build-strategies.html">構築戦略</a>を使って構築できます。</p>
+<p><code>factory</code>メソッドは3つの実引数を取ります。
+必須の名前、省略できるオプションのハッシュ、そして省略できるブロックです。</p>
+<p>名前はSymbolにすることになっています。</p>
+<h2 id="オプション"><a class="header" href="#オプション">オプション</a></h2>
+<ul>
+<li><code>:class</code>は、構築するクラスです。
+クラスないしStringやSymbol（<code>#to_s</code>に応答する任意のもの）にできます。
+既定では親クラス名かファクトリ名の何れかです。</li>
+<li><code>:parent</code>はこのファクトリが継承する別のファクトリ名です。
+既定では<code>nil</code>です。</li>
+<li><code>:aliases</code>はこのファクトリの別名です。
+構築戦略で使えます。
+既定では空リストです。</li>
+<li><code>:traits</code>はこのファクトリを構築するときに既定で使われる既定のトレイトです。
+既定で空リストです。</li>
+</ul>
+<h2 id="ブロック"><a class="header" href="#ブロック">ブロック</a></h2>
+<p>ブロックを使ってファクトリを定義できます。
+この中では以下のメソッドが使えます。</p>
+<ul>
+<li><a href="ref/add_attribute.html"><code>add_attribute</code></a></li>
+<li><a href="ref/association.html"><code>association</code></a></li>
+<li><a href="ref/sequence.html"><code>sequence</code></a></li>
+<li><a href="ref/trait.html"><code>trait</code></a></li>
+<li><a href="ref/method_missing.html"><code>method_missing</code></a></li>
+<li><a href="ref/transient.html"><code>transient</code></a></li>
+<li><a href="ref/traits_for_enum.html"><code>traits_for_enum</code></a></li>
+<li><a href="ref/build-and-create.html#initialize_with"><code>initialize_with</code></a></li>
+<li><a href="ref/build-and-create.html"><code>skip_create</code></a></li>
+<li><a href="ref/build-and-create.html#to_create"><code>to_create</code></a></li>
+<li><a href="ref/hooks.html#after-and-before-methods"><code>before</code></a></li>
+<li><a href="ref/hooks.html#after-and-before-methods"><code>after</code></a></li>
+<li><a href="ref/hooks.html#callback"><code>callback</code></a></li>
+<li><code>factory</code></li>
+</ul>
+<p><code>factory</code>内で<code>factory</code>を使うと、暗示した親を持つ新しいファクトリを定義できます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="add_attribute"><a class="header" href="#add_attribute">add_attribute</a></h1>
+<p>ファクトリの定義の中では、<code>add_attribute</code>メソッドで、オブジェクトが構築されるときに設定されるキーバリュー対を定義できます。</p>
+<p><code>add_attribute</code>メソッドは、名前（SymbolまたはString）とブロックの2つの実引数を取ります。
+ブロックはこのオブジェクトが構築される度に呼ばれます。
+ブロックは属性が構築戦略で上塗りされるときは呼ばれません。</p>
+<p>代入ではRubyの属性セッターを呼びます。
+例えば以下があるとします。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :user do
+    add_attribute(:name) { &quot;Acid Burn&quot; }
+  end
+end
+</code></pre>
+<p>このとき<code>#name=</code>セッターが使われます。</p>
+<pre><code class="language-ruby">user = User.new
+user.name = &quot;Acid Burn&quot;
+</code></pre>
+<p>早道については<a href="ref/method_missing.html">method_missing</a>も参照してください。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="関連"><a class="header" href="#関連">関連</a></h1>
+<p>ファクトリブロック内で<code>association</code>を使うと、このオブジェクトに隣合うオブジェクトが追加で作られます。
+この名前は、ActiveRecordの文脈だと一番わかりやすいでしょう。</p>
+<p><code>association</code>メソッドは必須の名前と省略できるオプションを取ります。</p>
+<p>オプションは0個以上のトレイト名 (Symbol) とそれに続く属性の上塗りのハッシュです。
+この関連を構築するとき、factory_botはトレイトと与えられた属性の上塗りを使います。</p>
+<p>早道については<a href="ref/method_missing.html">method_missing</a>を参照してください。
+各構築戦略の関連の扱いについての説明は<a href="ref/build-strategies.html">構築戦略</a>を参照してください。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="系列"><a class="header" href="#系列">系列</a></h1>
+<p>factory_botは2つの水準の系列に対応しています。
+大域的なものとファクトリ固有のものです。</p>
+<h2 id="大域系列"><a class="header" href="#大域系列">大域系列</a></h2>
+<p><a href="ref/define.html"><code>Factory.define</code></a>ブロックでは、<code>sequence</code>メソッドを使うと、他のファクトリで共有できる大域系列が定義されます。</p>
+<p><code>sequence</code>メソッドは、名前、省略できる実引数、ブロックを取ります。
+名前はSymbolにすることになっています。</p>
+<p>対応する実引数は、開始の値を表す数値（既定で<code>1</code>）と<code>:aliases</code>（既定で<code>[]</code>）です。
+開始の値は<code>#next</code>に応答しなければなりません。</p>
+<p>ブロックは値を実引数として取り、結果を返します。</p>
+<p>系列の値は大域的に増加します。
+複数の場所で<code>:email_address</code>系列を使うと、都度値が漸増します。</p>
+<p>早道については<a href="ref/method_missing.html">method_missing</a>を参照してください。</p>
+<h2 id="ファクトリ系列"><a class="header" href="#ファクトリ系列">ファクトリ系列</a></h2>
+<p>系列はファクトリブロック内に留めておけます。
+構文は大域系列と同じですが、漸増する値のスコープはファクトリ定義に限られます。</p>
+<p>加えて<code>factory</code>ブロックで<code>sequence</code>を使うと、暗黙にその値に<code>add_attribute</code>を呼びます。</p>
+<p>以下の2つは似ていますが、2つ目の例は大域系列が存在しません。</p>
+<pre><code class="language-ruby"># 大域系列
+sequence(:user_factory_email) { |n| &quot;person#{n}@example.com&quot; }
+
+factory :user do
+  # 大域系列を使う
+  email { generate(:user_factory_email) }
+end
+</code></pre>
+<pre><code class="language-ruby"># ファクトリのスコープの系列
+factory :user do
+  sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="トレイト"><a class="header" href="#トレイト">トレイト</a></h1>
+<p><code>factory</code>定義ブロック内で<code>trait</code>メソッドを使うと、ファクトリの変更内容が名前付きで定義されます。</p>
+<p>トレイトメソッドは名前 (Symbol) とブロックを取ります。
+ブロックは<a href="ref/factory.html"><code>factory</code></a>定義ブロックのように扱います。</p>
+<p>早道については<a href="ref/method_missing.html">method_missing</a>を参照してください。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="method_missing"><a class="header" href="#method_missing">method_missing</a></h1>
+<p><code>factory</code>定義ブロックでは、<code>add_attribute</code>や<code>association</code>や<code>sequence</code>や<code>trait</code>を使ってファクトリを定義できます。
+また、既定の<code>method_missing</code>定義を活かした早道も使えます。</p>
+<p>未知のメソッド（例えば<code>name</code>や<code>admin</code>や<code>email</code>や<code>account</code>）を呼ぶと、関連や系列やトレイトやファクトリの属性に繋がります。</p>
+<ol>
+<li>
+<p>method_missingにブロックが渡されたとき、常に属性を定義します。
+これにより属性に値を設定できます。</p>
+</li>
+<li>
+<p>method_missingに実引数としてキー<code>:factory</code>を持つハッシュが渡されたとき、常に関連を定義します。
+これにより関連に使うファクトリを上塗りできます。</p>
+</li>
+<li>
+<p>同名の別のファクトリがあるとき、関連を定義します。</p>
+</li>
+<li>
+<p>同名の大域系列があると、属性が定義されます。
+系列から値が取り出されます。</p>
+</li>
+<li>
+<p>ファクトリに同名のトレイトがあるとき、このファクトリの全ての構築に対してトレイトを変えます。</p>
+</li>
+</ol>
+<p><code>method_missing</code>を使ってみましょう。
+以下の明示的な定義があるとします。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+  factory :account
+  factory :organization
+
+  factory :user, traits: [:admin] do
+    add_attribute(:name) { &quot;Lord Nikon&quot; }
+    add_attribute(:email) { generate(:email) }
+    association :account
+    association :org, factory: :organization
+
+    trait :admin do
+      add_attribute(:admin) { true }
+    end
+  end
+end
+</code></pre>
+<p>上記はもっと暗黙な定義にできます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+  factory :account
+  factory :organization
+
+  factory :user do
+    name { &quot;Lord Nikon&quot; }      # `add_attribute`なし
+    admin                      # :traitsなし
+    email                      # `add_attribute`なし
+    account                    # `association`なし
+    org factory: :organization # `association`なし
+
+    trait :admin do
+      admin { true }
+    end
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="traits_for_enum"><a class="header" href="#traits_for_enum">traits_for_enum</a></h1>
+<p><code>factory</code>定義ブロックには、<code>traits_for_enum</code>メソッドという補助機能があります。
+任意のオブジェクトに、いくつかの値のうちのどれかになる属性を持たせます。
+元となった着想は<a href="https://api.rubyonrails.org/classes/ActiveRecord/Enum.html"><code>ActiveRecord::Enum</code></a>ですが、限られた値の集合がある任意の属性に適用できます。</p>
+<p>このメソッドにより、それぞれの値にトレイトが作られます。</p>
+<p><code>traits_for_enum</code>メソッドは、必須の属性名と省略できる値の集合を取ります。
+値は任意のEnumerableにできます。
+例えばArrayやHashです。
+既定では値は<code>nil</code>です。</p>
+<p>値がArrayのとき、このメソッドは配列内の各要素にトレイトを定義します。
+トレイト名は配列の要素であり、同じ配列の要素に属性を設定します。</p>
+<p>値がHashのとき、このメソッドはキーに基づくトレイトを定義し、属性を値に設定します。
+トレイト名はキーであり、属性を値に設定します。</p>
+<p>値が何らかのEnumerableのとき、ArrayまたはHashのように扱います。
+このとき、<code>#each</code>がHashのように対で反復するかどうかに基づきます。</p>
+<p>値がnilのとき、複数形になった属性名に因むクラスメソッドを使います。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :article do
+    traits_for_enum :visibility, [:public, :private]
+    # trait :public do
+    #   visibility { :public }
+    # end
+    # trait :private do
+    #   visibility { :private }
+    # end
+
+    traits_for_enum :collaborative, draft: 0, shared: 1
+    # trait :draft do
+    #   collaborative { 0 }
+    # end
+    # trait :shared do
+    #   collaborative { 1 }
+    # end
+
+    traits_for_enum :status
+    # Article.statuses.each do |key, value|
+    #   trait key do
+    #     status { value }
+    #   end
+    # end
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="skip_createとto_createそしてinitialize_with"><a class="header" href="#skip_createとto_createそしてinitialize_with">skip_createとto_create、そしてinitialize_with</a></h1>
+<p><code>skip_create</code>メソッドと<code>to_create</code>メソッドと<code>initialize_with</code>メソッドは、factory_botによる<a href="ref/build-strategies.html">構築戦略</a>とのやり取りの仕方を制御します。</p>
+<p>これらのメソッドは<code>factory</code>定義ブロック内で呼べます。
+作用はそのファクトリに留まります。
+<code>FactoryBot.define</code>内にすると大域的な変更として作用します。</p>
+<h2 id="initialize_with"><a class="header" href="#initialize_with">initialize_with</a></h2>
+<p><code>initialize_with</code>メソッドはブロックを取り、ファクトリのクラスのインスタンスを返します。
+<code>attributes</code>メソッドを使うことができます。
+このメソッドはオブジェクトの全てのフィールドと値からなるハッシュです。</p>
+<p>既定の定義は以下です。</p>
+<pre><code class="language-ruby">initialize_with { new }
+</code></pre>
+<h2 id="to_create"><a class="header" href="#to_create">to_create</a></h2>
+<p><code>to_create</code>メソッドは<code>FactoryBot.create</code>戦略を制御します。
+このメソッドは<code>initialize_with</code>で構築されたオブジェクトとfactory_botの文脈を取るブロックを取ります。
+文脈には<a href="ref/transient.html"><code>transient</code></a>ブロックからの追加のデータがあります。</p>
+<p>既定の定義は以下です。</p>
+<pre><code class="language-ruby">to_create { |obj, context| obj.save! }
+</code></pre>
+<p><code>skip_create</code>メソッドは<code>to_create</code>を何もしないように変える早道です。
+これにより<code>create</code>戦略を<code>build</code>の同意語として使えます。
+ただし<code>create</code>フックは追加で掛かっています。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transient"><a class="header" href="#transient">transient</a></h1>
+<p><code>factory</code>定義ブロック内では、クラスのインスタンスを構築することが目標です。
+factory_botはこれをするものですが、文脈でのデータの記録をつけています。
+データをこの文脈に設定するには<code>transient</code>ブロックを使います。</p>
+<p><code>transient</code>ブロックは<code>factory</code>定義ブロックのように扱います。
+しかし設定した属性、関連、トレイト、系列は最終的なオブジェクトに影響しません。</p>
+<p>これは<a href="ref/hooks.html">フック</a>や<a href="ref/build-and-create.html">to_create</a>との取り合わせで一番有用です。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="フック"><a class="header" href="#フック">フック</a></h1>
+<p><code>factory</code>定義ブロックや<code>FactoryBot.define</code>ブロック内部では、<code>after</code>メソッドや<code>before</code>メソッドや<code>callback</code>メソッドが使えます。
+これにより<a href="ref/build-strategies.html">構築戦略</a>の一部にフックを掛けられます。</p>
+<p><code>factory</code>定義ブロック内では、これらのコールバックはそのファクトリのみのスコープとなります。
+<code>FactoryBot.define</code>ブロック内では、全てのファクトリに対して大域的になります。</p>
+<h2 id="callback"><a class="header" href="#callback"><code>callback</code></a></h2>
+<p><code>callback</code>メソッドは任意のfactory_botコールバックを名前でフックを掛けられます。
+<a href="ref/build-strategies.html">構築戦略</a>の便覧に見られる通り、予め定義された名前は<code>after_build</code>と<code>before_create</code>と<code>after_create</code>と<code>after_stub</code>です。</p>
+<p>このメソッドはスプラットされる名前とブロックを取ります。
+名前のどれかが活性になる度にブロックが呼ばれます。
+ブロックは<code>#to_proc</code>に応答する任意のものにできます。</p>
+<p>このブロックは2つの実引数を取ります。
+1つはファクトリのインスタンスで、もう1つはfactory_botの文脈です。
+文脈は<a href="ref/transient.html">transient</a>属性を持ちます。</p>
+<p>同じコールバック名を複数回フックに掛けられます。
+ブロックは全て、定義された順に実行されます。
+コールバックは親から継承します。
+親のコールバックがまず実行されます。</p>
+<h2 id="afterメソッドとbeforeメソッド"><a class="header" href="#afterメソッドとbeforeメソッド"><code>after</code>メソッドと<code>before</code>メソッド</a></h2>
+<p><code>after</code>メソッドと<code>before</code>メソッドは<code>callback</code>にいい感じの構文を加えています。</p>
+<pre><code class="language-ruby">after(:create) do |user, context|
+  user.post_first_article(context.article)
+end
+
+callback(:after_create) do |user, context|
+  user.post_first_article(context.article)
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factorybotmodify"><a class="header" href="#factorybotmodify">FactoryBot.modify</a></h1>
+<p><code>FactoryBot.modify</code>クラスメソッドは使える<code>factory</code>メソッドを<em>上塗り</em>してブロックを定義します。
+ブロック内で呼べる唯一のメソッドです。</p>
+<p>このブロック内の<code>factory</code>メソッドは必須のファクトリ名とブロックを取ります。
+他の全ての実引数は無視されます。
+ファクトリ名は定義済みでなければなりません。
+ブロックは通常の<a href="ref/factory.html">ファクトリ定義ブロック</a>です。
+なお<a href="ref/hooks.html">フック</a>は消去できず、合わさったままになります。</p>
+<p>これを使いたい状況になる理由についての詳細は、<a href="ref/../modifying-factories/summary.html">手引き</a>を参照してください。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factorybotlint"><a class="header" href="#factorybotlint">FactoryBot.lint</a></h1>
+<p><code>FactoryBot.lint</code>メソッドは各ファクトリを試して失敗したときに<code>FactoryBot::InvalidFactoryError</code>を投げます。</p>
+<p>以下の省略できる実引数を取れます。</p>
+<ul>
+<li>スプラットされるファクトリ名です。
+これは1つのみにリントの対象を制限します。
+既定は全てです。</li>
+<li><code>:strategy</code>は使う<a href="ref/build-strategies.html">構築戦略</a>です。
+既定は<code>:create</code>です。</li>
+<li><code>:traits</code>は各トレイトの構築も試みるかどうかを表します。
+既定は<code>false</code>です。</li>
+<li><code>:verbose</code>はエラーでスタックトレースを表示するかどうかです。
+既定は<code>false</code>です。</li>
+</ul>
+<p><code>.lint</code>をシステムにフックを掛けるお勧めの工夫については、<a href="ref/../linting-factories/summary.html">手引き</a>で説明されています。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factorybotregister_strategy"><a class="header" href="#factorybotregister_strategy">FactoryBot.register_strategy</a></h1>
+<p><code>FactoryBot.register_strategy</code>メソッドは<a href="ref/build-strategies.html">構築戦略</a>の加え方です。</p>
+<p>2つの必須の実引数である名前とクラスを取ります。
+名前はSymbolで、<code>FactoryBot::Syntax::Methods</code>下に現すメソッドを登録します。</p>
+<p>クラスはメソッド<code>association</code>と<code>result</code>を定義しなければなりません。</p>
+<p><code>association</code>メソッドは<code>FactoryRunner</code>のインスタンスを取ります。
+このランナーを<code>#run</code>で走らせられます。
+このとき戦略名（既定は現在のもの）と省略できるブロックを渡します。
+ブロックは関連が構築された後に呼ばれ、構築されたオブジェクトが渡されます。</p>
+<p><code>result</code>メソッドは（<code>initialize_with</code>を使って）このファクトリで構築されたオブジェクトを取り、この構築戦略用のファクトリの結果を返します。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="準備"><a class="header" href="#準備">準備</a></h1>
+<p>インストール手順は様々です。
+もしあれば使っているフレームワークに依りますし、テストフレームワークについても考えられます。</p>
+<p>インストール手順が私達の手の届かないコードに基づいて様々であるため、そうしたドキュメントは<a href="https://github.com/thoughtbot/factory_bot/wiki/Installation">ウィキ</a>で更新され続けます。
+フレームワークが変わったときにウィキを編集することをお勧めします。</p>
+<p>以降では最もよくある準備をドキュメントとして書きます。
+<strong>しかし詳細は<a href="https://github.com/thoughtbot/factory_bot/wiki/Installation">ウィキ</a>をあたってください。</strong></p>
+<h2 id="gemfileの更新"><a class="header" href="#gemfileの更新">Gemfileの更新</a></h2>
+<p>Railsを使っている場合は次のようにしてください。</p>
+<pre><code class="language-ruby">gem &quot;factory_bot_rails&quot;
+</code></pre>
+<p>Railsを使って<em>いない</em>場合は次のようにしてください。</p>
+<pre><code class="language-ruby">gem &quot;factory_bot&quot;
+</code></pre>
+<p>詳細については<a href="https://github.com/thoughtbot/factory_bot/wiki/Installation">私達のウィキ</a>を参照してください。</p>
+<h2 id="テストスートの構成"><a class="header" href="#テストスートの構成">テストスートの構成</a></h2>
+<h3 id="rspec"><a class="header" href="#rspec">RSpec</a></h3>
+<pre><code class="language-ruby">RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+end
+</code></pre>
+<h3 id="testunit"><a class="header" href="#testunit">Test::Unit</a></h3>
+<pre><code class="language-ruby">class Test::Unit::TestCase
+  include FactoryBot::Syntax::Methods
+end
+</code></pre>
+<p>詳細については<a href="https://github.com/thoughtbot/factory_bot/wiki/Installation">私達のウィキ</a>を参照してください。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bundler無しで使う"><a class="header" href="#bundler無しで使う">Bundler無しで使う</a></h1>
+<p>Bundlerを使わないとき、gemがインストールされて呼ばれていることを確認してください。</p>
+<pre><code class="language-ruby">require 'factory_bot'
+</code></pre>
+<p>一旦requireされたら、<code>spec/factories</code>または<code>test/factories</code>のディレクトリ構造があるとして、以下を走らせるだけで済みます。</p>
+<pre><code class="language-ruby">FactoryBot.find_definitions
+</code></pre>
+<p>ファクトリ用の個別のディレクトリ構造を使っているとき、定義を見付けようとする前に定義ファイルパスを代えられます。</p>
+<pre><code class="language-ruby">FactoryBot.definition_file_paths = %w(custom_factories_directory)
+FactoryBot.find_definitions
+</code></pre>
+<p>ファクトリの個別のディレクトリがなく、行内に定義したいときも可能です。</p>
+<pre><code class="language-ruby">require 'factory_bot'
+
+FactoryBot.define do
+  factory :user do
+    name { 'John Doe' }
+    date_of_birth { 21.years.ago }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="railsの事前読込器とrspec"><a class="header" href="#railsの事前読込器とrspec">Railsの事前読込器とRSpec</a></h1>
+<p>RSpecを<code>spring</code>や<code>zeus</code>といったRailsの事前読込器付きで走らせるとき、関連付きのファクトリを作るときに<code>ActiveRecord::AssociationTypeMismatch</code>エラーに遭うかもしれません。
+以下のような感じです。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :united_states, class: &quot;Location&quot; do
+    name { 'United States' }
+    association :location_group, factory: :north_america
+  end
+
+  factory :north_america, class: &quot;LocationGroup&quot; do
+    name { 'North America' }
+  end
+end
+</code></pre>
+<p>エラーは、テストスートを走らせるときに起こります。</p>
+<pre><code>Failure/Error: united_states = create(:united_states)
+ActiveRecord::AssociationTypeMismatch:
+  LocationGroup(#70251250797320) expected, got LocationGroup(#70251200725840)
+</code></pre>
+<p>2つの解決策が考えられます。
+1つはテストスートを事前読込器無しで走らせることです。
+もう1つはRSpecの構成に<code>FactoryBot.reload</code>を追加することです。
+以下のような感じです。</p>
+<pre><code class="language-ruby">RSpec.configure do |config|
+  config.before(:suite) { FactoryBot.reload }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリ定義"><a class="header" href="#ファクトリ定義">ファクトリ定義</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリ名と属性"><a class="header" href="#ファクトリ名と属性">ファクトリ名と属性</a></h1>
+<p>各ファクトリには名前と属性の一式があります。
+名前は既定でオブジェクトのクラスを推測するために使われます。</p>
+<pre><code class="language-ruby"># 以下はUserクラスを推測します。
+FactoryBot.define do
+  factory :user do
+    first_name { &quot;John&quot; }
+    last_name  { &quot;Doe&quot; }
+    admin { false }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="クラスを明示的に指定"><a class="header" href="#クラスを明示的に指定">クラスを明示的に指定</a></h1>
+<p>クラスを明示的に指定することもできます。</p>
+<pre><code class="language-ruby"># 以下はUserクラスを使います（こうしなければAdminが推測されていました）
+factory :admin, class: &quot;User&quot;
+</code></pre>
+<p>定数が使えるときは定数も渡せます（なおこれは大きいRailsアプリケーションではテストの効率性の問題を引き起こすことがあります。
+定数の参照が積極読込を引き起こすためです）。</p>
+<pre><code class="language-ruby">factory :access_token, class: User
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="定義ファイルパス"><a class="header" href="#定義ファイルパス">定義ファイルパス</a></h1>
+<p>ファクトリはどこでも定義できます。
+しかしファクトリが以下の場所のファイルで定義された場合、<code>FactoryBot.find_definitions</code>を読んだ後に自動的に読み込まれます。</p>
+<pre><code>test/factories.rb
+spec/factories.rb
+test/factories/*.rb
+spec/factories/*.rb
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ハッシュ属性"><a class="header" href="#ハッシュ属性">ハッシュ属性</a></h1>
+<p>Rubyのブロック構文があるため、（例えば直列化された列やJSONの列用に）属性を<code>Hash</code>として定義するには、2対の波括弧が必要です。</p>
+<pre><code class="language-ruby">factory :program do
+  configuration { { auto_resolve: false, auto_define: true } }
+end
+</code></pre>
+<p>代えてお好みで<code>do</code>と<code>end</code>の構文にすることもできます。</p>
+<pre><code class="language-ruby">factory :program do
+  configuration do
+    { auto_resolve: false, auto_define: true }
+  end
+end
+</code></pre>
+<hr />
+<p>しかし値をハッシュとして定義するとオブジェクトを構築するときにハッシュ内に値を設定するのが複雑になります。
+その代わりにfactory_bot自体を使うようにしてください。</p>
+<pre><code class="language-ruby">factory :program do
+  configuration { attributes_for(:configuration) }
+end
+
+factory :configuration do
+  auto_resolve { false }
+  auto_define { true }
+end
+</code></pre>
+<p>この方法ではより簡単に構築の際に値を設定できます。</p>
+<pre><code class="language-ruby">create(
+  :program,
+  configuration: attributes_for(
+    :configuration,
+    auto_resolve: true,
+  )
+)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ベストプラクティス"><a class="header" href="#ベストプラクティス">ベストプラクティス</a></h1>
+<p>お勧めは、各クラスに1つのファクトリがあるようにし、そのクラスのインスタンスを作るのに必要な、最も単純な属性一式を提供することです。
+ActiveRecordオブジェクトを作る場合、これが意味するのは検証を通じて求められる属性のみを与え、既定値を持たせないということです。
+他のファクトリは各クラスについて共通する筋書を押さえる上で継承を通じて作れます。</p>
+<p>同じ名前で複数のファクトリを定義しようとするとエラーが投げられます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="静的属性"><a class="header" href="#静的属性">静的属性</a></h1>
+<p>（ブロックの無い）静的属性はfactory_bot 5では使えなくなりました。
+削除する決断についての詳細は<a href="https://robots.thoughtbot.com/deprecating-static-attributes-in-factory_bot-4-11">こちらのブログの記事</a>をお読みいただけます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリを使う"><a class="header" href="#ファクトリを使う">ファクトリを使う</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="構築戦略-1"><a class="header" href="#構築戦略-1">構築戦略</a></h1>
+<p>factory_botは複数の異なる構築戦略に対応しています。
+<code>build</code>、<code>create</code>、<code>attributes_for</code>、<code>build_stubbed</code>です。</p>
+<pre><code class="language-ruby"># 保存されないUserインスタンスを返します。
+user = build(:user)
+
+# 保存されたUserインスタンスを返します。
+user = create(:user)
+
+# 属性のハッシュを返します。例えばUserインスタンスを構築するのに使えます。
+attrs = attributes_for(:user)
+
+# Ruby 3.0のパターン合致代入の対応と統合します。
+attributes_for(:user) =&gt; {email:, name:, **attrs}
+
+# 全ての定義された属性をスタブ化したオブジェクトを返します。
+stub = build_stubbed(:user)
+
+# 上記のどのメソッドにも、ブロックを渡せば返却されたオブジェクトがもたらされます。
+create(:user) do |user|
+  user.posts.create(attributes_for(:post))
+end
+</code></pre>
+<h1 id="build_stubbedとmarshaldump"><a class="header" href="#build_stubbedとmarshaldump">build_stubbedとMarshal.dump</a></h1>
+<p>なお<code>build_stubbed</code>で作られたオブジェクトは<code>Marshal.dump</code>で直列化できません。
+factory_botはこれらのオブジェクトに特異メソッドを定義するからです。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="複数のレコードの構築と作成"><a class="header" href="#複数のレコードの構築と作成">複数のレコードの構築と作成</a></h1>
+<p>ファクトリの複数のインスタンスを一括で作成したり構築したりしたいときがあります。</p>
+<pre><code class="language-ruby">built_users   = build_list(:user, 25)
+created_users = create_list(:user, 25)
+</code></pre>
+<p>これらのメソッドは指定量のファクトリを構築ないし作成し、配列として返します。
+各ファクトリに属性を設定する上ではいつも通りハッシュで渡せます。</p>
+<pre><code class="language-ruby">twenty_year_olds = build_list(:user, 25, date_of_birth: 20.years.ago)
+</code></pre>
+<p>各ファクトリに異なる属性を設定するためには、これらのメソッドにブロックを渡せます。
+そこでファクトリと仮引数として添字を持たせます。</p>
+<pre><code class="language-ruby">twenty_somethings = build_list(:user, 10) do |user, i|
+  user.date_of_birth = (20 + i).years.ago
+end
+</code></pre>
+<p><code>create_list</code>は保存されたインスタンスをブロックに保存します。
+インスタンスを変更したらまた保存しなければなりません。</p>
+<pre><code class="language-ruby">twenty_somethings = create_list(:user, 10) do |user, i|
+  user.date_of_birth = (20 + i).years.ago
+  user.save!
+end
+</code></pre>
+<p><code>build_stubbed_list</code>では、完全にスタブ化されたインスタンスが得られます。</p>
+<pre><code class="language-ruby">stubbed_users = build_stubbed_list(:user, 25) # スタブ化された利用者の配列
+</code></pre>
+<p>2つのレコードを一括で作る<code>*_pair</code>メソッドの一式もあります。</p>
+<pre><code class="language-ruby">built_users   = build_pair(:user) # 2つの構築された利用者の配列
+created_users = create_pair(:user) # 2つの作成された利用者の配列
+</code></pre>
+<p>複数の属性のハッシュが必要なとき、<code>attributes_for_list</code>で生成します。</p>
+<pre><code class="language-ruby">users_attrs = attributes_for_list(:user, 25) # 属性ハッシュの配列
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="属性の上塗り"><a class="header" href="#属性の上塗り">属性の上塗り</a></h1>
+<p>使われた戦略に依らず、ハッシュを渡して定義された属性を上塗りできます。</p>
+<pre><code class="language-ruby"># Userインスタンスを構築しfirst_name特性を上塗りします
+user = build(:user, first_name: &quot;Joe&quot;)
+user.first_name
+# =&gt; &quot;Joe&quot;
+</code></pre>
+<p>Ruby 3.1の<code>Hash</code>表記での<a href="https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc.html#label-Hash+Literals">バリューの省略</a>対応は属性の上塗りにぴったり馴染む機能で、変数名の繰り返しになるところを削減できます。</p>
+<pre><code class="language-ruby">first_name = &quot;Joe&quot;
+
+# Userインスタンスを構築しfirst_name特性を上塗りします
+user = build(:user, first_name:)
+user.first_name
+# =&gt; &quot;Joe&quot;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="別称"><a class="header" href="#別称">別称</a></h1>
+<p>factory_botでは既存のファクトリに別称を定義して簡単に再利用できます。
+この機能がしっくりくるのは、例えば、Postオブジェクトに著者の属性があり、実際にはUserクラスのインスタンスを参照しているときです。
+通常factory_botは関連名からファクトリ名を推定できるものの、この場合は著者のファクトリを探して徒労になります。
+そのため利用者のファクトリに別称を付ければ別称名で使えます。</p>
+<pre><code class="language-ruby">factory :user, aliases: [:author, :commenter] do
+  first_name { &quot;John&quot; }
+  last_name { &quot;Doe&quot; }
+  date_of_birth { 18.years.ago }
+end
+
+factory :post do
+  # 別称を使うと以下の代わりに著者で書けます。
+  # association :author, factory: :user
+  author
+  title { &quot;How to read a book effectively&quot; }
+  body { &quot;There are five steps involved.&quot; }
+end
+
+factory :comment do
+  # 別称を使うと以下の代わりに評論家で書けます。
+  # association :commenter, factory: :user
+  commenter
+  body { &quot;Great article!&quot; }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="依存属性"><a class="header" href="#依存属性">依存属性</a></h1>
+<p>属性は文脈を使って他の属性の値に基づくものにできます。
+属性は動的な属性ブロックに処理を譲ります。</p>
+<pre><code class="language-ruby">factory :user do
+  first_name { &quot;Joe&quot; }
+  last_name  { &quot;Blow&quot; }
+  email { &quot;#{first_name}.#{last_name}@example.com&quot;.downcase }
+end
+
+create(:user, last_name: &quot;Doe&quot;).email
+# =&gt; &quot;joe.doe@example.com&quot;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="一過的属性"><a class="header" href="#一過的属性">一過的属性</a></h1>
+<p>一過的属性とは、ファクトリ定義内でのみ使える属性で、オブジェクトが構築されるときには設定されません。
+これにより、もっと複雑な仕組みをファクトリ内に書けます。</p>
+<p>これらの属性は<code>transient</code>ブロック内に定義します。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Zero Cool&quot; }
+  birth_date { age&amp;.years.ago }
+
+  transient do
+    age { 11 } # 上の`birth_date`に設定するためだけに使われます。
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="他の属性付き"><a class="header" href="#他の属性付き">他の属性付き</a></h1>
+<p>他の属性から一過的属性を使えます（<a href="transient-attributes/../dependent-attributes/summary.html">依存属性</a>を参照）。</p>
+<pre><code class="language-ruby">factory :user do
+  transient do
+    rockstar { true }
+  end
+
+  name { &quot;John Doe#{&quot; - Rockstar&quot; if rockstar}&quot; }
+end
+
+create(:user).name
+#=&gt; &quot;John Doe - ROCKSTAR&quot;
+
+create(:user, rockstar: false).name
+#=&gt; &quot;John Doe&quot;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="attributes_for付き"><a class="header" href="#attributes_for付き">attributes_for付き</a></h1>
+<p>一過的属性は<code>attributes_for</code>内では無視され、属性が存在して上塗りしようとしたとしても、モデルに設定されません。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="コールバック付き"><a class="header" href="#コールバック付き">コールバック付き</a></h1>
+<p>factory_botのコールバックで評価された定義自体を使う必要があるとき、（定義に）2つ目のブロック引数を宣言してそこから一過的属性を使う必要があります。
+こうすると、最終的な評価された値が表されます。</p>
+<pre><code class="language-ruby">factory :user do
+  transient do
+    upcased { false }
+  end
+
+  name { &quot;John Doe&quot; }
+
+  after(:create) do |user, context|
+    user.name.upcase! if context.upcased
+  end
+end
+
+create(:user).name
+#=&gt; &quot;John Doe&quot;
+
+create(:user, upcased: true).name
+#=&gt; &quot;JOHN DOE&quot;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="関連付き"><a class="header" href="#関連付き">関連付き</a></h1>
+<p>一過的<a href="transient-attributes/../associations/summary.html">関連</a>はfactory_botでは対応していません。
+一過的ブロック内の関連は通常の一過的でない関連として扱われます。</p>
+<p>必要であれば、一般には一過的属性内でファクトリを構築して回避できます。</p>
+<pre><code class="language-ruby">factory :post
+
+factory :user do
+  transient do
+    post { build(:post) }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="メソッド名と予約語の属性"><a class="header" href="#メソッド名と予約語の属性">メソッド名と予約語の属性</a></h1>
+<p>属性が既存のメソッドや予約語（<a href="https://github.com/thoughtbot/factory_bot/blob/main/lib/factory_bot/definition_proxy.rb">DefinitionProxy</a>内の全メソッド）と競合するとき、<code>add_attribute</code>で定義できます。</p>
+<pre><code class="language-ruby">factory :dna do
+  add_attribute(:sequence) { 'GATTACA' }
+end
+
+factory :payment do
+  add_attribute(:method) { 'paypal' }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="継承"><a class="header" href="#継承">継承</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="入れ子のファクトリ"><a class="header" href="#入れ子のファクトリ">入れ子のファクトリ</a></h1>
+<p>入れ子のファクトリでは、共通する属性を繰り返すことなく、同じクラスに対して複数のファクトリを作れます。</p>
+<pre><code class="language-ruby">factory :post do
+  title { &quot;A title&quot; }
+
+  factory :approved_post do
+    approved { true }
+  end
+end
+
+approved_post = create(:approved_post)
+approved_post.title    # =&gt; &quot;A title&quot;
+approved_post.approved # =&gt; true
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="親を明示的に代入"><a class="header" href="#親を明示的に代入">親を明示的に代入</a></h1>
+<p>親を明示的に代入することもできます。</p>
+<pre><code class="language-ruby">factory :post do
+  title { &quot;A title&quot; }
+end
+
+factory :approved_post, parent: :post do
+  approved { true }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ベストプラクティス-1"><a class="header" href="#ベストプラクティス-1">ベストプラクティス</a></h1>
+<p>前述した通り、作成に必須の属性のみを持つ各クラスの基礎的なファクトリを定義するのが良いでしょう。
+それからこの基礎的な親から継承するより具体的なファクトリを作るのです。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="関連-1"><a class="header" href="#関連-1">関連</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="暗黙定義"><a class="header" href="#暗黙定義">暗黙定義</a></h1>
+<p>ファクトリ内で関連を設定することができます。
+ファクトリ名が関連名と同じとき、ファクトリ名を省けます。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  author
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="明示定義"><a class="header" href="#明示定義">明示定義</a></h1>
+<p>関連を明示的に定義できます。
+<a href="associations/overriding-attributes.html">属性を上塗りする</a>ときに特にしっくりくることがあります。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  association :author
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="行内定義"><a class="header" href="#行内定義">行内定義</a></h1>
+<p>通常の属性内に行内で関連を定義することもできます。
+ただし<code>attributes_for</code>戦略を使うときは値が<code>nil</code>になることに注意してください。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  author { association :author }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリの指定"><a class="header" href="#ファクトリの指定">ファクトリの指定</a></h1>
+<p>異なるファクトリを指定することもできます（<a href="associations/../aliases/summary.html">別称</a>も役立つかもしれませんが）。</p>
+<p>暗黙には以下とします。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  author factory: :user
+end
+</code></pre>
+<p>明示的には以下とします。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  association :author, factory: :user
+end
+</code></pre>
+<p>行内では以下とします。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  author { association :user }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="属性の上塗り-1"><a class="header" href="#属性の上塗り-1">属性の上塗り</a></h1>
+<p>関連で属性の上塗りもできます。</p>
+<p>暗黙には以下とします。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  author factory: :author, last_name: &quot;Writely&quot;
+end
+</code></pre>
+<p>明示的には以下とします。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  association :author, last_name: &quot;Writely&quot;
+end
+</code></pre>
+<p>もしくはファクトリの属性を使って行内でもできます。</p>
+<pre><code class="language-rb">factory :post do
+  # ...
+  author_last_name { &quot;Writely&quot; }
+  author { association :author, last_name: author_last_name }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="関連の上塗り"><a class="header" href="#関連の上塗り">関連の上塗り</a></h1>
+<p>属性の上塗りは紐付くオブジェクトを結び付けるのに使えます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :author do
+    name { 'Taylor' }
+  end
+
+  factory :post do
+    author
+  end
+end
+
+eunji = build(:author, name: 'Eunji')
+post = build(:post, author: eunji)
+</code></pre>
+<p>Ruby 3.1の<code>Hash</code>表記での<a href="https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc.html#label-Hash+Literals">バリューの省略</a>対応は属性の上塗りにぴったり馴染む機能で、変数名の繰り返しになるところを削減できます。</p>
+<pre><code class="language-ruby">author = build(:author, name: 'Eunji')
+
+post = build(:post, author:)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="構築戦略-2"><a class="header" href="#構築戦略-2">構築戦略</a></h1>
+<p>関連は既定で親オブジェクトと同じ構築戦略を使います。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :author
+
+  factory :post do
+    author
+  end
+end
+
+post = build(:post)
+post.new_record?        # =&gt; true
+post.author.new_record? # =&gt; true
+
+post = create(:post)
+post.new_record?        # =&gt; false
+post.author.new_record? # =&gt; false
+</code></pre>
+<p>これは以前のバージョンのfactory_botの既定の挙動とは異なります。
+関連の戦略は必ずしも親オブジェクトの戦略と合致していませんでした。
+古い挙動を使い続けたいときは、<code>use_parent_strategy</code>構成オプションを<code>false</code>に設定できます。</p>
+<pre><code class="language-ruby">FactoryBot.use_parent_strategy = false
+
+# UserとPostを構築して保存します。
+post = create(:post)
+post.new_record?        # =&gt; false
+post.author.new_record? # =&gt; false
+
+# Userを構築して保存します。またPostを構築するものの保存はしません。
+post = build(:post)
+post.new_record?        # =&gt; true
+post.author.new_record? # =&gt; false
+</code></pre>
+<p>紐付くオブジェクトを保存しないためには、ファクトリで<code>strategy: :build</code>を指定します。</p>
+<pre><code class="language-ruby">FactoryBot.use_parent_strategy = false
+
+factory :post do
+  # ...
+  association :author, factory: :user, strategy: :build
+end
+
+# Userを構築し、Postを構築します。ただし何れも保存しません。
+post = build(:post)
+post.new_record?        # =&gt; true
+post.author.new_record? # =&gt; true
+</code></pre>
+<p>なお<code>strategy: :build</code>オプションは<code>association</code>の明示的な呼び出しで渡さなければなりません。
+暗黙の関連では使えません。</p>
+<pre><code class="language-ruby">factory :post do
+  # ...
+  author strategy: :build    # &lt;&lt;&lt; これはうまくいき「ません」。author_idがnilになります。
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="系列-1"><a class="header" href="#系列-1">系列</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="大域系列-1"><a class="header" href="#大域系列-1">大域系列</a></h1>
+<p>特定の形式（例えばEメールアドレス）の一意な値は系列を使って生成できます。
+系列は定義ブロックで<code>sequence</code>を読んで定義されます。
+系列の値は<code>generate</code>を読んで生成されます。</p>
+<pre><code class="language-ruby"># 新しい系列を定義します。
+FactoryBot.define do
+  sequence :email do |n|
+    &quot;person#{n}@example.com&quot;
+  end
+end
+
+generate :email
+# =&gt; &quot;person1@example.com&quot;
+
+generate :email
+# =&gt; &quot;person2@example.com&quot;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="動的属性付き"><a class="header" href="#動的属性付き">動的属性付き</a></h1>
+<p>系列は動的属性で使えます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  sequence :email do |n|
+    &quot;person#{n}@example.com&quot;
+  end
+end
+
+factory :invite do
+  invitee { generate(:email) }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="暗黙属性として"><a class="header" href="#暗黙属性として">暗黙属性として</a></h1>
+<p>もしくは暗黙属性として以下とします。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  sequence :email do |n|
+    &quot;person#{n}@example.com&quot;
+  end
+end
+
+factory :user do
+  email # `email { generate(:email) }`と同じです。
+end
+</code></pre>
+<p>なお系列を暗黙属性として定義すると、ファクトリに系列として同じ名前があるときにうまくいかなくなります。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="行内系列"><a class="header" href="#行内系列">行内系列</a></h1>
+<p>また特定のファクトリでのみ使われる行内系列を定義することもできます。</p>
+<pre><code class="language-ruby">factory :user do
+  sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+end
+</code></pre>
+<p>Ruby 2.7の<a href="https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters">連番仮引数</a>の対応を使うと、行内定義はさらに縮められます。</p>
+<pre><code class="language-ruby">factory :user do
+  sequence(:email) { &quot;person#{_1}@example.com&quot; }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="初期値"><a class="header" href="#初期値">初期値</a></h1>
+<p>初期値を上塗りできます。
+<code>#next</code>メソッドに応答する任意の値で動作します（例えば1、2、3、「a」、「b」、「c」）。</p>
+<pre><code class="language-ruby">factory :user do
+  sequence(:email, 1000) { |n| &quot;person#{n}@example.com&quot; }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ブロック無し"><a class="header" href="#ブロック無し">ブロック無し</a></h1>
+<p>ブロック無しでは値はそれ自身を漸増させ、初期値から始めていきます。</p>
+<pre><code class="language-ruby">factory :post do
+  sequence(:position)
+end
+</code></pre>
+<p>なお系列用の値は、<code>#next</code>に応答する限り、任意のEnumerableインスタンスにできます。</p>
+<pre><code class="language-ruby">factory :task do
+  sequence :priority, %i[low medium high urgent].cycle
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="別称-1"><a class="header" href="#別称-1">別称</a></h1>
+<p>系列には別称も付けられます。
+系列の別称は同じ計数を共有します。</p>
+<pre><code class="language-ruby">factory :user do
+  sequence(:email, 1000, aliases: [:sender, :receiver]) { |n| &quot;person#{n}@example.com&quot; }
+end
+
+# :emailの計数を漸増させます。:senderと:receiverと共有しています。
+generate(:sender)
+</code></pre>
+<p>別称を定義して計数に既定値 (1) を使うには以下とします。</p>
+<pre><code class="language-ruby">factory :user do
+  sequence(:email, aliases: [:sender, :receiver]) { |n| &quot;person#{n}@example.com&quot; }
+end
+</code></pre>
+<p>値を設定するには以下です。</p>
+<pre><code class="language-ruby">factory :user do
+  sequence(:email, 'a', aliases: [:sender, :receiver]) { |n| &quot;person#{n}@example.com&quot; }
+end
+</code></pre>
+<p>値には<code>#next</code>メソッドへの対応が必要です。
+ここでの次の値は「a」で、次に「b」、などとなります。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="巻き戻し"><a class="header" href="#巻き戻し">巻き戻し</a></h1>
+<p>系列は<code>FactoryBot.rewind_sequences</code>で巻き戻すこともできます。</p>
+<pre><code class="language-ruby">sequence(:email) {|n| &quot;person#{n}@example.com&quot; }
+
+generate(:email) # &quot;person1@example.com&quot;
+generate(:email) # &quot;person2@example.com&quot;
+generate(:email) # &quot;person3@example.com&quot;
+
+FactoryBot.rewind_sequences
+
+generate(:email) # &quot;person1@example.com&quot;
+</code></pre>
+<p>こうすると全ての登録された系列が巻き戻ります。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="一意性"><a class="header" href="#一意性">一意性</a></h1>
+<p>一意性制約に取り組むときは、生成される系列値と競合する値を渡して上塗りしないようにご注意ください。</p>
+<p>以下の例ではEメールが両方の利用者で同じになります。
+Eメールが一意でなければならないとき、このコードはエラーになります。</p>
+<pre><code class="language-rb">factory :user do
+  sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+end
+
+FactoryBot.create(:user, email: &quot;person1@example.com&quot;)
+FactoryBot.create(:user)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="トレイト-1"><a class="header" href="#トレイト-1">トレイト</a></h1>
+<p>トレイトでは属性をグループに纏めて任意のファクトリに適用できます。</p>
+<pre><code class="language-ruby">factory :user, aliases: [:author]
+
+factory :story do
+  title { &quot;My awesome story&quot; }
+  author
+
+  trait :published do
+    published { true }
+  end
+
+  trait :unpublished do
+    published { false }
+  end
+
+  trait :week_long_publishing do
+    start_at { 1.week.ago }
+    end_at { Time.now }
+  end
+
+  trait :month_long_publishing do
+    start_at { 1.month.ago }
+    end_at { Time.now }
+  end
+
+  factory :week_long_published_story,    traits: [:published, :week_long_publishing]
+  factory :month_long_published_story,   traits: [:published, :month_long_publishing]
+  factory :week_long_unpublished_story,  traits: [:unpublished, :week_long_publishing]
+  factory :month_long_unpublished_story, traits: [:unpublished, :month_long_publishing]
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="暗黙属性として-1"><a class="header" href="#暗黙属性として-1">暗黙属性として</a></h1>
+<p>トレイトは暗黙属性として使えます。</p>
+<pre><code class="language-ruby">factory :week_long_published_story_with_title, parent: :story do
+  published
+  week_long_publishing
+  title { &quot;Publishing that was started at #{start_at}&quot; }
+end
+</code></pre>
+<p>なおトレイトを暗黙属性として定義すると、トレイトと同じ名前のファクトリや系列があるときに、うまくいかなくなります。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="トレイトを使う"><a class="header" href="#トレイトを使う">トレイトを使う</a></h1>
+<p>factory_botでインスタンスを構築するとき、トレイトにはSymbolのリストも渡せます。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Friendly User&quot; }
+
+  trait :active do
+    name { &quot;John Doe&quot; }
+    status { :active }
+  end
+
+  trait :admin do
+    admin { true }
+  end
+end
+
+# :active状態で名前が「Jon Snow」の管理者の利用者を作ります。
+create(:user, :admin, :active, name: &quot;Jon Snow&quot;)
+</code></pre>
+<p>この機能は<code>build</code>、<code>build_stubbed</code>、<code>attributes_for</code>、<code>create</code>で動きます。</p>
+<p><code>create_list</code>メソッドと<code>build_list</code>メソッドも対応しています。
+2つ目の仮引数に作成・構築するインスタンス数を渡すことをご留意ください。
+このファイルの「複数レコードの構築と作成」でドキュメントに書かれている通りです。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Friendly User&quot; }
+
+  trait :active do
+    name { &quot;John Doe&quot; }
+    status { :active }
+  end
+
+  trait :admin do
+    admin { true }
+  end
+end
+
+# 3人の管理利用者を作ります。:active状態があり、名前は「Jon Snow」です
+create_list(:user, 3, :admin, :active, name: &quot;Jon Snow&quot;)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="列挙トレイト"><a class="header" href="#列挙トレイト">列挙トレイト</a></h1>
+<p>列挙属性を持つActive Recordがあるとします。</p>
+<pre><code class="language-rb">class Task &lt; ActiveRecord::Base
+  enum status: {queued: 0, started: 1, finished: 2}
+end
+
+</code></pre>
+<p>factory_botは列挙体の取り得る値それぞれについて自動的にトレイトを定義します。</p>
+<pre><code class="language-rb">FactoryBot.define do
+  factory :task
+end
+
+FactoryBot.build(:task, :queued)
+FactoryBot.build(:task, :started)
+FactoryBot.build(:task, :finished)
+</code></pre>
+<p>手でトレイトを書くのは億劫であり、必要ありません。</p>
+<pre><code class="language-rb">FactoryBot.define do
+  factory :task do
+    trait :queued do
+      status { :queued }
+    end
+
+    trait :started do
+      status { :started }
+    end
+
+    trait :finished do
+      status { :finished }
+    end
+  end
+end
+</code></pre>
+<p>全てのファクトリで列挙属性にトレイトを自動的に定義することが望ましくなければ、この機能を<code>FactoryBot.automatically_define_enum_traits = false</code>で無効にできます。</p>
+<p>その場合でも特定のファクトリで列挙属性にトレイトを明示的に定義できます。</p>
+<pre><code class="language-rb">FactoryBot.automatically_define_enum_traits = false
+
+FactoryBot.define do
+  factory :task do
+    traits_for_enum(:status)
+  end
+end
+</code></pre>
+<p>他の列挙できる値にこの機能を使うこともできます。
+特別にActive Recordの列挙属性に結び付いているわけではありません。</p>
+<p>配列の場合は以下です。</p>
+<pre><code class="language-rb">class Task
+  attr_accessor :status
+end
+
+FactoryBot.define do
+  factory :task do
+    traits_for_enum(:status, [&quot;queued&quot;, &quot;started&quot;, &quot;finished&quot;])
+  end
+end
+</code></pre>
+<p>あるいはハッシュの場合は以下です。</p>
+<pre><code class="language-rb">class Task
+  attr_accessor :status
+end
+
+FactoryBot.define do
+  factory :task do
+    traits_for_enum(:status, { queued: 0, started: 1, finished: 2 })
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="属性の優先度"><a class="header" href="#属性の優先度">属性の優先度</a></h1>
+<p>同じ属性を定義するトレイトはAttributeDefinitionErrorsを投げません。
+最後に属性を定義したトレイトが優先されます。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Friendly User&quot; }
+  login { name }
+
+  trait :active do
+    name { &quot;John Doe&quot; }
+    status { :active }
+    login { &quot;#{name} (active)&quot; }
+  end
+
+  trait :inactive do
+    name { &quot;Jane Doe&quot; }
+    status { :inactive }
+    login { &quot;#{name} (inactive)&quot; }
+  end
+
+  trait :admin do
+    admin { true }
+    login { &quot;admin-#{name}&quot; }
+  end
+
+  factory :active_admin,   traits: [:active, :admin]   # loginは「admin-John Doe」になります。
+  factory :inactive_admin, traits: [:admin, :inactive] # loginは「Jane Doe (inactive)」になります。
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="子のファクトリの内部"><a class="header" href="#子のファクトリの内部">子のファクトリの内部</a></h1>
+<p>子のファクトリの内部でトレイトから与えられる個々の属性を上塗りできます。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Friendly User&quot; }
+  login { name }
+
+  trait :active do
+    name { &quot;John Doe&quot; }
+    status { :active }
+    login { &quot;#{name} (M)&quot; }
+  end
+
+  factory :brandon do
+    active
+    name { &quot;Brandon&quot; }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ミックスインとして"><a class="header" href="#ミックスインとして">ミックスインとして</a></h1>
+<p>トレイトはファクトリの外側で定義し、共有する属性を組み合わせるためにミックスインとして使えます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  trait :timestamps do
+    created_at { 8.days.ago }
+    updated_at { 4.days.ago }
+  end
+  
+  factory :user, traits: [:timestamps] do
+    username { &quot;john_doe&quot; }
+  end
+  
+  factory :post do
+    timestamps
+    title { &quot;Traits rock&quot; }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="関連付き-1"><a class="header" href="#関連付き-1">関連付き</a></h1>
+<p>トレイトは関連とも簡単に使えます。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Friendly User&quot; }
+
+  trait :admin do
+    admin { true }
+  end
+end
+
+factory :post do
+  association :user, :admin, name: 'John Doe'
+end
+
+# 名前が「John Doe」の管理者の利用者を作ります。
+create(:post).user
+</code></pre>
+<p>ファクトリと異なる関連名を使うときは次のようにします。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;Friendly User&quot; }
+
+  trait :admin do
+    admin { true }
+  end
+end
+
+factory :post do
+  association :author, :admin, factory: :user, name: 'John Doe'
+  # もしくは以下です。
+  association :author, factory: [:user, :admin], name: 'John Doe'
+end
+
+# 名前が「John Doe」の管理者の利用者を作ります。
+create(:post).author
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="トレイト内トレイト"><a class="header" href="#トレイト内トレイト">トレイト内トレイト</a></h1>
+<p>トレイトは他のトレイト内で使い、属性を混ぜることができます。</p>
+<pre><code class="language-ruby">factory :order do
+  trait :completed do
+    completed_at { 3.days.ago }
+  end
+
+  trait :refunded do
+    completed
+    refunded_at { 1.day.ago }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="一過的属性付き"><a class="header" href="#一過的属性付き">一過的属性付き</a></h1>
+<p>トレイトは一過的属性を受け付けられます。</p>
+<pre><code class="language-ruby">factory :invoice do
+  trait :with_amount do
+    transient do
+      amount { 1 }
+    end
+
+    after(:create) do |invoice, context|
+      create :line_item, invoice: invoice, amount: context.amount
+    end
+  end
+end
+
+create :invoice, :with_amount, amount: 2
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="コールバック"><a class="header" href="#コールバック">コールバック</a></h1>
+<p>factory_botは4つのコールバックを作れます。</p>
+<ul>
+<li>after(:build) はファクトリが構築された後に（<code>FactoryBot.build</code>と<code>FactoryBot.create</code>を介して）呼ばれます。</li>
+<li>before(:create) はファクトリが保存される前に（<code>FactoryBot.create</code>を介して）呼ばれます。</li>
+<li>after(:create) はファクトリが保存された後に（<code>FactoryBot.create</code>を介して）呼ばれます。</li>
+<li>after(:stub) はファクトリがスタブ化された後に（<code>FactoryBot.build_stubbed</code>を介して）呼ばれます。</li>
+</ul>
+<p>例は以下です。</p>
+<pre><code class="language-ruby"># 利用者ファクトリが構築された後にgenerate_hashed_passwordメソッドを呼ぶファクトリを定義します。
+factory :user do
+  after(:build) { |user, context| generate_hashed_password(user) }
+end
+</code></pre>
+<p>なお、ブロックのオブジェクトのインスタンスが得られます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="複数コールバック"><a class="header" href="#複数コールバック">複数コールバック</a></h1>
+<p>同じファクトリに複数の種類のコールバックを定義することもできます。</p>
+<pre><code class="language-ruby">factory :user do
+  after(:build)  { |user| do_something_to(user) }
+  after(:create) { |user| do_something_else_to(user) }
+end
+</code></pre>
+<p>ファクトリは同じ種類のコールバックをいくらでも定義することもできます。
+こうしたコールバックは指定された順番に実行されます。</p>
+<pre><code class="language-ruby">factory :user do
+  after(:create) { this_runs_first }
+  after(:create) { then_this }
+end
+</code></pre>
+<p><code>create</code>を呼ぶと<code>after_build</code>コールバックと<code>after_create</code>コールバックの両方ともが呼ばれます。</p>
+<p>また標準的な属性と同様に、子のファクトリは親ファクトリからコールバックを受け継ぎます（また定義もできます）。</p>
+<p>複数のコールバックはブロックを走らせて代入できます。
+（全ての戦略を通じて共有されるコールバックはないため）同じコードを様々な戦略で構築するときに有用です。</p>
+<pre><code class="language-ruby">factory :user do
+  callback(:after_stub, :before_create) { do_something }
+  after(:stub, :create) { do_something_else }
+  before(:create, :custom) { do_a_third_thing }
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="大域コールバック"><a class="header" href="#大域コールバック">大域コールバック</a></h1>
+<p>全てのファクトリにコールバックを上塗りするには、<code>FactoryBot.define</code>ブロック内で定義します。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  after(:build) { |object| puts &quot;Built #{object}&quot; }
+  after(:create) { |object| AuditLog.create(attrs: object.attributes) }
+
+  factory :user do
+    name { &quot;John Doe&quot; }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="symbolto_proc"><a class="header" href="#symbolto_proc">Symbol#to_proc</a></h1>
+<p><code>Symbol#to_proc</code>に頼るコールバックを呼べます。</p>
+<pre><code class="language-ruby"># app/models/user.rb
+class User &lt; ActiveRecord::Base
+  def confirm!
+    # 利用者アカウントを確かめます。
+  end
+end
+
+# spec/factories.rb
+FactoryBot.define do
+  factory :user do
+    after :create, &amp;:confirm!
+  end
+end
+
+create(:user) # 利用者を作成して確かめます。
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリの変更"><a class="header" href="#ファクトリの変更">ファクトリの変更</a></h1>
+<p>ファクトリ一式が与えられているものの（gemの開発者からとしましょう）、アプリケーションにもっと合うように代えたいとき、子ファクトリを作ってそこに属性を加える代わりに、ファクトリを変更できます。</p>
+<p>gemが以下のようにUserファクトリを与えているとします。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :user do
+    full_name { &quot;John Doe&quot; }
+    sequence(:username) { |n| &quot;user#{n}&quot; }
+    password { &quot;password&quot; }
+  end
+end
+</code></pre>
+<p>追加の属性を加える子ファクトリを作るとすると以下になります。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :application_user, parent: :user do
+    full_name { &quot;Jane Doe&quot; }
+    date_of_birth { 21.years.ago }
+    health { 90 }
+  end
+end
+</code></pre>
+<p>その代わりとしてファクトリを変更できます。</p>
+<pre><code class="language-ruby">FactoryBot.modify do
+  factory :user do
+    full_name { &quot;Jane Doe&quot; }
+    date_of_birth { 21.years.ago }
+    health { 90 }
+  end
+end
+</code></pre>
+<p>ファクトリを変更するとき、どんな属性も（コールバックを除いて）お好みで代えられます。</p>
+<p><code>FactoryBot.modify</code>は<code>FactoryBot.define</code>の外側で呼ばなければなりません。
+ファクトリを違った風に操作するからです。</p>
+<p>注意点：ファクトリのみ変更でき（系列やトレイトはできません）、コールバックは<em>通常のものと同様に付属したまま</em>です。
+そのため、変更しているファクトリで<code>after(:create)</code>コールバックを定義するとき、<code>after(:create)</code>を定義しても上塗りされません。
+最初のコールバックの後に実行されます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ファクトリのリント"><a class="header" href="#ファクトリのリント">ファクトリのリント</a></h1>
+<p>factory_botは既知のファクトリをリントできます。</p>
+<pre><code class="language-ruby">FactoryBot.lint
+</code></pre>
+<p><code>FactoryBot.lint</code>は各ファクトリを作って作成の仮定で投げられた例外を捕えます。
+作成されなかったファクトリのリスト（と対応する例外）を持つ<code>FactoryBot::InvalidFactoryError</code>が投げられます。</p>
+<p><code>FactoryBot.lint</code>のお勧めの使い方はテストスートが実行される前に個別のタスクでこれを走らせることです。
+<code>before(:suite)</code>で走らせるとテスト単体を走らせるときにテストの効率に直に打撃があります。</p>
+<p>Rakeタスクの例は以下です。</p>
+<pre><code class="language-ruby"># lib/tasks/factory_bot.rake
+namespace :factory_bot do
+  desc &quot;Verify that all FactoryBot factories are valid&quot;
+  task lint: :environment do
+    if Rails.env.test?
+      conn = ActiveRecord::Base.connection
+      conn.transaction do
+        FactoryBot.lint
+        raise ActiveRecord::Rollback
+      end
+    else
+      system(&quot;bundle exec rake factory_bot:lint RAILS_ENV='test'&quot;)
+      fail if $?.exitstatus.nonzero?
+    end
+  end
+end
+</code></pre>
+<p><code>FactoryBot.lint</code>を読んだ後、恐らくデータベースを整頓したいことでしょう。
+レコードが作成されていることでしょうから。
+上で与えられた例ではSQLトランザクションを使ってロールバックし、データベースが綺麗なままにします。</p>
+<p>リントしたいファクトリのみを選んで渡してファクトリをリントできます。</p>
+<pre><code class="language-ruby">factories_to_lint = FactoryBot.factories.reject do |factory|
+  factory.name =~ /^old_/
+end
+
+FactoryBot.lint factories_to_lint
+</code></pre>
+<p>こうすると<code>old_</code>が接頭辞にない全てのファクトリがリントされます。</p>
+<p>トレイトもリントされます。
+このオプションは各ファクトリの全トレイトが有効なオブジェクトを生成することを自動で検証します。
+これは<code>lint</code>メソッドに<code>traits: true</code>を渡すと有効になります。</p>
+<pre><code class="language-ruby">FactoryBot.lint traits: true
+</code></pre>
+<p>これは他の実引数とも組み合わせられます。</p>
+<pre><code class="language-ruby">FactoryBot.lint factories_to_lint, traits: true
+</code></pre>
+<p>リントに使われる戦略を指定することもできます。</p>
+<pre><code class="language-ruby">FactoryBot.lint strategy: :build
+</code></pre>
+<p>冗長なリントは各エラーに完全なバックトレースを含めます。
+デバッグで役に立つことがあります。</p>
+<pre><code class="language-ruby">FactoryBot.lint verbose: true
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="独自の構築"><a class="header" href="#独自の構築">独自の構築</a></h1>
+<p>factory_botを使って、<code>initialize</code>に渡される属性があるオブジェクトを構築したいときや、クラスを構築する上で単に<code>new</code>を呼ぶ以上のことをしたいときは、ファクトリに<code>initialize_with</code>を定義して既定の挙動を上塗りできます。
+例えば以下です。</p>
+<pre><code class="language-ruby"># user.rb
+class User
+  attr_accessor :name, :email
+
+  def initialize(name)
+    @name = name
+  end
+end
+
+# factories.rb
+sequence(:email) { |n| &quot;person#{n}@example.com&quot; }
+
+factory :user do
+  name { &quot;Jane Doe&quot; }
+  email
+
+  initialize_with { new(name) }
+end
+
+build(:user).name # Jane Doe
+</code></pre>
+<p>factory_botはActiveRecordで飛び抜けて上手く書けるようになっていますが、どんなRubyクラスでも動作できます。
+ActiveRecordと最大限の互換性があるよう、既定の初期化器はクラスを構築するのに実引数なしで<code>new</code>を読んで全てのインスタンスを構築します。
+それから属性の書込みメソッドを呼んで全ての属性値を代入します。
+ActiveRecordでは上手く動きますが、他のRubyのクラスのほとんどは実際にはうまくいきません。</p>
+<p>以下の目的で初期化器を上塗りできます。</p>
+<ul>
+<li><code>initialize</code>に実引数が必須の非ActiveRecordオブジェクトを構築する。</li>
+<li><code>new</code>ではないメソッドを使ってインスタンスをインスタンス化する。</li>
+<li>構築された後にインスタンスを修飾するような雑なことをする。</li>
+</ul>
+<p><code>initialize_with</code>を使うとき、<code>new</code>を呼ぶときにクラス自体を宣言する必要はありません。
+しかし呼びたいその他のクラスメソッドは明示的にクラスに対して呼ばなければなりません。</p>
+<p>例は以下です。</p>
+<pre><code class="language-ruby">factory :user do
+  name { &quot;John Doe&quot; }
+
+  initialize_with { User.build_with_name(name) }
+end
+</code></pre>
+<p><code>attributes</code>を呼んで<code>initialize_with</code>ブロック内で全ての公の属性を使うこともできます。</p>
+<pre><code class="language-ruby">factory :user do
+  transient do
+    comments_count { 5 }
+  end
+
+  name &quot;John Doe&quot;
+
+  initialize_with { new(**attributes) }
+end
+</code></pre>
+<p>こうすると<code>new</code>に渡される全ての属性のハッシュを構築します。
+一過的属性は含まれませんが、ファクトリで定義されたその他全て（関連、評価された系列など）が渡されます。</p>
+<p><code>FactoryBot.define</code>ブロック内に含めると全てのファクトリに<code>initialize_with</code>を定義できます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  initialize_with { new(&quot;Awesome first argument&quot;) }
+end
+</code></pre>
+<p><code>initialize_with</code>を使うとき、<code>initialize_with</code>ブロック内で使う属性は構築子で<em>のみ</em>代入されます。
+これは以下のコードと大まかに同じです。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :user do
+    initialize_with { new(name) }
+
+    name { 'value' }
+  end
+end
+
+build(:user)
+# ……とすると以下が実行されます。
+User.new('value')
+</code></pre>
+<p>これは重複する代入を防止しています。
+4.0より前のfactory_botでは以下が走っていました。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :user do
+    initialize_with { new(name) }
+
+    name { 'value' }
+  end
+end
+
+build(:user)
+# ……とすると以下が実行されます。
+user = User.new('value')
+user.name = 'value'
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="独自の戦略"><a class="header" href="#独自の戦略">独自の戦略</a></h1>
+<p>独自の構築の戦略を加えてfactory_botの挙動を拡張したいときがあります。</p>
+<p>戦略は2つのメソッド<code>association</code>及び<code>result</code>を定義します。
+<code>association</code>は<code>FactoryBot::FactoryRunner</code>インスタンスを受け取ります。
+このインスタンスは<code>run</code>を呼んでお好みで戦略を上塗りできます。
+2つ目のメソッド<code>result</code>は<code>FactoryBot::Evaluation</code>インスタンスを受け取ります。
+コールバック、<code>object</code>、<code>hash</code>（結果のインスタンスやファクトリで定義された属性に基づくハッシュを得るためのもの）、<code>create</code>のきっかけとなる手段を（<code>notify</code>で）を提供します。
+<code>create</code>はファクトリで定義された<code>to_create</code>コールバックを実行します。</p>
+<p>factory_botで、戦略が内部で使われる仕組みを理解するには、4つの既定の戦略それぞれのソースを眺めるのが、恐らく一番簡単です。</p>
+<p>以下は<code>FactoryBot::Strategy::Create</code>を使ってモデルにJSON表現を構築する戦略を組む例です。</p>
+<pre><code class="language-ruby">class JsonStrategy
+  def initialize
+    @strategy = FactoryBot.strategy_by_name(:create).new
+  end
+
+  delegate :association, to: :@strategy
+
+  def result(evaluation)
+    @strategy.result(evaluation).to_json
+  end
+
+  def to_sym
+    :json
+  end
+end
+</code></pre>
+<p>factory_botに新しい戦略を認識させるために、その戦略を登録できます。</p>
+<pre><code class="language-ruby">FactoryBot.register_strategy(:json, JsonStrategy)
+</code></pre>
+<p>こうして呼べるようになります。</p>
+<pre><code class="language-ruby">FactoryBot.json(:user)
+</code></pre>
+<p>最後に、戦略の代わりに新しいオブジェクトと登録することによってfactory_bot独自の戦略を上塗りできます。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="独自コールバック"><a class="header" href="#独自コールバック">独自コールバック</a></h1>
+<p>独自の戦略を使いたいとき、独自コールバックを定義できます。</p>
+<pre><code class="language-ruby">class JsonStrategy
+  def initialize
+    @strategy = FactoryBot.strategy_by_name(:create).new
+  end
+
+  delegate :association, to: :@strategy
+
+  def result(evaluation)
+    result = @strategy.result(evaluation)
+    evaluation.notify(:before_json, result)
+
+    result.to_json.tap do |json|
+      evaluation.notify(:after_json, json)
+      evaluation.notify(:make_json_awesome, json)
+    end
+  end
+
+  def to_sym
+    :json
+  end
+end
+
+FactoryBot.register_strategy(:json, JsonStrategy)
+
+FactoryBot.define do
+  factory :user do
+    before(:json)                { |user| do_something_to(user) }
+    after(:json)                 { |user_json| do_something_to(user_json) }
+    callback(:make_json_awesome) { |user_json| do_something_to(user_json) }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="オブジェクトを永続化するための独自メソッド"><a class="header" href="#オブジェクトを永続化するための独自メソッド">オブジェクトを永続化するための独自メソッド</a></h1>
+<p>既定で、レコードを作成するとインスタンスに<code>save!</code>を呼びます。
+これは常に最適ではないことがあるため、ファクトリに<code>to_create</code>を定義して挙動を上塗りできます。</p>
+<pre><code class="language-ruby">factory :different_orm_model do
+  to_create { |instance| instance.persist! }
+end
+</code></pre>
+<p>作成で永続化のメソッドも一緒に無効化するには、ファクトリで<code>skip_create</code>することができます。</p>
+<pre><code class="language-ruby">factory :user_without_database do
+  skip_create
+end
+</code></pre>
+<p>全てのファクトリで<code>to_create</code>を上塗りするには<code>FactoryBot.define</code>ブロック内で定義します。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  to_create { |instance| instance.persist! }
+
+
+  factory :user do
+    name { &quot;John Doe&quot; }
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="activesupportの計装"><a class="header" href="#activesupportの計装">ActiveSupportの計装</a></h1>
+<p>何のファクトリが作られたか（またどの構築戦略か）把握する目的で、コンパイルされて走るファクトリを購読する方法を提供するために<code>ActiveSupport::Notifications</code>がincludeされています。
+一例としては実行時間の閾値に基づいてファクトリを把握することです。</p>
+<pre><code class="language-ruby">ActiveSupport::Notifications.subscribe(&quot;factory_bot.run_factory&quot;) do |name, start, finish, id, payload|
+  execution_time_in_seconds = finish - start
+
+  if execution_time_in_seconds &gt;= 0.5
+    $stderr.puts &quot;Slow factory: #{payload[:name]} using strategy #{payload[:strategy]}&quot;
+  end
+end
+</code></pre>
+<p>別の例としては全てのファクトリを対象にテストスートを通じてどのように使われたかを追跡するものです。
+RSpecを使っているとき、<code>before(:suite)</code>と<code>after(:suite)</code>を加えるだけです。</p>
+<pre><code class="language-ruby">factory_bot_results = {}
+config.before(:suite) do
+  ActiveSupport::Notifications.subscribe(&quot;factory_bot.run_factory&quot;) do |name, start, finish, id, payload|
+    factory_name = payload[:name]
+    strategy_name = payload[:strategy]
+    factory_bot_results[factory_name] ||= {}
+    factory_bot_results[factory_name][strategy_name] ||= 0
+    factory_bot_results[factory_name][strategy_name] += 1
+  end
+end
+
+config.after(:suite) do
+  puts factory_bot_results
+end
+</code></pre>
+<p>別の例として、ファクトリが一緒にコンパイルされる属性とトレイトを追跡することが関係します。
+RSpecを使っているとき、<code>before(:suite)</code>及び<code>after(:suite)</code>ブロックを加えて<code>factory_bot.compile_factory</code>の通知を購読できます。</p>
+<pre><code class="language-ruby">factory_bot_results = {}
+config.before(:suite) do
+  ActiveSupport::Notifications.subscribe(&quot;factory_bot.compile_factory&quot;) do |name, start, finish, id, payload|
+    factory_name = payload[:name]
+    factory_class = payload[:class]
+    attributes = payload[:attributes]
+    traits = payload[:traits]
+    factory_bot_results[factory_class] ||= {}
+    factory_bot_results[factory_class][factory_name] = {
+      attributes: attributes.map(&amp;:name)
+      traits: traits.map(&amp;:name)
+    }
+  end
+end
+
+config.after(:suite) do
+  puts factory_bot_results
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="has_many関連"><a class="header" href="#has_many関連">has_many関連</a></h1>
+<p><code>has_many</code>の関係でデータを生成するにはいくつか方法があります。
+最も単純な方法は素のRubyで補助メソッドを書いて異なるレコードと結び付けることです。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :post do
+    title { &quot;Through the Looking Glass&quot; }
+    user
+  end
+
+  factory :user do
+    name { &quot;Rachel Sanchez&quot; }
+  end
+end
+
+def user_with_posts(posts_count: 5)
+  FactoryBot.create(:user) do |user|
+    FactoryBot.create_list(:post, posts_count, user: user)
+  end
+end
+
+create(:user).posts.length # 0
+user_with_posts.posts.length # 5
+user_with_posts(posts_count: 15).posts.length # 15
+</code></pre>
+<p>オブジェクトの作成を完全にfactory_botに留める方が好みであれば、<code>after(:create)</code>コールバック内で記事を構築できます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :post do
+    title { &quot;Through the Looking Glass&quot; }
+    user
+  end
+
+  factory :user do
+    name { &quot;John Doe&quot; }
+
+    # user_with_postsは利用者が作成された後に記事データを作ります。
+    factory :user_with_posts do
+      # posts_countは文脈を介してコールバックで使える一過的属性として宣言されています。
+      transient do
+        posts_count { 5 }
+      end
+
+      # after(:create) は利用者インスタンス自体と文脈の2つの値を譲渡します。
+      # この文脈には、一過的属性を含むファクトリ由来の全ての値が保管されています。
+      # `create_list`の2つ目の実引数は作成されるレコードの数であり、利用者が適切に記事に紐付いていることを確かめています。
+      after(:create) do |user, context|
+        create_list(:post, context.posts_count, user: user)
+
+        # ここでレコードを再読込する必要があるかもしれません。
+        # アプリケーションに依ります。
+        user.reload
+      end
+    end
+  end
+end
+
+create(:user).posts.length # 0
+create(:user_with_posts).posts.length # 5
+create(:user_with_posts, posts_count: 15).posts.length # 15
+</code></pre>
+<p>もしくは、<code>build</code>や<code>build_stubbed</code>や<code>create</code>で上手くいく（ただし<code>attributes_for</code>では上手くいきません）解決策として、行内関連が使えます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :post do
+    title { &quot;Through the Looking Glass&quot; }
+    user
+  end
+
+  factory :user do
+    name { &quot;Taylor Kim&quot; }
+
+    factory :user_with_posts do
+      posts { [association(:post)] }
+    end
+  end
+end
+
+create(:user).posts.length # 0
+create(:user_with_posts).posts.length # 1
+build(:user_with_posts).posts.length # 1
+build_stubbed(:user_with_posts).posts.length # 1
+</code></pre>
+<p>柔軟性のため、これをコールバックの例の<code>posts_count</code>一過的属性と組み合わせられます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :post do
+    title { &quot;Through the Looking Glass&quot; }
+    user
+  end
+
+  factory :user do
+    name { &quot;Adiza Kumato&quot; }
+
+    factory :user_with_posts do
+      transient do
+        posts_count { 5 }
+      end
+
+      posts do
+        Array.new(posts_count) { association(:post) }
+      end
+    end
+  end
+end
+
+create(:user_with_posts).posts.length # 5
+create(:user_with_posts, posts_count: 15).posts.length # 15
+build(:user_with_posts, posts_count: 15).posts.length # 15
+build_stubbed(:user_with_posts, posts_count: 15).posts.length # 15
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="has_and_belongs_to_many関連"><a class="header" href="#has_and_belongs_to_many関連">has_and_belongs_to_many関連</a></h1>
+<p><code>has_and_belongs_to_many</code>の関係でデータを生成するのは前述の<code>has_many</code>の関係とよく似ています。
+属性名の単数形のバージョンへの単一のオブジェクトではなく、モデルの複数形の属性名にオブジェクトの配列を渡す必要があります。</p>
+<pre><code class="language-ruby">def profile_with_languages(languages_count: 2)
+  FactoryBot.create(:profile) do |profile|
+    FactoryBot.create_list(:language, languages_count, profiles: [profile])
+  end
+end
+</code></pre>
+<p>もしくはコールバックの方法では以下となります。</p>
+<pre><code class="language-ruby">factory :profile_with_languages do
+  transient do
+    languages_count { 2 }
+  end
+
+  after(:create) do |profile, context|
+    create_list(:language, context.languages_count, profiles: [profile])
+    profile.reload
+  end
+end
+</code></pre>
+<p>あるいは行内関連の方法では以下です（なおここでの<code>instance</code>の利用は、構築されるプロファイルへの参照です）。</p>
+<pre><code class="language-ruby">factory :profile_with_languages do
+  transient do
+    languages_count { 2 }
+  end
+
+  languages do
+    Array.new(languages_count) do
+      association(:language, profiles: [instance])
+    end
+  end
+end
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="多相関連"><a class="header" href="#多相関連">多相関連</a></h1>
+<p>多相関連はトレイトで制御できます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :video
+  factory :photo
+
+  factory :comment do
+    for_photo # 何も指定されなければ既定で:for_photoトレイトです。
+
+    trait :for_video do
+      association :commentable, factory: :video
+    end
+
+    trait :for_photo do
+      association :commentable, factory: :photo
+    end
+  end
+end
+</code></pre>
+<p>こうして以下とできます。</p>
+<pre><code class="language-ruby">create(:comment)
+create(:comment, :for_video)
+create(:comment, :for_photo)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="相互接続関連"><a class="header" href="#相互接続関連">相互接続関連</a></h1>
+<p>オブジェクトが相互接続する方法は際限なくあり、factory_botは常にそうした関係を扱うのに向いていないかもしれません。
+factory_botを使って個々のオブジェクトを構築し、素のRubyで補助メソッドを書いてこうしたオブジェクトを結び付けるのが理に適っている場合があります。</p>
+<p>つまり、より複雑で相互接続された関係は、行内関連と構築される<code>instance</code>への参照とを使ってfactory_botで構築できるということです。</p>
+<p>モデルが以下のようなものであるとします。
+ここで紐付く<code>Student</code>と<code>Profile</code>は両方とも同じ<code>School</code>に属します。</p>
+<pre><code class="language-ruby">class Student &lt; ApplicationRecord
+  belongs_to :school
+  has_one :profile
+end
+
+class Profile &lt; ApplicationRecord
+  belongs_to :school
+  belongs_to :student
+end
+
+class School &lt; ApplicationRecord
+  has_many :students
+  has_many :profiles
+end
+</code></pre>
+<p>生徒とプロファイルが相互に接続し、同じ学校にあることを以下のようなファクトリで確かめられます。</p>
+<pre><code class="language-ruby">FactoryBot.define do
+  factory :student do
+    school
+    profile { association :profile, student: instance, school: school }
+  end
+
+  factory :profile do
+    school
+    student { association :student, profile: instance, school: school }
+  end
+
+  factory :school
+end
+</code></pre>
+<p>なおこの方法は<code>build</code>や<code>build_stubbed</code>や<code>create</code>で上手くいきます。
+ただし<code>attributes_for</code>を使うと紐付けから<code>nil</code>が返ります。</p>
+<p>また、独自の<code>initialize_with</code>内で属性を代入したとき（例えば<code>initialize_with { new(**attributes) }</code>）、これらの属性は<code>instance</code>を参照すべきではないことにも注意してください。
+<code>nil</code>になるからです。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factory_bot"><a class="header" href="#factory_bot">factory_bot <a href="https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"><img src="https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main" alt="ビルド状態" /></a> <a href="https://codeclimate.com/github/thoughtbot/factory_bot"><img src="https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg" alt="Code Climate" /></a> <a href="https://badge.fury.io/rb/factory_bot"><img src="https://badge.fury.io/rb/factory_bot.svg" alt="Gemのバージョン" /></a></a></h1>
+<p>factory_botはフィクスチャの代わりになるものです。
+直感的な定義構文であり、複数の構築戦略（保存されたインスタンス、保存されないインスタンス、属性ハッシュ、スタブ化オブジェクト）、ファクトリ継承を含む同じクラスに対する複数のファクトリ（user、admin_user、など）に対応しています。</p>
+<p>Railsでfactory_botを使いたいときは<a href="https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a>を参照してください。</p>
+<p><em><a href="https://github.com/thoughtbot/factory_bot/blob/main/NAME.md">プロジェクト名の歴史に関心がありますか</a></em></p>
+<h3 id="factory_girlから移行されますか"><a class="header" href="#factory_girlから移行されますか">factory_girlから移行されますか</a></h3>
+<p><a href="https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/UPGRADE_FROM_FACTORY_GIRL.md">手引き</a>をご確認ください。</p>
+<h2 id="ドキュメント"><a class="header" href="#ドキュメント">ドキュメント</a></h2>
+<p><a href="https://thoughtbot.github.io/factory_bot">factory_botの本</a>で網羅的な参照、手引き、レシピを参照してください。</p>
+<p>RSpecやRailsといったサードパーティライブラリの統合についての情報は<a href="https://github.com/thoughtbot/factory_bot/wiki">factory_botのウィキ</a>を参照してください。</p>
+<p><a href="https://upcase.com/videos/factory-bot?utm_source=github&amp;utm_medium=open-source&amp;utm_campaign=factory-girl">詳細な導入のための映像</a>もあります。
+Upcaseで無料で見られます。</p>
+<h2 id="インストール"><a class="header" href="#インストール">インストール</a></h2>
+<p>以下を走らせてください。</p>
+<pre><code class="language-ruby">bundle add factory_bot
+</code></pre>
+<p>シェルで手動でgemをインストールするには、以下を走らせてください。</p>
+<pre><code class="language-shell">gem install factory_bot
+</code></pre>
+<h2 id="対応しているrubyのバージョン"><a class="header" href="#対応しているrubyのバージョン">対応しているRubyのバージョン</a></h2>
+<p>対応しているRubyのバージョンは<a href="https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml"><code>.github/workflows/build.yml</code></a>に一覧になっています。</p>
+<h2 id="その他の情報"><a class="header" href="#その他の情報">その他の情報</a></h2>
+<ul>
+<li><a href="https://rubygems.org/gems/factory_bot">Rubygems</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/factory-bot">Stack Overflow</a></li>
+<li><a href="https://github.com/thoughtbot/factory_bot/issues">イシュー</a></li>
+<li><a href="https://robots.thoughtbot.com/">GIANT ROBOTS SMASHING INTO OTHER GIANT
+ROBOTS</a></li>
+</ul>
+<h2 id="有用なツール"><a class="header" href="#有用なツール">有用なツール</a></h2>
+<ul>
+<li><a href="https://github.com/djezzzl/factory_trace">FactoryTrace</a>は使われていないファクトリやトレイトを見付けるのに役立ちます。</li>
+</ul>
+<h2 id="貢献"><a class="header" href="#貢献">貢献</a></h2>
+<p><a href="https://github.com/thoughtbot/factory_bot/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>を参照してください。</p>
+<p>factory_botは元はJoe Ferrisにより書かれ、thoughtbotにより保守されています。
+多くの向上と不具合の修正が<a href="https://github.com/thoughtbot/factory_bot/graphs/contributors">オープンソースコミュニティ</a>により貢献されました。</p>
+<h2 id="使用許諾-1"><a class="header" href="#使用許諾-1">使用許諾</a></h2>
+<p>factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free
+software, and may be redistributed under the terms specified in the
+<a href="https://github.com/thoughtbot/factory_bot/blob/main/LICENSE">LICENSE</a> file.</p>
+<!-- START /templates/footer.md -->
+<h2 id="thoughtbotについて-1"><a class="header" href="#thoughtbotについて-1">thoughtbotについて</a></h2>
+<p><img src="https://thoughtbot.com/thoughtbot-logo-for-readmes.svg" alt="thoughtbot" /></p>
+<p>このリポジトリはthoughtbot, inc.により保守され、資金提供されています。
+thoughtbotの名前とロゴはthoughtbot, inc.の商標です。</p>
+<p>私達はオープンソースソフトウェアが大好きです！
+<a href="https://thoughtbot.com/community?utm_source=github">私達の他のプロジェクト</a>を参照してください。
+<a href="https://thoughtbot.com/hire-us?utm_source=github">求人を募集しています</a>。</p>
+<!-- END /templates/footer.md -->
+<div style="break-before: page; page-break-before: always;"></div><h1 id="お知らせ"><a class="header" href="#お知らせ">お知らせ</a></h1>
+<h2 id="6512025年1月31日"><a class="header" href="#6512025年1月31日">6.5.1（2025年1月31日）</a></h2>
+<ul>
+<li>変更：可能な場合、ActiveRecordのトランザクション中にリント検査を実行 (Sean Doyle)</li>
+<li>修正：コンパイル時間を計測するときに無作為にテストが失敗していた点 (CodeMeinster)</li>
+<li>修正：activesupportの最小要件バージョンを6.1に引き上げました (Earlopain)</li>
+<li>内部的：開発依存関係を更新 (Neil Carvalho)</li>
+</ul>
+<h2 id="6502024年9月6日"><a class="header" href="#6502024年9月6日">6.5.0（2024年9月6日）</a></h2>
+<ul>
+<li>@elasticspoonにより、 https://github.com/thoughtbot/factory_bot/pull/1623
+でref/factory.mdの壊れていたリンクが修正されました。
+関連するイシューは1621です</li>
+<li>@ydah により、 https://github.com/thoughtbot/factory_bot/pull/1625
+に標準設定が追加されました</li>
+<li>@stefannibrasilにより、 https://github.com/thoughtbot/factory_bot/pull/1628
+でdynamic-readmeという、再利用のためのワークフローを呼ぶようにしました</li>
+<li>@stefannibrasilにより、 https://github.com/thoughtbot/factory_bot/pull/1630
+で再びreadmeが更新されました</li>
+<li>@stefannibrasilによる https://github.com/thoughtbot/factory_bot/pull/1635
+で、READMEが更新されたときにのみ、ワークフローを走らせるようにしました</li>
+<li>自動生成：@github-actionsによる
+https://github.com/thoughtbot/factory_bot/pull/1637 で、READMEのDynamic
+Sectionを更新しました</li>
+<li>@m-gizziによる https://github.com/thoughtbot/factory_bot/pull/1642
+で、文字列として渡された、下線文字のあるクラス名を扱う場合を、build_classに追加しました</li>
+<li>@berkosにより、 https://github.com/thoughtbot/factory_bot/pull/1615 でRuby
+3.3がCIに追加されました</li>
+<li>@smabosheにより、 https://github.com/thoughtbot/factory_bot/pull/1655
+でDependabotの構成が更新されました</li>
+<li>@sarahraqueldにより、 https://github.com/thoughtbot/factory_bot/pull/1651
+で新しいメンテナがCODEOWNERSに追加されました</li>
+<li>@sarahraqueldによる https://github.com/thoughtbot/factory_bot/pull/1666
+で、文書の書式とファイル名の競合を改善しました</li>
+<li>@sarahraqueldによる https://github.com/thoughtbot/factory_bot/pull/1677
+で、動的なセキュリティワークフローと SECURITY.md ファイルを追加しました</li>
+<li>自動生成：@github-actionsによる
+https://github.com/thoughtbot/factory_bot/pull/1678
+で、SECURITY中の動的な節を更新しました</li>
+<li>@Earlopainにより、 https://github.com/thoughtbot/factory_bot/pull/1686
+でrails 7.2の互換性が確保されました</li>
+<li>@ddieulivolにより、 https://github.com/thoughtbot/factory_bot/pull/1688
+でトレイトの文書にあるファクトリ定義が修正されました</li>
+</ul>
+<h2 id="6462023年1月30日"><a class="header" href="#6462023年1月30日">6.4.6（2023年1月30日）</a></h2>
+<ul>
+<li>修正：gemspecのRubyの最小バージョンの要件を上げました (Earlopain)。</li>
+<li>修正：<code>FactoryBot.modify</code>のリンク切れを直しました (Matt Brictson)。</li>
+<li>修正：<code>FactoryBot.lint</code>のリンク切れを直しました (Anton Dieterle)。</li>
+</ul>
+<h2 id="6452023年12月29日"><a class="header" href="#6452023年12月29日">6.4.5（2023年12月29日）</a></h2>
+<ul>
+<li>変更：Ruby 3.0以降、Rails6.1以降に対応しました (Mike Burns)。</li>
+</ul>
+<h2 id="6442023年12月27日"><a class="header" href="#6442023年12月27日">6.4.4（2023年12月27日）</a></h2>
+<ul>
+<li>内部的：observerの依存関係を除きました (Earlopain)。</li>
+</ul>
+<h2 id="6432023年12月26日"><a class="header" href="#6432023年12月26日">6.4.3（2023年12月26日）</a></h2>
+<ul>
+<li>修正：build_stubbedでIDセッターのないモデルに対応しました (Olivier Bellone)。</li>
+<li>修正：明示的な観察器の依存 (Oleg Antonyan)。</li>
+<li>内部：Rails 7.1をCIに追加 (Olivier Bellone)。</li>
+<li>内部：githubのactions/checkoutをv4に更新 (Lorenzo Zabot)。</li>
+<li>内部：CIでdisable-error_highlightを渡すのを中止 (Mike Burns)。</li>
+<li>内部：例外伝文検査を緩和 (Mike Burns)。</li>
+</ul>
+<h2 id="6422023年11月22日"><a class="header" href="#6422023年11月22日">6.4.2（2023年11月22日）</a></h2>
+<ul>
+<li>修正：最上水準のトレイトで、クラスがActiveSupport::Notificationsに渡されるようにしました (makicamel)。</li>
+</ul>
+<h2 id="6412023年11月20日"><a class="header" href="#6412023年11月20日">6.4.1（2023年11月20日）</a></h2>
+<ul>
+<li>修正：トレイトのあるファクトリについて、そのクラスがActiveSupport::Notificationsに渡されるようになりました
+(makicamel)。</li>
+</ul>
+<h2 id="640-november-17-2023"><a class="header" href="#640-november-17-2023">6.4.0 (November 17, 2023)</a></h2>
+<ul>
+<li>Added: if <code>build_stubbed</code> detects a UUID primary key, generate the
+correct type (Peter Boling, Alexandre Ruban).</li>
+<li>Docs: show examples of Ruby 3 syntactic sugars (Sean Doyle).</li>
+<li>Internal: resolve test warning messages (Mike Burns).</li>
+</ul>
+<h2 id="630-september-1-2023"><a class="header" href="#630-september-1-2023">6.3.0 (September 1, 2023)</a></h2>
+<ul>
+<li>Fix: link to changelog for RubyGems (Berkan Ünal).</li>
+<li>Fix: integrate with Ruby 3.2's <code>did_you_mean</code> library (Daniel Colson).</li>
+<li>Changed: explicitly define <code>#destroyed?</code> within the <code>Stub</code> strategy to
+return <code>false</code> to be consistent with ActiveRecord (Benjamin Fleischer).</li>
+<li>Added: announce <code>factory_bot.compile_factory</code> notification (Sean Doyle).</li>
+<li>Docs: clarify that custom strategies need to define <code>#to_sym</code> (Edmund
+Korley, Jonas S).</li>
+<li>Docs: fix CI link in README (Mark Huk).</li>
+<li>Docs: fix GitHub links (Robert Fletcher).</li>
+<li>Docs: install this library with <code>bundle add</code> (Glauco Custódio).</li>
+<li>Docs: re-write into mdBook (Mike Burns, Sara Jackson, Stefanni Brasil)</li>
+<li>Docs: clarify that automatic trait definitions could introduce new
+linting errors (Lawrence Chou).</li>
+<li>Internal: skip TruffleRuby on Rails 5.0, 5.1, 5.2 (Andrii Konchyn).</li>
+<li>Internal: fix typoes throughout codebase (Yudai Takada).</li>
+<li>Internal: run CI on <code>actions/checkout</code> v3 (Yudai Takada).</li>
+<li>Internal: follow standardrb code style (Yudai Takada).</li>
+<li>Internal: stop using Hound (Daniel Nolan).</li>
+<li>Internal: only run simplecov on C Ruby (Daniel Colson).</li>
+<li>Internal: quieter Cucumber (Daniel Colson).</li>
+<li>Internal: Ruby 3.2 support (Daniel Colson).</li>
+<li>Internal: Mike Burns is the CODEOWNER (Stefanni Brasil).</li>
+</ul>
+<h2 id="621-march-8-2022"><a class="header" href="#621-march-8-2022">6.2.1 (March 8, 2022)</a></h2>
+<ul>
+<li>Added: CI testing against truffleruby</li>
+<li>Changed: Documentation improvements for sequences and traits</li>
+<li>Fixed: ActiveSupport::Notifications reporting strategy through
+associations now report as symbols
+<ul>
+<li>BREAKING CHANGE: Custom strategies now need to define a <code>to_sym</code>
+method to specify the strategy identifier</li>
+</ul>
+</li>
+<li>Fixed: <code>add_attribute</code> with reserved keywords assigns values correctly</li>
+</ul>
+<h2 id="620-may-7-2021"><a class="header" href="#620-may-7-2021">6.2.0 (May 7, 2021)</a></h2>
+<ul>
+<li>Added: support for Ruby 3.0</li>
+<li>Changed: Include factory or trait name in error messages for missing
+traits. d05a9a3c</li>
+<li>Changed: Switched from Travis CI to GitHub Actions</li>
+<li>Fixed: More Ruby 2.7 kwarg deprecation warnings</li>
+</ul>
+<h2 id="610-july-8-2020"><a class="header" href="#610-july-8-2020">6.1.0 (July 8, 2020)</a></h2>
+<ul>
+<li>Added: public reader for the evaluation instance, helpful for building
+interrelated associations</li>
+<li>Changed: raise a more helpful error when passing an invalid argument to
+an association</li>
+<li>Fixed: Ruby 2.7 kwarg deprecation warnings</li>
+</ul>
+<h2 id="602-june-19-2020"><a class="header" href="#602-june-19-2020">6.0.2 (June 19, 2020)</a></h2>
+<ul>
+<li>Fixed: bug causing traits to consume more memory each time they were
+used</li>
+</ul>
+<h2 id="601-june-19-2020"><a class="header" href="#601-june-19-2020">6.0.1 (June 19, 2020)</a></h2>
+<ul>
+<li>Fixed: bug with constant resolution causing unexpected uninitialized
+constant errors</li>
+</ul>
+<h2 id="600-june-18-2020"><a class="header" href="#600-june-18-2020">6.0.0 (June 18, 2020)</a></h2>
+<ul>
+<li>Added: automatic definition of traits for Active Record enum attributes, enabled by default
+(Note that this required changing where factory_bot constantizes the build
+class, which may affect applications that were using abstract factories for
+inheritance. See issue #1409.) (This may break <code>FactoryBot.lint</code> because
+there may be previously non-existing factory+trait combinations being
+defined and checked)</li>
+<li>Added: <code>traits_for_enum</code> method to define traits for non-Active Record enums</li>
+<li>Added: <code>build_stubbed_starting_id=</code> option to define the starting id for <code>build_stubbed</code></li>
+<li>Removed: deprecated methods on the top-level <code>FactoryBot</code> module meant only for internal use</li>
+<li>Removed: support for EOL versions of Ruby (2.3, 2.4) and Rails (4.2)</li>
+<li>Removed: support for &quot;abstract&quot; factories with no associated class; use traits instead.</li>
+</ul>
+<h2 id="520-april-24-2020"><a class="header" href="#520-april-24-2020">5.2.0 (April 24, 2020)</a></h2>
+<ul>
+<li>Added: Pass index to block for <code>*_list</code> methods</li>
+<li>Deprecated: methods on the top-level <code>FactoryBot</code> module meant only for
+internal use: <code>callbacks</code>, <code>configuration</code>, <code>constructor</code>,
+<code>initialize_with</code>, <code>register_sequence</code>, <code>resent_configuration</code>,
+<code>skip_create</code>, <code>to_create</code></li>
+</ul>
+<h2 id="512-march-25-2020"><a class="header" href="#512-march-25-2020">5.1.2 (March 25, 2020)</a></h2>
+<ul>
+<li>Fixed: Ruby 2.7 keyword deprecation warning in FactoryBot.lint</li>
+</ul>
+<h2 id="511-october-2-2019"><a class="header" href="#511-october-2-2019">5.1.1 (October 2, 2019)</a></h2>
+<ul>
+<li>Improved: performance of traits</li>
+<li>Fixed: registering strategies on JRuby</li>
+</ul>
+<h2 id="510-september-21-2019"><a class="header" href="#510-september-21-2019">5.1.0 (September 21, 2019)</a></h2>
+<ul>
+<li>Added: &quot;Did you mean?&quot; style error message to help with typos in
+association declarations</li>
+<li>Changed: <code>NoMethodError</code> for static attributes now offers a &quot;Did you
+mean?&quot; style message</li>
+<li>Fixed: avoid undefining inherited evaluator methods</li>
+<li>Fixed: avoid stubbing id for records without a primary key</li>
+<li>Fixed: raise a helpful error for self-referencing traits to avoid a
+<code>SystemStackError</code></li>
+<li>Deprecated: methods on the top-level <code>FactoryBot</code> module meant only for
+internal use: <code>allow_class_lookup</code>, <code>allow_class_lookup</code>=,
+<code>register_trait</code>, <code>trait_by_name</code>, <code>traits</code>, <code>sequence_by_name</code>,
+<code>sequences</code>, <code>factory_by_name</code>, <code>register_factory</code>, <code>callback_names</code>,
+<code>register_callback</code>, <code>register_default_callbacks</code>,
+<code>register_default_strategies</code>, <code>strategies</code></li>
+</ul>
+<h2 id="502-february-22-2019"><a class="header" href="#502-february-22-2019">5.0.2 (February 22, 2019)</a></h2>
+<ul>
+<li>Bugfix: raise &quot;Trait not registered&quot; error when passing invalid trait
+arguments</li>
+</ul>
+<h2 id="501-february-15-2019"><a class="header" href="#501-february-15-2019">5.0.1 (February 15, 2019)</a></h2>
+<ul>
+<li>Bugfix: Do not raise error when two sequences have the same name in two
+traits that have the same name</li>
+</ul>
+<h2 id="500-february-1-2019"><a class="header" href="#500-february-1-2019">5.0.0 (February 1, 2019)</a></h2>
+<ul>
+<li>Added: Verbose option to include full backtraces in the linting output</li>
+<li>Changed: use_parent_strategy now defaults to true, so by default the
+build strategy will build, rather than create associations</li>
+<li>Changed: Passing a block when defining associations now raises an error</li>
+<li>Bugfix: use_parent_strategy is no longer reset by FactoryBot.reload</li>
+<li>Bugfix: rewind_sequences will now rewind local sequences along with the
+global ones</li>
+<li>Bugfix: the build_stubbed strategy now sets timestamps without changing
+the the original behavior of the timestamp methods</li>
+<li>Bugfix: avoid a stack error when referring to an &quot;attributes&quot; attribute
+in initialize_with</li>
+<li>Removed: support for EOL versions of Ruby and Rails</li>
+<li>Removed: static attributes (use dynamic attributes with a block instead)</li>
+<li>Removed: looking up factories by class</li>
+<li>Removed: ignore method (use transient instead)</li>
+<li>Removed: duplicate_attribute_assignment_from_initialize_with
+configuration option</li>
+<li>Deprecated: allow_class_lookup configuration option</li>
+</ul>
+<h2 id="4111-september-7-2018"><a class="header" href="#4111-september-7-2018">4.11.1 (September 7, 2018)</a></h2>
+<ul>
+<li>Documentation: Include .yardopts in the gem to fix broken RubyDoc links</li>
+</ul>
+<h2 id="4110-august-15-2018"><a class="header" href="#4110-august-15-2018">4.11.0 (August, 15, 2018)</a></h2>
+<ul>
+<li>Bugfix: Do not raise error for valid build_stubbed methods: decrement,
+increment, and toggle</li>
+<li>Bugfix: Do not add timestamps with build_stubbed for objects that
+shouldn't have timestamps</li>
+<li>静的属性を廃止しました。</li>
+</ul>
+<h2 id="4100-may-25-2018"><a class="header" href="#4100-may-25-2018">4.10.0 (May 25, 2018)</a></h2>
+<ul>
+<li>Allow sequences to be rewound</li>
+</ul>
+<h2 id="490-skipped---factorygirl-only-release"><a class="header" href="#490-skipped---factorygirl-only-release">4.9.0 (skipped - FactoryGirl only release)</a></h2>
+<h2 id="482-october-20-2017"><a class="header" href="#482-october-20-2017">4.8.2 (October 20, 2017)</a></h2>
+<ul>
+<li>Rename factory_girl to factory_bot</li>
+</ul>
+<h2 id="481-september-28-2017"><a class="header" href="#481-september-28-2017">4.8.1 (September 28, 2017)</a></h2>
+<ul>
+<li>Explicitly define <code>#destroyed?</code> within the <code>Stub</code> strategy to return
+<code>nil</code> instead of raising</li>
+<li>Update various dependencies</li>
+<li>Update internal test suite to use RSpec's mocking/stubbing instead of
+mocha</li>
+</ul>
+<h2 id="480-december-16-2016"><a class="header" href="#480-december-16-2016">4.8.0 (December 16, 2016)</a></h2>
+<ul>
+<li>ドキュメントを改善しました。</li>
+<li>Add <code>FactoryGirl.generate_list</code> to be consistent with
+<code>build_list</code>/<code>create_list</code> and friends</li>
+<li>Add <code>FactoryGirl.use_parent_strategy</code> configuration to allow
+associations to leverage parent build strategy</li>
+</ul>
+<h2 id="470-april-1-2016"><a class="header" href="#470-april-1-2016">4.7.0 (April 1, 2016)</a></h2>
+<ul>
+<li>ドキュメントを改善しました。</li>
+<li>Improve instrumentation payload to include traits, overrides, and the
+factory itself</li>
+<li>トレイトをリントできるようにしました。</li>
+<li>Deprecate factory lookup by class name in preparation for 5.0</li>
+<li>Improve internal performance by using flat_map instead of map and
+compact</li>
+<li>Improve handling of dirty attributes after building a stubbed object</li>
+<li>Reduce warnings from redefining methods</li>
+</ul>
+<h2 id="460-skipped"><a class="header" href="#460-skipped">4.6.0 (skipped)</a></h2>
+<h2 id="450-october-17-2014"><a class="header" href="#450-october-17-2014">4.5.0 (October 17, 2014)</a></h2>
+<ul>
+<li>Improve FactoryGirl.lint by including exception and message in output</li>
+<li>Allow selective linting</li>
+<li>Use more explicit #public_send when doing attribute assignment</li>
+<li>Improve documentation around FactoryGirl.lint and initialize_with</li>
+<li>Deprecate #ignore in favor of #transient</li>
+</ul>
+<h2 id="440-february-10-2014"><a class="header" href="#440-february-10-2014">4.4.0 (February 10, 2014)</a></h2>
+<ul>
+<li>FactoryGirl.lintを加えました。</li>
+<li>Fix memory leak in duplicate traits</li>
+<li>ドキュメントを更新しました。</li>
+</ul>
+<h2 id="430-november-3-2013"><a class="header" href="#430-november-3-2013">4.3.0 (November 3, 2013)</a></h2>
+<ul>
+<li>Start testing against Rails 4.0 and Ruby 2.0.0</li>
+<li>Stop testing against Rails 3.0 and Ruby 1.9.2</li>
+<li>Add <code>*_pair</code> methods to only build two objects</li>
+<li>Raise if a method is defined with a FactoryGirl block (factory or trait)</li>
+<li>Allow use of Symbol#to_proc in callbacks</li>
+<li>大域コールバックを加えました。</li>
+<li>Improve GETTING_STARTED and README</li>
+</ul>
+<h2 id="420-january-18-2013"><a class="header" href="#420-january-18-2013">4.2.0 (January 18, 2013)</a></h2>
+<ul>
+<li>ドキュメントを改善しました。</li>
+<li>Allow <code>*_list</code> syntax methods to accept a block</li>
+<li>Update gem dependencies</li>
+<li>Allow setting id for objects created with <code>build_stubbed</code></li>
+<li>Fix Stub strategy to mimic ActiveRecord regarding <code>created_at</code></li>
+<li>Evaluate sequences within the context of an Evaluator</li>
+<li>Fix Mocha deprecation warning</li>
+<li>Fix some warnings when running RUBYOPT=-w rake</li>
+<li>Convert test suite to RSpec's &quot;expect&quot; syntax</li>
+</ul>
+<h2 id="410-september-11-2012"><a class="header" href="#410-september-11-2012">4.1.0 (September 11, 2012)</a></h2>
+<ul>
+<li>Allow multiple callbacks to bind to the same block</li>
+<li>Fix documentation surrounding the stub strategy</li>
+</ul>
+<h2 id="400-august-3-2012"><a class="header" href="#400-august-3-2012">4.0.0 (August 3, 2012)</a></h2>
+<ul>
+<li>Remove deprecated cucumber_steps</li>
+<li>Remove deprecated alternate syntaxes</li>
+<li>Deprecate duplicate_attribute_assignment_from_initialize_with, which is
+now unused as attributes assigned within initialize_with are not
+subsequently assigned</li>
+</ul>
+<h2 id="361-august-2-2012"><a class="header" href="#361-august-2-2012">3.6.1 (August 2, 2012)</a></h2>
+<p>Update README to include info about running with JRuby</p>
+<ul>
+<li>Update dependencies on RSpec and tiny versions of Rails in Appraisal</li>
+<li>Improve flexibility of using traits with associations and add documentation</li>
+<li>Stub update_column to raise to mirror ActiveRecord's change from update_attribute</li>
+</ul>
+<h2 id="360-july-27-2012"><a class="header" href="#360-july-27-2012">3.6.0 (July 27, 2012)</a></h2>
+<ul>
+<li>Code/spec cleanup</li>
+<li>Allow factories with traits to be used in associations</li>
+<li>Refactor Factory to use DefinitionHierarchy to handle managing
+callbacks, custom constructor, and custom to_create</li>
+<li>Add memoization to speed up factories providing attribute overrides</li>
+<li>Add initial support of JRuby when running in 1.9 mode</li>
+<li>Improve docs on what happens when including FactoryGirl::Syntax::Methods</li>
+</ul>
+<h2 id="350-june-22-2012"><a class="header" href="#350-june-22-2012">3.5.0 (June 22, 2012)</a></h2>
+<ul>
+<li>Allow created_at to be set when using build_stubbed</li>
+<li>Deprecate FactoryGirl step definitions</li>
+</ul>
+<h2 id="342-june-19-2012"><a class="header" href="#342-june-19-2012">3.4.2 (June 19, 2012)</a></h2>
+<ul>
+<li>Fix bug in traits with callbacks called implicitly in factories whose
+callbacks trigger multiple times</li>
+</ul>
+<h2 id="341-june-18-2012"><a class="header" href="#341-june-18-2012">3.4.1 (June 18, 2012)</a></h2>
+<ul>
+<li>Fix traits so they can be nested and referred to from other traits</li>
+</ul>
+<h2 id="340-june-11-2012"><a class="header" href="#340-june-11-2012">3.4.0 (June 11, 2012)</a></h2>
+<ul>
+<li>Sequences support Enumerators</li>
+<li>Optionally disable duplicate assignment of attributes in initialize_with</li>
+<li>Make hash of public attributes available in initialize_with</li>
+<li>Support referring to a factory based on class name</li>
+</ul>
+<h2 id="330-may-13-2012"><a class="header" href="#330-may-13-2012">3.3.0 (May 13, 2012)</a></h2>
+<ul>
+<li>to_create、skip_create、initialize_withを大域的に定義できるようにしました。</li>
+<li>to_create、skip_create、initialize_withをトレイト内で定義できるようにしました。</li>
+<li>Fix deprecation messages for alternate syntaxes (make, generate, etc.)</li>
+<li>Improve library documentation</li>
+<li>Deprecate after_build, after_create, before_create, after_stub in favor
+of new callbacks</li>
+<li>Introduce new callback syntax: after(:build) {}, after(:custom) {}, or
+callback(:different) {} This allows for declaring any callback, usable
+with custom strategies</li>
+<li>Add attributes_for_list and build_stubbed_list with the
+StrategySyntaxMethodRegistrar</li>
+<li>Allow use of syntax methods (build, create, generate, etc) implicitly in
+callbacks</li>
+<li>Internal refactoring of a handful of components</li>
+</ul>
+<h2 id="320-april-24-2012"><a class="header" href="#320-april-24-2012">3.2.0 (April 24, 2012)</a></h2>
+<ul>
+<li>Use AS::Notifications for pub/sub to track running factories</li>
+<li>Call new within initialize_with implicitly on the build class</li>
+<li>Skip to_create with skip_create</li>
+<li>Allow registration of custom strategies</li>
+<li>Deprecate alternate syntaxes</li>
+<li>Implicitly call factory_bot's syntax methods from dynamic attributes</li>
+</ul>
+<h2 id="310-april-6-2012"><a class="header" href="#310-april-6-2012">3.1.0 (April 6, 2012)</a></h2>
+<ul>
+<li>Sequences support aliases, which reference the same block</li>
+<li>ドキュメントを更新しました。</li>
+<li>before_createコールバックを加えました。</li>
+<li>Support use of #attribute_names method to determine available attributes
+for steps</li>
+<li>Use ActiveSupport::Deprecation for all deprecations</li>
+</ul>
+<h2 id="300-march-23-2012"><a class="header" href="#300-march-23-2012">3.0.0 (March 23, 2012)</a></h2>
+<ul>
+<li>Deprecate the vintage syntax</li>
+<li>Remove Rails 2.x support</li>
+<li>Remove Ruby 1.8 support</li>
+<li>Remove deprecated features, including default_strategy, factory_name,
+:method for defining default strategy, ignore on individual attributes,
+and interacting with Factory the way you would FactoryGirl</li>
+</ul>
+<h2 id="264-march-16-2012"><a class="header" href="#264-march-16-2012">2.6.4 (March 16, 2012)</a></h2>
+<ul>
+<li>一過的属性名を無視しないようにしました。</li>
+<li>Ensure attributes set on instance are calculated uniquely</li>
+</ul>
+<h2 id="263-march-9-2012"><a class="header" href="#263-march-9-2012">2.6.3 (March 9, 2012)</a></h2>
+<ul>
+<li>Fix issue with traits not being present the first time a factory is
+accessed</li>
+<li>Update available Cucumber step definitions to not require a trailing
+colon when building a table of attributes to instantiate records with</li>
+</ul>
+<h2 id="262-march-9-2012"><a class="header" href="#262-march-9-2012">2.6.2 (March 9, 2012)</a></h2>
+<ul>
+<li>Allow factories to use all their ancestors' traits</li>
+<li>Ignore bin dir generated by bundler</li>
+<li>Namespace ::Factory as top-level to fix vintage syntax issue with Ruby
+1.9.2-p3p18</li>
+</ul>
+<h2 id="261-march-2-2012"><a class="header" href="#261-march-2-2012">2.6.1 (March 2, 2012)</a></h2>
+<ul>
+<li>Use FactoryGirl.reload in specs</li>
+<li>Clean up running named factories with a particular strategy with
+FactoryGirl::FactoryRunner</li>
+</ul>
+<h2 id="260-february-17-2012"><a class="header" href="#260-february-17-2012">2.6.0 (February 17, 2012)</a></h2>
+<ul>
+<li>Improve documentation of has_many associations in the GETTING_STARTED
+document</li>
+<li>Deprecate :method in favor of :strategy when overriding an association's
+build strategy</li>
+</ul>
+<h2 id="252-february-10-2012"><a class="header" href="#252-february-10-2012">2.5.2 (February 10, 2012)</a></h2>
+<ul>
+<li>Fix step definitions to use associations defined in parent factories</li>
+<li>Add inline trait support to (build|create)_list</li>
+<li>Update ActiveSupport dependency to &gt;= 2.3.9, which introduced
+class_attribute</li>
+</ul>
+<h2 id="251-february-3-2012"><a class="header" href="#251-february-3-2012">2.5.1 (February 3, 2012)</a></h2>
+<ul>
+<li>Fix attribute evaluation when the attribute isn't defined in the factory
+but is a private method on Object</li>
+<li>Update rubygems on Travis before running tests</li>
+<li>Fix spec name</li>
+<li>Update GETTING_STARTED with correct usage of build_stubbed</li>
+<li>READMEを更新し、initialize_withについて追記しました。</li>
+<li>Honor :parent on factory over block nesting</li>
+</ul>
+<h2 id="250-january-20-2012"><a class="header" href="#250-january-20-2012">2.5.0 (January 20, 2012)</a></h2>
+<ul>
+<li>Revert 'Deprecate build_stubbed and attributes_for'</li>
+<li>Implement initialize_with to allow overriding object instantiation</li>
+<li>Ensure FG runs against Rails 3.2.0</li>
+</ul>
+<h2 id="242-january-18-2012"><a class="header" href="#242-january-18-2012">2.4.2 (January 18, 2012)</a></h2>
+<ul>
+<li>行内トレイトと既定のファクトリとの相互作用を修正しました。</li>
+</ul>
+<h2 id="241-january-17-2012"><a class="header" href="#241-january-17-2012">2.4.1 (January 17, 2012)</a></h2>
+<ul>
+<li>Deprecate build_stubbed and attributes_for</li>
+<li>行内トレイトを修正しました。</li>
+</ul>
+<h2 id="240-january-13-2012"><a class="header" href="#240-january-13-2012">2.4.0 (January 13, 2012)</a></h2>
+<ul>
+<li>Refactor internals of FactoryGirl to use anonymous class on which
+attributes get defined</li>
+<li>Explicitly require Ruby 1.8.7 or higher in gemspec</li>
+<li>ドキュメントを修正しました。</li>
+<li>Add Gemnasium status to documentation</li>
+<li>Supplying a Class to a factory that overrides to_s no longer results in
+getting the wrong Class constructed</li>
+<li>Be more agnostic about ORMs when using columns in FactoryGirl step
+definitions</li>
+<li>Test against Active Record 3.2.0.rc2</li>
+<li>Update GETTING_STARTED to use Ruby syntax highlighting</li>
+</ul>
+<h2 id="232-november-26-2011"><a class="header" href="#232-november-26-2011">2.3.2 (November 26, 2011)</a></h2>
+<ul>
+<li>Move logic of where instance.save! is set to Definition</li>
+<li>Fix method name from aliases_for? to alias_for?</li>
+<li>Refactor internal attribute handling to use an anonymous class instead
+of faking Ruby's variable resolution. This allows for more sane usage of
+attributes without having to manage sorting priority because attributes
+can turn themselves into procs, which are used with define_method on a
+class so attributes work correctly all the time.</li>
+</ul>
+<h2 id="231-november-23-2011"><a class="header" href="#231-november-23-2011">2.3.1 (November 23, 2011)</a></h2>
+<ul>
+<li>Remove internally-used associate method from all the FactoryGirl::Proxy
+subclasses</li>
+<li>Move around requiring of files</li>
+<li>Consolidate errors into factory_bot.rb</li>
+<li>Refactor AttributeList to deal with priority only when iterating over
+attributes</li>
+<li>Refactor internals of some of the Proxy subclasses</li>
+<li>Ensure callbacks on traits are executed in the correct order</li>
+</ul>
+<h2 id="230-november-18-2011"><a class="header" href="#230-november-18-2011">2.3.0 (November 18, 2011)</a></h2>
+<ul>
+<li>Registries are named, resulting in better messages when factories,
+traits, or sequences cannot be found</li>
+<li>Fix incorrect tests</li>
+<li>Internals refactoring introducing FactoryGirl::NullFactory,
+FactoryGirl::Definition, and FactoryGirl::DeclarationList</li>
+<li>Use ActiveSupport for Hash#except and its delegation capabilities</li>
+<li>Fix usage of callbacks when added via implicit traits</li>
+<li>Use Bundler tasks and clean up dependencies</li>
+<li>Fix failing spec for big letters in factory name passed as symbol</li>
+<li>Add ability for traits to be added dynamically when creating an instance
+via build, create, build_stubbed, or attributes_for</li>
+</ul>
+<h2 id="220-october-14-2011"><a class="header" href="#220-october-14-2011">2.2.0 (October 14, 2011)</a></h2>
+<ul>
+<li>Clean up RSpec suite to not use 'should'</li>
+<li>Use create_list in step definitions</li>
+<li>Syntax methods that deal with ORM interaction (attributes_for, build,
+build_stubbed, and create) now accept a block that yields the
+result. This results in a more convenient way to interact with the
+result than using Object.tap.</li>
+<li>Standardize deprecation warnings</li>
+<li>Update transient attribute syntax to use blocks instead of calling
+ignore on each attribute declaration</li>
+<li>Parents can be defined after children because factories are evaluated
+when they're used; this means breaking up factories across multiple
+files will behave as expected</li>
+<li>Large internal refactoring, including changing access modifiers for a
+handful of methods for a more clearly defined API</li>
+</ul>
+<h2 id="212-september-23-2011"><a class="header" href="#212-september-23-2011">2.1.2 (September 23, 2011)</a></h2>
+<ul>
+<li>Bugfix: Vintage syntax fixed after bug introduced in 2.1.1</li>
+<li>Introduce dependency on activesupport to remove code from Factory class</li>
+</ul>
+<h2 id="211-september-23-2011-yanked"><a class="header" href="#211-september-23-2011-yanked">2.1.1 (September 23, 2011) (yanked)</a></h2>
+<ul>
+<li>Bugfix: Parent object callbacks are run before child object callbacks</li>
+<li>Declarations: allow overriding/modification of individual traits in
+child factories</li>
+<li>Callbacks refactored to not be attributes</li>
+<li>Updating documentation for formatting and clarity (incl. new specificity
+for cucumber)</li>
+</ul>
+<h2 id="210-september-02-2011"><a class="header" href="#210-september-02-2011">2.1.0 (September 02, 2011)</a></h2>
+<ul>
+<li>Bugfix: created_at now defined for stubbed models</li>
+<li>Gemspec updated for use with Rails 3.1</li>
+<li>Factories can now be modified post-definition (useful for overriding
+defaults from gems/plugins)</li>
+<li>All factories can now be reloaded with Factory.reload</li>
+<li>Add :method =&gt; build to factory associations to prevent saving of
+associated objects</li>
+<li>Factories defined in {Rails.root}/factories are now loaded by default</li>
+<li>Various documentation updates</li>
+</ul>
+<h2 id="114-november-28-2008"><a class="header" href="#114-november-28-2008">1.1.4 (November 28, 2008)</a></h2>
+<ul>
+<li>Factory.build now uses Factory.create for associations of the built
+object</li>
+<li>Factory definitions are now detected in subdirectories, such as
+factories/person_factory.rb (thanks to Josh Nichols)</li>
+<li>Factory definitions are now loaded after the environment in a Rails
+project (fixes some issues with dependencies being loaded too early)
+(thanks to Josh Nichols)</li>
+<li>Factory names ending in 's' no longer cause problems (thanks to Alex
+Sharp and Josh Owens)</li>
+</ul>
+<h2 id="113-september-12-2008"><a class="header" href="#113-september-12-2008">1.1.3 (September 12, 2008)</a></h2>
+<ul>
+<li>自動的にfactories.rb、test/factories.rb、spec/factories.rbから定義を取り入れるようにしました。</li>
+</ul>
+<h2 id="112-july-30-2008"><a class="header" href="#112-july-30-2008">1.1.2 (July 30, 2008)</a></h2>
+<ul>
+<li>Improved error handling for invalid and undefined factories/attributes</li>
+<li>Improved handling of strings vs symbols vs classes</li>
+<li>Added a prettier syntax for handling associations</li>
+<li>Updated documentation and fixed compatibility with Rails 2.1</li>
+</ul>
+<h2 id="111-june-23-2008"><a class="header" href="#111-june-23-2008">1.1.1 (June 23, 2008)</a></h2>
+<ul>
+<li>The attribute &quot;name&quot; no longer requires using #add_attribute</li>
+</ul>
+<h2 id="110-june-03-2008"><a class="header" href="#110-june-03-2008">1.1.0 (June 03, 2008)</a></h2>
+<ul>
+<li>依存属性の対応を加えました。</li>
+<li>Fixed the attributes_for build strategy to not build associations</li>
+<li>Added support for sequences</li>
+</ul>
+<h2 id="100-may-31-2008"><a class="header" href="#100-may-31-2008">1.0.0 (May 31, 2008)</a></h2>
+<ul>
+<li>First version</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="プロジェクト名の歴史"><a class="header" href="#プロジェクト名の歴史">プロジェクト名の歴史</a></h1>
+<h2 id="factory-girl"><a class="header" href="#factory-girl">Factory Girl</a></h2>
+<p>このライブラリは2008年に「Factory
+Girl」という名前で<a href="https://robots.thoughtbot.com/waiting-for-a-factory-girl">初回リリース</a>されました。</p>
+<p><em>デザインパターン</em>本のソフトウェアパターンである<a href="https://en.wikipedia.org/wiki/Factory_method_pattern">ファクトリーメソッド</a>と<a href="http://martinfowler.com/bliki/ObjectMother.html">母オブジェクト</a>の理念に共感して名前を選びました。
+また同名の<a href="https://www.youtube.com/watch?v=4jKix2DFlnA">ローリングストーンズの歌</a>への参照にもなっています。</p>
+<h2 id="factory-bot"><a class="header" href="#factory-bot">Factory Bot</a></h2>
+<p>「Factory Girl」という名前は、このライブラリを知った開発者や攻撃的ないし問題があるように感じたりする人にとって困惑するものでした。
+2017年10月に「Factory
+Bot」に<a href="https://robots.thoughtbot.com/factory_bot">ライブラリを改名</a>しました。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factory-botへの貢献"><a class="header" href="#factory-botへの貢献">Factory Botへの貢献</a></h1>
+<p>どなたでもプルリクエストを歓迎します。
+このプロジェクトに参加することで、thoughtbotの<a href="https://thoughtbot.com/open-source-code-of-conduct">行動規範</a>に従うことに同意したものとします。</p>
+<p>以下は<em>あなた</em>が貢献できる方法です。</p>
+<ul>
+<li>アルファ、ベータ、プレリリースのバージョンを使う</li>
+<li>不具合を報告する</li>
+<li>新機能を提案する</li>
+<li>ドキュメントを書いたり編集したりする</li>
+<li>仕様を書く</li>
+<li>コードを書く（<strong>どんなパッチも些細ではありません</strong>。誤植修正やコメントの追加などもそうです）</li>
+<li>コードを改修する</li>
+<li><a href="https://github.com/thoughtbot/factory_bot/issues">イシュー</a>を閉じる</li>
+<li>パッチをレビューする</li>
+</ul>
+<h2 id="イシューを送る"><a class="header" href="#イシューを送る">イシューを送る</a></h2>
+<ul>
+<li><a href="https://github.com/thoughtbot/factory_bot/issues">GitHubのイシュートラッカー</a>を使って不具合と機能と把握しています。</li>
+<li>不具合報告や機能の要望を送る前に、既に送られていないか必ずお確かめください。</li>
+<li>不具合報告を送るとき、<a href="https://github.com/thoughtbot/factory_bot/blob/main/.github/REPRODUCTION_SCRIPT.rb">再現スクリプト</a>とその不具合を再現するのに必要かもしれないその他の詳細を含めてください。
+これにはgemのバージョン、Rubyのバージョン、オペレーティングシステムが含まれます。</li>
+</ul>
+<h2 id="イシューを整頓する"><a class="header" href="#イシューを整頓する">イシューを整頓する</a></h2>
+<ul>
+<li>送信者から反応がないイシューは30日以降に閉じられます。</li>
+<li>イシューは修正されたり回答されたと思われたときに閉じられます。
+メンテナが間違っていたときは再び開くことがあります。</li>
+<li>イシューが間違って閉じられたときはイシューを理解して説明してください。
+喜んでイシューを再度開きます。</li>
+</ul>
+<h2 id="プルリクエストを送る"><a class="header" href="#プルリクエストを送る">プルリクエストを送る</a></h2>
+<ol>
+<li><a href="https://github.com/thoughtbot/factory_bot/tree/main">公式リポジトリ</a>を<a href="https://help.github.com/articles/fork-a-repo/">フォーク</a>します。</li>
+<li><a href="https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/">トピックブランチを作ります</a>。</li>
+<li>機能や不具合修正を実装します。</li>
+<li>変更を加え、コミットし、プッシュします。</li>
+<li><a href="https://help.github.com/articles/using-pull-requests/">プルリクエストを送る</a>。</li>
+</ol>
+<h3 id="補足"><a class="header" href="#補足">補足</a></h3>
+<ul>
+<li>コードを変えたときはテストを加えてください。
+テストのない貢献は受け付けられません。</li>
+<li>テストの加え方が分からなければ、PRを作って手助けを求めるコメントを残してください。
+喜んでお手伝いします！</li>
+<li>gemのバージョンを更新しないでください。</li>
+</ul>
+<h2 id="準備-1"><a class="header" href="#準備-1">準備</a></h2>
+<pre><code class="language-sh">bundle install
+</code></pre>
+<h2 id="テストスートを走らせる"><a class="header" href="#テストスートを走らせる">テストスートを走らせる</a></h2>
+<p>既定のrakeタスクでは、完全なテストスートと<a href="https://github.com/testdouble/standard">standard</a>が実行されます。</p>
+<pre><code class="language-sh">bundle exec rake
+</code></pre>
+<p>1グループのテスト（単体、スペック、機能）を走らせることもできます。</p>
+<pre><code class="language-sh">bundle exec rake spec:unit
+bundle exec rake spec:acceptance
+bundle exec rake features
+</code></pre>
+<p>個別のrspecのテストを走らせるため、パスと行番号を与えられます。</p>
+<pre><code class="language-sh">bundle exec rspec spec/path/to/spec.rb:123
+</code></pre>
+<p><a href="https://github.com/thoughtbot/appraisal">appraisal</a>で特定のバージョンのrailsでテストを走らせられます。
+Rails 6に対して、既定のrakeタスクを走らせる例は以下です。</p>
+<pre><code class="language-sh">bundle exec appraisal 6.0 rake
+</code></pre>
+<h2 id="整形"><a class="header" href="#整形">整形</a></h2>
+<p>自動でコードを整形するには<a href="https://github.com/testdouble/standard">standard</a>を使ってください。</p>
+<pre><code class="language-sh">bundle exec rake standard:fix
+</code></pre>
+<p>https://github.com/middleman/middleman-heroku/blob/master/CONTRIBUTING.md
+から着想を得ました。</p>
+<h2 id="この日本語訳について"><a class="header" href="#この日本語訳について">この日本語訳について</a></h2>
+<p>本文書は<a href="https://thoughtbot.github.io/factory_bot/" title="thoughtbot">``The factory_bot book''</a>の日本語訳です。</p>
+<p>日本語訳のファイル（Markdown形式）は原文のファイル構造に従って生成され、<code>translation/ja</code>ディレクトリ以下に配置されます。
+特に<code>translation/ja/docs</code>ディレクトリ以下に配置されるファイルはmdBookによりウェブページに変換されます。</p>
+<p>翻訳管理にはpo4aが使われており、GNU GettextのPO形式により翻訳が保管されます。
+そのため、原文に変更が発生した場合は次の手順で更新します。
+なお、お知らせは過去のバージョンは未翻訳のものが残っています。
+これらのバージョンは必要に応じて訳出することとします。
+POファイルでは<code>translation/po/news.ja.po</code>に分離されています。</p>
+<ol>
+<li>原文のリポジトリに合わせてリベースする。</li>
+<li><code>make -C translation</code>でPOファイルを更新する。</li>
+<li>更新された<code>translation/po/*.ja.po</code>を編集し、fuzzyの項目や未翻訳の項目の翻訳を完了する。</li>
+<li>再度<code>make -C translation</code>を実行し、日本語訳のファイルを生成する。</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
