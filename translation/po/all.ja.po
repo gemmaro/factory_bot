@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2025-01-28 16:26+0900\n"
-"PO-Revision-Date: 2024-11-24 10:48+0900\n"
+"POT-Creation-Date: 2025-03-23 09:16+0900\n"
+"PO-Revision-Date: 2025-03-23 09:17+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -77,13 +77,13 @@ msgstr ""
 "う人向けの情報があります。"
 
 #. type: Title -
-#: ../docs/src/intro.md:15 ../README.md:76
+#: ../docs/src/intro.md:15 ../README.md:77
 #, no-wrap
 msgid "License"
 msgstr "使用許諾"
 
 #. type: Plain text
-#: ../docs/src/intro.md:20 ../README.md:81
+#: ../docs/src/intro.md:20 ../README.md:82
 msgid ""
 "factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
 "software, and may be redistributed under the terms specified in the "
@@ -94,13 +94,13 @@ msgstr ""
 "[LICENSE] file."
 
 #. type: Link reference
-#: ../docs/src/intro.md:21 ../README.md:82
+#: ../docs/src/intro.md:21 ../README.md:83
 #, no-wrap
 msgid "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
 msgstr "[LICENSE]: https://github.com/thoughtbot/factory_bot/blob/main/LICENSE"
 
 #. type: Title ##
-#: ../docs/src/intro.md:23 ../README.md:85
+#: ../docs/src/intro.md:23 ../README.md:86
 #, no-wrap
 msgid "About thoughtbot"
 msgstr "thoughtbotについて"
@@ -125,13 +125,13 @@ msgstr ""
 "製品を設計、開発、成長させるための[求人を募集しています][hire]。"
 
 #. type: Link reference
-#: ../docs/src/intro.md:32 ../README.md:96
+#: ../docs/src/intro.md:32 ../README.md:97
 #, no-wrap
 msgid "[community]: https://thoughtbot.com/community?utm_source=github"
 msgstr "[community]: https://thoughtbot.com/community?utm_source=github"
 
 #. type: Link reference
-#: ../docs/src/intro.md:33 ../README.md:97
+#: ../docs/src/intro.md:33 ../README.md:98
 #, no-wrap
 msgid "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
 msgstr "[hire]: https://thoughtbot.com/hire-us?utm_source=github"
@@ -7351,7 +7351,7 @@ msgid "Useful Tools"
 msgstr "有用なツール"
 
 #. type: Bullet: '* '
-#: ../README.md:65
+#: ../README.md:66
 msgid ""
 "[FactoryTrace](https://github.com/djezzzl/factory_trace) - helps to find "
 "unused factories and traits."
@@ -7359,14 +7359,27 @@ msgstr ""
 "[FactoryTrace](https://github.com/djezzzl/factory_trace)は使われていないファ"
 "クトリやトレイトを見付けるのに役立ちます。"
 
+#. type: Bullet: '* '
+#: ../README.md:66
+msgid ""
+"[ruby-lsp-factory_bot](https://github.com/donny741/ruby-lsp-factory_bot) / "
+"[ruby-lsp-rails-factory-bot](https://github.com/johansenja/ruby-lsp-rails-"
+"factory-bot) - integration with [ruby-lsp](https://github.com/Shopify/ruby-"
+"lsp) to provide intellisense"
+msgstr ""
+"[ruby-lsp-factory_bot](https://github.com/donny741/ruby-lsp-factory_bot) / "
+"[ruby-lsp-rails-factory-bot](https://github.com/johansenja/ruby-lsp-rails-"
+"factory-bot) - [ruby-lsp](https://github.com/Shopify/ruby-lsp)との統合による"
+"インテリセンスの提供"
+
 #. type: Title -
-#: ../README.md:67
+#: ../README.md:68
 #, no-wrap
 msgid "Contributing"
 msgstr "貢献"
 
 #. type: Plain text
-#: ../README.md:70
+#: ../README.md:71
 msgid ""
 "Please see [CONTRIBUTING.md](https://github.com/thoughtbot/factory_bot/blob/"
 "main/CONTRIBUTING.md)."
@@ -7375,7 +7388,7 @@ msgstr ""
 "CONTRIBUTING.md)を参照してください。"
 
 #. type: Plain text
-#: ../README.md:74
+#: ../README.md:75
 msgid ""
 "factory_bot was originally written by Joe Ferris and is maintained by "
 "thoughtbot.  Many improvements and bugfixes were contributed by the [open "
@@ -7387,18 +7400,18 @@ msgstr ""
 "thoughtbot/factory_bot/graphs/contributors)により貢献されました。"
 
 #. type: Plain text
-#: ../README.md:85
+#: ../README.md:86
 #, no-wrap
 msgid "<!-- START /templates/footer.md -->\n"
 msgstr "<!-- START /templates/footer.md -->\n"
 
 #. type: Plain text
-#: ../README.md:88
+#: ../README.md:89
 msgid "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
 msgstr "![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)"
 
 #. type: Plain text
-#: ../README.md:91
+#: ../README.md:92
 msgid ""
 "This repo is maintained and funded by thoughtbot, inc.  The names and logos "
 "for thoughtbot are trademarks of thoughtbot, inc."
@@ -7407,7 +7420,7 @@ msgstr ""
 "thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
 
 #. type: Plain text
-#: ../README.md:95
+#: ../README.md:96
 msgid ""
 "We love open source software! See [our other projects][community].  We are "
 "[available for hire][hire]."
@@ -7417,55 +7430,55 @@ msgstr ""
 "[求人を募集しています][hire]。"
 
 #. type: Plain text
-#: ../README.md:101
+#: ../README.md:102
 #, no-wrap
 msgid "<!-- END /templates/footer.md -->\n"
 msgstr "<!-- END /templates/footer.md -->\n"
 
 #. type: Link reference
-#: ../README.md:102
+#: ../README.md:103
 #, no-wrap
 msgid "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
 msgstr "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
 
 #. type: Link reference
-#: ../README.md:103
+#: ../README.md:104
 #, no-wrap
 msgid "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
 msgstr "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
 
 #. type: Link reference
-#: ../README.md:104
+#: ../README.md:105
 #, no-wrap
 msgid "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
 msgstr "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
 
 #. type: Link reference
-#: ../README.md:105
+#: ../README.md:106
 #, no-wrap
 msgid "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
 msgstr "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
 
 #. type: Link reference
-#: ../README.md:106
+#: ../README.md:107
 #, no-wrap
 msgid "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
 msgstr "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
 
 #. type: Link reference
-#: ../README.md:107
+#: ../README.md:108
 #, no-wrap
 msgid "[version]: https://badge.fury.io/rb/factory_bot"
 msgstr "[version]: https://badge.fury.io/rb/factory_bot"
 
 #. type: Link reference
-#: ../README.md:108
+#: ../README.md:109
 #, no-wrap
 msgid "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
 msgstr "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
 
 #. type: Link reference
-#: ../README.md:109
+#: ../README.md:110
 #, no-wrap
 msgid "[hound]: https://houndci.com"
 msgstr "[hound]: https://houndci.com"

@@ -64,6 +64,9 @@ gem install factory_bot
 ------
 
 * [FactoryTrace](https://github.com/djezzzl/factory_trace)は使われていないファクトリやトレイトを見付けるのに役立ちます。
+* [ruby-lsp-factory_bot](https://github.com/donny741/ruby-lsp-factory_bot) /
+  [ruby-lsp-rails-factory-bot](https://github.com/johansenja/ruby-lsp-rails-factory-bot)
+  - [ruby-lsp](https://github.com/Shopify/ruby-lsp)との統合によるインテリセンスの提供
 
 貢献
 --
