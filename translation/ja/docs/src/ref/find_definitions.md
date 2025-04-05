@@ -6,6 +6,7 @@
 既定の読込順は以下の通りです。
 
 1. `factories.rb`
+1. `factories/**/*.rb`
 1. `test/factories.rb`
 1. `test/factories/**/*.rb`
 1. `spec/factories.rb`

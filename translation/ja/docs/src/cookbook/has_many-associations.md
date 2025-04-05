@@ -65,7 +65,9 @@ create(:user_with_posts).posts.length # 5
 create(:user_with_posts, posts_count: 15).posts.length # 15
 ```
 
-もしくは、`build`や`build_stubbed`や`create`で上手くいく（ただし`attributes_for`では上手くいきません）解決策として、行内関連が使えます。
+以下はデータベースへの保存せずに済ませる単純な例です。
+`build`や`build_stubbed`や`create`で機能します（ただし`attributes_for`では上手くいきません）。
+行内関連が使えます。
 
 ```ruby
 FactoryBot.define do
@@ -78,6 +80,12 @@ FactoryBot.define do
     name { "Taylor Kim" }
 
     factory :user_with_posts do
+      posts { [association(:post)] }
+    end
+
+    # または
+
+    trait :with_posts do
       posts { [association(:post)] }
     end
   end

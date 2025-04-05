@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2025-03-23 09:16+0900\n"
-"PO-Revision-Date: 2025-03-23 09:17+0900\n"
+"POT-Creation-Date: 2025-04-05 16:11+0900\n"
+"PO-Revision-Date: 2025-04-05 16:14+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -2199,12 +2199,14 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/cookbook/has_many-associations.md:74
 msgid ""
-"Or, for a solution that works with `build`, `build_stubbed`, and `create` "
-"(although it doesn't work well with `attributes_for`), you can use inline "
-"associations:"
+"The following is a simple example that works without having to save to the "
+"database. It works with `build`, `build_stubbed`, and `create` (although it "
+"doesn't work well with `attributes_for`), you can use inline associations:"
 msgstr ""
-"もしくは、`build`や`build_stubbed`や`create`で上手くいく（ただし"
-"`attributes_for`では上手くいきません）解決策として、行内関連が使えます。"
+"以下はデータベースへの保存せずに済ませる単純な例です。\n"
+"`build`や`build_stubbed`や`create`で機能します（ただし`attributes_for`では上"
+"手くいきません）。\n"
+"行内関連が使えます。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/cookbook/has_many-associations.md:75
@@ -2222,6 +2224,12 @@ msgid ""
 "    factory :user_with_posts do\n"
 "      posts { [association(:post)] }\n"
 "    end\n"
+"\n"
+"    # or\n"
+"\n"
+"    trait :with_posts do\n"
+"      posts { [association(:post)] }\n"
+"    end\n"
 "  end\n"
 "end\n"
 "\n"
@@ -2242,6 +2250,12 @@ msgstr ""
 "    factory :user_with_posts do\n"
 "      posts { [association(:post)] }\n"
 "    end\n"
+"\n"
+"    # または\n"
+"\n"
+"    trait :with_posts do\n"
+"      posts { [association(:post)] }\n"
+"    end\n"
 "  end\n"
 "end\n"
 "\n"
@@ -2251,7 +2265,7 @@ msgstr ""
 "build_stubbed(:user_with_posts).posts.length # 1\n"
 
 #. type: Plain text
-#: ../docs/src/cookbook/has_many-associations.md:99
+#: ../docs/src/cookbook/has_many-associations.md:105
 msgid ""
 "For more flexibility you can combine this with the `posts_count` transient "
 "attribute from the callback example:"
@@ -2260,7 +2274,7 @@ msgstr ""
 "ます。"
 
 #. type: Fenced code block (ruby)
-#: ../docs/src/cookbook/has_many-associations.md:100
+#: ../docs/src/cookbook/has_many-associations.md:106
 #, no-wrap
 msgid ""
 "FactoryBot.define do\n"
@@ -3161,18 +3175,22 @@ msgstr ""
 "find_definitions`を読んだ後に自動的に読み込まれます。"
 
 #. type: Plain text
-#: ../docs/src/defining/file-paths.md:10
+#: ../docs/src/defining/file-paths.md:12
 #, no-wrap
 msgid ""
+"    factories.rb\n"
+"    factories/**/*.rb\n"
 "    test/factories.rb\n"
+"    test/factories/**/*.rb\n"
 "    spec/factories.rb\n"
-"    test/factories/*.rb\n"
-"    spec/factories/*.rb\n"
+"    spec/factories/**/*.rb\n"
 msgstr ""
+"    factories.rb\n"
+"    factories/**/*.rb\n"
 "    test/factories.rb\n"
+"    test/factories/**/*.rb\n"
 "    spec/factories.rb\n"
-"    test/factories/*.rb\n"
-"    spec/factories/*.rb\n"
+"    spec/factories/**/*.rb\n"
 
 #. type: Title #
 #: ../docs/src/defining/hash-attributes.md:1
@@ -4312,38 +4330,43 @@ msgstr ""
 "既定の読込順は以下の通りです。"
 
 #. type: Bullet: '1. '
-#: ../docs/src/ref/find_definitions.md:14
+#: ../docs/src/ref/find_definitions.md:15
 msgid "`factories.rb`"
 msgstr "`factories.rb`"
 
 #. type: Bullet: '1. '
-#: ../docs/src/ref/find_definitions.md:14
+#: ../docs/src/ref/find_definitions.md:15
+msgid "`factories/**/*.rb`"
+msgstr "`factories/**/*.rb`"
+
+#. type: Bullet: '1. '
+#: ../docs/src/ref/find_definitions.md:15
 msgid "`test/factories.rb`"
 msgstr "`test/factories.rb`"
 
 #. type: Bullet: '1. '
-#: ../docs/src/ref/find_definitions.md:14
+#: ../docs/src/ref/find_definitions.md:15
 msgid "`test/factories/**/*.rb`"
 msgstr "`test/factories/**/*.rb`"
 
 #. type: Bullet: '1. '
-#: ../docs/src/ref/find_definitions.md:14
+#: ../docs/src/ref/find_definitions.md:15
 msgid "`spec/factories.rb`"
 msgstr "`spec/factories.rb`"
 
 #. type: Bullet: '1. '
-#: ../docs/src/ref/find_definitions.md:14
+#: ../docs/src/ref/find_definitions.md:15
 msgid "`spec/factories/**/*.rb`"
 msgstr "`spec/factories/**/*.rb`"
 
 #. type: Title ##
-#: ../docs/src/ref/find_definitions.md:15
+#: ../docs/src/ref/find_definitions.md:16
 #, no-wrap
 msgid "Rails"
 msgstr "Rails"
 
 #. type: Plain text
-#: ../docs/src/ref/find_definitions.md:20
+#: ../docs/src/ref/find_definitions.md:21
 msgid ""
 "The `.find_definitions` method is called automatically by "
 "`factory_bot_rails` after initialize. The `.definition_file_paths` can be "
