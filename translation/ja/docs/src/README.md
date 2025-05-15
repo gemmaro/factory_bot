@@ -10,7 +10,7 @@ _[プロジェクト名の歴史に関心がありますか][NAME]_
 
 ### factory\_girlから移行されますか
 
-[手引き](https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。
+[手引き](https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。
 
 
 ドキュメント

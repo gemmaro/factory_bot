@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2025-04-05 16:11+0900\n"
-"PO-Revision-Date: 2025-04-05 16:14+0900\n"
+"POT-Creation-Date: 2025-05-15 20:15+0900\n"
+"PO-Revision-Date: 2025-05-15 20:16+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -7223,10 +7223,10 @@ msgstr "factory\\_girlから移行されますか"
 #. type: Plain text
 #: ../README.md:14
 msgid ""
-"Check out the [guide](https://github.com/thoughtbot/factory_bot/blob/4-9-0-"
-"stable/UPGRADE_FROM_FACTORY_GIRL.md)."
+"Check out the [guide](https://github.com/thoughtbot/factory_bot/blob/v4.9.0/"
+"UPGRADE_FROM_FACTORY_GIRL.md)."
 msgstr ""
-"[手引き](https://github.com/thoughtbot/factory_bot/blob/4-9-0-stable/"
+"[手引き](https://github.com/thoughtbot/factory_bot/blob/v4.9.0/"
 "UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。"
 
 #. type: Title -
