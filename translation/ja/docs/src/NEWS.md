@@ -1,5 +1,18 @@
 # お知らせ
 
+## 6.5.2（2025年5月20日）
+
+    * 変更：「冗長なリント」のテストを更新し、Ruby 3.4で変更されたバックトレースを受け付けるようにしました (CodeMeister)
+    * 修正：`build_stubbed`で`created_at`と`updated_at`に同じ時間記録を設定するようにしました (Kim
+      Emmanuel)
+    * 修正：系列を改修し、複製されたトレイトが親系列を確実に使うようにしました。 (CodeMeister)
+    * 文書：definition_file_paths commentを修正 (Milo Winningham)
+    * 文書：README.mdの有用なツールの節にruby-lsp拡張を追加 (johansenja)
+    * 文書：定義ファイルのパスについての文書を修正 (Ryo Nakamura)
+    * 文書：has_many-associations.mdを更新し、トレイトで行内関連を使えることに言及しました (Matthew
+      Zagaja)
+    * 文書：「Factory Girlからの移行」の手引きのリンクを修正 (Neil Carvalho)
+
 ## 6.5.1（2025年1月31日）
 
   * 変更：可能な場合、ActiveRecordのトランザクション中にリント検査を実行 (Sean Doyle)
