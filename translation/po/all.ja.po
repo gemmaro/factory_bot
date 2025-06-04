@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2025-05-15 20:15+0900\n"
-"PO-Revision-Date: 2025-05-15 20:16+0900\n"
+"POT-Creation-Date: 2025-06-04 21:19+0900\n"
+"PO-Revision-Date: 2025-06-04 21:51+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -530,67 +530,67 @@ msgid "Guide"
 msgstr "手引き"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Setup](setup/summary.md)"
 msgstr "[準備](setup/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Using Without Bundler](using-without-bundler/summary.md)"
 msgstr "[Bundler無しで使う](using-without-bundler/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Rails Preloaders and RSpec](rails-preloaders-and-rspec/summary.md)"
 msgstr "[Railsの事前読込器とRSpec](rails-preloaders-and-rspec/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Defining factories](defining/summary.md)"
 msgstr "[ファクトリ定義](defining/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Factory name and attributes](defining/name-attributes.md)"
 msgstr "[ファクトリ名と属性](defining/name-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Specifying the class explicitly](defining/explicit-class.md)"
 msgstr "[クラスを明示的に指定](defining/explicit-class.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Definition file paths](defining/file-paths.md)"
 msgstr "[定義ファイルパス](defining/file-paths.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Hash attributes](defining/hash-attributes.md)"
 msgstr "[ハッシュ属性](defining/hash-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Best practices](defining/best-practices.md)"
 msgstr "[ベストプラクティス](defining/best-practices.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Static Attributes (deprecated)](defining/static-attributes.md)"
 msgstr "[静的属性（廃止）](defining/static-attributes.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Using factories](using-factories/summary.md)"
 msgstr "[ファクトリを使う](using-factories/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Build strategies](using-factories/build-strategies.md)"
 msgstr "[構築戦略](using-factories/build-strategies.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid ""
 "[Building or Creating Multiple Records](building-or-creating-multiple-"
 "records/summary.md)"
@@ -599,47 +599,47 @@ msgstr ""
 "summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Attribute overrides](using-factories/attribute-overrides.md)"
 msgstr "[属性の上塗り](using-factories/attribute-overrides.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Aliases](aliases/summary.md)"
 msgstr "[別称](aliases/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Dependent Attributes](dependent-attributes/summary.md)"
 msgstr "[依存属性](dependent-attributes/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Transient Attributes](transient-attributes/summary.md)"
 msgstr "[一過的属性](transient-attributes/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With other attributes](transient-attributes/with-other-attributes.md)"
 msgstr "[他の属性付き](transient-attributes/with-other-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With `attributes_for`](transient-attributes/with-attributes_for.md)"
 msgstr "[`attributes_for`付き](transient-attributes/with-attributes_for.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With callbacks](transient-attributes/with-callbacks.md)"
 msgstr "[コールバック付き](transient-attributes/with-callbacks.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With associations](transient-attributes/with-associations.md)"
 msgstr "[関連付き](transient-attributes/with-associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid ""
 "[Method Name / Reserved Word Attributes](method-name-reserved-word-"
 "attributes/summary.md)"
@@ -647,213 +647,228 @@ msgstr ""
 "[メソッド名と予約語の属性](method-name-reserved-word-attributes/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Inheritance](inheritance/summary.md)"
 msgstr "[継承](inheritance/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Nested factories](inheritance/nested-factories.md)"
 msgstr "[入れ子のファクトリ](inheritance/nested-factories.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid ""
 "[Assigning parent explicitly](inheritance/assigning-parent-explicitly.md)"
 msgstr "[親を明示的に代入](inheritance/assigning-parent-explicitly.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Best practices](inheritance/best-practices.md)"
 msgstr "[ベストプラクティス](inheritance/best-practices.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Associations](associations/summary.md)"
 msgstr "[関連](associations/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Implicit definition](associations/implicit-definition.md)"
 msgstr "[暗黙定義](associations/implicit-definition.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Explicit definition](associations/explicit-definition.md)"
 msgstr "[明示定義](associations/explicit-definition.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Inline definition](associations/inline-definition.md)"
 msgstr "[行内定義](associations/inline-definition.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Specifying the factory](associations/specifying-the-factory.md)"
 msgstr "[ファクトリの指定](associations/specifying-the-factory.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Overriding attributes](associations/overriding-attributes.md)"
 msgstr "[属性の上塗り](associations/overriding-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Association overrides](associations/association-overrides.md)"
 msgstr "[関連の上塗り](associations/association-overrides.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Build strategies](associations/build-strategies.md)"
 msgstr "[構築戦略](associations/build-strategies.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Sequences](sequences/summary.md)"
 msgstr "[系列](sequences/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Global sequences](sequences/global-sequences.md)"
 msgstr "[大域系列](sequences/global-sequences.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With dynamic attributes](sequences/with-dynamic-attributes.md)"
 msgstr "[動的属性付き](sequences/with-dynamic-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[As implicit attributes](sequences/as-implicit-attributes.md)"
 msgstr "[暗黙属性として](sequences/as-implicit-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
-msgid "[Inline sequences](sequences/inline-sequences.md)"
-msgstr "[行内系列](sequences/inline-sequences.md)"
+#: ../docs/src/SUMMARY.md:94
+msgid "[Factory sequences](sequences/factory-sequences.md)"
+msgstr "[ファクトリ系列](sequences/factory-sequences.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Initial value](sequences/initial-value.md)"
 msgstr "[初期値](sequences/initial-value.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Without a block](sequences/without-a-block.md)"
 msgstr "[ブロック無し](sequences/without-a-block.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Aliases](sequences/aliases.md)"
 msgstr "[別称](sequences/aliases.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
+msgid "[Sequence URIs](sequences/sequence-uris.md)"
+msgstr "[系列URI](sequences/sequence-uris.md)"
+
+#. type: Bullet: '  - '
+#: ../docs/src/SUMMARY.md:94
 msgid "[Rewinding](sequences/rewinding.md)"
 msgstr "[巻き戻し](sequences/rewinding.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
+msgid "[Setting the value](sequences/setting-the-value.md)"
+msgstr "[値の設定](sequences/setting-the-value.md)"
+
+#. type: Bullet: '  - '
+#: ../docs/src/SUMMARY.md:94
+msgid "[Generating a sequence](sequences/generating.md)"
+msgstr "[系列の生成](sequences/generating.md)"
+
+#. type: Bullet: '  - '
+#: ../docs/src/SUMMARY.md:94
 msgid "[Uniqueness](sequences/uniqueness.md)"
 msgstr "[一意性](sequences/uniqueness.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Traits](traits/summary.md)"
 msgstr "[トレイト](traits/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[As implicit attributes](traits/as-implicit-attributes.md)"
 msgstr "[暗黙属性として](traits/as-implicit-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Using traits](traits/using.md)"
 msgstr "[トレイトを使う](traits/using.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Enum traits](traits/enum.md)"
 msgstr "[列挙トレイト](traits/enum.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Attribute precedence](traits/attribute-precedence.md)"
 msgstr "[属性の優先度](traits/attribute-precedence.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[In child factories](traits/in-child-factories.md)"
 msgstr "[子のファクトリの内部](traits/in-child-factories.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[As mixins](traits/mixins.md)"
 msgstr "[ミックスインとして](traits/mixins.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With associations](traits/with-associations.md)"
 msgstr "[関連付き](traits/with-associations.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Traits within traits](traits/traits-within-traits.md)"
 msgstr "[トレイト内トレイト](traits/traits-within-traits.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[With transient attributes](traits/with-transient-attributes.md)"
 msgstr "[一過的属性付き](traits/with-transient-attributes.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Callbacks](callbacks/summary.md)"
 msgstr "[コールバック](callbacks/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Multiple callbacks](callbacks/multiple-callbacks.md)"
 msgstr "[複数コールバック](callbacks/multiple-callbacks.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Global callbacks](callbacks/global-callbacks.md)"
 msgstr "[大域コールバック](callbacks/global-callbacks.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Symbol#to_proc](callbacks/symbol-to_proc.md)"
 msgstr "[Symbol#to_proc](callbacks/symbol-to_proc.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Modifying factories](modifying-factories/summary.md)"
 msgstr "[ファクトリの変更](modifying-factories/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Linting Factories](linting-factories/summary.md)"
 msgstr "[ファクトリのリント](linting-factories/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Custom Construction](custom-construction/summary.md)"
 msgstr "[独自の構築](custom-construction/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Custom Strategies](custom-strategies/summary.md)"
 msgstr "[独自の戦略](custom-strategies/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid "[Custom Callbacks](custom-callbacks/summary.md)"
 msgstr "[独自コールバック](custom-callbacks/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid ""
 "[Custom Methods to Persist Objects](custom-methods-to-persist-objects/"
 "summary.md)"
@@ -862,24 +877,24 @@ msgstr ""
 "objects/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:91
+#: ../docs/src/SUMMARY.md:94
 msgid ""
 "[ActiveSupport Instrumentation](activesupport-instrumentation/summary.md)"
 msgstr "[ActiveSupportの計装](activesupport-instrumentation/summary.md)"
 
 #. type: Title ##
-#: ../docs/src/SUMMARY.md:92
+#: ../docs/src/SUMMARY.md:95
 #, no-wrap
 msgid "Cookbook"
 msgstr "レシピ"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:97
+#: ../docs/src/SUMMARY.md:100
 msgid "[`has_many` associations](cookbook/has_many-associations.md)"
 msgstr "[`has_many`関連](cookbook/has_many-associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:97
+#: ../docs/src/SUMMARY.md:100
 msgid ""
 "[`has_and_belongs_to_many` associations](cookbook/has_and_belongs_to_many-"
 "associations.md)"
@@ -888,12 +903,12 @@ msgstr ""
 "associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:97
+#: ../docs/src/SUMMARY.md:100
 msgid "[Polymorphic associations](cookbook/polymorphic-associations.md)"
 msgstr "[多相関連](cookbook/polymorphic-associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:97
+#: ../docs/src/SUMMARY.md:100
 msgid "[Interconnected associations](cookbook/interconnected-associations.md)"
 msgstr "[相互接続関連](cookbook/interconnected-associations.md)"
 
@@ -1865,6 +1880,7 @@ msgstr "factory\\_botは4つのコールバックを作れます。"
 
 #. type: Plain text
 #: ../docs/src/callbacks/summary.md:9
+#: ../docs/src/callbacks/default-callbacks.md:9
 #, no-wrap
 msgid ""
 "* after(:build)   - called after a factory is built   (via `FactoryBot.build`, `FactoryBot.create`)\n"
@@ -1879,6 +1895,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../docs/src/callbacks/summary.md:11
+#: ../docs/src/callbacks/default-callbacks.md:11
 msgid "Examples:"
 msgstr "例は以下です。"
 
@@ -4894,8 +4911,8 @@ msgid "See [method_missing](method_missing.html) for a shorthand."
 msgstr ""
 "早道については[method_missing](method_missing.html)を参照してください。"
 
-#. type: Title ##
-#: ../docs/src/ref/sequence.md:25
+#. type: Title #
+#: ../docs/src/ref/sequence.md:25 ../docs/src/sequences/factory-sequences.md:1
 #, no-wrap
 msgid "Factory sequences"
 msgstr "ファクトリ系列"
@@ -5351,58 +5368,6 @@ msgstr ""
 "end\n"
 
 #. type: Title #
-#: ../docs/src/sequences/inline-sequences.md:1
-#, no-wrap
-msgid "Inline sequences"
-msgstr "行内系列"
-
-#. type: Plain text
-#: ../docs/src/sequences/inline-sequences.md:5
-msgid ""
-"And it's also possible to define an in-line sequence that is only used in a "
-"particular factory:"
-msgstr "また特定のファクトリでのみ使われる行内系列を定義することもできます。"
-
-#. type: Fenced code block (ruby)
-#: ../docs/src/sequences/inline-sequences.md:6
-#, no-wrap
-msgid ""
-"factory :user do\n"
-"  sequence(:email) { |n| \"person#{n}@example.com\" }\n"
-"end\n"
-msgstr ""
-"factory :user do\n"
-"  sequence(:email) { |n| \"person#{n}@example.com\" }\n"
-"end\n"
-
-#. type: Plain text
-#: ../docs/src/sequences/inline-sequences.md:14
-msgid ""
-"With Ruby 2.7's support for [numbered parameters][], inline definitions can "
-"be even more abbreviated:"
-msgstr ""
-"Ruby 2.7の[連番仮引数][numbered parameters]の対応を使うと、行内定義はさらに縮"
-"められます。"
-
-#. type: Fenced code block (ruby)
-#: ../docs/src/sequences/inline-sequences.md:15
-#, no-wrap
-msgid ""
-"factory :user do\n"
-"  sequence(:email) { \"person#{_1}@example.com\" }\n"
-"end\n"
-msgstr ""
-"factory :user do\n"
-"  sequence(:email) { \"person#{_1}@example.com\" }\n"
-"end\n"
-
-#. type: Link reference
-#: ../docs/src/sequences/inline-sequences.md:21
-#, no-wrap
-msgid "[numbered parameters]: https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters"
-msgstr "[numbered parameters]: https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters"
-
-#. type: Title #
 #: ../docs/src/sequences/rewinding.md:1
 #, no-wrap
 msgid "Rewinding"
@@ -5410,37 +5375,119 @@ msgstr "巻き戻し"
 
 #. type: Plain text
 #: ../docs/src/sequences/rewinding.md:4
-msgid "Sequences can also be rewound with `FactoryBot.rewind_sequences`:"
-msgstr "系列は`FactoryBot.rewind_sequences`で巻き戻すこともできます。"
+msgid "Sequences can also be rewound to their starting value:"
+msgstr "系列は初めの値に巻き戻すこともできます。"
 
-#. type: Fenced code block (ruby)
+#. type: Title ##
 #: ../docs/src/sequences/rewinding.md:5
 #, no-wrap
-msgid ""
-"sequence(:email) {|n| \"person#{n}@example.com\" }\n"
-"\n"
-"generate(:email) # \"person1@example.com\"\n"
-"generate(:email) # \"person2@example.com\"\n"
-"generate(:email) # \"person3@example.com\"\n"
-"\n"
-"FactoryBot.rewind_sequences\n"
-"\n"
-"generate(:email) # \"person1@example.com\"\n"
-msgstr ""
-"sequence(:email) {|n| \"person#{n}@example.com\" }\n"
-"\n"
-"generate(:email) # \"person1@example.com\"\n"
-"generate(:email) # \"person2@example.com\"\n"
-"generate(:email) # \"person3@example.com\"\n"
-"\n"
-"FactoryBot.rewind_sequences\n"
-"\n"
-"generate(:email) # \"person1@example.com\"\n"
+msgid "All sequences"
+msgstr "全ての系列"
 
 #. type: Plain text
-#: ../docs/src/sequences/rewinding.md:17
-msgid "This rewinds all registered sequences."
-msgstr "こうすると全ての登録された系列が巻き戻ります。"
+#: ../docs/src/sequences/rewinding.md:8
+msgid ""
+"Rewind all global and factory sequences with `FactoryBot.rewind_sequences`:"
+msgstr ""
+"`FactoryBot.rewind_sequences`とすると、大域でファクトリである全ての系列が巻き"
+"戻ります。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/rewinding.md:9
+#, no-wrap
+msgid ""
+"FactoryBot.define do\n"
+"  sequence(:email) {|n| \"person#{n}@example.com\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:email) {|n| \"user#{n}@example.com\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"generate(:email) # \"person1@example.com\"\n"
+"generate(:email) # \"person2@example.com\"\n"
+"generate(:email) # \"person3@example.com\"\n"
+"\n"
+"generate(:user, :email) # \"user1@example.com\"\n"
+"generate(:user, :email) # \"user2@example.com\"\n"
+"generate(:user, :email) # \"user3@example.com\"\n"
+"\n"
+"FactoryBot.rewind_sequences\n"
+"\n"
+"generate(:email)        # \"person1@example.com\"\n"
+"generate(:user, :email) # \"user1@example.com\"\n"
+msgstr ""
+"FactoryBot.define do\n"
+"  sequence(:email) {|n| \"person#{n}@example.com\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:email) {|n| \"user#{n}@example.com\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"generate(:email) # \"person1@example.com\"\n"
+"generate(:email) # \"person2@example.com\"\n"
+"generate(:email) # \"person3@example.com\"\n"
+"\n"
+"generate(:user, :email) # \"user1@example.com\"\n"
+"generate(:user, :email) # \"user2@example.com\"\n"
+"generate(:user, :email) # \"user3@example.com\"\n"
+"\n"
+"FactoryBot.rewind_sequences\n"
+"\n"
+"generate(:email)        # \"person1@example.com\"\n"
+"generate(:user, :email) # \"user1@example.com\"\n"
+
+#. type: Title ##
+#: ../docs/src/sequences/rewinding.md:32
+#, no-wrap
+msgid "Individual sequences"
+msgstr "個々の系列"
+
+#. type: Plain text
+#: ../docs/src/sequences/rewinding.md:35
+msgid ""
+"An individual sequence can be rewound by passing the [sequence URI](sequence-"
+"uris.md) to `FactoryBot.rewind_sequence`:"
+msgstr ""
+"`FactoryBot.rewind_sequences`に[系列URI](sequence-uris.md)を渡すと、個々の系"
+"列を巻き戻せます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/rewinding.md:36
+#, no-wrap
+msgid ""
+"FactoryBot.define do\n"
+"  sequence(:email) {|n| \"global_email_#{n}@example.com\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:email) {|n| \"user_email_#{n}@example.com\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"FactoryBot.rewind_sequence(:email)\n"
+"generate(:email)\n"
+"#=> \"global_email_1@example.com\"\n"
+"\n"
+"factoryBot.rewind_sequence(:user, :email)\n"
+"generate(:user, :email)\n"
+"#=> \"user_email_1@example.com\"\n"
+msgstr ""
+"FactoryBot.define do\n"
+"  sequence(:email) {|n| \"global_email_#{n}@example.com\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:email) {|n| \"user_email_#{n}@example.com\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"FactoryBot.rewind_sequence(:email)\n"
+"generate(:email)\n"
+"#=> \"global_email_1@example.com\"\n"
+"\n"
+"factoryBot.rewind_sequence(:user, :email)\n"
+"generate(:user, :email)\n"
+"#=> \"user_email_1@example.com\"\n"
 
 #. type: Title #
 #: ../docs/src/sequences/uniqueness.md:1
@@ -6091,14 +6138,14 @@ msgid "Traits"
 msgstr "トレイト"
 
 #. type: Plain text
-#: ../docs/src/traits/summary.md:5
+#: ../docs/src/traits/summary.md:5 ../docs/src/traits/defining-traits.md:5
 msgid ""
 "Traits allow you to group attributes together and then apply them to any "
 "factory."
 msgstr "トレイトでは属性をグループに纏めて任意のファクトリに適用できます。"
 
 #. type: Fenced code block (ruby)
-#: ../docs/src/traits/summary.md:6
+#: ../docs/src/traits/summary.md:6 ../docs/src/traits/defining-traits.md:6
 #, no-wrap
 msgid ""
 "factory :user, aliases: [:author]\n"
@@ -6751,12 +6798,14 @@ msgstr ""
 
 #. type: Title #
 #: ../docs/src/using-factories/build-strategies.md:28
+#: ../docs/src/using-factories/build_stubbed-and-marshaldump.md:1
 #, no-wrap
 msgid "build_stubbed and Marshal.dump"
 msgstr "build_stubbedとMarshal.dump"
 
 #. type: Plain text
 #: ../docs/src/using-factories/build-strategies.md:31
+#: ../docs/src/using-factories/build_stubbed-and-marshaldump.md:4
 msgid ""
 "Note that objects created with `build_stubbed` cannot be serialized with "
 "`Marshal.dump`, since factory\\_bot defines singleton methods on these "
@@ -6848,6 +6897,711 @@ msgstr ""
 "    date_of_birth { 21.years.ago }\n"
 "  end\n"
 "end\n"
+
+#. type: Title #
+#: ../docs/src/associations/summary.md:1
+#, no-wrap
+msgid "Associations"
+msgstr "関連"
+
+#. type: Title #
+#: ../docs/src/callbacks/default-callbacks.md:1
+#, no-wrap
+msgid "Default callbacks"
+msgstr "既定コールバック"
+
+#. type: Plain text
+#: ../docs/src/callbacks/default-callbacks.md:4
+msgid "factory\\_bot makes available four callbacks for injecting some code:"
+msgstr "factory\\_botでは、コードを挿入する上で、4つコールバックが使えます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/callbacks/default-callbacks.md:12
+#, no-wrap
+msgid ""
+"# Define a factory that calls the generate_hashed_password method after it is built\n"
+"factory :user do\n"
+"  after(:build) { |user| generate_hashed_password(user) }\n"
+"end\n"
+msgstr ""
+"# 構築後にgenerate_hashed_passwordメソッドを呼ぶファクトリを定義\n"
+"factory :user do\n"
+"  after(:build) { |user| generate_hashed_password(user) }\n"
+"end\n"
+
+#. type: Plain text
+#: ../docs/src/callbacks/default-callbacks.md:19
+msgid ""
+"Note that you'll have an instance of the object in the block. This can be "
+"useful."
+msgstr ""
+"なお、ブロックにはオブジェクトのインスタンスがあります。\n"
+"こうなっていることで便利なときがあります。"
+
+#. type: Title #
+#: ../docs/src/defining/summary.md:1
+#, no-wrap
+msgid "Defining factories"
+msgstr "ファクトリの定義"
+
+#. type: Title #
+#: ../docs/src/inheritance/summary.md:1
+#, no-wrap
+msgid "Inheritance"
+msgstr "継承"
+
+#. type: Plain text
+#: ../docs/src/sequences/factory-sequences.md:5
+msgid ""
+"And it's also possible to define a sequence that is only used in a "
+"particular factory:"
+msgstr "また、特定のファクトリでのみ使われる系列を定義することもできます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/factory-sequences.md:6
+#, no-wrap
+msgid ""
+"factory :user do\n"
+"  sequence(:email) { |n| \"person#{n}@example.com\" }\n"
+"end\n"
+msgstr ""
+"factory :user do\n"
+"  sequence(:email) { |n| \"person#{n}@example.com\" }\n"
+"end\n"
+
+#. type: Plain text
+#: ../docs/src/sequences/factory-sequences.md:14
+msgid ""
+"With Ruby 2.7's support for [numbered parameters][], inline definitions can "
+"be even more abbreviated:"
+msgstr ""
+"Ruby 2.7の[連番仮引数][numbered parameters]により、行内定義はもっと更に短く書"
+"けます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/factory-sequences.md:15
+#, no-wrap
+msgid ""
+"factory :user do\n"
+"  sequence(:email) { \"person#{_1}@example.com\" }\n"
+"end\n"
+msgstr ""
+"factory :user do\n"
+"  sequence(:email) { \"person#{_1}@example.com\" }\n"
+"end\n"
+
+#. type: Link reference
+#: ../docs/src/sequences/factory-sequences.md:21
+#, no-wrap
+msgid "[numbered parameters]: https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters"
+msgstr "[numbered parameters]: https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters"
+
+#. type: Title #
+#: ../docs/src/sequences/generating.md:1
+#, no-wrap
+msgid "Generating a Sequence"
+msgstr "系列の生成"
+
+#. type: Plain text
+#: ../docs/src/sequences/generating.md:4
+msgid ""
+"Being able to diectly generate a sequence, without having to build the "
+"object can really speed up testing. This can be achieved by passing the "
+"[sequence URI](sequence-uris.md) to `:generate` for a single value or `:"
+"generate_list` for an Array of sequential values."
+msgstr ""
+"直接系列を生成できるようにし、ただしオブジェクトを構築せずにおくと、テストが"
+"本当に高速になることがあります。\n"
+"これは単一の値の`:generate`に[系列URI](sequence-uris.md)を渡したり、系列の値"
+"の配列に`:generate_list`を渡したりして実現できます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/generating.md:5
+#, no-wrap
+msgid ""
+"FactoryBot.define do\n"
+"  sequence(:char, 'a') {|c| \"global_character_#{c}\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:name, %w[Jane Joe Josh Jayde John].to_enum)\n"
+"\n"
+"    trait :with_age do\n"
+"      sequence(:age, 21)\n"
+"    end\n"
+"  end\n"
+"end\n"
+"\n"
+"##\n"
+"# char\n"
+"generate(:char) # \"global_character_a\"\n"
+"generate_list(:char, 2) # [\"global_character_b\", \"global_character_c\"]\n"
+"generate(:char) # \"global_character_d\"\n"
+"\n"
+"##\n"
+"# user name\n"
+"generate(:user, :name) # \"Jane\"\n"
+"generate_list(:user, :name, 3) # ['Joe', 'Josh', 'Jayde']\n"
+"generate(:user, :name) # \"John\"\n"
+"\n"
+"##\n"
+"# user age\n"
+"generate(:user, :with_age, :age) # 21\n"
+"generate_list(:user, :with_age, :age, 5) # [22, 23, 24, 25, 26]\n"
+"generate(:user, :with_age, :age) # 27\n"
+msgstr ""
+"FactoryBot.define do\n"
+"  sequence(:char, 'a') {|c| \"global_character_#{c}\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:name, %w[Jane Joe Josh Jayde John].to_enum)\n"
+"\n"
+"    trait :with_age do\n"
+"      sequence(:age, 21)\n"
+"    end\n"
+"  end\n"
+"end\n"
+"\n"
+"##\n"
+"# 文字\n"
+"generate(:char) # \"global_character_a\"\n"
+"generate_list(:char, 2) # [\"global_character_b\", \"global_character_c\"]\n"
+"generate(:char) # \"global_character_d\"\n"
+"\n"
+"##\n"
+"# 利用者名\n"
+"generate(:user, :name) # \"Jane\"\n"
+"generate_list(:user, :name, 3) # ['Joe', 'Josh', 'Jayde']\n"
+"generate(:user, :name) # \"John\"\n"
+"\n"
+"##\n"
+"# 利用者の年齢\n"
+"generate(:user, :with_age, :age) # 21\n"
+"generate_list(:user, :with_age, :age, 5) # [22, 23, 24, 25, 26]\n"
+"generate(:user, :with_age, :age) # 27\n"
+
+#. type: Title ##
+#: ../docs/src/sequences/generating.md:37
+#, no-wrap
+msgid "Scope"
+msgstr "スコープ"
+
+#. type: Plain text
+#: ../docs/src/sequences/generating.md:40
+msgid ""
+"On occasion a sequence block may refer to a scoped attribute. In this case, "
+"the scope must be provided, or else an exception will be raised:"
+msgstr ""
+"系列のブロックからスコープ内の属性を参照することもあるでしょう。\n"
+"この場合、スコープを与えなければなりません。\n"
+"そうしなければ例外が投げられます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/generating.md:41
+#, no-wrap
+msgid ""
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    sequence(:email) { |n| \"#{name}-#{n}@example.com\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"generate(:user, :email)\n"
+"# ArgumentError, Sequence user:email failed to return a value. Perhaps it needs a scope to operate? (scope: <object>)\n"
+"\n"
+"jester = build(:user, name: \"Jester\")\n"
+"jester.email # \"Jester-1@example.com\"\n"
+"\n"
+"generate(:user, :email, scope: jester)\n"
+"# \"Jester-2@example.com\"\n"
+"\n"
+"generate_list(:user, :email, 2, scope: jester)\n"
+"# [\"Jester-3@example.com\", \"Jester-4@example.com\"]\n"
+msgstr ""
+"FactoryBot.define do\n"
+"  factory :user do\n"
+"    sequence(:email) { |n| \"#{name}-#{n}@example.com\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"generate(:user, :email)\n"
+"# ArgumentError, Sequence user:email failed to return a value. Perhaps it needs a scope to operate? (scope: <object>)\n"
+"\n"
+"jester = build(:user, name: \"Jester\")\n"
+"jester.email # \"Jester-1@example.com\"\n"
+"\n"
+"generate(:user, :email, scope: jester)\n"
+"# \"Jester-2@example.com\"\n"
+"\n"
+"generate_list(:user, :email, 2, scope: jester)\n"
+"# [\"Jester-3@example.com\", \"Jester-4@example.com\"]\n"
+
+#. type: Plain text
+#: ../docs/src/sequences/generating.md:62
+msgid ""
+"When testing, the scope can be any object that responds to the referrenced "
+"attributes:"
+msgstr ""
+"テストのとき、スコープは参照されている属性に応答する任意のオブジェクトにでき"
+"ます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/generating.md:63
+#, no-wrap
+msgid ""
+"require 'ostruct'\n"
+"\n"
+"FactoryBot.define\n"
+"  factory :user do\n"
+"    sequence(:info) { |n| \"#{name}-#{n}-#{age + n}\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"test_scope = OpenStruct.new(name: \"Jester\", age: 23)\n"
+"\n"
+"generate_list('user/info', 3, scope: test_scope)\n"
+"# [\"Jester-1-24\", \"Jester-2-25\", \"Jester-3-26\"]\n"
+msgstr ""
+"require 'ostruct'\n"
+"\n"
+"FactoryBot.define\n"
+"  factory :user do\n"
+"    sequence(:info) { |n| \"#{name}-#{n}-#{age + n}\" }\n"
+"  end\n"
+"end\n"
+"\n"
+"test_scope = OpenStruct.new(name: \"Jester\", age: 23)\n"
+"\n"
+"generate_list('user/info', 3, scope: test_scope)\n"
+"# [\"Jester-1-24\", \"Jester-2-25\", \"Jester-3-26\"]\n"
+
+#. type: Title #
+#: ../docs/src/sequences/sequence-uris.md:1
+#, no-wrap
+msgid "Sequence URIs"
+msgstr "系列URI"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:4
+msgid "There are many reasons to manipulate a specific sequence:"
+msgstr "特定の系列を操作したい理由は沢山あります。"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/sequence-uris.md:9
+msgid "generating a single value with: `generate`"
+msgstr "単一の値を生成：`generate`"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/sequence-uris.md:9
+msgid "generating multiple values with: `generate_list`"
+msgstr "複数の値を生成：`generate_list`"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/sequence-uris.md:9
+msgid "setting it to a new value with `FactoryBot.set_sequence`"
+msgstr "`FactoryBot.rewind_sequences`で新しい値に設定"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/sequence-uris.md:9
+msgid "rewinding it with: `rewind_sequence`"
+msgstr "巻き戻し：`rewind_sequence`"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:11
+msgid ""
+"To accomplish this we need to be able to reference the desired sequence. "
+"This is achieved with its unique URI."
+msgstr ""
+"これを達成するには、所望の系列を参照できる必要があります。\n"
+"これはその系列の一意なURIで実現できます。"
+
+#. type: Title ##
+#: ../docs/src/sequences/sequence-uris.md:12
+#, no-wrap
+msgid "URI Composition"
+msgstr "URI合成"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:15
+msgid "Each URI is composed of up to three names:"
+msgstr "各URIは3つの名前が組み合わさったものです。"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:21
+#, no-wrap
+msgid ""
+"| position | name           | required                                                             |\n"
+"| :------: | -------------- | -------------------------------------------------------------------- |\n"
+"|    1.    | factory name:  | **if** - the sequence is defined within a Factory or a Factory Trait |\n"
+"|    2.    | trait name:    | **if** - the sequence is defined within a Trait                      |\n"
+"|    3.    | sequence name: | **always required**                                                  |\n"
+msgstr ""
+"| 位置 | 名前           | 必要かどうか                                                             |\n"
+"| :------: | -------------- | -------------------------------------------------------------------- |\n"
+"|    1.    | ファクトリ名  | **条件付き** - 系列はファクトリないしファクトリトレイト内で定義されます |\n"
+"|    2.    | トレイト名    | **条件付き** - 系列はトレイト内で定義されます                      |\n"
+"|    3.    | 系列名 | **必ず必要**                                                  |\n"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:23
+msgid "The URI can be entered as individual symbols:"
+msgstr "URIは個々のシンボルとして入力されます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/sequence-uris.md:24
+#, no-wrap
+msgid "generate(:my_factory_name, :my_trait_name, :my_sequence_name)\n"
+msgstr "generate(:my_factory_name, :my_trait_name, :my_sequence_name)\n"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:29
+#, no-wrap
+msgid "**or** as individual strings:\n"
+msgstr "**あるいは** 個々の文字列として入力されます。\n"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/sequence-uris.md:30
+#, no-wrap
+msgid "generate('my_factory_name', 'my_trait_name', 'my_sequence_name')\n"
+msgstr "generate('my_factory_name', 'my_trait_name', 'my_sequence_name')\n"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:35
+#, no-wrap
+msgid "**or** as a single resource string:\n"
+msgstr "**あるいは** 単一のリソース文字列として入力されます。\n"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/sequence-uris.md:36
+#, no-wrap
+msgid "generate(\"my_factory_name/my_trait_name/my_sequence_name\")\n"
+msgstr "generate(\"my_factory_name/my_trait_name/my_sequence_name\")\n"
+
+#. type: Title ##
+#: ../docs/src/sequences/sequence-uris.md:40
+#, no-wrap
+msgid "Full URI example"
+msgstr "完全なURIの例"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:43
+msgid ""
+"This example details all the possible scenarios, with the comments showing "
+"the URI used to generate a value for each specific sequence:"
+msgstr ""
+"以下の例では詳しく全てのあり得るシナリオを説明しています。\n"
+"コメントでは、それぞれの系列の値を生成するのに使われるURIを示しています。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/sequence-uris.md:44
+#, no-wrap
+msgid ""
+"FactoryBot.define do\n"
+"  sequence(:sequence) {|n| \"global_sequence_#{n}\"}\n"
+"  # generate(:sequence)\n"
+"\n"
+"  trait :global_trait do\n"
+"    sequence(:sequence) {|n| \"global_trait_sequence_#{n}\"}\n"
+"    # generate(:global_trait, :sequence)\n"
+"  end\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:sequence) {|n| \"user_sequence_#{n}\"}\n"
+"    # generate(:user, :sequence)\n"
+"\n"
+"    trait :user_trait do\n"
+"      sequence(:sequence) {|n| \"user_trait_sequence_#{n}\"}\n"
+"      # generate(:user, :user_trait, :sequence)\n"
+"    end\n"
+"\n"
+"    factory :author do\n"
+"      sequence(:sequence) {|n| \"author_sequence_#{n}\"}\n"
+"      # generate(:author, :sequence)\n"
+"\n"
+"      trait :author_trait do\n"
+"        sequence(:sequence) {|n| \"author_trait_sequence_#{n}\"}\n"
+"        # generate(:author, :author_trait, :sequence)\n"
+"      end\n"
+"    end\n"
+"  end\n"
+"end\n"
+msgstr ""
+"FactoryBot.define do\n"
+"  sequence(:sequence) {|n| \"global_sequence_#{n}\"}\n"
+"  # generate(:sequence)\n"
+"\n"
+"  trait :global_trait do\n"
+"    sequence(:sequence) {|n| \"global_trait_sequence_#{n}\"}\n"
+"    # generate(:global_trait, :sequence)\n"
+"  end\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:sequence) {|n| \"user_sequence_#{n}\"}\n"
+"    # generate(:user, :sequence)\n"
+"\n"
+"    trait :user_trait do\n"
+"      sequence(:sequence) {|n| \"user_trait_sequence_#{n}\"}\n"
+"      # generate(:user, :user_trait, :sequence)\n"
+"    end\n"
+"\n"
+"    factory :author do\n"
+"      sequence(:sequence) {|n| \"author_sequence_#{n}\"}\n"
+"      # generate(:author, :sequence)\n"
+"\n"
+"      trait :author_trait do\n"
+"        sequence(:sequence) {|n| \"author_trait_sequence_#{n}\"}\n"
+"        # generate(:author, :author_trait, :sequence)\n"
+"      end\n"
+"    end\n"
+"  end\n"
+"end\n"
+
+#. type: Title ##
+#: ../docs/src/sequences/sequence-uris.md:76
+#, no-wrap
+msgid "Multi URIs"
+msgstr "複数URI"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:79
+msgid "It is possible for a single sequence to have multiple URIs."
+msgstr "1つの系列に複数のURIを持たせることができます。"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:81
+msgid ""
+"If the factory or trait has aliases, the sequence will have an additional "
+"URI for each alias, or combination of aliases."
+msgstr ""
+"ファクトリやトレイトに別称があるとき、系列はそれぞれの別称、また別称の組み合"
+"わせ毎に、追加でURIを持ちます。"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:83
+msgid ""
+"In this example, the same sequence can referenced in four different ways:"
+msgstr "この例では、同じ系列を4つの異なる方法で参照できます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/sequence-uris.md:84
+#, no-wrap
+msgid ""
+"factory :user, aliases: [:author] do\n"
+"  trait :user_trait, aliases: [:author_trait] do\n"
+"    sequence(:sequence) {|n| \"author_trait_sequence_#{n}\"}\n"
+"  end\n"
+"end\n"
+"\n"
+"# generate(:user,   :user_trait,   :sequence)\n"
+"# generate(:user,   :author_trait, :sequence)\n"
+"# generate(:author, :user_trait,   :sequence)\n"
+"# generate(:author, :author_trait, :sequence)\n"
+msgstr ""
+"factory :user, aliases: [:author] do\n"
+"  trait :user_trait, aliases: [:author_trait] do\n"
+"    sequence(:sequence) {|n| \"author_trait_sequence_#{n}\"}\n"
+"  end\n"
+"end\n"
+"\n"
+"# generate(:user,   :user_trait,   :sequence)\n"
+"# generate(:user,   :author_trait, :sequence)\n"
+"# generate(:author, :user_trait,   :sequence)\n"
+"# generate(:author, :author_trait, :sequence)\n"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:98
+#: ../docs/src/sequences/setting-the-value.md:42
+#, no-wrap
+msgid "<div class='warning'>\n"
+msgstr "<div class='warning'>\n"
+
+#. type: Title ##
+#: ../docs/src/sequences/sequence-uris.md:99
+#, no-wrap
+msgid "Important"
+msgstr "重要"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/sequence-uris.md:102
+msgid ""
+"No matter how deeply nested, the factory name component of the URI is always "
+"the factory where the sequence is defined, not any parent factories."
+msgstr ""
+"どれだけ深く入れ子になっていても、URIのファクトリ名の構成要素は常に、その系列"
+"が定義されているファクトリです。\n"
+"決して親ファクトリではありません。"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/sequence-uris.md:104
+msgid ""
+"If a factory inherits a sequence, the URI must reference the factory where "
+"it was defined, not the one in which it is used."
+msgstr ""
+"ファクトリが系列を継承するとき、URIはそれが定義されたファクトリを参照しなくて"
+"はなりません。\n"
+"使われているファクトリではありません。"
+
+#. type: Plain text
+#: ../docs/src/sequences/sequence-uris.md:105
+#: ../docs/src/sequences/setting-the-value.md:55
+#, no-wrap
+msgid "</div>\n"
+msgstr "</div>\n"
+
+#. type: Title #
+#: ../docs/src/sequences/setting-the-value.md:1
+#, no-wrap
+msgid "Setting the value"
+msgstr "値の設定"
+
+#. type: Plain text
+#: ../docs/src/sequences/setting-the-value.md:4
+msgid ""
+"When testing or working in the console, being able to set the sequence to a "
+"specific value, is incredibly helpful. This can be achieved by passing the "
+"[sequence URI](sequence-uris.md) and the new value to `FactoryBot."
+"set_sequence`:"
+msgstr ""
+"コンソールで試行錯誤するとき、系列を特定の値に設定できると、大変便利です。\n"
+"これは`FactoryBot.set_sequence`に[系列URI](sequence-uris.md)と新しい値を渡す"
+"と実現できます。"
+
+#. type: Title ##
+#: ../docs/src/sequences/setting-the-value.md:5
+#, no-wrap
+msgid "Global Sequences"
+msgstr "大域系列"
+
+#. type: Plain text
+#: ../docs/src/sequences/setting-the-value.md:8
+msgid "Global sequences are set with the sequence name and the new value:"
+msgstr "大域系列は系列名と新しい値で設定されます。"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/sequences/setting-the-value.md:9
+#, no-wrap
+msgid ""
+"FactoryBot.define do\n"
+"  sequence(:char, 'a') {|c| \"global_character_#{c}\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:name, %w[Jane Joe Josh Jayde John].to_enum)\n"
+"\n"
+"    trait :with_email do\n"
+"      sequence(:email) {|n| \"user_#{n}@example.com\" }\n"
+"    end\n"
+"  end\n"
+"end\n"
+"\n"
+"##\n"
+"# char\n"
+"generate(:char) # \"global_character_a\"\n"
+"FactoryBot.set_sequence(:char, 'z')\n"
+"generate(:char) # \"global_character_z\"\n"
+"\n"
+"##\n"
+"# user name\n"
+"generate(:user, :name) # \"Jane\"\n"
+"FactoryBot.set_sequence(:user, :name, 'Jayde')\n"
+"generate(:user, :name) # \"Jayde\"\n"
+"\n"
+"##\n"
+"# user email\n"
+"generate(:user, :with_email, :email) # \"user_1@example.com\"\n"
+"FactoryBot.set_sequence(:user, :with_email, :email, 1_234_567)\n"
+"generate(:user, :with_email, :email) # \"user_1234567@example.com\"\n"
+msgstr ""
+"FactoryBot.define do\n"
+"  sequence(:char, 'a') {|c| \"global_character_#{c}\" }\n"
+"\n"
+"  factory :user do\n"
+"    sequence(:name, %w[Jane Joe Josh Jayde John].to_enum)\n"
+"\n"
+"    trait :with_email do\n"
+"      sequence(:email) {|n| \"user_#{n}@example.com\" }\n"
+"    end\n"
+"  end\n"
+"end\n"
+"\n"
+"##\n"
+"# 文字\n"
+"generate(:char) # \"global_character_a\"\n"
+"FactoryBot.set_sequence(:char, 'z')\n"
+"generate(:char) # \"global_character_z\"\n"
+"\n"
+"##\n"
+"# 利用者名\n"
+"generate(:user, :name) # \"Jane\"\n"
+"FactoryBot.set_sequence(:user, :name, 'Jayde')\n"
+"generate(:user, :name) # \"Jayde\"\n"
+"\n"
+"##\n"
+"# 利用者のEメール\n"
+"generate(:user, :with_email, :email) # \"user_1@example.com\"\n"
+"FactoryBot.set_sequence(:user, :with_email, :email, 1_234_567)\n"
+"generate(:user, :with_email, :email) # \"user_1234567@example.com\"\n"
+
+#. type: Title ##
+#: ../docs/src/sequences/setting-the-value.md:43
+#, no-wrap
+msgid "Note"
+msgstr "補足"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/setting-the-value.md:46
+msgid ""
+"The new value must match the sequence collection: You cannot pass a String "
+"to an Integer based sequence!"
+msgstr ""
+"新しい値は系列の要素の集合に合致しなければなりません。\n"
+"Integerベースの系列にStringを渡すことはできません！"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/setting-the-value.md:48
+msgid ""
+"An integer based sequence, such as a record ID, can accept any positive "
+"integer as the value."
+msgstr ""
+"整数ベースの系列、例えばレコードIDは、値として任意の正の整数を受け付けます。"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/setting-the-value.md:50
+msgid "A fixed collection sequence can accept any value within the collection."
+msgstr ""
+"取り得る要素が決まっている集まりの系列は、その中にある任意の値を取れます。"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/setting-the-value.md:52
+msgid ""
+"An unlimited sequence, such as a character `sequence(:unlimited,'a')` will "
+"timeout if not found within the default maximum search time of three seconds."
+msgstr ""
+"無制限の系列、例えば文字の`sequence(:unlimited,'a')`は、既定の最大の探索時間"
+"である3秒内に見つからなければ、時間切れになります。"
+
+#. type: Bullet: '- '
+#: ../docs/src/sequences/setting-the-value.md:54
+msgid ""
+"The timeout can be configured with: `FactoryBot.sequence_setting_timeout = "
+"1.5`"
+msgstr "時間制限を構成できます：`FactoryBot.sequence_setting_timeout = 1.5`"
+
+#. type: Title #
+#: ../docs/src/sequences/summary.md:1
+#, no-wrap
+msgid "Sequences"
+msgstr "系列"
+
+#. type: Title #
+#: ../docs/src/traits/defining-traits.md:1
+#, no-wrap
+msgid "Defining traits"
+msgstr "トレイトの定義"
+
+#. type: Title #
+#: ../docs/src/using-factories/summary.md:1
+#, no-wrap
+msgid "Using factories"
+msgstr "ファクトリを使う"
 
 #. type: Title #
 #: ../CONTRIBUTING.md:1
@@ -7453,55 +8207,55 @@ msgstr ""
 "[求人を募集しています][hire]。"
 
 #. type: Plain text
-#: ../README.md:102
+#: ../README.md:101
 #, no-wrap
 msgid "<!-- END /templates/footer.md -->\n"
 msgstr "<!-- END /templates/footer.md -->\n"
 
 #. type: Link reference
-#: ../README.md:103
+#: ../README.md:102
 #, no-wrap
 msgid "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
 msgstr "[ci-image]: https://github.com/thoughtbot/factory_bot/actions/workflows/build.yml/badge.svg?branch=main"
 
 #. type: Link reference
-#: ../README.md:104
+#: ../README.md:103
 #, no-wrap
 msgid "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
 msgstr "[ci]: https://github.com/thoughtbot/factory_bot/actions?query=workflow%3ABuild+branch%3Amain"
 
 #. type: Link reference
-#: ../README.md:105
+#: ../README.md:104
 #, no-wrap
 msgid "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
 msgstr "[grade-image]: https://codeclimate.com/github/thoughtbot/factory_bot/badges/gpa.svg"
 
 #. type: Link reference
-#: ../README.md:106
+#: ../README.md:105
 #, no-wrap
 msgid "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
 msgstr "[grade]: https://codeclimate.com/github/thoughtbot/factory_bot"
 
 #. type: Link reference
-#: ../README.md:107
+#: ../README.md:106
 #, no-wrap
 msgid "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
 msgstr "[version-image]: https://badge.fury.io/rb/factory_bot.svg"
 
 #. type: Link reference
-#: ../README.md:108
+#: ../README.md:107
 #, no-wrap
 msgid "[version]: https://badge.fury.io/rb/factory_bot"
 msgstr "[version]: https://badge.fury.io/rb/factory_bot"
 
 #. type: Link reference
-#: ../README.md:109
+#: ../README.md:108
 #, no-wrap
 msgid "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
 msgstr "[hound-badge-image]: https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg"
 
 #. type: Link reference
-#: ../README.md:110
+#: ../README.md:109
 #, no-wrap
 msgid "[hound]: https://houndci.com"
 msgstr "[hound]: https://houndci.com"
