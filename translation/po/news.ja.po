@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FactoryBot\n"
-"POT-Creation-Date: 2025-06-17 19:04+0900\n"
+"POT-Creation-Date: 2025-07-31 21:11+0900\n"
 "PO-Revision-Date: 2025-06-17 19:06+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
@@ -180,8 +180,8 @@ msgstr ""
 #. type: Bullet: '  * '
 #: ../NEWS.md:47
 msgid ""
-"Call dynamic-readme reusable workflow by @stefannibrasil in https://github."
-"com/thoughtbot/factory_bot/pull/1628"
+"Call dynamic-readme reusable workflow by @stefannibrasil in https://"
+"github.com/thoughtbot/factory_bot/pull/1628"
 msgstr ""
 "@stefannibrasilにより、 https://github.com/thoughtbot/factory_bot/pull/1628 "
 "でdynamic-readmeという、再利用のためのワークフローを呼ぶようにしました"
@@ -217,8 +217,8 @@ msgstr ""
 #: ../NEWS.md:47
 msgid ""
 "Added a case for build_class to handle class names with underscores passed "
-"as a string by @m-gizzi in https://github.com/thoughtbot/factory_bot/"
-"pull/1642"
+"as a string by @m-gizzi in https://github.com/thoughtbot/factory_bot/pull/"
+"1642"
 msgstr ""
 "@m-gizziによる https://github.com/thoughtbot/factory_bot/pull/1642 で、文字列"
 "として渡された、下線文字のあるクラス名を扱う場合を、build_classに追加しました"
@@ -403,8 +403,8 @@ msgid ""
 "Fix: factories with traits pass their class to ActiveSupport::Notifications "
 "(makicamel)."
 msgstr ""
-"修正：トレイトのあるファクトリについて、そのクラスがActiveSupport::"
-"Notificationsに渡されるようになりました (makicamel)。"
+"修正：トレイトのあるファクトリについて、そのクラスが"
+"ActiveSupport::Notificationsに渡されるようになりました (makicamel)。"
 
 #. type: Title ##
 #: ../NEWS.md:81
@@ -1489,9 +1489,9 @@ msgstr ""
 #. type: Bullet: '  * '
 #: ../NEWS.md:337
 msgid ""
-"Remove deprecated features, including default_strategy, factory_name, :"
-"method for defining default strategy, ignore on individual attributes, and "
-"interacting with Factory the way you would FactoryGirl"
+"Remove deprecated features, including default_strategy, "
+"factory_name, :method for defining default strategy, ignore on individual "
+"attributes, and interacting with Factory the way you would FactoryGirl"
 msgstr ""
 
 #. type: Title ##
@@ -1840,8 +1840,8 @@ msgstr ""
 #. type: Bullet: '  * '
 #: ../NEWS.md:434
 msgid ""
-"Internals refactoring introducing FactoryGirl::NullFactory, FactoryGirl::"
-"Definition, and FactoryGirl::DeclarationList"
+"Internals refactoring introducing FactoryGirl::NullFactory, "
+"FactoryGirl::Definition, and FactoryGirl::DeclarationList"
 msgstr ""
 
 #. type: Bullet: '  * '

@@ -84,6 +84,7 @@
   - [複数コールバック](callbacks/multiple-callbacks.md)
   - [大域コールバック](callbacks/global-callbacks.md)
   - [Symbol#to_proc](callbacks/symbol-to_proc.md)
+  - [コールバックの順序](callbacks/callback_order.md)
 - [ファクトリの変更](modifying-factories/summary.md)
 - [ファクトリのリント](linting-factories/summary.md)
 - [独自の構築](custom-construction/summary.md)

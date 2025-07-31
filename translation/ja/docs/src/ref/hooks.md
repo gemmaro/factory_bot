@@ -10,9 +10,9 @@
 
 ## `callback`
 
-`callback`メソッドは任意のfactory\_botコールバックを名前でフックを掛けられます。
+`callback`メソッドでは、任意のfactory\_botのコールバックに名前でフックを掛けられます。
 [構築戦略][build
-strategies]の便覧に見られる通り、予め定義された名前は`after_build`と`before_create`と`after_create`と`after_stub`です。
+strategies]の便覧に見られる通り、予め定義された名前は`before_all`と`after_build`と`before_create`と`after_create`と`after_stub`と`after_all`です。
 
 このメソッドはスプラットされる名前とブロックを取ります。
 名前のどれかが活性になる度にブロックが呼ばれます。

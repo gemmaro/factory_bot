@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2025-06-04 21:19+0900\n"
-"PO-Revision-Date: 2025-06-04 21:51+0900\n"
+"POT-Creation-Date: 2025-07-31 21:11+0900\n"
+"PO-Revision-Date: 2025-07-31 21:22+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -160,9 +160,9 @@ msgid ""
 "instrumentation using [ActiveSupport::Notifications], passing a payload with "
 "`:name`, `:strategy`, `:traits`, `:overrides`, and `:factory` keys."
 msgstr ""
-"こうした戦略は全て、[ActiveSupport::Notifications]を使って`factory_bot."
-"run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、`:overrides`、"
-"`:factory`を持つペイロードを渡します。"
+"こうした戦略は全て、[ActiveSupport::Notifications]を使って"
+"`factory_bot.run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、"
+"`:overrides`、`:factory`を持つペイロードを渡します。"
 
 #. type: Link reference
 #: ../docs/src/ref/build-strategies.md:10
@@ -213,9 +213,9 @@ msgstr "`build`"
 #: ../docs/src/ref/build-strategies.md:30
 msgid ""
 "The `FactoryBot.build` method constructs an instance of the class according "
-"to `initialize_with`, which defaults to calling the `.new` class method.  `."
-"build_list` constructs multiple instances, and `.build_pair` is a shorthand "
-"to construct two instances."
+"to `initialize_with`, which defaults to calling the `.new` class method.  "
+"`.build_list` constructs multiple instances, and `.build_pair` is a "
+"shorthand to construct two instances."
 msgstr ""
 "`FactoryBot.build`メソッドは`initialize_with`にしたがってクラスのインスタンス"
 "を構築します。\n"
@@ -243,9 +243,9 @@ msgstr "`create`"
 #: ../docs/src/ref/build-strategies.md:41
 msgid ""
 "The `FactoryBot.create` method constructs an instance of the class according "
-"to `initialize_with`, and then persists it using `to_create`. The `."
-"create_list` class method constructs multiple instances, and `.create_pair` "
-"is a shorthand to construct two instances."
+"to `initialize_with`, and then persists it using `to_create`. The "
+"`.create_list` class method constructs multiple instances, and "
+"`.create_pair` is a shorthand to construct two instances."
 msgstr ""
 "`FactoryBot.create`メソッドは`initialize_with`にしたがってクラスのインスタン"
 "スを構築し、`to_create`を使って永続化します。\n"
@@ -530,67 +530,67 @@ msgid "Guide"
 msgstr "手引き"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Setup](setup/summary.md)"
 msgstr "[準備](setup/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Using Without Bundler](using-without-bundler/summary.md)"
 msgstr "[Bundler無しで使う](using-without-bundler/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Rails Preloaders and RSpec](rails-preloaders-and-rspec/summary.md)"
 msgstr "[Railsの事前読込器とRSpec](rails-preloaders-and-rspec/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Defining factories](defining/summary.md)"
 msgstr "[ファクトリ定義](defining/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Factory name and attributes](defining/name-attributes.md)"
 msgstr "[ファクトリ名と属性](defining/name-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Specifying the class explicitly](defining/explicit-class.md)"
 msgstr "[クラスを明示的に指定](defining/explicit-class.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Definition file paths](defining/file-paths.md)"
 msgstr "[定義ファイルパス](defining/file-paths.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Hash attributes](defining/hash-attributes.md)"
 msgstr "[ハッシュ属性](defining/hash-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Best practices](defining/best-practices.md)"
 msgstr "[ベストプラクティス](defining/best-practices.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Static Attributes (deprecated)](defining/static-attributes.md)"
 msgstr "[静的属性（廃止）](defining/static-attributes.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Using factories](using-factories/summary.md)"
 msgstr "[ファクトリを使う](using-factories/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Build strategies](using-factories/build-strategies.md)"
 msgstr "[構築戦略](using-factories/build-strategies.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid ""
 "[Building or Creating Multiple Records](building-or-creating-multiple-"
 "records/summary.md)"
@@ -599,47 +599,47 @@ msgstr ""
 "summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Attribute overrides](using-factories/attribute-overrides.md)"
 msgstr "[属性の上塗り](using-factories/attribute-overrides.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Aliases](aliases/summary.md)"
 msgstr "[別称](aliases/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Dependent Attributes](dependent-attributes/summary.md)"
 msgstr "[依存属性](dependent-attributes/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Transient Attributes](transient-attributes/summary.md)"
 msgstr "[一過的属性](transient-attributes/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With other attributes](transient-attributes/with-other-attributes.md)"
 msgstr "[他の属性付き](transient-attributes/with-other-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With `attributes_for`](transient-attributes/with-attributes_for.md)"
 msgstr "[`attributes_for`付き](transient-attributes/with-attributes_for.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With callbacks](transient-attributes/with-callbacks.md)"
 msgstr "[コールバック付き](transient-attributes/with-callbacks.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With associations](transient-attributes/with-associations.md)"
 msgstr "[関連付き](transient-attributes/with-associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid ""
 "[Method Name / Reserved Word Attributes](method-name-reserved-word-"
 "attributes/summary.md)"
@@ -647,228 +647,233 @@ msgstr ""
 "[メソッド名と予約語の属性](method-name-reserved-word-attributes/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Inheritance](inheritance/summary.md)"
 msgstr "[継承](inheritance/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Nested factories](inheritance/nested-factories.md)"
 msgstr "[入れ子のファクトリ](inheritance/nested-factories.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid ""
 "[Assigning parent explicitly](inheritance/assigning-parent-explicitly.md)"
 msgstr "[親を明示的に代入](inheritance/assigning-parent-explicitly.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Best practices](inheritance/best-practices.md)"
 msgstr "[ベストプラクティス](inheritance/best-practices.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Associations](associations/summary.md)"
 msgstr "[関連](associations/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Implicit definition](associations/implicit-definition.md)"
 msgstr "[暗黙定義](associations/implicit-definition.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Explicit definition](associations/explicit-definition.md)"
 msgstr "[明示定義](associations/explicit-definition.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Inline definition](associations/inline-definition.md)"
 msgstr "[行内定義](associations/inline-definition.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Specifying the factory](associations/specifying-the-factory.md)"
 msgstr "[ファクトリの指定](associations/specifying-the-factory.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Overriding attributes](associations/overriding-attributes.md)"
 msgstr "[属性の上塗り](associations/overriding-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Association overrides](associations/association-overrides.md)"
 msgstr "[関連の上塗り](associations/association-overrides.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Build strategies](associations/build-strategies.md)"
 msgstr "[構築戦略](associations/build-strategies.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Sequences](sequences/summary.md)"
 msgstr "[系列](sequences/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Global sequences](sequences/global-sequences.md)"
 msgstr "[大域系列](sequences/global-sequences.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With dynamic attributes](sequences/with-dynamic-attributes.md)"
 msgstr "[動的属性付き](sequences/with-dynamic-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[As implicit attributes](sequences/as-implicit-attributes.md)"
 msgstr "[暗黙属性として](sequences/as-implicit-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Factory sequences](sequences/factory-sequences.md)"
 msgstr "[ファクトリ系列](sequences/factory-sequences.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Initial value](sequences/initial-value.md)"
 msgstr "[初期値](sequences/initial-value.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Without a block](sequences/without-a-block.md)"
 msgstr "[ブロック無し](sequences/without-a-block.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Aliases](sequences/aliases.md)"
 msgstr "[別称](sequences/aliases.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Sequence URIs](sequences/sequence-uris.md)"
 msgstr "[系列URI](sequences/sequence-uris.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Rewinding](sequences/rewinding.md)"
 msgstr "[巻き戻し](sequences/rewinding.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Setting the value](sequences/setting-the-value.md)"
 msgstr "[値の設定](sequences/setting-the-value.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Generating a sequence](sequences/generating.md)"
 msgstr "[系列の生成](sequences/generating.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Uniqueness](sequences/uniqueness.md)"
 msgstr "[一意性](sequences/uniqueness.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Traits](traits/summary.md)"
 msgstr "[トレイト](traits/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[As implicit attributes](traits/as-implicit-attributes.md)"
 msgstr "[暗黙属性として](traits/as-implicit-attributes.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Using traits](traits/using.md)"
 msgstr "[トレイトを使う](traits/using.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Enum traits](traits/enum.md)"
 msgstr "[列挙トレイト](traits/enum.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Attribute precedence](traits/attribute-precedence.md)"
 msgstr "[属性の優先度](traits/attribute-precedence.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[In child factories](traits/in-child-factories.md)"
 msgstr "[子のファクトリの内部](traits/in-child-factories.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[As mixins](traits/mixins.md)"
 msgstr "[ミックスインとして](traits/mixins.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With associations](traits/with-associations.md)"
 msgstr "[関連付き](traits/with-associations.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Traits within traits](traits/traits-within-traits.md)"
 msgstr "[トレイト内トレイト](traits/traits-within-traits.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[With transient attributes](traits/with-transient-attributes.md)"
 msgstr "[一過的属性付き](traits/with-transient-attributes.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Callbacks](callbacks/summary.md)"
 msgstr "[コールバック](callbacks/summary.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Multiple callbacks](callbacks/multiple-callbacks.md)"
 msgstr "[複数コールバック](callbacks/multiple-callbacks.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Global callbacks](callbacks/global-callbacks.md)"
 msgstr "[大域コールバック](callbacks/global-callbacks.md)"
 
 #. type: Bullet: '  - '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Symbol#to_proc](callbacks/symbol-to_proc.md)"
 msgstr "[Symbol#to_proc](callbacks/symbol-to_proc.md)"
 
+#. type: Bullet: '  - '
+#: ../docs/src/SUMMARY.md:95
+msgid "[Callback order](callbacks/callback_order.md)"
+msgstr "[コールバックの順序](callbacks/callback_order.md)"
+
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Modifying factories](modifying-factories/summary.md)"
 msgstr "[ファクトリの変更](modifying-factories/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Linting Factories](linting-factories/summary.md)"
 msgstr "[ファクトリのリント](linting-factories/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Custom Construction](custom-construction/summary.md)"
 msgstr "[独自の構築](custom-construction/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Custom Strategies](custom-strategies/summary.md)"
 msgstr "[独自の戦略](custom-strategies/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid "[Custom Callbacks](custom-callbacks/summary.md)"
 msgstr "[独自コールバック](custom-callbacks/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid ""
 "[Custom Methods to Persist Objects](custom-methods-to-persist-objects/"
 "summary.md)"
@@ -877,24 +882,24 @@ msgstr ""
 "objects/summary.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:94
+#: ../docs/src/SUMMARY.md:95
 msgid ""
 "[ActiveSupport Instrumentation](activesupport-instrumentation/summary.md)"
 msgstr "[ActiveSupportの計装](activesupport-instrumentation/summary.md)"
 
 #. type: Title ##
-#: ../docs/src/SUMMARY.md:95
+#: ../docs/src/SUMMARY.md:96
 #, no-wrap
 msgid "Cookbook"
 msgstr "レシピ"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:100
+#: ../docs/src/SUMMARY.md:101
 msgid "[`has_many` associations](cookbook/has_many-associations.md)"
 msgstr "[`has_many`関連](cookbook/has_many-associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:100
+#: ../docs/src/SUMMARY.md:101
 msgid ""
 "[`has_and_belongs_to_many` associations](cookbook/has_and_belongs_to_many-"
 "associations.md)"
@@ -903,12 +908,12 @@ msgstr ""
 "associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:100
+#: ../docs/src/SUMMARY.md:101
 msgid "[Polymorphic associations](cookbook/polymorphic-associations.md)"
 msgstr "[多相関連](cookbook/polymorphic-associations.md)"
 
 #. type: Bullet: '- '
-#: ../docs/src/SUMMARY.md:100
+#: ../docs/src/SUMMARY.md:101
 msgid "[Interconnected associations](cookbook/interconnected-associations.md)"
 msgstr "[相互接続関連](cookbook/interconnected-associations.md)"
 
@@ -939,8 +944,8 @@ msgid ""
 "We chose the name as a nod in the direction of the [Factory method](https://"
 "en.wikipedia.org/wiki/Factory_method_pattern)  and [Object Mother](http://"
 "martinfowler.com/bliki/ObjectMother.html) software patterns from the _Design "
-"Patterns_ book, and as a reference to the [Rolling Stones song](https://www."
-"youtube.com/watch?v=4jKix2DFlnA) of the same name."
+"Patterns_ book, and as a reference to the [Rolling Stones song](https://"
+"www.youtube.com/watch?v=4jKix2DFlnA) of the same name."
 msgstr ""
 "*デザインパターン*本のソフトウェアパターンである[ファクトリーメソッド]"
 "(https://en.wikipedia.org/wiki/Factory_method_pattern)と[母オブジェクト]"
@@ -965,8 +970,8 @@ msgid ""
 msgstr ""
 "「Factory Girl」という名前は、このライブラリを知った開発者や攻撃的ないし問題"
 "があるように感じたりする人にとって困惑するものでした。\n"
-"2017年10月に「Factory Bot」に[ライブラリを改名](https://robots.thoughtbot."
-"com/factory_bot)しました。"
+"2017年10月に「Factory Bot」に[ライブラリを改名](https://"
+"robots.thoughtbot.com/factory_bot)しました。"
 
 #. type: Title #
 #: ../docs/src/activesupport-instrumentation/summary.md:1
@@ -983,8 +988,8 @@ msgid ""
 "based on a threshold of execution time."
 msgstr ""
 "何のファクトリが作られたか（またどの構築戦略か）把握する目的で、コンパイルさ"
-"れて走るファクトリを購読する方法を提供するために`ActiveSupport::"
-"Notifications`がincludeされています。\n"
+"れて走るファクトリを購読する方法を提供するために"
+"`ActiveSupport::Notifications`がincludeされています。\n"
 "一例としては実行時間の閾値に基づいてファクトリを把握することです。"
 
 #. type: Fenced code block (ruby)
@@ -1056,9 +1061,9 @@ msgstr ""
 #: ../docs/src/activesupport-instrumentation/summary.md:40
 msgid ""
 "Another example could involve tracking the attributes and traits that "
-"factories are compiled with. If you're using RSpec, you could add `before(:"
-"suite)` and `after(:suite)` blocks that subscribe to `factory_bot."
-"compile_factory` notifications:"
+"factories are compiled with. If you're using RSpec, you could add "
+"`before(:suite)` and `after(:suite)` blocks that subscribe to "
+"`factory_bot.compile_factory` notifications:"
 msgstr ""
 "別の例として、ファクトリが一緒にコンパイルされる属性とトレイトを追跡すること"
 "が関係します。\n"
@@ -1557,8 +1562,8 @@ msgstr "ファクトリの指定"
 #. type: Plain text
 #: ../docs/src/associations/specifying-the-factory.md:5
 msgid ""
-"You can specify a different factory (although [Aliases](../aliases/summary."
-"md)  might also help you out here)."
+"You can specify a different factory (although [Aliases](../aliases/"
+"summary.md)  might also help you out here)."
 msgstr ""
 "異なるファクトリを指定することもできます（[別称](../aliases/summary.md)も役立"
 "つかもしれませんが）。"
@@ -1747,8 +1752,8 @@ msgstr "大域コールバック"
 #. type: Plain text
 #: ../docs/src/callbacks/global-callbacks.md:5
 msgid ""
-"To override callbacks for all factories, define them within the `FactoryBot."
-"define` block:"
+"To override callbacks for all factories, define them within the "
+"`FactoryBot.define` block:"
 msgstr ""
 "全てのファクトリにコールバックを上塗りするには、`FactoryBot.define`ブロック内"
 "で定義します。"
@@ -1875,48 +1880,95 @@ msgstr "コールバック"
 
 #. type: Plain text
 #: ../docs/src/callbacks/summary.md:4
-msgid "factory\\_bot makes four callbacks available:"
-msgstr "factory\\_botは4つのコールバックを作れます。"
+msgid "factory\\_bot makes six callbacks available:"
+msgstr "factory\\_botでは、6種類のコールバックを作れます。"
 
 #. type: Plain text
-#: ../docs/src/callbacks/summary.md:9
-#: ../docs/src/callbacks/default-callbacks.md:9
+#: ../docs/src/callbacks/summary.md:13
 #, no-wrap
 msgid ""
-"* after(:build)   - called after a factory is built   (via `FactoryBot.build`, `FactoryBot.create`)\n"
-"* before(:create) - called before a factory is saved  (via `FactoryBot.create`)\n"
-"* after(:create)  - called after a factory is saved   (via `FactoryBot.create`)\n"
-"* after(:stub)    - called after a factory is stubbed (via `FactoryBot.build_stubbed`)\n"
+"| Callback        | Timing                                                                                                                    |\n"
+"| --------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
+"| before(:all)    | called before a factory constructs an object (via `FactoryBot.build`, `FactoryBot.create`, or `FactoryBot.build_stubbed`) |\n"
+"| after(:build)   | called after a factory builds an object (via `FactoryBot.build` or `FactoryBot.create`)                                   |\n"
+"| before(:create) | called before a factory saves an object (via `FactoryBot.create`)                                                         |\n"
+"| after(:create)  | called after a factory saves an object (via `FactoryBot.create`)                                                          |\n"
+"| after(:stub)    | called after a factory stubs an object (via `FactoryBot.build_stubbed`)                                                   |\n"
+"| after(:all)     | called after a factory constructs an object (via `FactoryBot.build`, `FactoryBot.create`, or `FactoryBot.build_stubbed`)  |\n"
 msgstr ""
-"* after(:build) はファクトリが構築された後に（`FactoryBot.build`と`FactoryBot.create`を介して）呼ばれます。\n"
-"* before(:create) はファクトリが保存される前に（`FactoryBot.create`を介して）呼ばれます。\n"
-"* after(:create) はファクトリが保存された後に（`FactoryBot.create`を介して）呼ばれます。\n"
-"* after(:stub) はファクトリがスタブ化された後に（`FactoryBot.build_stubbed`を介して）呼ばれます。\n"
+"| コールバック        | 時機                                                                                                                    |\n"
+"| --------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
+"| before(:all)    | ファクトリがオブジェクトを構築する前に（`FactoryBot.build`や`FactoryBot.create`や`FactoryBot.build_stubbed`を介して）呼ばれます |\n"
+"| after(:build)   | ファクトリがオブジェクトを構築した後に（`FactoryBot.build`や`FactoryBot.create`を介して）呼ばれます                                   |\n"
+"| before(:create) | ファクトリがオブジェクトを保存する前に（`FactoryBot.create`を介して）呼ばれます                                                         |\n"
+"| after(:create)  | ファクトリがオブジェクトを保存した後に（`FactoryBot.create`を介して）呼ばれます                                                          |\n"
+"| after(:stub)    | ファクトリがオブジェクトをスタブした後に（`FactoryBot.build_stubbed`を介して）呼ばれます                                                   |\n"
+"| after(:all)     | ファクトリがオブジェクトを構築した後に（`FactoryBot.build`や`FactoryBot.create`や`FactoryBot.build_stubbed`を介して）呼ばれます  |\n"
 
-#. type: Plain text
-#: ../docs/src/callbacks/summary.md:11
-#: ../docs/src/callbacks/default-callbacks.md:11
-msgid "Examples:"
-msgstr "例は以下です。"
+#. type: Title ##
+#: ../docs/src/callbacks/summary.md:15
+#, no-wrap
+msgid "Examples"
+msgstr "例"
+
+#. type: Title ###
+#: ../docs/src/callbacks/summary.md:17
+#, no-wrap
+msgid "Calling an object's own method after building"
+msgstr "構築後にオブジェクト自体のメソッドを呼ぶ"
 
 #. type: Fenced code block (ruby)
-#: ../docs/src/callbacks/summary.md:12
+#: ../docs/src/callbacks/summary.md:19
 #, no-wrap
 msgid ""
-"# Define a factory that calls the generate_hashed_password method after the user factory is built\n"
+"## \n"
+"# Define a factory that calls the generate_hashed_password method\n"
+"# after the user factory is built.\n"
+"#\n"
+"# Note that you'll have an instance of the object in the block\n"
+"#\n"
 "factory :user do\n"
 "  after(:build) { |user, context| generate_hashed_password(user) }\n"
 "end\n"
 msgstr ""
-"# 利用者ファクトリが構築された後にgenerate_hashed_passwordメソッドを呼ぶファクトリを定義します。\n"
+"##\n"
+"# 利用者ファクトリが構築された後にgenerate_hashed_password\n"
+"# メソッドを呼ぶファクトリを定義します。\n"
+"#\n"
+"# なお、ブロックにはオブジェクトのインスタンスがあります。\n"
+"#\n"
 "factory :user do\n"
 "  after(:build) { |user, context| generate_hashed_password(user) }\n"
 "end\n"
 
-#. type: Plain text
-#: ../docs/src/callbacks/summary.md:19
-msgid "Note that you'll have an instance of the object in the block."
-msgstr "なお、ブロックのオブジェクトのインスタンスが得られます。"
+#. type: Title ###
+#: ../docs/src/callbacks/summary.md:31
+#, no-wrap
+msgid "Skipping an object's own :after_create callback"
+msgstr "オブジェクト自体の :after_create コールバックを飛ばす"
+
+#. type: Fenced code block (ruby)
+#: ../docs/src/callbacks/summary.md:33
+#, no-wrap
+msgid ""
+"##\n"
+"# Disable a model's own :after_create callback that sends an email \n"
+"# on creation, then re-enable it afterwards\n"
+"#\n"
+"factory :user do\n"
+"  before(:all){ User.skip_callback(:create, :after, :send_welcome_email) }\n"
+"  after(:all){ User.set_callback(:create, :after, :send_welcome_email) }\n"
+"end\n"
+msgstr ""
+"##\n"
+"# モデル自体の :after_create コールバックを無効にします。\n"
+"# このコールバックは作成時にEメールを送るものです。\n"
+"# それから作成後に再び有効にします。\n"
+"#\n"
+"factory :user do\n"
+"  before(:all){ User.skip_callback(:create, :after, :send_welcome_email) }\n"
+"  after(:all){ User.set_callback(:create, :after, :send_welcome_email) }\n"
+"end\n"
 
 #. type: Title #
 #: ../docs/src/callbacks/symbol-to_proc.md:1
@@ -2137,8 +2189,8 @@ msgid ""
 "If you prefer to keep the object creation fully within factory\\_bot, you "
 "can build the posts in an `after(:create)` callback."
 msgstr ""
-"オブジェクトの作成を完全にfactory\\_botに留める方が好みであれば、`after(:"
-"create)`コールバック内で記事を構築できます。"
+"オブジェクトの作成を完全にfactory\\_botに留める方が好みであれば、"
+"`after(:create)`コールバック内で記事を構築できます。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/cookbook/has_many-associations.md:34
@@ -2957,8 +3009,8 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/custom-methods-to-persist-objects/summary.md:24
 msgid ""
-"To override `to_create` for all factories, define it within the `FactoryBot."
-"define` block:"
+"To override `to_create` for all factories, define it within the "
+"`FactoryBot.define` block:"
 msgstr ""
 "全てのファクトリで`to_create`を上塗りするには`FactoryBot.define`ブロック内で"
 "定義します。"
@@ -3032,8 +3084,8 @@ msgstr ""
 #. type: Plain text
 #: ../docs/src/custom-strategies/summary.md:19
 msgid ""
-"Here's an example of composing a strategy using `FactoryBot::Strategy::"
-"Create` to build a JSON representation of your model."
+"Here's an example of composing a strategy using "
+"`FactoryBot::Strategy::Create` to build a JSON representation of your model."
 msgstr ""
 "以下は`FactoryBot::Strategy::Create`を使ってモデルにJSON表現を構築する戦略を"
 "組む例です。"
@@ -3188,8 +3240,8 @@ msgid ""
 "the following locations:"
 msgstr ""
 "ファクトリはどこでも定義できます。\n"
-"しかしファクトリが以下の場所のファイルで定義された場合、`FactoryBot."
-"find_definitions`を読んだ後に自動的に読み込まれます。"
+"しかしファクトリが以下の場所のファイルで定義された場合、"
+"`FactoryBot.find_definitions`を読んだ後に自動的に読み込まれます。"
 
 #. type: Plain text
 #: ../docs/src/defining/file-paths.md:12
@@ -3367,8 +3419,9 @@ msgid ""
 "factory_bot-4-11)."
 msgstr ""
 "（ブロックの無い）静的属性はfactory_bot 5では使えなくなりました。\n"
-"削除する決断についての詳細は[こちらのブログの記事](https://robots.thoughtbot."
-"com/deprecating-static-attributes-in-factory_bot-4-11)をお読みいただけます。"
+"削除する決断についての詳細は[こちらのブログの記事](https://"
+"robots.thoughtbot.com/deprecating-static-attributes-in-factory_bot-4-11)をお"
+"読みいただけます。"
 
 #. type: Title #
 #: ../docs/src/dependent-attributes/summary.md:1
@@ -3519,8 +3572,8 @@ msgid ""
 msgstr ""
 "`FactoryBot.lint`は各ファクトリを作って作成の仮定で投げられた例外を捕えま"
 "す。\n"
-"作成されなかったファクトリのリスト（と対応する例外）を持つ`FactoryBot::"
-"InvalidFactoryError`が投げられます。"
+"作成されなかったファクトリのリスト（と対応する例外）を持つ"
+"`FactoryBot::InvalidFactoryError`が投げられます。"
 
 #. type: Plain text
 #: ../docs/src/linting-factories/summary.md:17
@@ -3824,8 +3877,9 @@ msgstr ""
 msgid ""
 "A caveat: you can only modify factories (not sequences or traits), and "
 "callbacks *still compound as they normally would*. So, if the factory you're "
-"modifying defines an `after(:create)` callback, you defining an `after(:"
-"create)` won't override it, it will instead be run after the first callback."
+"modifying defines an `after(:create)` callback, you defining an "
+"`after(:create)` won't override it, it will instead be run after the first "
+"callback."
 msgstr ""
 "注意点：ファクトリのみ変更でき（系列やトレイトはできません）、コールバックは*"
 "通常のものと同様に付属したまま*です。\n"
@@ -4143,9 +4197,9 @@ msgstr "FactoryBot.define"
 #: ../docs/src/ref/define.md:6
 msgid ""
 "Each file loaded by factory\\_bot is expected to call `FactoryBot.define` "
-"with a block. The block is evaluated within an instance of `FactoryBot::"
-"Syntax::Default::DSL`, giving access to `factory`, `sequence`, `trait`, and "
-"other methods."
+"with a block. The block is evaluated within an instance of "
+"`FactoryBot::Syntax::Default::DSL`, giving access to `factory`, `sequence`, "
+"`trait`, and other methods."
 msgstr ""
 "factory\\_botで読み込まれる各ファイルはブロック付きの`FactoryBot.define`で呼"
 "ばれることになります。\n"
@@ -4387,8 +4441,8 @@ msgstr "Rails"
 msgid ""
 "The `.find_definitions` method is called automatically by "
 "`factory_bot_rails` after initialize. The `.definition_file_paths` can be "
-"set during initialization (e.g. `config/initializers`), or via `Rails."
-"application.config.factory_bot.definition_file_paths`."
+"set during initialization (e.g. `config/initializers`), or via "
+"`Rails.application.config.factory_bot.definition_file_paths`."
 msgstr ""
 "`.find_definitions`メソッドは初期化後に`factory_bot_rails`により自動的に呼ば"
 "れます。\n"
@@ -4441,12 +4495,14 @@ msgstr "`callback`"
 msgid ""
 "The `callback` method allows you to hook into any factory\\_bot callback by "
 "name. The pre-defined names, as seen in the [build strategies] reference, "
-"are `after_build`, `before_create`, `after_create`, and `after_stub`."
+"are `before_all`, `after_build`, `before_create`, `after_create`, "
+"`after_stub`, and `after_all`."
 msgstr ""
-"`callback`メソッドは任意のfactory\\_botコールバックを名前でフックを掛けられま"
-"す。\n"
+"`callback`メソッドでは、任意のfactory\\_botのコールバックに名前でフックを掛け"
+"られます。\n"
 "[構築戦略][build strategies]の便覧に見られる通り、予め定義された名前は"
-"`after_build`と`before_create`と`after_create`と`after_stub`です。"
+"`before_all`と`after_build`と`before_create`と`after_create`と`after_stub`と"
+"`after_all`です。"
 
 #. type: Plain text
 #: ../docs/src/ref/hooks.md:21
@@ -4523,11 +4579,11 @@ msgstr "FactoryBot.lint"
 #. type: Plain text
 #: ../docs/src/ref/lint.md:5
 msgid ""
-"The `FactoryBot.lint` method tries each factory and raises `FactoryBot::"
-"InvalidFactoryError` on failure."
+"The `FactoryBot.lint` method tries each factory and raises "
+"`FactoryBot::InvalidFactoryError` on failure."
 msgstr ""
-"`FactoryBot.lint`メソッドは各ファクトリを試して失敗したときに`FactoryBot::"
-"InvalidFactoryError`を投げます。"
+"`FactoryBot.lint`メソッドは各ファクトリを試して失敗したときに"
+"`FactoryBot::InvalidFactoryError`を投げます。"
 
 #. type: Plain text
 #: ../docs/src/ref/lint.md:7
@@ -4620,9 +4676,9 @@ msgstr ""
 #. type: Bullet: '1. '
 #: ../docs/src/ref/method_missing.md:16
 msgid ""
-"If the method missing is passed a hash as a argument with the key `:"
-"factory`, then it always defines an association. This allows you to override "
-"the factory used for the association."
+"If the method missing is passed a hash as a argument with the key "
+"`:factory`, then it always defines an association. This allows you to "
+"override the factory used for the association."
 msgstr ""
 "method\\_missingに実引数としてキー`:factory`を持つハッシュが渡されたとき、常"
 "に関連を定義します。\n"
@@ -5929,8 +5985,8 @@ msgstr ""
 #: ../docs/src/traits/enum.md:48
 msgid ""
 "If automatically defining traits for enum attributes on every factory is not "
-"desired, it is possible to disable the feature by setting `FactoryBot."
-"automatically_define_enum_traits = false`"
+"desired, it is possible to disable the feature by setting "
+"`FactoryBot.automatically_define_enum_traits = false`"
 msgstr ""
 "全てのファクトリで列挙属性にトレイトを自動的に定義することが望ましくなけれ"
 "ば、この機能を`FactoryBot.automatically_define_enum_traits = false`で無効にで"
@@ -6653,8 +6709,8 @@ msgid ""
 "You can access transient attributes within other attributes (see [Dependent "
 "Attributes](../dependent-attributes/summary.md)):"
 msgstr ""
-"他の属性から一過的属性を使えます（[依存属性](../dependent-attributes/summary."
-"md)を参照）。"
+"他の属性から一過的属性を使えます（[依存属性](../dependent-attributes/"
+"summary.md)を参照）。"
 
 #. type: Fenced code block (ruby)
 #: ../docs/src/transient-attributes/with-other-attributes.md:6
@@ -6915,6 +6971,25 @@ msgstr "既定コールバック"
 msgid "factory\\_bot makes available four callbacks for injecting some code:"
 msgstr "factory\\_botでは、コードを挿入する上で、4つコールバックが使えます。"
 
+#. type: Plain text
+#: ../docs/src/callbacks/default-callbacks.md:9
+#, no-wrap
+msgid ""
+"* after(:build)   - called after a factory is built   (via `FactoryBot.build`, `FactoryBot.create`)\n"
+"* before(:create) - called before a factory is saved  (via `FactoryBot.create`)\n"
+"* after(:create)  - called after a factory is saved   (via `FactoryBot.create`)\n"
+"* after(:stub)    - called after a factory is stubbed (via `FactoryBot.build_stubbed`)\n"
+msgstr ""
+"* after(:build) はファクトリが構築された後に（`FactoryBot.build`と`FactoryBot.create`を介して）呼ばれます。\n"
+"* before(:create) はファクトリが保存される前に（`FactoryBot.create`を介して）呼ばれます。\n"
+"* after(:create) はファクトリが保存された後に（`FactoryBot.create`を介して）呼ばれます。\n"
+"* after(:stub) はファクトリがスタブ化された後に（`FactoryBot.build_stubbed`を介して）呼ばれます。\n"
+
+#. type: Plain text
+#: ../docs/src/callbacks/default-callbacks.md:11
+msgid "Examples:"
+msgstr "例は以下です。"
+
 #. type: Fenced code block (ruby)
 #: ../docs/src/callbacks/default-callbacks.md:12
 #, no-wrap
@@ -7007,8 +7082,8 @@ msgstr "系列の生成"
 msgid ""
 "Being able to diectly generate a sequence, without having to build the "
 "object can really speed up testing. This can be achieved by passing the "
-"[sequence URI](sequence-uris.md) to `:generate` for a single value or `:"
-"generate_list` for an Array of sequential values."
+"[sequence URI](sequence-uris.md) to `:generate` for a single value or "
+"`:generate_list` for an Array of sequential values."
 msgstr ""
 "直接系列を生成できるようにし、ただしオブジェクトを構築せずにおくと、テストが"
 "本当に高速になることがあります。\n"
@@ -7458,8 +7533,8 @@ msgstr "値の設定"
 msgid ""
 "When testing or working in the console, being able to set the sequence to a "
 "specific value, is incredibly helpful. This can be achieved by passing the "
-"[sequence URI](sequence-uris.md) and the new value to `FactoryBot."
-"set_sequence`:"
+"[sequence URI](sequence-uris.md) and the new value to "
+"`FactoryBot.set_sequence`:"
 msgstr ""
 "コンソールで試行錯誤するとき、系列を特定の値に設定できると、大変便利です。\n"
 "これは`FactoryBot.set_sequence`に[系列URI](sequence-uris.md)と新しい値を渡す"
@@ -8070,12 +8145,12 @@ msgstr "対応しているRubyのバージョン"
 #: ../README.md:49
 msgid ""
 "Supported Ruby versions are listed in [`.github/workflows/build.yml`]"
-"(https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build."
-"yml)"
+"(https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/"
+"build.yml)"
 msgstr ""
-"対応しているRubyのバージョンは[`.github/workflows/build.yml`](https://github."
-"com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml)に一覧になっ"
-"ています。"
+"対応しているRubyのバージョンは[`.github/workflows/build.yml`](https://"
+"github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml)に一"
+"覧になっています。"
 
 #. type: Title -
 #: ../README.md:51
@@ -8103,11 +8178,11 @@ msgstr "[イシュー](https://github.com/thoughtbot/factory_bot/issues)"
 #. type: Bullet: '* '
 #: ../README.md:57
 msgid ""
-"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
-"com/)"
+"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://"
+"robots.thoughtbot.com/)"
 msgstr ""
-"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://robots.thoughtbot."
-"com/)"
+"[GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](https://"
+"robots.thoughtbot.com/)"
 
 #. type: Link reference
 #: ../README.md:58
