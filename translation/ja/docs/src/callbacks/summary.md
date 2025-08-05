@@ -4,12 +4,13 @@ factory\_botでは、6種類のコールバックを作れます。
 
 | コールバック        | 時機                                                                                                                    |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| before(:all)    | ファクトリがオブジェクトを構築する前に（`FactoryBot.build`や`FactoryBot.create`や`FactoryBot.build_stubbed`を介して）呼ばれます |
-| after(:build)   | ファクトリがオブジェクトを構築した後に（`FactoryBot.build`や`FactoryBot.create`を介して）呼ばれます                                   |
-| before(:create) | ファクトリがオブジェクトを保存する前に（`FactoryBot.create`を介して）呼ばれます                                                         |
-| after(:create)  | ファクトリがオブジェクトを保存した後に（`FactoryBot.create`を介して）呼ばれます                                                          |
-| after(:stub)    | ファクトリがオブジェクトをスタブした後に（`FactoryBot.build_stubbed`を介して）呼ばれます                                                   |
-| after(:all)     | ファクトリがオブジェクトを構築した後に（`FactoryBot.build`や`FactoryBot.create`や`FactoryBot.build_stubbed`を介して）呼ばれます  |
+| before(:all)    | 独自の戦略を含めて、どの戦略がオブジェクトの構築に使われたときも、その前に呼ばれます |
+| before(:build)  | ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）オブジェクトを構築する前に呼ばれます                                  |
+| after(:build)   | ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）オブジェクトを構築した後に呼ばれます                                   |
+| before(:create) | ファクトリが（`FactoryBot.create`で）オブジェクトを保存する前に呼ばれます                                                         |
+| after(:create)  | ファクトリが（`FactoryBot.create`で）オブジェクトを保存した後に呼ばれます                                                          |
+| after(:stub)    | ファクトリが（`FactoryBot.build_stubbed`で）オブジェクトをスタブした後に呼ばれます                                                   |
+| after(:all)     | 独自の戦略を含めて、どの戦略が完了したときも、その後に呼ばれます  |
 
 
 ## 例
@@ -18,7 +19,7 @@ factory\_botでは、6種類のコールバックを作れます。
 
 ```ruby
 ##
-# 利用者ファクトリが構築された後にgenerate_hashed_password
+# 利用者ファクトリが構築された後に generate_hashed_password
 # メソッドを呼ぶファクトリを定義します。
 #
 # なお、ブロックにはオブジェクトのインスタンスがあります。

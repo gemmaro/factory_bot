@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
-"POT-Creation-Date: 2025-07-31 21:11+0900\n"
-"PO-Revision-Date: 2025-07-31 21:22+0900\n"
+"POT-Creation-Date: 2025-08-05 21:30+0900\n"
+"PO-Revision-Date: 2025-08-05 21:49+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -1884,44 +1884,46 @@ msgid "factory\\_bot makes six callbacks available:"
 msgstr "factory\\_botでは、6種類のコールバックを作れます。"
 
 #. type: Plain text
-#: ../docs/src/callbacks/summary.md:13
+#: ../docs/src/callbacks/summary.md:14
 #, no-wrap
 msgid ""
 "| Callback        | Timing                                                                                                                    |\n"
 "| --------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
-"| before(:all)    | called before a factory constructs an object (via `FactoryBot.build`, `FactoryBot.create`, or `FactoryBot.build_stubbed`) |\n"
+"| before(:all)    | called before any strategy is used to construct an object, including custom strategies                                    |\n"
+"| before(:build)  | called before a factory builds an object (via `FactoryBot.build` or `FactoryBot.create`)                                  |\n"
 "| after(:build)   | called after a factory builds an object (via `FactoryBot.build` or `FactoryBot.create`)                                   |\n"
 "| before(:create) | called before a factory saves an object (via `FactoryBot.create`)                                                         |\n"
 "| after(:create)  | called after a factory saves an object (via `FactoryBot.create`)                                                          |\n"
 "| after(:stub)    | called after a factory stubs an object (via `FactoryBot.build_stubbed`)                                                   |\n"
-"| after(:all)     | called after a factory constructs an object (via `FactoryBot.build`, `FactoryBot.create`, or `FactoryBot.build_stubbed`)  |\n"
+"| after(:all)     | called after any strategy has completed, including custom strategies                                                      |\n"
 msgstr ""
 "| コールバック        | 時機                                                                                                                    |\n"
 "| --------------- | ------------------------------------------------------------------------------------------------------------------------- |\n"
-"| before(:all)    | ファクトリがオブジェクトを構築する前に（`FactoryBot.build`や`FactoryBot.create`や`FactoryBot.build_stubbed`を介して）呼ばれます |\n"
-"| after(:build)   | ファクトリがオブジェクトを構築した後に（`FactoryBot.build`や`FactoryBot.create`を介して）呼ばれます                                   |\n"
-"| before(:create) | ファクトリがオブジェクトを保存する前に（`FactoryBot.create`を介して）呼ばれます                                                         |\n"
-"| after(:create)  | ファクトリがオブジェクトを保存した後に（`FactoryBot.create`を介して）呼ばれます                                                          |\n"
-"| after(:stub)    | ファクトリがオブジェクトをスタブした後に（`FactoryBot.build_stubbed`を介して）呼ばれます                                                   |\n"
-"| after(:all)     | ファクトリがオブジェクトを構築した後に（`FactoryBot.build`や`FactoryBot.create`や`FactoryBot.build_stubbed`を介して）呼ばれます  |\n"
+"| before(:all)    | 独自の戦略を含めて、どの戦略がオブジェクトの構築に使われたときも、その前に呼ばれます |\n"
+"| before(:build)  | ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）オブジェクトを構築する前に呼ばれます                                  |\n"
+"| after(:build)   | ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）オブジェクトを構築した後に呼ばれます                                   |\n"
+"| before(:create) | ファクトリが（`FactoryBot.create`で）オブジェクトを保存する前に呼ばれます                                                         |\n"
+"| after(:create)  | ファクトリが（`FactoryBot.create`で）オブジェクトを保存した後に呼ばれます                                                          |\n"
+"| after(:stub)    | ファクトリが（`FactoryBot.build_stubbed`で）オブジェクトをスタブした後に呼ばれます                                                   |\n"
+"| after(:all)     | 独自の戦略を含めて、どの戦略が完了したときも、その後に呼ばれます  |\n"
 
 #. type: Title ##
-#: ../docs/src/callbacks/summary.md:15
+#: ../docs/src/callbacks/summary.md:16
 #, no-wrap
 msgid "Examples"
 msgstr "例"
 
 #. type: Title ###
-#: ../docs/src/callbacks/summary.md:17
+#: ../docs/src/callbacks/summary.md:18
 #, no-wrap
 msgid "Calling an object's own method after building"
 msgstr "構築後にオブジェクト自体のメソッドを呼ぶ"
 
 #. type: Fenced code block (ruby)
-#: ../docs/src/callbacks/summary.md:19
+#: ../docs/src/callbacks/summary.md:20
 #, no-wrap
 msgid ""
-"## \n"
+"##\n"
 "# Define a factory that calls the generate_hashed_password method\n"
 "# after the user factory is built.\n"
 "#\n"
@@ -1932,7 +1934,7 @@ msgid ""
 "end\n"
 msgstr ""
 "##\n"
-"# 利用者ファクトリが構築された後にgenerate_hashed_password\n"
+"# 利用者ファクトリが構築された後に generate_hashed_password\n"
 "# メソッドを呼ぶファクトリを定義します。\n"
 "#\n"
 "# なお、ブロックにはオブジェクトのインスタンスがあります。\n"
@@ -1942,17 +1944,17 @@ msgstr ""
 "end\n"
 
 #. type: Title ###
-#: ../docs/src/callbacks/summary.md:31
+#: ../docs/src/callbacks/summary.md:32
 #, no-wrap
 msgid "Skipping an object's own :after_create callback"
 msgstr "オブジェクト自体の :after_create コールバックを飛ばす"
 
 #. type: Fenced code block (ruby)
-#: ../docs/src/callbacks/summary.md:33
+#: ../docs/src/callbacks/summary.md:34
 #, no-wrap
 msgid ""
 "##\n"
-"# Disable a model's own :after_create callback that sends an email \n"
+"# Disable a model's own :after_create callback that sends an email\n"
 "# on creation, then re-enable it afterwards\n"
 "#\n"
 "factory :user do\n"
@@ -6972,26 +6974,32 @@ msgid "factory\\_bot makes available four callbacks for injecting some code:"
 msgstr "factory\\_botでは、コードを挿入する上で、4つコールバックが使えます。"
 
 #. type: Plain text
-#: ../docs/src/callbacks/default-callbacks.md:9
+#: ../docs/src/callbacks/default-callbacks.md:12
 #, no-wrap
 msgid ""
-"* after(:build)   - called after a factory is built   (via `FactoryBot.build`, `FactoryBot.create`)\n"
-"* before(:create) - called before a factory is saved  (via `FactoryBot.create`)\n"
-"* after(:create)  - called after a factory is saved   (via `FactoryBot.create`)\n"
-"* after(:stub)    - called after a factory is stubbed (via `FactoryBot.build_stubbed`)\n"
+"* before(:all)    - called before any strategy is used (e.g., `FactoryBot.build`, `FactoryBot.create`, `FactoryBot.build_stubbed`)\n"
+"* before(:build)  - called before a factory is built   (via `FactoryBot.build`, `FactoryBot.create`)\n"
+"* after(:build)   - called after a factory is built    (via `FactoryBot.build`, `FactoryBot.create`)\n"
+"* before(:create) - called before a factory is saved   (via `FactoryBot.create`)\n"
+"* after(:create)  - called after a factory is saved    (via `FactoryBot.create`)\n"
+"* after(:stub)    - called after a factory is stubbed  (via `FactoryBot.build_stubbed`)\n"
+"* after(:all)     - called after any strategy is used  (e.g., `FactoryBot.build`, `FactoryBot.create`, `FactoryBot.build_stubbed`)\n"
 msgstr ""
+"* before(:all) はどの戦略が使われたときも、その前に呼ばれます（例：`FactoryBot.build`, `FactoryBot.create`, `FactoryBot.build_stubbed`）\n"
+"* before(:build) ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）構築される前に呼ばれます\n"
 "* after(:build) はファクトリが構築された後に（`FactoryBot.build`と`FactoryBot.create`を介して）呼ばれます。\n"
 "* before(:create) はファクトリが保存される前に（`FactoryBot.create`を介して）呼ばれます。\n"
 "* after(:create) はファクトリが保存された後に（`FactoryBot.create`を介して）呼ばれます。\n"
 "* after(:stub) はファクトリがスタブ化された後に（`FactoryBot.build_stubbed`を介して）呼ばれます。\n"
+"* after(:all) どの戦略が使われたときも、その後に呼ばれます（例：`FactoryBot.build`, `FactoryBot.create`, `FactoryBot.build_stubbed`）\n"
 
 #. type: Plain text
-#: ../docs/src/callbacks/default-callbacks.md:11
+#: ../docs/src/callbacks/default-callbacks.md:14
 msgid "Examples:"
 msgstr "例は以下です。"
 
 #. type: Fenced code block (ruby)
-#: ../docs/src/callbacks/default-callbacks.md:12
+#: ../docs/src/callbacks/default-callbacks.md:15
 #, no-wrap
 msgid ""
 "# Define a factory that calls the generate_hashed_password method after it is built\n"
@@ -7005,7 +7013,7 @@ msgstr ""
 "end\n"
 
 #. type: Plain text
-#: ../docs/src/callbacks/default-callbacks.md:19
+#: ../docs/src/callbacks/default-callbacks.md:22
 msgid ""
 "Note that you'll have an instance of the object in the block. This can be "
 "useful."
