@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
 "POT-Creation-Date: 2025-08-17T17:38:48+09:00\n"
-"PO-Revision-Date: 2025-08-17 18:21+0900\n"
+"PO-Revision-Date: 2025-08-17 18:46+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -920,7 +920,7 @@ msgstr ""
 
 #: src/ref/add_attribute.md:15 src/ref/add_attribute.md:24
 msgid "\"Acid Burn\""
-msgstr ""
+msgstr "\"Acid Burn\""
 
 #: src/ref/add_attribute.md:20
 msgid "This will use the `#name=` setter:"
@@ -1053,7 +1053,7 @@ msgstr "# 大域系列\n"
 #: src/sequences/rewinding.md:11 src/sequences/uniqueness.md:11
 #: src/custom-construction/summary.md:19
 msgid "\"person#{n}@example.com\""
-msgstr ""
+msgstr "\"person#{n}@example.com\""
 
 #: src/ref/sequence.md:42
 msgid "# Using a global sequence\n"
@@ -1144,7 +1144,7 @@ msgstr ""
 
 #: src/ref/method_missing.md:35 src/ref/method_missing.md:56
 msgid "\"Lord Nikon\""
-msgstr ""
+msgstr "\"Lord Nikon\""
 
 #: src/ref/method_missing.md:47
 msgid "... into a more implicit definition:"
@@ -1231,6 +1231,12 @@ msgid ""
 "    #   visibility { :private }\n"
 "    # end\n"
 msgstr ""
+"# trait :public do\n"
+"    #   visibility { :public }\n"
+"    # end\n"
+"    # trait :private do\n"
+"    #   visibility { :private }\n"
+"    # end\n"
 
 #: src/ref/traits_for_enum.md:42
 msgid ""
@@ -1241,6 +1247,12 @@ msgid ""
 "    #   collaborative { 1 }\n"
 "    # end\n"
 msgstr ""
+"# trait :draft do\n"
+"    #   collaborative { 0 }\n"
+"    # end\n"
+"    # trait :shared do\n"
+"    #   collaborative { 1 }\n"
+"    # end\n"
 
 #: src/ref/traits_for_enum.md:50
 msgid ""
@@ -1250,6 +1262,11 @@ msgid ""
 "    #   end\n"
 "    # end\n"
 msgstr ""
+"# Article.statuses.each do |key, value|\n"
+"    #   trait key do\n"
+"    #     status { value }\n"
+"    #   end\n"
+"    # end\n"
 
 #: src/ref/build-and-create.md:3
 msgid ""
@@ -1635,7 +1652,7 @@ msgstr ""
 
 #: src/using-without-bundler/summary.md:20
 msgid "%w(custom_factories_directory)"
-msgstr ""
+msgstr "%w(custom_factories_directory)"
 
 #: src/using-without-bundler/summary.md:24
 msgid ""
@@ -1646,7 +1663,7 @@ msgstr "ファクトリの個別のディレクトリがなく、行内に定義
 #: src/using-without-bundler/summary.md:32 src/traits/with-associations.md:15
 #: src/traits/with-associations.md:34 src/traits/with-associations.md:36
 msgid "'John Doe'"
-msgstr ""
+msgstr "'John Doe'"
 
 #: src/rails-preloaders-and-rspec/summary.md:3
 msgid ""
@@ -1665,15 +1682,15 @@ msgstr "\"Location\""
 
 #: src/rails-preloaders-and-rspec/summary.md:10
 msgid "'United States'"
-msgstr ""
+msgstr "'United States'"
 
 #: src/rails-preloaders-and-rspec/summary.md:14
 msgid "\"LocationGroup\""
-msgstr ""
+msgstr "\"LocationGroup\""
 
 #: src/rails-preloaders-and-rspec/summary.md:15
 msgid "'North America'"
-msgstr ""
+msgstr "'North America'"
 
 #: src/rails-preloaders-and-rspec/summary.md:20
 msgid "The error occurs during the run of the test suite:"
@@ -1699,16 +1716,16 @@ msgstr ""
 
 #: src/defining/name-attributes.md:7
 msgid "# This will guess the User class\n"
-msgstr ""
+msgstr "# 以下ではUserクラスが推定されます\n"
 
 #: src/defining/name-attributes.md:10 src/aliases/summary.md:12
 msgid "\"John\""
-msgstr ""
+msgstr "\"John\""
 
 #: src/defining/name-attributes.md:11 src/aliases/summary.md:13
 #: src/dependent-attributes/summary.md:13
 msgid "\"Doe\""
-msgstr ""
+msgstr "\"Doe\""
 
 #: src/defining/explicit-class.md:3
 msgid "It is also possible to explicitly specify the class:"
@@ -1721,7 +1738,7 @@ msgstr "# 以下はUserクラスを使います（こうしなければAdminが�
 
 #: src/defining/explicit-class.md:7
 msgid "\"User\""
-msgstr ""
+msgstr "\"User\""
 
 #: src/defining/explicit-class.md:10
 msgid ""
@@ -1817,30 +1834,32 @@ msgstr ""
 
 #: src/using-factories/build-strategies.md:7
 msgid "# Returns a User instance that's not saved\n"
-msgstr ""
+msgstr "# 保存されていないUserインスタンスを返します\n"
 
 #: src/using-factories/build-strategies.md:9
 msgid "# Returns a saved User instance\n"
-msgstr ""
+msgstr "# 保存されたUserインスタンスを返します\n"
 
 #: src/using-factories/build-strategies.md:12
 msgid ""
 "# Returns a hash of attributes, which can be used to build a User instance "
 "for example\n"
 msgstr ""
+"# 属性のハッシュを返します。\n"
+"# 例えばUserインスタンスを構築するのに使えます\n"
 
 #: src/using-factories/build-strategies.md:15
 msgid "# Integrates with Ruby 3.0's support for pattern matching assignment\n"
-msgstr ""
+msgstr "# Ruby 3.0のパターン合致代入の対応と統合\n"
 
 #: src/using-factories/build-strategies.md:18
 msgid "# Returns an object with all defined attributes stubbed out\n"
-msgstr ""
+msgstr "# 全ての定義された属性がスタブされたオブジェクトを返す\n"
 
 #: src/using-factories/build-strategies.md:21
 msgid ""
 "# Passing a block to any of the methods above will yield the return object\n"
-msgstr ""
+msgstr "# ブロックを上記のメソッドのどれに渡しても返却されたオブジェクトをyieldします\n"
 
 #: src/using-factories/build-strategies.md:28
 msgid "build_stubbed and Marshal.dump"
@@ -1898,7 +1917,7 @@ msgstr ""
 
 #: src/building-or-creating-multiple-records/summary.md:41
 msgid "# array of stubbed users\n"
-msgstr ""
+msgstr "# スタブされた利用者の配列\n"
 
 #: src/building-or-creating-multiple-records/summary.md:44
 msgid ""
@@ -1907,11 +1926,11 @@ msgstr "2つのレコードを一括で作る`*_pair`メソッドの一式もあ
 
 #: src/building-or-creating-multiple-records/summary.md:47
 msgid "# array of two built users\n"
-msgstr ""
+msgstr "# 2つの構築された利用者の配列\n"
 
 #: src/building-or-creating-multiple-records/summary.md:48
 msgid "# array of two created users\n"
-msgstr ""
+msgstr "# 2つの作成された利用者の配列\n"
 
 #: src/building-or-creating-multiple-records/summary.md:51
 msgid ""
@@ -1921,7 +1940,7 @@ msgstr "複数の属性のハッシュが必要なとき、`attributes_for_list`
 
 #: src/building-or-creating-multiple-records/summary.md:55
 msgid "# array of attribute hashes\n"
-msgstr ""
+msgstr "# 属性のハッシュの配列\n"
 
 #: src/using-factories/attribute-overrides.md:3
 msgid ""
@@ -1979,21 +1998,23 @@ msgstr ""
 
 #: src/aliases/summary.md:21
 msgid "\"How to read a book effectively\""
-msgstr ""
+msgstr "\"How to read a book effectively\""
 
 #: src/aliases/summary.md:22
 msgid "\"There are five steps involved.\""
-msgstr ""
+msgstr "\"There are five steps involved.\""
 
 #: src/aliases/summary.md:26
 msgid ""
 "# The alias allows us to write commenter instead of\n"
 "  # association :commenter, factory: :user\n"
 msgstr ""
+"# 別称により以下の代わりにcommenterと書くことができます\n"
+"  # association :commenter, factory: :user\n"
 
 #: src/aliases/summary.md:29
 msgid "\"Great article!\""
-msgstr ""
+msgstr "\"Great article!\""
 
 #: src/dependent-attributes/summary.md:3
 msgid ""
@@ -2005,15 +2026,15 @@ msgstr ""
 
 #: src/dependent-attributes/summary.md:9
 msgid "\"Blow\""
-msgstr ""
+msgstr "\"Blow\""
 
 #: src/dependent-attributes/summary.md:10
 msgid "\"#{first_name}.#{last_name}@example.com\""
-msgstr ""
+msgstr "\"#{first_name}.#{last_name}@example.com\""
 
 #: src/dependent-attributes/summary.md:13
 msgid "# => \"joe.doe@example.com\"\n"
-msgstr ""
+msgstr "# => \"joe.doe@example.com\"\n"
 
 #: src/transient-attributes/summary.md:3
 msgid ""
@@ -2031,11 +2052,11 @@ msgstr "これらの属性は`transient`ブロック内に定義します。"
 
 #: src/transient-attributes/summary.md:11
 msgid "\"Zero Cool\""
-msgstr ""
+msgstr "\"Zero Cool\""
 
 #: src/transient-attributes/summary.md:15
 msgid "# only used to set `birth_date` above\n"
-msgstr ""
+msgstr "# 上記の`birth_date`の設定だけに使われます\n"
 
 #: src/transient-attributes/with-other-attributes.md:3
 msgid ""
@@ -2047,16 +2068,16 @@ msgstr ""
 
 #: src/transient-attributes/with-other-attributes.md:12
 msgid "\"John Doe#{\" - Rockstar\" if rockstar}\""
-msgstr ""
+msgstr "\"John Doe#{\" - Rockstar\" if rockstar}\""
 
 #: src/transient-attributes/with-other-attributes.md:15
 msgid "#=> \"John Doe - ROCKSTAR\"\n"
-msgstr ""
+msgstr "#=> \"John Doe - ROCKSTAR\"\n"
 
 #: src/transient-attributes/with-other-attributes.md:18
 #: src/transient-attributes/with-callbacks.md:20
 msgid "#=> \"John Doe\"\n"
-msgstr ""
+msgstr "#=> \"John Doe\"\n"
 
 #: src/transient-attributes/with-attributes_for.md:1
 msgid "With attributes_for"
@@ -2089,11 +2110,11 @@ msgstr ""
 #: src/custom-methods-to-persist-objects/summary.md:31
 #: src/cookbook/has_many-associations.md:42
 msgid "\"John Doe\""
-msgstr ""
+msgstr "\"John Doe\""
 
 #: src/transient-attributes/with-callbacks.md:23
 msgid "#=> \"JOHN DOE\"\n"
-msgstr ""
+msgstr "#=> \"JOHN DOE\"\n"
 
 #: src/transient-attributes/with-associations.md:3
 msgid ""
@@ -2124,11 +2145,11 @@ msgstr ""
 
 #: src/method-name-reserved-word-attributes/summary.md:10
 msgid "'GATTACA'"
-msgstr ""
+msgstr "'GATTACA'"
 
 #: src/method-name-reserved-word-attributes/summary.md:14
 msgid "'paypal'"
-msgstr ""
+msgstr "'paypal'"
 
 #: src/inheritance/nested-factories.md:3
 msgid ""
@@ -2141,11 +2162,11 @@ msgstr ""
 #: src/inheritance/nested-factories.md:8
 #: src/inheritance/assigning-parent-explicitly.md:7
 msgid "\"A title\""
-msgstr ""
+msgstr "\"A title\""
 
 #: src/inheritance/nested-factories.md:16
 msgid "# => \"A title\"\n"
-msgstr ""
+msgstr "# => \"A title\"\n"
 
 #: src/inheritance/nested-factories.md:17
 #: src/associations/build-strategies.md:15
@@ -2154,7 +2175,7 @@ msgstr ""
 #: src/associations/build-strategies.md:54
 #: src/associations/build-strategies.md:55
 msgid "# => true\n"
-msgstr ""
+msgstr "# => true\n"
 
 #: src/inheritance/assigning-parent-explicitly.md:3
 msgid "You can also assign the parent explicitly:"
@@ -2190,7 +2211,7 @@ msgstr ""
 #: src/associations/build-strategies.md:48
 #: src/associations/build-strategies.md:63
 msgid "# ...\n"
-msgstr ""
+msgstr "# ...\n"
 
 #: src/associations/explicit-definition.md:3
 msgid ""
@@ -2239,7 +2260,7 @@ msgstr "関連で属性の上塗りもできます。"
 #: src/associations/overriding-attributes.md:20
 #: src/associations/overriding-attributes.md:29
 msgid "\"Writely\""
-msgstr ""
+msgstr "\"Writely\""
 
 #: src/associations/overriding-attributes.md:24
 msgid "Or inline using attributes from the factory:"
@@ -2251,12 +2272,12 @@ msgstr "属性の上塗りは紐付くオブジェクトを結び付けるのに
 
 #: src/associations/association-overrides.md:8
 msgid "'Taylor'"
-msgstr ""
+msgstr "'Taylor'"
 
 #: src/associations/association-overrides.md:16
 #: src/associations/association-overrides.md:25
 msgid "'Eunji'"
-msgstr ""
+msgstr "'Eunji'"
 
 #: src/associations/association-overrides.md:20
 msgid ""
@@ -2277,7 +2298,7 @@ msgstr "関連は既定で親オブジェクトと同じ構築戦略を使いま
 #: src/associations/build-strategies.md:34
 #: src/associations/build-strategies.md:39
 msgid "# => false\n"
-msgstr ""
+msgstr "# => false\n"
 
 #: src/associations/build-strategies.md:23
 msgid ""
@@ -2294,11 +2315,13 @@ msgstr ""
 
 #: src/associations/build-strategies.md:30
 msgid "# Builds and saves a User and a Post\n"
-msgstr ""
+msgstr "# UserとPostを構築して保存\n"
 
 #: src/associations/build-strategies.md:35
 msgid "# Builds and saves a User, and then builds but does not save a Post\n"
 msgstr ""
+"# Userを構築して保存します。\n"
+"# また、Postは構築しますが保存しません\n"
 
 #: src/associations/build-strategies.md:42
 msgid ""
@@ -2310,6 +2333,8 @@ msgstr ""
 #: src/associations/build-strategies.md:51
 msgid "# Builds a User, and then builds a Post, but does not save either\n"
 msgstr ""
+"# Userを構築し、それからPostを構築します。\n"
+"# しかし、どちらも保存しません\n"
 
 #: src/associations/build-strategies.md:58
 msgid ""
@@ -2337,15 +2362,15 @@ msgstr ""
 
 #: src/sequences/global-sequences.md:8
 msgid "# Defines a new sequence\n"
-msgstr ""
+msgstr "# 新しい系列を定義\n"
 
 #: src/sequences/global-sequences.md:15
 msgid "# => \"person1@example.com\"\n"
-msgstr ""
+msgstr "# => \"person1@example.com\"\n"
 
 #: src/sequences/global-sequences.md:18
 msgid "# => \"person2@example.com\"\n"
-msgstr ""
+msgstr "# => \"person2@example.com\"\n"
 
 #: src/sequences/with-dynamic-attributes.md:3
 msgid "Sequences can be used in dynamic attributes:"
@@ -2357,7 +2382,7 @@ msgstr "もしくは暗黙属性として以下とします。"
 
 #: src/sequences/as-implicit-attributes.md:13
 msgid "# Same as `email { generate(:email) }`\n"
-msgstr ""
+msgstr "# `email { generate(:email) }`と同じ\n"
 
 #: src/sequences/as-implicit-attributes.md:17
 msgid ""
@@ -2382,7 +2407,7 @@ msgstr "Ruby 2.7の[連番仮引数](https://ruby-doc.org/core-2.7.1/Proc.html#c
 
 #: src/sequences/factory-sequences.md:17
 msgid "\"person#{_1}@example.com\""
-msgstr ""
+msgstr "\"person#{_1}@example.com\""
 
 #: src/sequences/initial-value.md:3
 msgid ""
@@ -2417,7 +2442,7 @@ msgstr ""
 
 #: src/sequences/without-a-block.md:16
 msgid "%i[low medium high urgent]"
-msgstr ""
+msgstr "%i[low medium high urgent]"
 
 #: src/sequences/aliases.md:3
 msgid ""
@@ -2431,6 +2456,8 @@ msgid ""
 "# will increase value counter for :email which is shared by :sender "
 "and :receiver\n"
 msgstr ""
+"# :email の値の計数を増やします。\n"
+"# 計数は :sender と :receiver で共有されています\n"
 
 #: src/sequences/aliases.md:14
 msgid "Define aliases and use default value (1) for the counter"
@@ -2443,7 +2470,7 @@ msgstr "値を設定するには以下です。"
 #: src/sequences/aliases.md:26 src/sequences/setting-the-value.md:11
 #: src/sequences/generating.md:7
 msgid "'a'"
-msgstr ""
+msgstr "'a'"
 
 #: src/sequences/aliases.md:30
 msgid ""
@@ -2495,15 +2522,15 @@ msgstr "位置"
 
 #: src/sequences/sequence-uris.md:16
 msgid "name"
-msgstr ""
+msgstr "名前"
 
 #: src/sequences/sequence-uris.md:16
 msgid "required"
-msgstr ""
+msgstr "必須かどうか"
 
 #: src/sequences/sequence-uris.md:18
 msgid "1."
-msgstr ""
+msgstr "1."
 
 #: src/sequences/sequence-uris.md:18
 msgid "factory name:"
@@ -2511,11 +2538,11 @@ msgstr "ファクトリ名："
 
 #: src/sequences/sequence-uris.md:18
 msgid "**if** - the sequence is defined within a Factory or a Factory Trait"
-msgstr ""
+msgstr "**もし**系列がファクトリかファクトリトレイトで定義されている場合は"
 
 #: src/sequences/sequence-uris.md:19
 msgid "2."
-msgstr ""
+msgstr "2."
 
 #: src/sequences/sequence-uris.md:19
 msgid "trait name:"
@@ -2523,11 +2550,11 @@ msgstr "トレイト名："
 
 #: src/sequences/sequence-uris.md:19
 msgid "**if** - the sequence is defined within a Trait"
-msgstr ""
+msgstr "**もし**系列がトレイトで定義されている場合は"
 
 #: src/sequences/sequence-uris.md:20
 msgid "3."
-msgstr ""
+msgstr "3."
 
 #: src/sequences/sequence-uris.md:20
 msgid "sequence name:"
@@ -2535,7 +2562,7 @@ msgstr "系列名："
 
 #: src/sequences/sequence-uris.md:20
 msgid "**always required**"
-msgstr ""
+msgstr "**常に必須**"
 
 #: src/sequences/sequence-uris.md:22
 msgid "The URI can be entered as individual symbols:"
@@ -2547,11 +2574,11 @@ msgstr "**あるいは** 個々の文字列として入力されます。"
 
 #: src/sequences/sequence-uris.md:31
 msgid "'my_factory_name'"
-msgstr ""
+msgstr "'my_factory_name'"
 
 #: src/sequences/sequence-uris.md:31
 msgid "'my_trait_name'"
-msgstr ""
+msgstr "'my_trait_name'"
 
 #: src/sequences/sequence-uris.md:31
 msgid "'my_sequence_name'"
@@ -2587,7 +2614,7 @@ msgstr "# generate(:sequence)\n"
 
 #: src/sequences/sequence-uris.md:50
 msgid "\"global_trait_sequence_#{n}\""
-msgstr ""
+msgstr "\"global_trait_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:51
 msgid "# generate(:global_trait, :sequence)\n"
@@ -2595,15 +2622,15 @@ msgstr "# generate(:global_trait, :sequence)\n"
 
 #: src/sequences/sequence-uris.md:55
 msgid "\"user_sequence_#{n}\""
-msgstr ""
+msgstr "\"user_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:56
 msgid "# generate(:user, :sequence)\n"
-msgstr ""
+msgstr "# generate(:user, :sequence)\n"
 
 #: src/sequences/sequence-uris.md:59
 msgid "\"user_trait_sequence_#{n}\""
-msgstr ""
+msgstr "\"user_trait_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:60
 msgid "# generate(:user, :user_trait, :sequence)\n"
@@ -2615,11 +2642,11 @@ msgstr "\"author_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:65
 msgid "# generate(:author, :sequence)\n"
-msgstr ""
+msgstr "# generate(:author, :sequence)\n"
 
 #: src/sequences/sequence-uris.md:68 src/sequences/sequence-uris.md:87
 msgid "\"author_trait_sequence_#{n}\""
-msgstr ""
+msgstr "\"author_trait_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:69
 msgid "# generate(:author, :author_trait, :sequence)\n"
@@ -2697,31 +2724,31 @@ msgstr ""
 
 #: src/sequences/rewinding.md:14
 msgid "\"user#{n}@example.com\""
-msgstr ""
+msgstr "\"user#{n}@example.com\""
 
 #: src/sequences/rewinding.md:18 src/sequences/rewinding.md:28
 msgid "# \"person1@example.com\"\n"
-msgstr ""
+msgstr "# \"person1@example.com\"\n"
 
 #: src/sequences/rewinding.md:19
 msgid "# \"person2@example.com\"\n"
-msgstr ""
+msgstr "# \"person2@example.com\"\n"
 
 #: src/sequences/rewinding.md:20
 msgid "# \"person3@example.com\"\n"
-msgstr ""
+msgstr "# \"person3@example.com\"\n"
 
 #: src/sequences/rewinding.md:22 src/sequences/rewinding.md:29
 msgid "# \"user1@example.com\"\n"
-msgstr ""
+msgstr "# \"user1@example.com\"\n"
 
 #: src/sequences/rewinding.md:23
 msgid "# \"user2@example.com\"\n"
-msgstr ""
+msgstr "# \"user2@example.com\"\n"
 
 #: src/sequences/rewinding.md:24
 msgid "# \"user3@example.com\"\n"
-msgstr ""
+msgstr "# \"user3@example.com\"\n"
 
 #: src/sequences/rewinding.md:32
 msgid "Individual sequences"
@@ -2737,19 +2764,19 @@ msgstr ""
 
 #: src/sequences/rewinding.md:38
 msgid "\"global_email_#{n}@example.com\""
-msgstr ""
+msgstr "\"global_email_#{n}@example.com\""
 
 #: src/sequences/rewinding.md:41
 msgid "\"user_email_#{n}@example.com\""
-msgstr ""
+msgstr "\"user_email_#{n}@example.com\""
 
 #: src/sequences/rewinding.md:46
 msgid "#=> \"global_email_1@example.com\"\n"
-msgstr ""
+msgstr "#=> \"global_email_1@example.com\"\n"
 
 #: src/sequences/rewinding.md:50
 msgid "#=> \"user_email_1@example.com\"\n"
-msgstr ""
+msgstr "#=> \"user_email_1@example.com\"\n"
 
 #: src/sequences/setting-the-value.md:3
 msgid ""
@@ -2772,65 +2799,71 @@ msgstr "大域系列は系列名と新しい値で設定されます。"
 
 #: src/sequences/setting-the-value.md:11 src/sequences/generating.md:7
 msgid "\"global_character_#{c}\""
-msgstr ""
+msgstr "\"global_character_#{c}\""
 
 #: src/sequences/setting-the-value.md:14 src/sequences/generating.md:10
 msgid "%w[Jane Joe Josh Jayde John]"
-msgstr ""
+msgstr "%w[Jane Joe Josh Jayde John]"
 
 #: src/sequences/setting-the-value.md:17
 msgid "\"user_#{n}@example.com\""
-msgstr ""
+msgstr "\"user_#{n}@example.com\""
 
 #: src/sequences/setting-the-value.md:21 src/sequences/generating.md:17
 msgid ""
 "##\n"
 "# char\n"
 msgstr ""
+"##\n"
+"# 文字\n"
 
 #: src/sequences/setting-the-value.md:24 src/sequences/generating.md:20
 msgid "# \"global_character_a\"\n"
-msgstr ""
+msgstr "# \"global_character_a\"\n"
 
 #: src/sequences/setting-the-value.md:25
 msgid "'z'"
-msgstr ""
+msgstr "'z'"
 
 #: src/sequences/setting-the-value.md:26
 msgid "# \"global_character_z\"\n"
-msgstr ""
+msgstr "# \"global_character_z\"\n"
 
 #: src/sequences/setting-the-value.md:27 src/sequences/generating.md:23
 msgid ""
 "##\n"
 "# user name\n"
 msgstr ""
+"##\n"
+"# 利用者名\n"
 
 #: src/sequences/setting-the-value.md:30 src/sequences/generating.md:26
 msgid "# \"Jane\"\n"
-msgstr ""
+msgstr "# \"Jane\"\n"
 
 #: src/sequences/setting-the-value.md:31
 msgid "'Jayde'"
-msgstr ""
+msgstr "'Jayde'"
 
 #: src/sequences/setting-the-value.md:32
 msgid "# \"Jayde\"\n"
-msgstr ""
+msgstr "# \"Jayde\"\n"
 
 #: src/sequences/setting-the-value.md:33
 msgid ""
 "##\n"
 "# user email\n"
 msgstr ""
+"##\n"
+"# 利用者のEメール\n"
 
 #: src/sequences/setting-the-value.md:36
 msgid "# \"user_1@example.com\"\n"
-msgstr ""
+msgstr "# \"user_1@example.com\"\n"
 
 #: src/sequences/setting-the-value.md:38
 msgid "# \"user_1234567@example.com\"\n"
-msgstr ""
+msgstr "# \"user_1234567@example.com\"\n"
 
 #: src/sequences/setting-the-value.md:43
 msgid "Note"
@@ -2888,37 +2921,39 @@ msgstr ""
 
 #: src/sequences/generating.md:21
 msgid "# [\"global_character_b\", \"global_character_c\"]\n"
-msgstr ""
+msgstr "# [\"global_character_b\", \"global_character_c\"]\n"
 
 #: src/sequences/generating.md:22
 msgid "# \"global_character_d\"\n"
-msgstr ""
+msgstr "# \"global_character_d\"\n"
 
 #: src/sequences/generating.md:27
 msgid "# ['Joe', 'Josh', 'Jayde']\n"
-msgstr ""
+msgstr "# ['Joe', 'Josh', 'Jayde']\n"
 
 #: src/sequences/generating.md:28
 msgid "# \"John\"\n"
-msgstr ""
+msgstr "# \"John\"\n"
 
 #: src/sequences/generating.md:29
 msgid ""
 "##\n"
 "# user age\n"
 msgstr ""
+"##\n"
+"# 利用者の年齢\n"
 
 #: src/sequences/generating.md:32
 msgid "# 21\n"
-msgstr ""
+msgstr "# 21\n"
 
 #: src/sequences/generating.md:33
 msgid "# [22, 23, 24, 25, 26]\n"
-msgstr ""
+msgstr "# [22, 23, 24, 25, 26]\n"
 
 #: src/sequences/generating.md:34
 msgid "# 27\n"
-msgstr ""
+msgstr "# 27\n"
 
 #: src/sequences/generating.md:37
 msgid "Scope"
@@ -2935,29 +2970,29 @@ msgstr ""
 
 #: src/sequences/generating.md:44
 msgid "\"#{name}-#{n}@example.com\""
-msgstr ""
+msgstr "\"#{name}-#{n}@example.com\""
 
 #: src/sequences/generating.md:48
 msgid ""
 "# ArgumentError, Sequence user:email failed to return a value. Perhaps it "
 "needs a scope to operate? (scope: <object>)\n"
-msgstr ""
+msgstr "# ArgumentError, Sequence user:email failed to return a value. Perhaps it needs a scope to operate? (scope: <object>)\n"
 
 #: src/sequences/generating.md:51 src/sequences/generating.md:72
 msgid "\"Jester\""
-msgstr ""
+msgstr "\"Jester\""
 
 #: src/sequences/generating.md:52
 msgid "# \"Jester-1@example.com\"\n"
-msgstr ""
+msgstr "# \"Jester-1@example.com\"\n"
 
 #: src/sequences/generating.md:54
 msgid "# \"Jester-2@example.com\"\n"
-msgstr ""
+msgstr "# \"Jester-2@example.com\"\n"
 
 #: src/sequences/generating.md:57
 msgid "# [\"Jester-3@example.com\", \"Jester-4@example.com\"]\n"
-msgstr ""
+msgstr "# [\"Jester-3@example.com\", \"Jester-4@example.com\"]\n"
 
 #: src/sequences/generating.md:61
 msgid ""
@@ -2969,19 +3004,19 @@ msgstr ""
 
 #: src/sequences/generating.md:64
 msgid "'ostruct'"
-msgstr ""
+msgstr "'ostruct'"
 
 #: src/sequences/generating.md:68
 msgid "\"#{name}-#{n}-#{age + n}\""
-msgstr ""
+msgstr "\"#{name}-#{n}-#{age + n}\""
 
 #: src/sequences/generating.md:74
 msgid "'user/info'"
-msgstr ""
+msgstr "'user/info'"
 
 #: src/sequences/generating.md:74
 msgid "# [\"Jester-1-24\", \"Jester-2-25\", \"Jester-3-26\"]\n"
-msgstr ""
+msgstr "# [\"Jester-1-24\", \"Jester-2-25\", \"Jester-3-26\"]\n"
 
 #: src/sequences/uniqueness.md:3
 msgid ""
@@ -3001,7 +3036,7 @@ msgstr ""
 
 #: src/sequences/uniqueness.md:14
 msgid "\"person1@example.com\""
-msgstr ""
+msgstr "\"person1@example.com\""
 
 #: src/traits/summary.md:3
 msgid ""
@@ -3011,7 +3046,7 @@ msgstr "トレイトでは属性をグループに纏めて任意のファクト
 
 #: src/traits/summary.md:10
 msgid "\"My awesome story\""
-msgstr ""
+msgstr "\"My awesome story\""
 
 #: src/traits/as-implicit-attributes.md:3
 msgid "Traits can be used as implicit attributes:"
@@ -3019,7 +3054,7 @@ msgstr "トレイトは暗黙属性として使えます。"
 
 #: src/traits/as-implicit-attributes.md:9
 msgid "\"Publishing that was started at #{start_at}\""
-msgstr ""
+msgstr "\"Publishing that was started at #{start_at}\""
 
 #: src/traits/as-implicit-attributes.md:13
 msgid ""
@@ -3041,15 +3076,15 @@ msgstr ""
 #: src/traits/attribute-precedence.md:8 src/traits/in-child-factories.md:7
 #: src/traits/with-associations.md:7 src/traits/with-associations.md:26
 msgid "\"Friendly User\""
-msgstr ""
+msgstr "\"Friendly User\""
 
 #: src/traits/using.md:19
 msgid "# creates an admin user with :active status and name \"Jon Snow\"\n"
-msgstr ""
+msgstr "# :active 状態と名前「Jon Snow」で管理者の利用者を作成\n"
 
 #: src/traits/using.md:21 src/traits/using.md:45
 msgid "\"Jon Snow\""
-msgstr ""
+msgstr "\"Jon Snow\""
 
 #: src/traits/using.md:24
 msgid ""
@@ -3072,7 +3107,7 @@ msgstr ""
 
 #: src/traits/using.md:43
 msgid "# creates 3 admin users with :active status and name \"Jon Snow\"\n"
-msgstr ""
+msgstr "# :active 状態と名前「Jon Snow」を持つ3人の管理者の利用者を作成\n"
 
 #: src/traits/enum.md:3
 msgid "Given an Active Record model with an enum attribute:"
@@ -3122,15 +3157,15 @@ msgstr "配列の場合は以下です。"
 
 #: src/traits/enum.md:74
 msgid "\"queued\""
-msgstr ""
+msgstr "\"queued\""
 
 #: src/traits/enum.md:74
 msgid "\"started\""
-msgstr ""
+msgstr "\"started\""
 
 #: src/traits/enum.md:74
 msgid "\"finished\""
-msgstr ""
+msgstr "\"finished\""
 
 #: src/traits/enum.md:79
 msgid "Or with a hash:"
@@ -3147,28 +3182,28 @@ msgstr ""
 
 #: src/traits/attribute-precedence.md:14
 msgid "\"#{name} (active)\""
-msgstr ""
+msgstr "\"#{name} (active)\""
 
 #: src/traits/attribute-precedence.md:18 src/modifying-factories/summary.md:24
 #: src/modifying-factories/summary.md:36 src/custom-construction/summary.md:22
 msgid "\"Jane Doe\""
-msgstr ""
+msgstr "\"Jane Doe\""
 
 #: src/traits/attribute-precedence.md:20
 msgid "\"#{name} (inactive)\""
-msgstr ""
+msgstr "\"#{name} (inactive)\""
 
 #: src/traits/attribute-precedence.md:25
 msgid "\"admin-#{name}\""
-msgstr ""
+msgstr "\"admin-#{name}\""
 
 #: src/traits/attribute-precedence.md:28
 msgid "# login will be \"admin-John Doe\"\n"
-msgstr ""
+msgstr "# ログイン名は「admin-John Doe」になります\n"
 
 #: src/traits/attribute-precedence.md:29
 msgid "# login will be \"Jane Doe (inactive)\"\n"
-msgstr ""
+msgstr "# ログイン名は「Jane Doe (inactive)」になります\n"
 
 #: src/traits/in-child-factories.md:3
 msgid ""
@@ -3178,11 +3213,11 @@ msgstr ""
 
 #: src/traits/in-child-factories.md:13
 msgid "\"#{name} (M)\""
-msgstr ""
+msgstr "\"#{name} (M)\""
 
 #: src/traits/in-child-factories.md:18
 msgid "\"Brandon\""
-msgstr ""
+msgstr "\"Brandon\""
 
 #: src/traits/mixins.md:3
 msgid ""
@@ -3194,7 +3229,7 @@ msgstr ""
 
 #: src/traits/mixins.md:14
 msgid "\"john_doe\""
-msgstr ""
+msgstr "\"john_doe\""
 
 #: src/traits/mixins.md:19
 msgid "\"Traits rock\""
@@ -3206,7 +3241,7 @@ msgstr "トレイトは関連とも簡単に使えます。"
 
 #: src/traits/with-associations.md:17 src/traits/with-associations.md:38
 msgid "# creates an admin user with name \"John Doe\"\n"
-msgstr ""
+msgstr "# 名前が「John Doe」の管理者の利用者を作成\n"
 
 #: src/traits/with-associations.md:22
 msgid ""
@@ -3215,7 +3250,7 @@ msgstr "ファクトリと異なる関連名を使うときは次のようにし
 
 #: src/traits/with-associations.md:35 src/cookbook/has_many-associations.md:89
 msgid "# or\n"
-msgstr ""
+msgstr "# もしくは\n"
 
 #: src/traits/traits-within-traits.md:3
 msgid "Traits can be used within other traits to mix in their attributes."
@@ -3235,27 +3270,27 @@ msgstr "コールバック"
 
 #: src/callbacks/summary.md:5
 msgid "Timing"
-msgstr ""
+msgstr "時機"
 
 #: src/callbacks/summary.md:7
 msgid "before(:all)"
-msgstr ""
+msgstr "before(:all)"
 
 #: src/callbacks/summary.md:7
 msgid ""
 "called before any strategy is used to construct an object, including custom "
 "strategies"
-msgstr ""
+msgstr "どの戦略であれ、オブジェクトの構築に戦略が使われる前に呼ばれます。独自の戦略を含みます"
 
 #: src/callbacks/summary.md:8
 msgid "before(:build)"
-msgstr ""
+msgstr "before(:build)"
 
 #: src/callbacks/summary.md:8
 msgid ""
 "called before a factory builds an object (via `FactoryBot.build` or "
 "`FactoryBot.create`)"
-msgstr ""
+msgstr "ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）オブジェクトを構築する前に呼ばれます"
 
 #: src/callbacks/summary.md:9
 msgid "after(:build)"
@@ -3265,7 +3300,7 @@ msgstr "after(:build)"
 msgid ""
 "called after a factory builds an object (via `FactoryBot.build` or "
 "`FactoryBot.create`)"
-msgstr ""
+msgstr "ファクトリが（`FactoryBot.build`や`FactoryBot.create`で）オブジェクトを構築した後に呼ばれます"
 
 #: src/callbacks/summary.md:10
 msgid "before(:create)"
@@ -3273,7 +3308,7 @@ msgstr "before(:create)"
 
 #: src/callbacks/summary.md:10
 msgid "called before a factory saves an object (via `FactoryBot.create`)"
-msgstr ""
+msgstr "ファクトリが（`FactoryBot.create`で）オブジェクトを保存する前に呼ばれます"
 
 #: src/callbacks/summary.md:11
 msgid "after(:create)"
@@ -3281,23 +3316,23 @@ msgstr "after(:create)"
 
 #: src/callbacks/summary.md:11
 msgid "called after a factory saves an object (via `FactoryBot.create`)"
-msgstr ""
+msgstr "ファクトリが（`FactoryBot.create`で）オブジェクトを保存した後に呼ばれます"
 
 #: src/callbacks/summary.md:12
 msgid "after(:stub)"
-msgstr ""
+msgstr "after(:stub)"
 
 #: src/callbacks/summary.md:12
 msgid "called after a factory stubs an object (via `FactoryBot.build_stubbed`)"
-msgstr ""
+msgstr "ファクトリが（`FactoryBot.build_stubbed`で）オブジェクトをスタブした後に呼ばれます"
 
 #: src/callbacks/summary.md:13
 msgid "after(:all)"
-msgstr ""
+msgstr "after(:all)"
 
 #: src/callbacks/summary.md:13
 msgid "called after any strategy has completed, including custom strategies"
-msgstr ""
+msgstr "どの戦略であれ、その戦略が完了した後に呼ばれます。独自の戦略を含みます"
 
 #: src/callbacks/summary.md:16
 msgid "Examples"
@@ -3334,6 +3369,10 @@ msgid ""
 "# on creation, then re-enable it afterwards\n"
 "#\n"
 msgstr ""
+"##\n"
+"# モデル自身の :after_create コールバックを無効にします。\n"
+"# このコールバックは作成時にEメールを送るもので、後で改めて有効にします\n"
+"#\n"
 
 #: src/callbacks/multiple-callbacks.md:3
 msgid "You can also define multiple types of callbacks on the same factory:"
@@ -3382,7 +3421,7 @@ msgstr ""
 
 #: src/callbacks/global-callbacks.md:8
 msgid "\"Built #{object}\""
-msgstr ""
+msgstr "\"Built #{object}\""
 
 #: src/callbacks/symbol-to_proc.md:3
 msgid "You can call callbacks that rely on `Symbol#to_proc`:"
@@ -3390,11 +3429,11 @@ msgstr "`Symbol#to_proc`に頼るコールバックを呼べます。"
 
 #: src/callbacks/symbol-to_proc.md:6
 msgid "# app/models/user.rb\n"
-msgstr ""
+msgstr "# app/models/user.rb\n"
 
 #: src/callbacks/symbol-to_proc.md:9
 msgid "# confirm the user account\n"
-msgstr ""
+msgstr "# 利用者アカウントを確定\n"
 
 #: src/callbacks/symbol-to_proc.md:12
 msgid "# spec/factories.rb\n"
@@ -3402,7 +3441,7 @@ msgstr "# spec/factories.rb\n"
 
 #: src/callbacks/symbol-to_proc.md:20
 msgid "# creates the user and confirms it\n"
-msgstr ""
+msgstr "# 利用者を作成して確定\n"
 
 #: src/callbacks/callback_order.md:1
 msgid "Callback Order"
@@ -3438,23 +3477,23 @@ msgstr "単純なファクトリの例"
 
 #: src/callbacks/callback_order.md:14 src/callbacks/callback_order.md:57
 msgid "\"Global before(:all)\""
-msgstr ""
+msgstr "\"Global before(:all)\""
 
 #: src/callbacks/callback_order.md:15 src/callbacks/callback_order.md:60
 msgid "\"Global after(:all)\""
-msgstr ""
+msgstr "\"Global after(:all)\""
 
 #: src/callbacks/callback_order.md:18
 msgid "\"User before(:all)\""
-msgstr ""
+msgstr "\"User before(:all)\""
 
 #: src/callbacks/callback_order.md:19
 msgid "\"User after(:all)\""
-msgstr ""
+msgstr "\"User after(:all)\""
 
 #: src/callbacks/callback_order.md:20
 msgid "\"User before(:build)\""
-msgstr ""
+msgstr "\"User before(:build)\""
 
 #: src/callbacks/callback_order.md:21
 msgid "\"User after(:build)\""
@@ -3462,19 +3501,19 @@ msgstr "\"User after(:build)\""
 
 #: src/callbacks/callback_order.md:24 src/callbacks/callback_order.md:69
 msgid "\"Trait-A before(:build)\""
-msgstr ""
+msgstr "\"Trait-A before(:build)\""
 
 #: src/callbacks/callback_order.md:25 src/callbacks/callback_order.md:70
 msgid "\"Trait-A after(:build)\""
-msgstr ""
+msgstr "\"Trait-A after(:build)\""
 
 #: src/callbacks/callback_order.md:29 src/callbacks/callback_order.md:80
 msgid "\"Trait-B before(:build)\""
-msgstr ""
+msgstr "\"Trait-B before(:build)\""
 
 #: src/callbacks/callback_order.md:30 src/callbacks/callback_order.md:81
 msgid "\"Trait-B after(:build)\""
-msgstr ""
+msgstr "\"Trait-B after(:build)\""
 
 #: src/callbacks/callback_order.md:36
 msgid ""
@@ -3491,6 +3530,18 @@ msgid ""
 "# 9. \"Global after(:all)\"\n"
 "# 10. \"User after(:all)\"\n"
 msgstr ""
+"# 結果：\n"
+"#\n"
+"# 1. \"Global before(:all)\"\n"
+"# 2. \"User before(:all)\"\n"
+"# 3. \"User before(:build)\n"
+"# 4. \"Trait-B before(:build)\"\n"
+"# 5. \"Trait-A before(:build)\"\n"
+"# 6. \"User after(:build)\"\n"
+"# 7. \"Trait-B after(:build)\"\n"
+"# 8. \"Trait-A after(:build)\"\n"
+"# 9. \"Global after(:all)\"\n"
+"# 10. \"User after(:all)\"\n"
 
 #: src/callbacks/callback_order.md:53
 msgid "An inherited factory example:"
@@ -3498,59 +3549,59 @@ msgstr "継承されたファクトリの例"
 
 #: src/callbacks/callback_order.md:58
 msgid "\"Global before(:build)\""
-msgstr ""
+msgstr "\"Global before(:build)\""
 
 #: src/callbacks/callback_order.md:59
 msgid "\"Global after(:build)\""
-msgstr ""
+msgstr "\"Global after(:build)\""
 
 #: src/callbacks/callback_order.md:63
 msgid "\"Parent before(:all)\""
-msgstr ""
+msgstr "\"Parent before(:all)\""
 
 #: src/callbacks/callback_order.md:64
 msgid "\"Parent before(:build)\""
-msgstr ""
+msgstr "\"Parent before(:build)\""
 
 #: src/callbacks/callback_order.md:65
 msgid "\"Parent after(:all)\""
-msgstr ""
+msgstr "\"Parent after(:all)\""
 
 #: src/callbacks/callback_order.md:66
 msgid "\"Parent after(:build)\""
-msgstr ""
+msgstr "\"Parent after(:build)\""
 
 #: src/callbacks/callback_order.md:74
 msgid "\"Child before(:all)\""
-msgstr ""
+msgstr "\"Child before(:all)\""
 
 #: src/callbacks/callback_order.md:75
 msgid "\"Child before(:build)\""
-msgstr ""
+msgstr "\"Child before(:build)\""
 
 #: src/callbacks/callback_order.md:76
 msgid "\"Child after(:build)\""
-msgstr ""
+msgstr "\"Child after(:build)\""
 
 #: src/callbacks/callback_order.md:77
 msgid "\"Child after(:all)\""
-msgstr ""
+msgstr "\"Child after(:all)\""
 
 #: src/callbacks/callback_order.md:82
 msgid "\"Trait-B after(:all)\""
-msgstr ""
+msgstr "\"Trait-B after(:all)\""
 
 #: src/callbacks/callback_order.md:86
 msgid "\"Trait-C before(:build)\""
-msgstr ""
+msgstr "\"Trait-C before(:build)\""
 
 #: src/callbacks/callback_order.md:87
 msgid "\"Trait-C after(:build)\""
-msgstr ""
+msgstr "\"Trait-C after(:build)\""
 
 #: src/callbacks/callback_order.md:88
 msgid "\"Trait-C before(:all)\""
-msgstr ""
+msgstr "\"Trait-C before(:all)\""
 
 #: src/callbacks/callback_order.md:95
 msgid ""
@@ -3577,6 +3628,28 @@ msgid ""
 "# 19. \"Child after(:all)\"\n"
 "# 20. \"Trait-B after(:all)\"\n"
 msgstr ""
+"# 結果：\n"
+"#\n"
+"# 1. \"Global before(:all)\"\n"
+"# 2. \"Parent before(:all)\"\n"
+"# 3. \"Child before(:all)\"\n"
+"# 4. \"Trait-C before(:all)\"\n"
+"# 5. \"Global before(:build)\"\n"
+"# 6. \"Parent before(:build)\"\n"
+"# 7. \"Child before(:build)\"\n"
+"# 8. \"Trait-C before(:build)\"\n"
+"# 9. \"Trait-A before(:build)\"\n"
+"# 10. \"Trait-B before(:build)\"\n"
+"# 11. \"Global after(:build)\"\n"
+"# 12. \"Parent after(:build)\"\n"
+"# 13. \"Child after(:build)\"\n"
+"# 14. \"Trait-C after(:build)\"\n"
+"# 15. \"Trait-A after(:build)\"\n"
+"# 16. \"Trait-B after(:build)\"\n"
+"# 17. \"Global after(:all)\"\n"
+"# 18. \"Parent after(:all)\"\n"
+"# 19. \"Child after(:all)\"\n"
+"# 20. \"Trait-B after(:all)\"\n"
 
 #: src/modifying-factories/summary.md:3
 msgid ""
@@ -3594,11 +3667,11 @@ msgstr "gemが以下のようにUserファクトリを与えているとしま�
 
 #: src/modifying-factories/summary.md:13
 msgid "\"user#{n}\""
-msgstr ""
+msgstr "\"user#{n}\""
 
 #: src/modifying-factories/summary.md:14
 msgid "\"password\""
-msgstr ""
+msgstr "\"password\""
 
 #: src/modifying-factories/summary.md:19
 msgid "Instead of creating a child factory that added additional attributes:"
@@ -3675,11 +3748,11 @@ msgstr "# lib/tasks/factory_bot.rake\n"
 
 #: src/linting-factories/summary.md:23
 msgid "\"Verify that all FactoryBot factories are valid\""
-msgstr ""
+msgstr "\"Verify that all FactoryBot factories are valid\""
 
 #: src/linting-factories/summary.md:32
 msgid "\"bundle exec rake factory_bot:lint RAILS_ENV='test'\""
-msgstr ""
+msgstr "\"bundle exec rake factory_bot:lint RAILS_ENV='test'\""
 
 #: src/linting-factories/summary.md:39
 msgid ""
@@ -3699,7 +3772,7 @@ msgstr "リントしたいファクトリのみを選んで渡してファクト
 
 #: src/linting-factories/summary.md:47
 msgid "/^old_/"
-msgstr ""
+msgstr "/^old_/"
 
 #: src/linting-factories/summary.md:53
 msgid "This would lint all factories that aren't prefixed with `old_`."
@@ -3746,7 +3819,7 @@ msgstr ""
 
 #: src/custom-construction/summary.md:9
 msgid "# user.rb\n"
-msgstr ""
+msgstr "# user.rb\n"
 
 #: src/custom-construction/summary.md:17
 msgid "# factories.rb\n"
@@ -3754,7 +3827,7 @@ msgstr "# factories.rb\n"
 
 #: src/custom-construction/summary.md:28
 msgid "# Jane Doe\n"
-msgstr ""
+msgstr "# Jane Doe\n"
 
 #: src/custom-construction/summary.md:31
 msgid ""
@@ -3832,7 +3905,7 @@ msgstr ""
 
 #: src/custom-construction/summary.md:82
 msgid "\"Awesome first argument\""
-msgstr ""
+msgstr "\"Awesome first argument\""
 
 #: src/custom-construction/summary.md:86
 msgid ""
@@ -3849,11 +3922,11 @@ msgstr ""
 #: src/custom-construction/summary.md:118
 #: src/custom-construction/summary.md:119
 msgid "'value'"
-msgstr ""
+msgstr "'value'"
 
 #: src/custom-construction/summary.md:99 src/custom-construction/summary.md:116
 msgid "# runs\n"
-msgstr ""
+msgstr "# 以下が実行されます\n"
 
 #: src/custom-construction/summary.md:104
 msgid ""
@@ -3972,7 +4045,7 @@ msgstr "\"factory_bot.run_factory\""
 #: src/activesupport-instrumentation/summary.md:13
 msgid ""
 "\"Slow factory: #{payload[:name]} using strategy #{payload[:strategy]}\""
-msgstr ""
+msgstr "\"Slow factory: #{payload[:name]} using strategy #{payload[:strategy]}\""
 
 #: src/activesupport-instrumentation/summary.md:18
 msgid ""
@@ -3998,7 +4071,7 @@ msgstr ""
 
 #: src/activesupport-instrumentation/summary.md:44
 msgid "\"factory_bot.compile_factory\""
-msgstr ""
+msgstr "\"factory_bot.compile_factory\""
 
 #: src/cookbook/has_many-associations.md:1
 msgid "has_many associations"
@@ -4019,23 +4092,23 @@ msgstr ""
 #: src/cookbook/has_many-associations.md:78
 #: src/cookbook/has_many-associations.md:109
 msgid "\"Through the Looking Glass\""
-msgstr ""
+msgstr "\"Through the Looking Glass\""
 
 #: src/cookbook/has_many-associations.md:15
 msgid "\"Rachel Sanchez\""
-msgstr ""
+msgstr "\"Rachel Sanchez\""
 
 #: src/cookbook/has_many-associations.md:25
 #: src/cookbook/has_many-associations.md:66
 #: src/cookbook/has_many-associations.md:97
 msgid "# 0\n"
-msgstr ""
+msgstr "# 0\n"
 
 #: src/cookbook/has_many-associations.md:26
 #: src/cookbook/has_many-associations.md:67
 #: src/cookbook/has_many-associations.md:128
 msgid "# 5\n"
-msgstr ""
+msgstr "# 5\n"
 
 #: src/cookbook/has_many-associations.md:27
 #: src/cookbook/has_many-associations.md:68
@@ -4043,7 +4116,7 @@ msgstr ""
 #: src/cookbook/has_many-associations.md:130
 #: src/cookbook/has_many-associations.md:131
 msgid "# 15\n"
-msgstr ""
+msgstr "# 15\n"
 
 #: src/cookbook/has_many-associations.md:30
 msgid ""
@@ -4056,13 +4129,15 @@ msgstr ""
 #: src/cookbook/has_many-associations.md:44
 msgid ""
 "# user_with_posts will create post data after the user has been created\n"
-msgstr ""
+msgstr "# user_with_posts により、利用者が作成された後に投稿データが作成されます\n"
 
 #: src/cookbook/has_many-associations.md:46
 msgid ""
 "# posts_count is declared as a transient attribute available in the\n"
 "      # callback via the context\n"
 msgstr ""
+"# posts_count は一過的属性として宣言されています。\n"
+"      # 属性は文脈を介してコールバックで使えます\n"
 
 #: src/cookbook/has_many-associations.md:52
 msgid ""
@@ -4074,11 +4149,18 @@ msgid ""
 "      # to create and we make sure the user is associated properly to the "
 "post\n"
 msgstr ""
+"# after(:create) は2つの値をyieldします。\n"
+"      # 利用者インスタンス自体と文脈です。\n"
+"      # 文脈はファクトリの全ての値を保管し、一過的属性を含みます。\n"
+"      # `create_list` の2つ目の引数は作成するレコード数であり、\n"
+"      # 利用者が適切に投稿に関連付けられていることを確かめています\n"
 
 #: src/cookbook/has_many-associations.md:59
 msgid ""
 "# You may need to reload the record here, depending on your application\n"
 msgstr ""
+"# レコードをここで再読み込みする必要があるかもしれません。\n"
+"        # アプリケーションによります\n"
 
 #: src/cookbook/has_many-associations.md:71
 msgid ""
@@ -4093,13 +4175,13 @@ msgstr ""
 
 #: src/cookbook/has_many-associations.md:83
 msgid "\"Taylor Kim\""
-msgstr ""
+msgstr "\"Taylor Kim\""
 
 #: src/cookbook/has_many-associations.md:98
 #: src/cookbook/has_many-associations.md:99
 #: src/cookbook/has_many-associations.md:100
 msgid "# 1\n"
-msgstr ""
+msgstr "# 1\n"
 
 #: src/cookbook/has_many-associations.md:103
 msgid ""
@@ -4111,7 +4193,7 @@ msgstr ""
 
 #: src/cookbook/has_many-associations.md:114
 msgid "\"Adiza Kumato\""
-msgstr ""
+msgstr "\"Adiza Kumato\""
 
 #: src/cookbook/has_and_belongs_to_many-associations.md:1
 msgid "has_and_belongs_to_many associations"
@@ -4147,7 +4229,7 @@ msgstr "多相関連はトレイトで制御できます。"
 
 #: src/cookbook/polymorphic-associations.md:11
 msgid "# default to the :for_photo trait if none is specified\n"
-msgstr ""
+msgstr "# 何も指定されていなければ、既定で :for_photo トレイトです\n"
 
 #: src/cookbook/polymorphic-associations.md:24
 msgid "This allows us to do:"
