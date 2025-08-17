@@ -13,4 +13,4 @@ bin
 
 gemfiles/*.lock
 /doc/
-/docs/po/
+/docs/po/messages.pot
