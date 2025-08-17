@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: factory_bot\n"
 "POT-Creation-Date: 2025-08-17T17:38:48+09:00\n"
-"PO-Revision-Date: 2025-08-17 17:50+0900\n"
+"PO-Revision-Date: 2025-08-17 18:21+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
@@ -466,17 +466,13 @@ msgstr ""
 "使って構築できます。"
 
 #: src/ref/build-strategies.md:6
-#, fuzzy
 msgid ""
 "All of these strategies notify on the `factory_bot.run_factory` "
 "instrumentation using [ActiveSupport::Notifications](https://"
 "api.rubyonrails.org/classes/ActiveSupport/Notifications.html), passing a "
 "payload with `:name`, `:strategy`, `:traits`, `:overrides`, and `:factory` "
 "keys."
-msgstr ""
-"こうした戦略は全て、[ActiveSupport::Notifications]を使って"
-"`factory_bot.run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、"
-"`:overrides`、`:factory`を持つペイロードを渡します。"
+msgstr "こうした戦略は全て、[ActiveSupport::Notifications](https://api.rubyonrails.org/classes/ActiveSupport/Notifications.html)を使って`factory_bot.run_factory`計装に通知し、キー`:name`、`:strategy`、`:traits`、`:overrides`、`:factory`を持つペイロードを渡します。"
 
 #: src/ref/build-strategies.md:12
 msgid ""
@@ -494,7 +490,6 @@ msgstr ""
 "返します。"
 
 #: src/ref/build-strategies.md:18
-#, fuzzy
 msgid ""
 "The list methods (`.build_list`, `.create_list`, etc.) have two required "
 "arguments: the name of the factory, and the number of instances to build. "
@@ -502,20 +497,17 @@ msgid ""
 "block. This block takes the produced object and the zero-based index as "
 "arguments, and returns an updated object."
 msgstr ""
-"リストのメソッド（`.build_list`や`.create_list`など）には2つの必須の実引数を"
-"持ちます。\n"
+"リストのメソッド（`.build_list`や`.create_list`など）には2つの必須の実引数を持ちます。\n"
 "ファクトリの名前と構築するインスタンスの数です。\n"
-"また省略可能なトレイトと上塗りするものを取れます。\n"
+"また、トレイトと上塗りするものを取れますが、これは省略できます。\n"
 "最後にブロックを取れます。\n"
-"このブロックは生成されたオブジェクトとゼロ始まりの添字を実引数として取り、更"
-"新されたオブジェクトを返します。"
+"このブロックは生成されたオブジェクトとゼロ始まりの添字を実引数として取り、更新されたオブジェクトを返します。"
 
 #: src/ref/build-strategies.md:24
 msgid "`build`"
 msgstr "`build`"
 
 #: src/ref/build-strategies.md:26
-#, fuzzy
 msgid ""
 "The `FactoryBot.build` method constructs an instance of the class according "
 "to `initialize_with`, which defaults to calling the `.new` class method. "
@@ -650,13 +642,10 @@ msgstr ""
 "す。"
 
 #: src/ref/build-strategies.md:76
-#, fuzzy
 msgid ""
 "all [ActiveModel::Dirty](https://api.rubyonrails.org/classes/ActiveModel/"
 "Dirty.html) change tracking is cleared"
-msgstr ""
-"[ActiveModel::Dirty]: https://api.rubyonrails.org/classes/ActiveModel/"
-"Dirty.html"
+msgstr "全ての[ActiveModel::Dirty](https://api.rubyonrails.org/classes/ActiveModel/Dirty.html)の変更の追跡が消去されます"
 
 #: src/ref/build-strategies.md:77
 msgid "`persisted?` is true"
@@ -803,7 +792,6 @@ msgstr ""
 "既定では親クラス名かファクトリ名の何れかです。"
 
 #: src/ref/factory.md:16
-#, fuzzy
 msgid ""
 "`:parent`\\- the name of another factory that this factory should inherit "
 "from. Defaults to `nil`."
@@ -821,12 +809,11 @@ msgstr ""
 "既定では空リストです。"
 
 #: src/ref/factory.md:20
-#, fuzzy
 msgid ""
 "`:traits` - base traits that are used by default when building this factory. "
 "Defaults to the empty list."
 msgstr ""
-"`:traits`はこのファクトリを構築するときに既定で使われる既定のトレイトです。\n"
+"`:traits`はこのファクトリを構築するときに既定で使われる基底のトレイトです。\n"
 "既定で空リストです。"
 
 #: src/ref/factory.md:23
@@ -988,13 +975,10 @@ msgstr ""
 "大域的なものとファクトリ固有のものです。"
 
 #: src/ref/sequence.md:7
-#, fuzzy
 msgid ""
 "With a [`Factory.define`](define.html) block, use the `sequence` method to "
 "define global sequences that can be shared with other factories."
-msgstr ""
-"[`Factory.define`]ブロックでは、`sequence`メソッドを使うと、他のファクトリで"
-"共有できる大域系列が定義されます。"
+msgstr "[`Factory.define`](define.html)ブロックでは、`sequence`メソッドを使うと、他のファクトリで共有できる大域系列が定義されます。"
 
 #: src/ref/sequence.md:12
 msgid ""
@@ -1056,9 +1040,8 @@ msgid ""
 msgstr "以下の2つは似ていますが、2つ目の例は大域系列が存在しません。"
 
 #: src/ref/sequence.md:38
-#, fuzzy
 msgid "# A global sequence\n"
-msgstr "大域系列"
+msgstr "# 大域系列\n"
 
 #: src/ref/sequence.md:39 src/ref/sequence.md:50 src/ref/method_missing.md:30
 #: src/ref/method_missing.md:51 src/sequences/global-sequences.md:11
@@ -1073,14 +1056,12 @@ msgid "\"person#{n}@example.com\""
 msgstr ""
 
 #: src/ref/sequence.md:42
-#, fuzzy
 msgid "# Using a global sequence\n"
-msgstr "大域系列"
+msgstr "# 大域系列を使う\n"
 
 #: src/ref/sequence.md:48
-#, fuzzy
 msgid "# A factory-scoped sequence\n"
-msgstr "ファクトリ系列"
+msgstr "# ファクトリのスコープにある系列\n"
 
 #: src/ref/trait.md:3
 msgid ""
@@ -1091,13 +1072,12 @@ msgstr ""
 "付きで定義されます。"
 
 #: src/ref/trait.md:5
-#, fuzzy
 msgid ""
 "The trait method takes a name (Symbol) and a block. Treat the block like you "
 "would a [`factory`](factory.html) definition block."
 msgstr ""
 "トレイトメソッドは名前 (Symbol) とブロックを取ります。\n"
-"ブロックは[`factory`]定義ブロックのように扱います。"
+"ブロックは[`factory`](factory.html)定義ブロックのように扱います。"
 
 #: src/ref/method_missing.md:3
 msgid ""
@@ -1118,7 +1098,6 @@ msgstr ""
 "列やトレイトやファクトリの属性に繋がります。"
 
 #: src/ref/method_missing.md:10
-#, fuzzy
 msgid ""
 "If the method missing is passed a block, it always defines an attribute. "
 "This allows you to set the value for the attribute."
@@ -1172,22 +1151,18 @@ msgid "... into a more implicit definition:"
 msgstr "上記はもっと暗黙な定義にできます。"
 
 #: src/ref/method_missing.md:56 src/ref/method_missing.md:58
-#, fuzzy
 msgid "# no more `add_attribute`\n"
-msgstr "add_attribute"
+msgstr "# `add_attribute`なし\n"
 
 #: src/ref/method_missing.md:57
-#, fuzzy
 msgid "# no more :traits\n"
-msgstr "列挙トレイト"
+msgstr "# :traits なし\n"
 
 #: src/ref/method_missing.md:59 src/ref/method_missing.md:60
-#, fuzzy
 msgid "# no more `association`\n"
-msgstr "多相関連"
+msgstr "# `association`なし\n"
 
 #: src/ref/traits_for_enum.md:3
-#, fuzzy
 msgid ""
 "With a `factory` definition block, the `traits_for_enum` method is a helper "
 "for any object with an attribute that can be one of a few values. The "
@@ -1195,11 +1170,9 @@ msgid ""
 "classes/ActiveRecord/Enum.html) but it can apply to any attribute with a "
 "restricted set of values."
 msgstr ""
-"`factory`定義ブロックには、`traits_for_enum`メソッドという補助機能がありま"
-"す。\n"
+"`factory`定義ブロックには、`traits_for_enum`メソッドという補助機能があります。\n"
 "任意のオブジェクトに、いくつかの値のうちのどれかになる属性を持たせます。\n"
-"元となった着想は[`ActiveRecord::Enum`]ですが、限られた値の集合がある任意の属"
-"性に適用できます。"
+"元となった着想は[`ActiveRecord::Enum`](https://api.rubyonrails.org/classes/ActiveRecord/Enum.html)ですが、限られた値の集合がある任意の属性に適用できます。"
 
 #: src/ref/traits_for_enum.md:10
 msgid "This method creates a trait for each value."
@@ -1321,7 +1294,6 @@ msgid "to_create"
 msgstr "to_create"
 
 #: src/ref/build-and-create.md:24
-#, fuzzy
 msgid ""
 "The `to_create` method lets you control the `FactoryBot.create` strategy. "
 "This method takes a block which takes the object as constructed by "
@@ -1329,12 +1301,11 @@ msgid ""
 "data from any [`transient`](transient.html) blocks."
 msgstr ""
 "`to_create`メソッドは`FactoryBot.create`戦略を制御します。\n"
-"このメソッドは`initialize_with`で構築されたオブジェクトとfactory\\_botの文脈"
-"を取るブロックを取ります。\n"
-"文脈には[`transient`]ブロックからの追加のデータがあります。"
+"このメソッドはブロックを取ります。\n"
+"さらにそのブロックは`initialize_with`で構築されたオブジェクトとfactory\\_botの文脈を取ります。\n"
+"文脈には[`transient`](transient.html)ブロックからの追加のデータがあります。"
 
 #: src/ref/build-and-create.md:37
-#, fuzzy
 msgid ""
 "The `skip_create` method is a shorthand for turning `to_create` into a no-"
 "op. This allows you to use the `create` strategy as a synonym for `build`, "
@@ -1373,15 +1344,13 @@ msgstr ""
 "で一番有用です。"
 
 #: src/ref/hooks.md:3
-#, fuzzy
 msgid ""
 "Within a `factory` definition block and the `FactoryBot.define` block, you "
 "have access to the `after`, `before`, and `callback` methods. This allow you "
 "to hook into parts of the [build strategies](build-strategies.html)."
 msgstr ""
-"`factory`定義ブロックや`FactoryBot.define`ブロック内部では、`after`メソッドや"
-"`before`メソッドや`callback`メソッドが使えます。\n"
-"これにより[構築戦略][build strategies]の一部にフックを掛けられます。"
+"`factory`定義ブロックや`FactoryBot.define`ブロック内部では、`after`メソッドや`before`メソッドや`callback`メソッドが使えます。\n"
+"これにより[構築戦略](build-strategies.html)の一部にフックを掛けられます。"
 
 #: src/ref/hooks.md:9
 msgid ""
@@ -1398,18 +1367,14 @@ msgid "`callback`"
 msgstr "`callback`"
 
 #: src/ref/hooks.md:14
-#, fuzzy
 msgid ""
 "The `callback` method allows you to hook into any factory\\_bot callback by "
 "name. The pre-defined names, as seen in the [build strategies](build-"
 "strategies.html) reference, are `before_all`, `after_build`, "
 "`before_create`, `after_create`, `after_stub`, and `after_all`."
 msgstr ""
-"`callback`メソッドでは、任意のfactory\\_botのコールバックに名前でフックを掛け"
-"られます。\n"
-"[構築戦略][build strategies]の便覧に見られる通り、予め定義された名前は"
-"`before_all`と`after_build`と`before_create`と`after_create`と`after_stub`と"
-"`after_all`です。"
+"`callback`メソッドでは、任意のfactory\\_botのコールバックに名前でフックを掛けられます。\n"
+"[構築戦略](build-strategies.html)の便覧に見られる通り、予め定義された名前は`before_all`と`after_build`と`before_create`と`after_create`と`after_stub`と`after_all`です。"
 
 #: src/ref/hooks.md:18
 msgid ""
@@ -1422,7 +1387,6 @@ msgstr ""
 "ブロックは`#to_proc`に応答する任意のものにできます。"
 
 #: src/ref/hooks.md:22
-#, fuzzy
 msgid ""
 "This block takes two arguments: the instance of the factory, and the "
 "factory\\_bot context. The context holds [transient](transient.html) "
@@ -1506,12 +1470,11 @@ msgstr ""
 "既定は全てです。"
 
 #: src/ref/lint.md:9
-#, fuzzy
 msgid ""
 "`:strategy` - the [build strategy](build-strategies.html) to use. The "
 "default is `:create`."
 msgstr ""
-"`:strategy`は使う[構築戦略][build strategy]です。\n"
+"`:strategy`は使う[構築戦略](build-strategies.html)です。\n"
 "既定は`:create`です。"
 
 #: src/ref/lint.md:10
@@ -1587,25 +1550,22 @@ msgstr ""
 "も考えられます。"
 
 #: src/setup/summary.md:6
-#, fuzzy
 msgid ""
 "Since installation varies based on code that we do not control, those docs "
 "are kept up-to-date in [our wiki](https://github.com/thoughtbot/factory_bot/"
 "wiki/Installation). We encourage you to edit the wiki as the frameworks "
 "change."
 msgstr ""
-"インストール手順が私達の手の届かないコードに基づいて様々であるため、そうした"
-"ドキュメントは[ウィキ][our wiki]で更新され続けます。\n"
+"インストール手順が私達の手の届かないコードに基づいて様々であるため、そうしたドキュメントは[ウィキ](https://github.com/thoughtbot/factory_bot/wiki/Installation)で更新され続けます。\n"
 "フレームワークが変わったときにウィキを編集することをお勧めします。"
 
 #: src/setup/summary.md:10
-#, fuzzy
 msgid ""
 "Below we document the most common setup. However, **we go into more detail "
 "in [our wiki](https://github.com/thoughtbot/factory_bot/wiki/Installation)**."
 msgstr ""
 "以降では最もよくある準備をドキュメントとして書きます。\n"
-"**しかし詳細は[ウィキ][our wiki]をあたってください。**"
+"**しかし詳細は[ウィキ](https://github.com/thoughtbot/factory_bot/wiki/Installation)をあたってください。**"
 
 #: src/setup/summary.md:15
 msgid "Update Your Gemfile"
@@ -1616,27 +1576,22 @@ msgid "If you're using Rails:"
 msgstr "Railsを使っている場合は次のようにしてください。"
 
 #: src/setup/summary.md:20
-#, fuzzy
 msgid "\"factory_bot_rails\""
-msgstr "gem \"factory_bot_rails\"\n"
+msgstr "\"factory_bot_rails\""
 
 #: src/setup/summary.md:23
-#, fuzzy
 msgid "If you're _not_ using Rails:"
 msgstr "Railsを使って*いない*場合は次のようにしてください。"
 
 #: src/setup/summary.md:26
-#, fuzzy
 msgid "\"factory_bot\""
-msgstr "gem \"factory_bot\"\n"
+msgstr "\"factory_bot\""
 
 #: src/setup/summary.md:29 src/setup/summary.md:49
-#, fuzzy
 msgid ""
 "For more, see [our wiki](https://github.com/thoughtbot/factory_bot/wiki/"
 "Installation)."
-msgstr ""
-"[our wiki]: https://github.com/thoughtbot/factory_bot/wiki/Installation"
+msgstr "詳細については[ウィキ](https://github.com/thoughtbot/factory_bot/wiki/Installation)を参照。"
 
 #: src/setup/summary.md:31
 msgid "Configure your test suite"
@@ -1659,9 +1614,8 @@ msgstr ""
 
 #: src/using-without-bundler/summary.md:6
 #: src/using-without-bundler/summary.md:28
-#, fuzzy
 msgid "'factory_bot'"
-msgstr "require 'factory_bot'\n"
+msgstr "'factory_bot'"
 
 #: src/using-without-bundler/summary.md:9
 msgid ""
@@ -1706,9 +1660,8 @@ msgstr ""
 "以下のような感じです。"
 
 #: src/rails-preloaders-and-rspec/summary.md:9
-#, fuzzy
 msgid "\"Location\""
-msgstr "関連"
+msgstr "\"Location\""
 
 #: src/rails-preloaders-and-rspec/summary.md:10
 msgid "'United States'"
@@ -1762,12 +1715,9 @@ msgid "It is also possible to explicitly specify the class:"
 msgstr "クラスを明示的に指定することもできます。"
 
 #: src/defining/explicit-class.md:6
-#, fuzzy
 msgid ""
 "# This will use the User class (otherwise Admin would have been guessed)\n"
-msgstr ""
-"# 以下はUserクラスを使います（こうしなければAdminが推測されていました）\n"
-"factory :admin, class: \"User\"\n"
+msgstr "# 以下はUserクラスを使います（こうしなければAdminが推測されていました）\n"
 
 #: src/defining/explicit-class.md:7
 msgid "\"User\""
@@ -1820,7 +1770,6 @@ msgid "This way you can more easily set value when building:"
 msgstr "この方法ではより簡単に構築の際に値を設定できます。"
 
 #: src/defining/best-practices.md:3
-#, fuzzy
 msgid ""
 "It is recommended that you have one factory for each class that provides the "
 "simplest set of attributes necessary to create an instance of that class. If "
@@ -1847,7 +1796,6 @@ msgid "Static Attributes"
 msgstr "静的属性"
 
 #: src/defining/static-attributes.md:3
-#, fuzzy
 msgid ""
 "Static attributes (without a block) are no longer available in factory\\_bot "
 "5. You can read more about the decision to remove them in [this blog post]"
@@ -1983,38 +1931,29 @@ msgstr "使われた戦略に依らず、ハッシュを渡して定義された
 
 #: src/using-factories/attribute-overrides.md:7
 #: src/using-factories/attribute-overrides.md:19
-#, fuzzy
 msgid "# Build a User instance and override the first_name property\n"
-msgstr ""
-"# Userインスタンスを構築しfirst_name特性を上塗りします\n"
-"user = build(:user, first_name: \"Joe\")\n"
-"user.first_name\n"
-"# => \"Joe\"\n"
+msgstr "# Userインスタンスを構築しfirst_name特性を上塗りします\n"
 
 #: src/using-factories/attribute-overrides.md:8
 #: src/using-factories/attribute-overrides.md:18
 #: src/dependent-attributes/summary.md:8
 msgid "\"Joe\""
-msgstr ""
+msgstr "\"Joe\""
 
 #: src/using-factories/attribute-overrides.md:9
 #: src/using-factories/attribute-overrides.md:22
 msgid "# => \"Joe\"\n"
-msgstr ""
+msgstr "# => \"Joe\"\n"
 
 #: src/using-factories/attribute-overrides.md:13
-#, fuzzy
 msgid ""
 "Ruby 3.1's support for [omitting values](https://docs.ruby-lang.org/en/3.1/"
 "syntax/literals_rdoc.html#label-Hash+Literals) from `Hash` literals "
 "dovetails with attribute overrides and provides an opportunity to limit the "
 "repetition of variable names:"
-msgstr ""
-"Ruby 3.1の`Hash`表記での[バリューの省略][omitting values]対応は属性の上塗りに"
-"ぴったり馴染む機能で、変数名の繰り返しになるところを削減できます。"
+msgstr "Ruby 3.1の`Hash`表記での[バリューの省略](https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc.html#label-Hash+Literals)対応は属性の上塗りにぴったり馴染む機能で、変数名の繰り返しになるところを削減できます。"
 
 #: src/aliases/summary.md:3
-#, fuzzy
 msgid ""
 "factory\\_bot allows you to define aliases to existing factories to make "
 "them easier to re-use. This could come in handy when, for example, your Post "
@@ -2031,15 +1970,12 @@ msgstr ""
 "そのため利用者のファクトリに別称を付ければ別称名で使えます。"
 
 #: src/aliases/summary.md:18
-#, fuzzy
 msgid ""
 "# The alias allows us to write author instead of\n"
 "  # association :author, factory: :user\n"
 msgstr ""
-"factory :post do\n"
-"  # ...\n"
-"  association :author, factory: :user\n"
-"end\n"
+"# 別称により、以下ではなくauthorと書けます\n"
+"  # association :author, factory: :user\n"
 
 #: src/aliases/summary.md:21
 msgid "\"How to read a book effectively\""
@@ -2176,7 +2112,6 @@ msgid ""
 msgstr "必要であれば、一般には一過的属性内でファクトリを構築して回避できます。"
 
 #: src/method-name-reserved-word-attributes/summary.md:3
-#, fuzzy
 msgid ""
 "If your attributes conflict with existing methods or reserved words (all "
 "methods in the [DefinitionProxy](https://github.com/thoughtbot/factory_bot/"
@@ -2275,7 +2210,6 @@ msgstr ""
 "ただし`attributes_for`戦略を使うときは値が`nil`になることに注意してください。"
 
 #: src/associations/specifying-the-factory.md:3
-#, fuzzy
 msgid ""
 "You can specify a different factory (although [Aliases](../aliases/"
 "summary.md) might also help you out here)."
@@ -2325,15 +2259,12 @@ msgid "'Eunji'"
 msgstr ""
 
 #: src/associations/association-overrides.md:20
-#, fuzzy
 msgid ""
 "Ruby 3.1's support for [omitting values](https://docs.ruby-lang.org/en/3.1/"
 "syntax/literals_rdoc.html#label-Hash+Literals) from `Hash` literals "
 "dovetails with attribute overrides, and provides an opportunity to limit the "
 "repetition of variable names:"
-msgstr ""
-"Ruby 3.1の`Hash`表記での[バリューの省略][omitting values]対応は属性の上塗りに"
-"ぴったり馴染む機能で、変数名の繰り返しになるところを削減できます。"
+msgstr "Ruby 3.1の`Hash`表記での[バリューの省略](https://docs.ruby-lang.org/en/3.1/syntax/literals_rdoc.html#label-Hash+Literals)対応は属性の上塗りにぴったり馴染む機能で、変数名の繰り返しになるところを削減できます。"
 
 #: src/associations/build-strategies.md:3
 msgid ""
@@ -2390,13 +2321,8 @@ msgstr ""
 "暗黙の関連では使えません。"
 
 #: src/associations/build-strategies.md:64
-#, fuzzy
 msgid "# <<< this does *not* work; causes author_id to be nil\n"
-msgstr ""
-"factory :post do\n"
-"  # ...\n"
-"  author strategy: :build    # <<< これはうまくいき「ません」。author_idがnil"
-"になります。\n"
+msgstr "# <<< これはうまくいき「ません」。author_idがnilになります。\n"
 
 #: src/sequences/global-sequences.md:3
 msgid ""
@@ -2448,14 +2374,11 @@ msgid ""
 msgstr "また、特定のファクトリでのみ使われる系列を定義することもできます。"
 
 #: src/sequences/factory-sequences.md:12
-#, fuzzy
 msgid ""
 "With Ruby 2.7's support for [numbered parameters](https://ruby-doc.org/"
 "core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters), inline "
 "definitions can be even more abbreviated:"
-msgstr ""
-"Ruby 2.7の[連番仮引数][numbered parameters]により、行内定義はもっと更に短く書"
-"けます。"
+msgstr "Ruby 2.7の[連番仮引数](https://ruby-doc.org/core-2.7.1/Proc.html#class-Proc-label-Numbered+parameters)により、行内定義はもっと更に短く書けます。"
 
 #: src/sequences/factory-sequences.md:17
 msgid "\"person#{_1}@example.com\""
@@ -2567,9 +2490,8 @@ msgid "Each URI is composed of up to three names:"
 msgstr "各URIは3つの名前が組み合わさったものです。"
 
 #: src/sequences/sequence-uris.md:16
-#, fuzzy
 msgid "position"
-msgstr "URI合成"
+msgstr "位置"
 
 #: src/sequences/sequence-uris.md:16
 msgid "name"
@@ -2584,9 +2506,8 @@ msgid "1."
 msgstr ""
 
 #: src/sequences/sequence-uris.md:18
-#, fuzzy
 msgid "factory name:"
-msgstr "ファクトリ"
+msgstr "ファクトリ名："
 
 #: src/sequences/sequence-uris.md:18
 msgid "**if** - the sequence is defined within a Factory or a Factory Trait"
@@ -2597,9 +2518,8 @@ msgid "2."
 msgstr ""
 
 #: src/sequences/sequence-uris.md:19
-#, fuzzy
 msgid "trait name:"
-msgstr "トレイト"
+msgstr "トレイト名："
 
 #: src/sequences/sequence-uris.md:19
 msgid "**if** - the sequence is defined within a Trait"
@@ -2610,9 +2530,8 @@ msgid "3."
 msgstr ""
 
 #: src/sequences/sequence-uris.md:20
-#, fuzzy
 msgid "sequence name:"
-msgstr "系列"
+msgstr "系列名："
 
 #: src/sequences/sequence-uris.md:20
 msgid "**always required**"
@@ -2623,9 +2542,8 @@ msgid "The URI can be entered as individual symbols:"
 msgstr "URIは個々のシンボルとして入力されます。"
 
 #: src/sequences/sequence-uris.md:28
-#, fuzzy
 msgid "**or** as individual strings:"
-msgstr "**あるいは** 個々の文字列として入力されます。\n"
+msgstr "**あるいは** 個々の文字列として入力されます。"
 
 #: src/sequences/sequence-uris.md:31
 msgid "'my_factory_name'"
@@ -2636,19 +2554,16 @@ msgid "'my_trait_name'"
 msgstr ""
 
 #: src/sequences/sequence-uris.md:31
-#, fuzzy
 msgid "'my_sequence_name'"
-msgstr "系列"
+msgstr "'my_sequence_name'"
 
 #: src/sequences/sequence-uris.md:34
-#, fuzzy
 msgid "**or** as a single resource string:"
-msgstr "**あるいは** 単一のリソース文字列として入力されます。\n"
+msgstr "**あるいは** 単一のリソース文字列として入力されます。"
 
 #: src/sequences/sequence-uris.md:37
-#, fuzzy
 msgid "\"my_factory_name/my_trait_name/my_sequence_name\""
-msgstr "generate(\"my_factory_name/my_trait_name/my_sequence_name\")\n"
+msgstr "\"my_factory_name/my_trait_name/my_sequence_name\""
 
 #: src/sequences/sequence-uris.md:40
 msgid "Full URI example"
@@ -2663,23 +2578,20 @@ msgstr ""
 "コメントでは、それぞれの系列の値を生成するのに使われるURIを示しています。"
 
 #: src/sequences/sequence-uris.md:46
-#, fuzzy
 msgid "\"global_sequence_#{n}\""
-msgstr "大域系列"
+msgstr "\"global_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:47
-#, fuzzy
 msgid "# generate(:sequence)\n"
-msgstr "系列の生成"
+msgstr "# generate(:sequence)\n"
 
 #: src/sequences/sequence-uris.md:50
 msgid "\"global_trait_sequence_#{n}\""
 msgstr ""
 
 #: src/sequences/sequence-uris.md:51
-#, fuzzy
 msgid "# generate(:global_trait, :sequence)\n"
-msgstr "generate(:my_factory_name, :my_trait_name, :my_sequence_name)\n"
+msgstr "# generate(:global_trait, :sequence)\n"
 
 #: src/sequences/sequence-uris.md:55
 msgid "\"user_sequence_#{n}\""
@@ -2694,14 +2606,12 @@ msgid "\"user_trait_sequence_#{n}\""
 msgstr ""
 
 #: src/sequences/sequence-uris.md:60
-#, fuzzy
 msgid "# generate(:user, :user_trait, :sequence)\n"
-msgstr "generate(:my_factory_name, :my_trait_name, :my_sequence_name)\n"
+msgstr "# generate(:user, :user_trait, :sequence)\n"
 
 #: src/sequences/sequence-uris.md:64
-#, fuzzy
 msgid "\"author_sequence_#{n}\""
-msgstr "ファクトリ系列"
+msgstr "\"author_sequence_#{n}\""
 
 #: src/sequences/sequence-uris.md:65
 msgid "# generate(:author, :sequence)\n"
@@ -2712,9 +2622,8 @@ msgid "\"author_trait_sequence_#{n}\""
 msgstr ""
 
 #: src/sequences/sequence-uris.md:69
-#, fuzzy
 msgid "# generate(:author, :author_trait, :sequence)\n"
-msgstr "generate(:my_factory_name, :my_trait_name, :my_sequence_name)\n"
+msgstr "# generate(:author, :author_trait, :sequence)\n"
 
 #: src/sequences/sequence-uris.md:76
 msgid "Multi URIs"
@@ -2738,19 +2647,12 @@ msgid ""
 msgstr "この例では、同じ系列を4つの異なる方法で参照できます。"
 
 #: src/sequences/sequence-uris.md:90
-#, fuzzy
 msgid ""
 "# generate(:user,   :user_trait,   :sequence)\n"
 "# generate(:user,   :author_trait, :sequence)\n"
 "# generate(:author, :user_trait,   :sequence)\n"
 "# generate(:author, :author_trait, :sequence)\n"
 msgstr ""
-"factory :user, aliases: [:author] do\n"
-"  trait :user_trait, aliases: [:author_trait] do\n"
-"    sequence(:sequence) {|n| \"author_trait_sequence_#{n}\"}\n"
-"  end\n"
-"end\n"
-"\n"
 "# generate(:user,   :user_trait,   :sequence)\n"
 "# generate(:user,   :author_trait, :sequence)\n"
 "# generate(:author, :user_trait,   :sequence)\n"
@@ -3295,9 +3197,8 @@ msgid "\"john_doe\""
 msgstr ""
 
 #: src/traits/mixins.md:19
-#, fuzzy
 msgid "\"Traits rock\""
-msgstr "トレイト"
+msgstr "\"Traits rock\""
 
 #: src/traits/with-associations.md:3
 msgid "Traits can be used with associations easily too:"
@@ -3329,7 +3230,6 @@ msgid "factory\\_bot makes six callbacks available:"
 msgstr "factory\\_botでは、6種類のコールバックを作れます。"
 
 #: src/callbacks/summary.md:5
-#, fuzzy
 msgid "Callback"
 msgstr "コールバック"
 
@@ -3358,9 +3258,8 @@ msgid ""
 msgstr ""
 
 #: src/callbacks/summary.md:9
-#, fuzzy
 msgid "after(:build)"
-msgstr "`after_build`"
+msgstr "after(:build)"
 
 #: src/callbacks/summary.md:9
 msgid ""
@@ -3369,18 +3268,16 @@ msgid ""
 msgstr ""
 
 #: src/callbacks/summary.md:10
-#, fuzzy
 msgid "before(:create)"
-msgstr "`before_create`"
+msgstr "before(:create)"
 
 #: src/callbacks/summary.md:10
 msgid "called before a factory saves an object (via `FactoryBot.create`)"
 msgstr ""
 
 #: src/callbacks/summary.md:11
-#, fuzzy
 msgid "after(:create)"
-msgstr "`after_create`"
+msgstr "after(:create)"
 
 #: src/callbacks/summary.md:11
 msgid "called after a factory saves an object (via `FactoryBot.create`)"
@@ -3411,7 +3308,6 @@ msgid "Calling an object's own method after building"
 msgstr "構築後にオブジェクト自体のメソッドを呼ぶ"
 
 #: src/callbacks/summary.md:21
-#, fuzzy
 msgid ""
 "##\n"
 "# Define a factory that calls the generate_hashed_password method\n"
@@ -3426,9 +3322,6 @@ msgstr ""
 "#\n"
 "# なお、ブロックにはオブジェクトのインスタンスがあります。\n"
 "#\n"
-"factory :user do\n"
-"  after(:build) { |user, context| generate_hashed_password(user) }\n"
-"end\n"
 
 #: src/callbacks/summary.md:32
 msgid "Skipping an object's own :after_create callback"
@@ -3504,9 +3397,8 @@ msgid "# confirm the user account\n"
 msgstr ""
 
 #: src/callbacks/symbol-to_proc.md:12
-#, fuzzy
 msgid "# spec/factories.rb\n"
-msgstr "`spec/factories.rb`"
+msgstr "# spec/factories.rb\n"
 
 #: src/callbacks/symbol-to_proc.md:20
 msgid "# creates the user and confirms it\n"
@@ -3565,9 +3457,8 @@ msgid "\"User before(:build)\""
 msgstr ""
 
 #: src/callbacks/callback_order.md:21
-#, fuzzy
 msgid "\"User after(:build)\""
-msgstr "`after_build`"
+msgstr "\"User after(:build)\""
 
 #: src/callbacks/callback_order.md:24 src/callbacks/callback_order.md:69
 msgid "\"Trait-A before(:build)\""
@@ -3734,7 +3625,6 @@ msgstr ""
 "ファクトリを違った風に操作するからです。"
 
 #: src/modifying-factories/summary.md:48
-#, fuzzy
 msgid ""
 "A caveat: you can only modify factories (not sequences or traits), and "
 "callbacks _still compound as they normally would_. So, if the factory you're "
@@ -3780,9 +3670,8 @@ msgid "Example Rake task:"
 msgstr "Rakeタスクの例は以下です。"
 
 #: src/linting-factories/summary.md:21
-#, fuzzy
 msgid "# lib/tasks/factory_bot.rake\n"
-msgstr "gem install factory_bot\n"
+msgstr "# lib/tasks/factory_bot.rake\n"
 
 #: src/linting-factories/summary.md:23
 msgid "\"Verify that all FactoryBot factories are valid\""
@@ -3860,9 +3749,8 @@ msgid "# user.rb\n"
 msgstr ""
 
 #: src/custom-construction/summary.md:17
-#, fuzzy
 msgid "# factories.rb\n"
-msgstr "`factories.rb`"
+msgstr "# factories.rb\n"
 
 #: src/custom-construction/summary.md:28
 msgid "# Jane Doe\n"
@@ -3947,7 +3835,6 @@ msgid "\"Awesome first argument\""
 msgstr ""
 
 #: src/custom-construction/summary.md:86
-#, fuzzy
 msgid ""
 "When using `initialize_with`, attributes accessed from within the "
 "`initialize_with` block are assigned _only_ in the constructor; this equates "
@@ -4079,9 +3966,8 @@ msgstr ""
 
 #: src/activesupport-instrumentation/summary.md:9
 #: src/activesupport-instrumentation/summary.md:25
-#, fuzzy
 msgid "\"factory_bot.run_factory\""
-msgstr "gem \"factory_bot_rails\"\n"
+msgstr "\"factory_bot.run_factory\""
 
 #: src/activesupport-instrumentation/summary.md:13
 msgid ""
