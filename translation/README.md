@@ -1,6 +1,4 @@
-PO4A-HEADER: mode=eof
-
-## この日本語訳について
+# この日本語訳について
 
 本文書は[``The factory_bot book''][book]の日本語訳です。
 

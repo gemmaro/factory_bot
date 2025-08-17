@@ -2,8 +2,8 @@ export LANG=C
 
 po4a_options = --keep-translations ${PO4A_OPTS}
 
-all: translate \
-	ja/docs/book.toml
+all:
+	$(error no default tasks)
 .PHONY: all
 
 translate:
@@ -18,7 +18,3 @@ update:
 render:
 	cd ../docs && MDBOOK_BOOK__LANGUAGE=ja mdbook build -d book/ja
 .PHONY: render
-
-ja/docs/book.toml: ../docs/book.toml convert-mdBook-config
-	mkdir -p $(dir $@)
-	./convert-mdBook-config < $< > $@
