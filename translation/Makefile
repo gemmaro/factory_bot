@@ -12,6 +12,7 @@ translate:
 
 update:
 	cd ../docs && MDBOOK_OUTPUT='{"xgettext": {}}' mdbook build -d po
+	msgmerge --update ../docs/po/ja.po ../docs/po/messages.pot
 .PHONY: update
 
 ja/docs/book.toml: ../docs/book.toml convert-mdBook-config
