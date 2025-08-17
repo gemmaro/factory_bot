@@ -1,24 +1,18 @@
-# Japanese translations for PACKAGE package
-# PACKAGE パッケージに対する英訳
-# Copyright (C) 2024 Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2024.
+# factory_botの和訳
+# Copyright (C) 2025 factory_bot
+# gemmaro, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: FactoryBot\n"
+"Project-Id-Version: factory_bot\n"
 "POT-Creation-Date: 2025-08-17T17:38:48+09:00\n"
-"PO-Revision-Date: 2025-08-17 17:06+0900\n"
+"PO-Revision-Date: 2025-08-17 17:50+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  all.ja.po (factory_bot)  #-#-#-#-#\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"#-#-#-#-#  news.ja.po (FactoryBot)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/SUMMARY.md:1
@@ -141,9 +135,8 @@ msgid "Best practices"
 msgstr "ベストプラクティス"
 
 #: src/SUMMARY.md:35
-#, fuzzy
 msgid "Static Attributes (deprecated)"
-msgstr "静的属性"
+msgstr "静的属性（廃止）"
 
 #: src/SUMMARY.md:36 src/using-factories/summary.md:1
 msgid "Using factories"
@@ -175,9 +168,8 @@ msgid "With other attributes"
 msgstr "他の属性付き"
 
 #: src/SUMMARY.md:44
-#, fuzzy
 msgid "With `attributes_for`"
-msgstr "attributes_for付き"
+msgstr "`attributes_for`付き"
 
 #: src/SUMMARY.md:45 src/transient-attributes/with-callbacks.md:1
 msgid "With callbacks"
@@ -277,7 +269,6 @@ msgid "Setting the value"
 msgstr "値の設定"
 
 #: src/SUMMARY.md:71
-#, fuzzy
 msgid "Generating a sequence"
 msgstr "系列の生成"
 
@@ -334,7 +325,6 @@ msgid "Symbol#to_proc"
 msgstr "Symbol#to_proc"
 
 #: src/SUMMARY.md:87
-#, fuzzy
 msgid "Callback order"
 msgstr "コールバックの順番"
 
@@ -371,14 +361,12 @@ msgid "Cookbook"
 msgstr "レシピ"
 
 #: src/SUMMARY.md:98
-#, fuzzy
 msgid "`has_many` associations"
-msgstr "has_many関連"
+msgstr "`has_many`関連"
 
 #: src/SUMMARY.md:99
-#, fuzzy
 msgid "`has_and_belongs_to_many` associations"
-msgstr "has_and_belongs_to_many関連"
+msgstr "`has_and_belongs_to_many`関連"
 
 #: src/SUMMARY.md:100 src/cookbook/polymorphic-associations.md:1
 msgid "Polymorphic associations"
@@ -440,22 +428,17 @@ msgid "License"
 msgstr "使用許諾"
 
 #: src/intro.md:17
-#, fuzzy
 msgid ""
 "factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
 "software, and may be redistributed under the terms specified in the [LICENSE]"
 "(https://github.com/thoughtbot/factory_bot/blob/main/LICENSE) file."
-msgstr ""
-"factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free "
-"software, and may be redistributed under the terms specified in the "
-"[LICENSE] file."
+msgstr "factory_bot is Copyright © 2008 Joe Ferris and thoughtbot. It is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/thoughtbot/factory_bot/blob/main/LICENSE) file."
 
 #: src/intro.md:23
 msgid "About thoughtbot"
 msgstr "thoughtbotについて"
 
 #: src/intro.md:25
-#, fuzzy
 msgid ""
 "factory_bot is maintained and funded by thoughtbot, inc. The names and logos "
 "for thoughtbot are trademarks of thoughtbot, inc."
@@ -464,7 +447,6 @@ msgstr ""
 "thoughtbotの名前とロゴはthoughtbot, inc.の商標です。"
 
 #: src/intro.md:28
-#, fuzzy
 msgid ""
 "We love open source software! See [our other projects](https://"
 "thoughtbot.com/community?utm_source=github) or [hire us](https://"
@@ -472,8 +454,8 @@ msgid ""
 "product."
 msgstr ""
 "私達はオープンソースソフトウェアが大好きです！\n"
-"[私達の他のプロジェクト][community]を参照してください。\n"
-"製品を設計、開発、成長させるための[求人を募集しています][hire]。"
+"[私達の他のプロジェクト](https://thoughtbot.com/community?utm_source=github)を参照してください。\n"
+"製品を設計、開発、成長させるための[求人を募集しています](https://thoughtbot.com/hire-us?utm_source=github)。"
 
 #: src/ref/build-strategies.md:3
 msgid ""
