@@ -10,6 +10,10 @@ translate:
 	po4a ${po4a_options} po4a.cfg
 .PHONY: translate
 
+update:
+	cd ../docs && MDBOOK_OUTPUT='{"xgettext": {}}' mdbook build -d po
+.PHONY: update
+
 ja/docs/book.toml: ../docs/book.toml convert-mdBook-config
 	mkdir -p $(dir $@)
 	./convert-mdBook-config < $< > $@

@@ -13,3 +13,4 @@ bin
 
 gemfiles/*.lock
 /doc/
+/docs/po/
