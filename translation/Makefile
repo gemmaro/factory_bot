@@ -15,6 +15,10 @@ update:
 	msgmerge --update ../docs/po/ja.po ../docs/po/messages.pot
 .PHONY: update
 
+render:
+	cd ../docs && MDBOOK_BOOK__LANGUAGE=ja mdbook build -d book/ja
+.PHONY: render
+
 ja/docs/book.toml: ../docs/book.toml convert-mdBook-config
 	mkdir -p $(dir $@)
 	./convert-mdBook-config < $< > $@

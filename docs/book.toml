@@ -22,3 +22,6 @@ title = "factory_bot"
 "/associations/interconnected-associations.html" = "../cookbook/interconnected-associations.html"
 "/traits/defining-traits.html" = "summary.html"
 "/callbacks/default-callbacks.html" = "summary.html"
+
+[preprocessor.gettext]
+after = ["links"]
