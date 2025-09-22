@@ -2,8 +2,7 @@ export LANG=C
 
 po4a_options = --keep-translations ${PO4A_OPTS}
 
-all:
-	$(error no default tasks)
+all: translate
 .PHONY: all
 
 translate:

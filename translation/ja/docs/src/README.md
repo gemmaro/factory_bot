@@ -1,20 +1,20 @@
-# factory_bot [![ビルド状態][ci-image]][ci] [![Code Climate][grade-image]][grade] [![Gemのバージョン][version-image]][version]
+# factory_bot 
+
+[![ビルド状態][ci-image]][ci] [![Code Climate][grade-image]][grade]
+[![Gemバージョン][version-image]][version]
 
 factory_botはフィクスチャの代わりになるものです。
 直感的な定義構文であり、複数の構築戦略（保存されたインスタンス、保存されないインスタンス、属性ハッシュ、スタブ化オブジェクト）、ファクトリ継承を含む同じクラスに対する複数のファクトリ（user、admin_user、など）に対応しています。
 
 Railsでfactory_botを使いたいときは[factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)を参照してください。
 
-_[プロジェクト名の歴史に関心がありますか][NAME]_
+プロジェクト名の経緯に関心がおありですか？
+[こちら](https://github.com/thoughtbot/factory_bot/blob/main/NAME.md)にあります。
 
+factory_girlからの移行中ですか？
+[更新の手引き](https://github.com/thoughtbot/factory_bot/blob/4.9.0-stable/UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。
 
-### factory\_girlから移行されますか
-
-[手引き](https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。
-
-
-ドキュメント
-------
+## ドキュメント
 
 [factory_botの本][the factory_bot book]で網羅的な参照、手引き、レシピを参照してください。
 
@@ -28,8 +28,7 @@ Upcaseで無料で見られます。
 [the factory_bot book]: https://thoughtbot.github.io/factory_bot
 [the factory_bot wiki]: https://github.com/thoughtbot/factory_bot/wiki
 
-インストール
---------
+## インストール
 
 以下を走らせてください。
 
@@ -43,13 +42,11 @@ bundle add factory_bot
 gem install factory_bot
 ```
 
-対応しているRubyのバージョン
-----------------
+## 対応しているRubyのバージョン
 
-対応しているRubyのバージョンは[`.github/workflows/build.yml`](https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml)に一覧になっています。
+対応しているRubyのバージョンは`.github/workflows/build.yml`（[ソース](https://github.com/thoughtbot/factory_bot/blob/main/.github/workflows/build.yml)）に一覧になっています。
 
-その他の情報
-------
+## その他の情報
 
 * [Rubygems](https://rubygems.org/gems/factory_bot)
 * [Stack Overflow](https://stackoverflow.com/questions/tagged/factory-bot)
@@ -58,10 +55,8 @@ gem install factory_bot
   ROBOTS](https://robots.thoughtbot.com/)
 
 [GETTING_STARTED]: https://github.com/thoughtbot/factory_bot/blob/main/GETTING_STARTED.md
-[NAME]: https://github.com/thoughtbot/factory_bot/blob/main/NAME.md
 
-有用なツール
-------
+## 有用なツール
 
 * [FactoryTrace](https://github.com/djezzzl/factory_trace)は使われていないファクトリやトレイトを見付けるのに役立ちます。
 * [ruby-lsp-factory_bot](https://github.com/donny741/ruby-lsp-factory_bot) /
