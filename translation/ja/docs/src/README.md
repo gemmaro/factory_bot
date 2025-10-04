@@ -11,8 +11,8 @@ Railsでfactory_botを使いたいときは[factory_bot_rails](https://github.co
 プロジェクト名の経緯に関心がおありですか？
 [こちら](https://github.com/thoughtbot/factory_bot/blob/main/NAME.md)にあります。
 
-factory_girlからの移行中ですか？
-[更新の手引き](https://github.com/thoughtbot/factory_bot/blob/4.9.0-stable/UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。
+factory\_girlからの移行中ですか？
+[更新の手引き](https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md)をご確認ください。
 
 ## ドキュメント
 
