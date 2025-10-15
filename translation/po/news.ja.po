@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FactoryBot\n"
-"POT-Creation-Date: 2025-08-17 16:47+0900\n"
+"POT-Creation-Date: 2025-10-15 20:03+0900\n"
 "PO-Revision-Date: 2025-08-17 17:06+0900\n"
 "Last-Translator: gemmaro <gemmaro.dev@gmail.com>\n"
 "Language-Team: none\n"
@@ -620,7 +620,7 @@ msgstr ""
 
 #. type: Bullet: '* '
 #: ../NEWS.md:129
-msgid "Internal: fix typoes throughout codebase (Yudai Takada)."
+msgid "Internal: fix typos throughout codebase (Yudai Takada)."
 msgstr ""
 
 #. type: Bullet: '* '

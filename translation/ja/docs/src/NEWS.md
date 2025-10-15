@@ -143,7 +143,7 @@
 * Docs: clarify that automatic trait definitions could introduce new linting
   errors (Lawrence Chou).
 * Internal: skip TruffleRuby on Rails 5.0, 5.1, 5.2 (Andrii Konchyn).
-* Internal: fix typoes throughout codebase (Yudai Takada).
+* Internal: fix typos throughout codebase (Yudai Takada).
 * Internal: run CI on `actions/checkout` v3 (Yudai Takada).
 * Internal: follow standardrb code style (Yudai Takada).
 * Internal: stop using Hound (Daniel Nolan).
