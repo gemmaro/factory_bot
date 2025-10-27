@@ -1,5 +1,27 @@
 # お知らせ
 
+## 6.5.6（2025年10月22日）
+
+* 修正：@JinOketani
+  による[#1768](https://github.com/thoughtbot/factory_bot/pull/1768)で、関連の上塗りの優先度をトレイトの外部キーより上げました
+* 構築：@ydahにより[#1778](https://github.com/thoughtbot/factory_bot/pull/1778)でostructが開発依存関係に追加されました
+* 構築：@ydahにより[#1779](https://github.com/thoughtbot/factory_bot/pull/1779)でstandardがv1.44.0からv1.51.1に更新されました
+* 構築：@ydahにより[#1780](https://github.com/thoughtbot/factory_bot/pull/1780)でRuby
+  3.4がCIマトリックスに加わりました
+* 構築：@ydahにより[#1781](https://github.com/thoughtbot/factory_bot/pull/1781)で不要な開発依存関係が削除されました
+* 構築：@ydahにより[#1782](https://github.com/thoughtbot/factory_bot/pull/1782)でgemのバージョンと依存関係が更新されました
+* 構築：@vburzynskiにより[#1784](https://github.com/thoughtbot/factory_bot/pull/1784)でmutex_mの削除が元に戻されました
+* 改修：@vburzynskiにより[#1770](https://github.com/thoughtbot/factory_bot/pull/1770)でファクトリの算出器が整頓されました
+* 微修正(ci)：@dependabot[bot]により[#1765](https://github.com/thoughtbot/factory_bot/pull/1765)でactions/checkoutが4から5に上がりました
+* 微修正（スペック）：@vburzynskiにより[#1776](https://github.com/thoughtbot/factory_bot/pull/1776)で遅いスペックにタグ付けがされました
+* 文書：@vburzynskiにより[#1763](https://github.com/thoughtbot/factory_bot/pull/1763)でRELEASING.mdが更新されました
+* 文書：@imRohanにより[#1769](https://github.com/thoughtbot/factory_bot/pull/1769)でFactoryGirlの更新の手引きへのリンクが更新されました
+* 文書：@ydahにより[#1783](https://github.com/thoughtbot/factory_bot/pull/1783)でいくつか誤植が修正されました
+* 文書
+  (yard)：@vburzynskiにより[#1764](https://github.com/thoughtbot/factory_bot/pull/1764)でyardの文書の警告が解消されました
+* 文書
+  (yard)：@djbenderにより[#1777](https://github.com/thoughtbot/factory_bot/pull/1777)でyard文書でのRubyの構文彩色がされるようになりました
+
 ## 6.5.5（2025年8月15日）
 
 * 機能：開発者用のコンソール機能を追加 (CodeMeister)
